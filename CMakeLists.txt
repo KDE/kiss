@@ -12,7 +12,8 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 include(GNUInstallDirs)
 
-find_package(Qt5 COMPONENTS Core Quick QuickControls2 WaylandCompositor REQUIRED)
+find_package(Qt5 COMPONENTS Core Quick QuickControls2 DBus REQUIRED)
+find_package(KF5I18n)
 
 set(DefaultPermissions
 	OWNER_WRITE OWNER_READ OWNER_EXECUTE

@@ -1,6 +1,16 @@
 set(SOURCES
 		Sources/Main.cpp
+		Sources/KISS.h
 		Resources/Resources.qrc
+)
+
+qt5_add_dbus_interface(SOURCES
+	DBusProtocols/org.freedesktop.Accounts.Service.xml
+	AccountsService
+)
+qt5_add_dbus_interface(SOURCES
+	DBusProtocols/org.freedesktop.Accounts.User.xml
+	User
 )
 
 add_executable(org.kde.initialsystemsetup
@@ -11,7 +21,9 @@ target_compile_definitions(org.kde.initialsystemsetup
 		PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>
 )
 target_link_libraries(org.kde.initialsystemsetup
-		PRIVATE Qt5::Core Qt5::Quick Qt5::QuickControls2 Qt5::WaylandCompositor
+	PRIVATE
+		Qt5::Core Qt5::Quick Qt5::QuickControls2 Qt5::DBus
+		KF5::I18n
 )
 
 install(TARGETS org.kde.initialsystemsetup
