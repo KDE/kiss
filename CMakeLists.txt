@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(KDEInitialSystemSetup LANGUAGES CXX)
+
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+include(GNUInstallDirs)
+
+find_package(Qt5 COMPONENTS Core Quick QuickControls2 WaylandCompositor REQUIRED)
+
+set(DefaultPermissions
+	OWNER_WRITE OWNER_READ OWNER_EXECUTE
+	GROUP_READ GROUP_EXECUTE
+	WORLD_READ WORLD_EXECUTE
+)
+
+add_subdirectory(KDEInitialSystemSetup)
