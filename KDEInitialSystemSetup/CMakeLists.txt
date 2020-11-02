@@ -30,7 +30,7 @@ configure_file(org.kde.initialsystemsetup.service.in org.kde.initialsystemsetup.
 
 install(
 	FILES ${CMAKE_CURRENT_BINARY_DIR}/org.kde.initialsystemsetup.service
-	DESTINATION ${KDE_INSTALL_SYSTEMDUNITDIR}
+	DESTINATION ${KDE_INSTALL_SYSTEMDUNITDIR}/system
 )
 
 install(TARGETS org.kde.initialsystemsetup

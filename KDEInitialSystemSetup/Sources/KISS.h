@@ -58,5 +58,6 @@ class KISS : public QObject
 		m_systemd.disableService("org.kde.initialsystemsetup");
 		m_systemd.enableService("sddm");
 		m_systemd.startService("sddm");
+		QCoreApplication::exit(0);
 	}
 };
