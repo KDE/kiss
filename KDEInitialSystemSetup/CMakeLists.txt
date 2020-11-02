@@ -12,10 +12,6 @@ qt5_add_dbus_interface(SOURCES
 	DBusProtocols/org.freedesktop.Accounts.User.xml
 	User
 )
-qt5_add_dbus_interface(SOURCES
-	DBusProtocols/systemd.xml
-	systemd
-)
 
 add_executable(org.kde.initialsystemsetup
 		${SOURCES}
@@ -33,7 +29,7 @@ target_link_libraries(org.kde.initialsystemsetup
 configure_file(org.kde.initialsystemsetup.service.in org.kde.initialsystemsetup.service @ONLY)
 
 install(
-	FILES org.kde.initialsystemsetup.service
+	FILES ${CMAKE_CURRENT_BINARY_DIR}/org.kde.initialsystemsetup.service
 	DESTINATION ${KDE_INSTALL_SYSTEMDUNITDIR}
 )
 

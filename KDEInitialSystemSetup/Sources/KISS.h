@@ -11,12 +11,15 @@
 #include "User.h"
 #undef org
 
+#include "systemd.h"
+
 class KISS : public QObject
 {
 	Q_OBJECT
 
 	QStringList m_locales;
 	OrgFreedesktopAccountsInterface* m_accountsInterface;
+	Systemd m_systemd;
 
 	public: KISS(QObject* parent = nullptr) : QObject(parent)
 	{
@@ -48,5 +51,12 @@ class KISS : public QObject
 
 			Q_EMIT finished(true);
 		});
+	}
+
+	public: Q_INVOKABLE void disableSelf()
+	{
+		m_systemd.disableService("org.kde.initialsystemsetup");
+		m_systemd.enableService("sddm");
+		m_systemd.startService("sddm");
 	}
 };

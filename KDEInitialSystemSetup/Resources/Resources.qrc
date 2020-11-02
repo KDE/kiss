@@ -3,5 +3,6 @@
 		<file>Main.qml</file>
 		<file>pages/user/Page.qml</file>
 		<file>pages/locale/Page.qml</file>
+		<file>pages/ready/Page.qml</file>
 	</qresource>
 </RCC>

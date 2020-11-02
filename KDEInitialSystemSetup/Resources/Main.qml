@@ -14,4 +14,13 @@ ApplicationWindow {
 
 		initialItem: "pages/locale/Page.qml"
 	}
+
+	Connections {
+		target: KISS
+		function onFinished(success) {
+			if (success) {
+				staccy.replace("qrc:/pages/ready/Page.qml")
+			}
+		}
+	}
 }
