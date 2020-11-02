@@ -1,0 +1,11 @@
+[Unit]
+Description=KDE Initial System Setup
+Conflicts=getty@tty1.service
+After=systemd-user-sessions.service getty@tty1.service plymouth-quit.service systemd-logind.service
+
+[Service]
+ExecStart=@KDE_INSTALL_BINDIR@/org.kde.initialsystemsetup
+Restart=always
+
+[Install]
+Alias=display-manager.service
