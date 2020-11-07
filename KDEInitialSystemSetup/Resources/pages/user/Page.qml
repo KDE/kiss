@@ -42,10 +42,5 @@ Item {
 
 			Kirigami.FormData.label: "Password:"
 		}
-		Button {
-			text: "Confirm"
-
-			onClicked: appWindow.currentPage++
-		}
 	}
 }
