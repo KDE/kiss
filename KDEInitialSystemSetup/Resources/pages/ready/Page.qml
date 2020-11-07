@@ -5,6 +5,9 @@ import org.kde.kirigami 2.10 as Kirigami
 
 Item {
 	property string title: ""
+	property bool canNext: false
+
+	function apply() {}
 
 	ColumnLayout {
 		anchors.centerIn: parent

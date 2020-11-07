@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<schemalist>
+
+	<enum id="org.kde.initialsystemsetup.DisplayManagers">
+		<value nick="sddm" value="1" />
+	</enum>
+
+	<schema path="/org/kde/initialsystemsetup/" id="org.kde.initialsystemsetup">
+		<key name='display-manager-backend' enum='org.kde.initialsystemsetup.DisplayManagers'>
+			<default>'sddm'</default>
+			<summary>Display manager being used</summary>
+			<description>
+				This tells KISS which display manager is being used on the system.
+				This allows it to figure out which display manager to enable, and
+				how to launch a user session.
+			</description>
+		</key>
+		<key name="desktop-session" type="s">
+			<default>'plasmawayland.desktop'</default>
+			<summary>Which session to start after setup</summary>
+			<description>
+				This tells KISS which desktop file corresponding to an X11 or a
+				Wayland session should be started after initial system setup is
+				completed.
+			</description>
+		</key>
+		<key name="stages" type="as">
+			<default>['user']</default>
+			<summary>Which pages of the initial setup to show, and in which order.</summary>
+			<description>
+				This tells KISS which pages it should show. The language selection page
+				is always shown first, and the ready page is always shown last. The user
+				page is required to be in the list of vendor-provided pages, and KISS will
+				abort if it is not found.
+			</description>
+		</key>
+	</schema>
+
+</schemalist>

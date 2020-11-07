@@ -10,13 +10,45 @@ ApplicationWindow {
 	visible: true
 
 	property string language: ""
+	property int currentPage: 0
+	onCurrentPageChanged: {
+		staccy.currentItem.apply()
+		staccy.replace(`qrc:/pages/${KISS.pages[currentPage]}/Page.qml`)
+	}
 
 	Rectangle {
 		anchors.fill: parent
 		color: "#404040"
 	}
 
+	RowLayout {
+		anchors {
+			left: kardo.left
+			right: kardo.right
+			top: kardo.bottom
+			topMargin: Kirigami.Units.largeSpacing
+		}
+
+		Button {
+			text: "Previous"
+			visible: appWindow.currentPage > 0
+			onClicked: appWindow.currentPage--
+		}
+
+		Item {
+			Layout.fillWidth: true
+		}
+
+		Button {
+			text: "Next"
+			visible: (staccy.currentItem.canNext) && (appWindow.currentPage + 1 != KISS.pages.length)
+			onClicked: appWindow.currentPage++
+		}
+	}
+
 	Kirigami.Card {
+		id: kardo
+
 		height: parent.height > Kirigami.Units.gridUnit * 30 ? Kirigami.Units.gridUnit * 30 : parent.height
 		width: parent.width > Kirigami.Units.gridUnit * 20 ? Kirigami.Units.gridUnit * 20 : parent.width
 
@@ -67,18 +99,24 @@ ApplicationWindow {
 
 				clip: true
 
-				initialItem: "pages/locale/Page.qml"
+				initialItem: `pages/${KISS.pages[0]}/Page.qml`
+
+				replaceEnter: Transition {
+					PropertyAnimation {
+						property: "opacity"
+						from: 0
+						to: 1
+					}
+				}
+				replaceExit: Transition {
+					PropertyAnimation {
+						property: "opacity"
+						from: 1
+						to: 0
+					}
+				}
 			}
 		}
 
-	}
-
-	Connections {
-		target: KISS
-		function onFinished(success) {
-			if (success) {
-				staccy.replace("qrc:/pages/ready/Page.qml")
-			}
-		}
 	}
 }
