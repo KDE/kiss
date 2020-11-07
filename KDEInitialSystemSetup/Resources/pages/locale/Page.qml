@@ -4,12 +4,14 @@ import org.kde.kirigami 2.10 as Kirigami
 
 ListView {
 	model: KISS.locales
+	property string title: "Welcome"
+	property string description: "Select a language to begin setup"
 
 	delegate: Kirigami.BasicListItem {
-		text: modelData
+		text: modelData.name
 
 		onClicked: {
-			appWindow.language = modelData
+			appWindow.language = modelData.code
 			staccy.push("qrc:/pages/user/Page.qml")
 		}
 	}

@@ -15,11 +15,23 @@
 #include "Backend.h"
 #include "DisplayManagerBackends/SDDM.h"
 
+struct Language
+{
+	Q_GADGET
+
+public:
+	Q_PROPERTY(QString name MEMBER m_name CONSTANT)
+	QString m_name;
+
+	Q_PROPERTY(QString code MEMBER m_code CONSTANT)
+	QString m_code;
+};
+
 class KISS : public QObject
 {
 	Q_OBJECT
 
-	QStringList m_locales;
+	QVariantList m_locales;
 	OrgFreedesktopAccountsInterface* m_accountsInterface;
 	Backend* m_backend;
 	QString m_name;
@@ -27,7 +39,16 @@ class KISS : public QObject
 	public: KISS(QObject* parent = nullptr) : QObject(parent)
 	{
 		m_backend = new SDDMBackend;
-		m_locales = QStringList(KLocalizedString::availableDomainTranslations("plasmashell").values());
+		auto locs = KLocalizedString::availableDomainTranslations("plasmashell").values();
+		std::transform(locs.begin(), locs.end(), std::back_inserter(m_locales), [](const QString& locale) -> QVariant {
+			return QVariant::fromValue(Language {
+				.m_name = QLocale(locale).nativeLanguageName(),
+				.m_code = locale
+			});
+		});
+		std::sort(m_locales.begin(), m_locales.end(), [](const QVariant& lhs, const QVariant& rhs) -> bool {
+			return lhs.value<Language>().m_name < rhs.value<Language>().m_name;
+		});
 		m_accountsInterface = new OrgFreedesktopAccountsInterface(QStringLiteral("org.freedesktop.Accounts"), QStringLiteral("/org/freedesktop/Accounts"), QDBusConnection::systemBus(), this);
 	}
 
@@ -36,8 +57,8 @@ class KISS : public QObject
 		delete m_backend;
 	}
 
-	Q_PROPERTY(QStringList locales READ locales)
-	public: QStringList locales() const
+	Q_PROPERTY(QVariantList locales READ locales)
+	public: QVariantList locales() const
 	{
 		return m_locales;
 	}

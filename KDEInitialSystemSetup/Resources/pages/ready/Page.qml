@@ -4,6 +4,8 @@ import QtQuick.Layouts 1.10
 import org.kde.kirigami 2.10 as Kirigami
 
 Item {
+	property string title: ""
+
 	ColumnLayout {
 		anchors.centerIn: parent
 
