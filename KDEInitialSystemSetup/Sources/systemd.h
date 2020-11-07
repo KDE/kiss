@@ -7,13 +7,21 @@ class Systemd
 {
 	QDBusInterface* m_daemon;
 
-	public: Systemd()
+	private: Systemd()
 	{
 		m_daemon = new QDBusInterface("org.freedesktop.systemd1", "/org/freedesktop/systemd1", "org.freedesktop.systemd1.Manager", QDBusConnection::systemBus());
 	}
-	public: ~Systemd()
+	private: ~Systemd()
 	{
 		delete m_daemon;
+	}
+	public: static Systemd* instance()
+	{
+		static Systemd* inst = nullptr;
+		if (inst == nullptr) {
+			inst = new Systemd();
+		}
+		return inst;
 	}
 	private: QString s(const QString& unit)
 	{

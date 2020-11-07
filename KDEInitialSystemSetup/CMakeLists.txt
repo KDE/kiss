@@ -23,7 +23,7 @@ target_compile_definitions(org.kde.initialsystemsetup
 target_link_libraries(org.kde.initialsystemsetup
 	PRIVATE
 		Qt5::Core Qt5::Quick Qt5::QuickControls2 Qt5::DBus
-		KF5::I18n
+		KF5::I18n KF5::ConfigCore
 )
 
 configure_file(org.kde.initialsystemsetup.service.in org.kde.initialsystemsetup.service @ONLY)
