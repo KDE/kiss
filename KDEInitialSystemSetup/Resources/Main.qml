@@ -11,14 +11,22 @@ ApplicationWindow {
 
 	property string language: ""
 	property int currentPage: 0
+	property int oldPage: 0
+	property bool goingForward: true
 	onCurrentPageChanged: {
+		if (oldPage < currentPage) {
+			goingForward = true
+		} else {
+			goingForward = false
+		}
+		oldPage = currentPage
 		staccy.currentItem.apply()
 		staccy.replace(`qrc:/pages/${KISS.pages[currentPage]}/Page.qml`)
 	}
 
 	Rectangle {
 		anchors.fill: parent
-		color: "#404040"
+		color: "#929292"
 	}
 
 	RowLayout {
@@ -69,6 +77,13 @@ ApplicationWindow {
 				Layout.bottomMargin: -bottomInset
 				Layout.topMargin: -topInset
 
+				Behavior on implicitHeight {
+					NumberAnimation {
+						duration: Kirigami.Units.shortDuration
+						easing.type: Easing.InOutCirc
+					}
+				}
+
 				contentItem: ColumnLayout {
 					Kirigami.Heading {
 						text: staccy.currentItem.title ?? "yeet"
@@ -77,12 +92,19 @@ ApplicationWindow {
 						Layout.fillWidth: true
 					}
 					Kirigami.Heading {
-						visible: text !== ""
+						opacity: text !== "" ? 0.7 : 0
+						Layout.preferredHeight: text !== "" ? -1 : 0
 
 						text: staccy.currentItem.description ?? ""
 						horizontalAlignment: Text.AlignHCenter
 						level: 4
-						opacity: 0.7
+
+						Behavior on opacity {
+							NumberAnimation {
+								duration: Kirigami.Units.shortDuration
+								easing.type: Easing.InOutCirc
+							}
+						}
 
 						Layout.fillWidth: true
 					}
@@ -100,19 +122,24 @@ ApplicationWindow {
 				clip: true
 
 				initialItem: `pages/${KISS.pages[0]}/Page.qml`
+				property real aniFrom: (staccy.mirrored ? -1 : 1) * staccy.width
+				property real aniTo: (staccy.mirrored ? -1 : 1) * -staccy.width
 
 				replaceEnter: Transition {
-					PropertyAnimation {
-						property: "opacity"
-						from: 0
-						to: 1
+					XAnimator {
+						from: appWindow.goingForward ? staccy.aniFrom : staccy.aniTo
+						to: 0
+						duration: Kirigami.Units.shortDuration
+						easing.type: Easing.InOutCirc
 					}
 				}
+
 				replaceExit: Transition {
-					PropertyAnimation {
-						property: "opacity"
-						from: 1
-						to: 0
+					XAnimator {
+						from: 0
+						to: appWindow.goingForward ? staccy.aniTo : staccy.aniFrom
+						duration: Kirigami.Units.shortDuration
+						easing.type: Easing.InOutCirc
 					}
 				}
 			}

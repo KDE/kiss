@@ -11,12 +11,22 @@ Item {
 
 	ColumnLayout {
 		anchors.centerIn: parent
+		spacing: Kirigami.Units.largeSpacing * 2
 
 		Kirigami.Heading {
 			text: "All Done!"
+			horizontalAlignment: Text.AlignHCenter
+			Layout.fillWidth: true
+		}
+		Image {
+			source: "yay.svg"
+
+			Layout.preferredWidth: 150
+			Layout.preferredHeight: 150
 		}
 		Button {
 			text: "Let's get started"
+			Layout.fillWidth: Qt.AlignHCenter
 
 			onClicked: {
 				KISS.disableSelf()
