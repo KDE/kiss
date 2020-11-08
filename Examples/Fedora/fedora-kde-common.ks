@@ -13,6 +13,8 @@ fedora-release-kde
 ### Browser
 falkon
 
+kiss
+
 ### fixes
 
 # use kde-print-manager instead of system-config-printer
