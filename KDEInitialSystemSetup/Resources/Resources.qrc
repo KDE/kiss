@@ -1,6 +1,7 @@
 <RCC>
 	<qresource prefix="/">
 		<file>Main.qml</file>
+		<file>MobileMain.qml</file>
 		<!-- User Details Page-->
 		<file>pages/user/Page.qml</file>
 		<!-- Locale/Welcome Page-->

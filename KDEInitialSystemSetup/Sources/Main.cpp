@@ -1,6 +1,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
+#include <QQuickStyle>
 
 #include "KISS.h"
 
@@ -12,8 +13,21 @@ int main(int argc, char *argv[])
 	QGuiApplication app(argc, argv);
 	QScopedPointer<KISS> kiss(new KISS);
 
+	QCommandLineParser parser;
+	QCommandLineOption mobileOpt("m", "mobile");
+	parser.addOption(mobileOpt);
+	parser.process(app);
+
+	QUrl url;
+	if (parser.isSet(mobileOpt)) {
+		url = QStringLiteral("qrc:/MobileMain.qml");
+		QQuickStyle::setStyle("plasma");
+	} else {
+		url = QStringLiteral("qrc:/Main.qml");
+		QQuickStyle::setStyle("org.kde.desktop");
+	}
+
 	QQmlApplicationEngine engine;
-	const QUrl url(QStringLiteral("qrc:/Main.qml"));
 	engine.rootContext()->setContextProperty("KISS", kiss.data());
 	QObject::connect(
 		&engine, &QQmlApplicationEngine::objectCreated,

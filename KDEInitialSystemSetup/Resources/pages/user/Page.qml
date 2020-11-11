@@ -19,7 +19,9 @@ Item {
 	}
 
 	Kirigami.FormLayout {
-		anchors.centerIn: parent
+		anchors.verticalCenter: parent.verticalCenter
+		anchors.left: parent.left
+		anchors.right: parent.right
 
 		TextField {
 			id: name
