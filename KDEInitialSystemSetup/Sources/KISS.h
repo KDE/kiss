@@ -16,6 +16,8 @@
 #include "Settings.h"
 #include "DisplayManagerBackends/SDDM.h"
 
+#include <crack.h>
+
 #include <optional>
 
 static auto backends = QMap<QString,std::function<Backend*()>> {
@@ -114,5 +116,19 @@ public: void reset_ ## name() {\
 		m_backend->yeetToSession(username());
 
 		Systemd::instance()->stopService("org.kde.initialsystemsetup");
+	}
+	public: Q_INVOKABLE QString checkPassword(const QString& username, const QString& realname, const QString& password)
+	{
+		auto usernameData = username.toLocal8Bit();
+		auto realnameData = realname.toLocal8Bit();
+		auto passwordData = password.toLocal8Bit();
+
+		usernameData.data();
+
+		auto data = FascistCheckUser(passwordData.data(), GetDefaultCracklibDict(), usernameData.data(), realnameData.data());
+		if (data == nullptr) {
+			return QString();
+		}
+		return QString::fromLocal8Bit(data);
 	}
 };

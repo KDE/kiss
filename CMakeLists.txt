@@ -15,7 +15,7 @@ set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
 include(KDEInstallDirs)
 
-find_package(Qt5 COMPONENTS Core Quick QuickControls2 DBus REQUIRED)
+find_package(Qt5 COMPONENTS Core Widgets Quick QuickControls2 DBus REQUIRED)
 find_package(KF5I18n)
 find_package(KF5Config)
 find_package(PkgConfig REQUIRED)

@@ -1,5 +1,6 @@
 import QtQuick 2.5
 import QtQuick.Controls 2.10
+import QtQuick.Layouts 1.10
 import org.kde.kirigami 2.10 as Kirigami
 
 Item {
@@ -26,14 +27,14 @@ Item {
 		TextField {
 			id: name
 
-			text: KISS.username
+			text: KISS.realname
 
 			Kirigami.FormData.label: "Realname:"
 		}
 		TextField {
 			id: user
 
-			text: KISS.password
+			text: KISS.username
 
 			Kirigami.FormData.label: "Username:"
 		}
@@ -43,6 +44,13 @@ Item {
 			text: KISS.password
 
 			Kirigami.FormData.label: "Password:"
+		}
+		Kirigami.InlineMessage {
+			text: KISS.checkPassword(user.text, name.text, pass.text)
+			type: Kirigami.MessageType.Error
+			visible: pass.text !== "" && text !== ""
+
+			Layout.fillWidth: true
 		}
 	}
 }
