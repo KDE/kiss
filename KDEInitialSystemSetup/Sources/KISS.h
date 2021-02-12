@@ -19,9 +19,10 @@
 #include <crack.h>
 
 #include <optional>
+#include <memory>
 
-static auto backends = QMap<QString,std::function<Backend*()>> {
-	{"sddm", []() -> Backend* { return new SDDMBackend; } }
+static auto backends = QMap<QString,std::function<std::unique_ptr<Backend>()>> {
+	{"sddm", []() -> std::unique_ptr<Backend> {return std::unique_ptr<Backend>(new SDDMBackend); } }
 };
 
 struct Language
@@ -39,45 +40,8 @@ public:
 class KISS : public QObject
 {
 	Q_OBJECT
-
-	QVariantList m_locales;
-	OrgFreedesktopAccountsInterface* m_accountsInterface;
-	Backend* m_backend;
-	QString m_name;
-
-	public: KISS(QObject* parent = nullptr) : QObject(parent)
-	{
-		m_backend = backends[Settings::instance()->displayManager()]();
-
-		auto locs = KLocalizedString::availableDomainTranslations("plasmashell").values();
-		std::transform(locs.begin(), locs.end(), std::back_inserter(m_locales), [](const QString& locale) -> QVariant {
-			return QVariant::fromValue(Language {
-				.m_name = QLocale(locale).nativeLanguageName(),
-				.m_code = locale
-			});
-		});
-		std::sort(m_locales.begin(), m_locales.end(), [](const QVariant& lhs, const QVariant& rhs) -> bool {
-			return lhs.value<Language>().m_name < rhs.value<Language>().m_name;
-		});
-		m_accountsInterface = new OrgFreedesktopAccountsInterface(QStringLiteral("org.freedesktop.Accounts"), QStringLiteral("/org/freedesktop/Accounts"), QDBusConnection::systemBus(), this);
-	}
-
-	public: ~KISS()
-	{
-		delete m_backend;
-	}
-
 	Q_PROPERTY(QVariantList locales READ locales CONSTANT)
-	public: QVariantList locales() const
-	{
-		return m_locales;
-	}
-
 	Q_PROPERTY(QStringList pages READ pages CONSTANT)
-	public: QStringList pages() const
-	{
-		return Settings::instance()->pages();
-	}
 
 #define synth_prop(kind, name, default) Q_PROPERTY(kind name READ name WRITE set_ ## name RESET reset_ ## name NOTIFY name ## _changed) \
 std::optional<kind> m_ ## name;\
@@ -95,8 +59,6 @@ public: void reset_ ## name() {\
 		m_ ## name.reset(); Q_EMIT name ## _changed();\
 	}\
 }
-
-	// The stuff that we may potentially use when setting stuff up
 	synth_prop(QString, targetLanguage, QStringLiteral("en_US"))
 
 	synth_prop(QString, username, QString())
@@ -104,31 +66,18 @@ public: void reset_ ## name() {\
 	synth_prop(QString, password, QString())
 	synth_prop(bool, admin, true)
 
-	public: Q_INVOKABLE void disableSelf()
-	{
-		auto reply = m_accountsInterface->CreateUser(username(), realname(), admin() ? 1 : 0);
-		auto user = OrgFreedesktopAccountsUserInterface(QStringLiteral("org.freedesktop.Accounts"), reply.value().path(), QDBusConnection::systemBus(), this);
-		user.SetLanguage(targetLanguage());
-		user.SetPassword(password(), QString());
+public:
+	explicit KISS(QObject *parent = nullptr);
+	~KISS();
 
-		Systemd::instance()->disableService("org.kde.initialsystemsetup");
+	Q_INVOKABLE void disableSelf();
+	Q_INVOKABLE QString checkPassword(const QString& username, const QString& realname, const QString& password);
 
-		m_backend->yeetToSession(username());
+	QVariantList locales() const;
+	QStringList pages() const;
 
-		Systemd::instance()->stopService("org.kde.initialsystemsetup");
-	}
-	public: Q_INVOKABLE QString checkPassword(const QString& username, const QString& realname, const QString& password)
-	{
-		auto usernameData = username.toLocal8Bit();
-		auto realnameData = realname.toLocal8Bit();
-		auto passwordData = password.toLocal8Bit();
-
-		usernameData.data();
-
-		auto data = FascistCheckUser(passwordData.data(), GetDefaultCracklibDict(), usernameData.data(), realnameData.data());
-		if (data == nullptr) {
-			return QString();
-		}
-		return QString::fromLocal8Bit(data);
-	}
+private:
+	QVariantList m_locales;
+	OrgFreedesktopAccountsInterface* m_accountsInterface;
+	std::unique_ptr<Backend> m_backend;
 };

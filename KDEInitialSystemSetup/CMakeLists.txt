@@ -1,7 +1,8 @@
 set(SOURCES
-		Sources/Main.cpp
-		Sources/KISS.h
-		Resources/Resources.qrc
+    Sources/Main.cpp
+    Sources/Settings.cpp
+    Sources/KISS.cpp
+    Resources/Resources.qrc
 )
 
 qt5_add_dbus_interface(SOURCES
@@ -13,9 +14,7 @@ qt5_add_dbus_interface(SOURCES
 	User
 )
 
-add_executable(org.kde.initialsystemsetup
-		${SOURCES}
-)
+add_executable(org.kde.initialsystemsetup ${SOURCES})
 
 target_compile_definitions(org.kde.initialsystemsetup
 		PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>
