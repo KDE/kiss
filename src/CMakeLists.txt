@@ -1,17 +1,17 @@
 set(SOURCES
-    Sources/Main.cpp
-    Sources/Settings.cpp
-    Sources/KISS.cpp
-    Resources/Resources.qrc
+    main.cpp
+    settings.cpp
+    kiss.cpp
+    resources.qrc
 )
 
 qt5_add_dbus_interface(SOURCES
-	DBusProtocols/org.freedesktop.Accounts.Service.xml
-	AccountsService
+    dbus/org.freedesktop.Accounts.Service.xml
+    AccountsService
 )
 qt5_add_dbus_interface(SOURCES
-	DBusProtocols/org.freedesktop.Accounts.User.xml
-	User
+    dbus/org.freedesktop.Accounts.User.xml
+    User
 )
 
 add_executable(org.kde.initialsystemsetup ${SOURCES})

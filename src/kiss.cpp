@@ -3,7 +3,7 @@
 //
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include "KISS.h"
+#include "kiss.h"
 
 KISS::KISS(QObject* parent)
 	: QObject(parent)

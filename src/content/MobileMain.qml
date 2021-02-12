@@ -21,7 +21,7 @@ ApplicationWindow {
 		}
 		oldPage = currentPage
 		staccy.currentItem.apply()
-		staccy.replace(`qrc:/pages/${KISS.pages[currentPage]}/Page.qml`)
+		staccy.replace(`qrc:${KISS.pages[currentPage]}.qml`)
 	}
 
 	Rectangle {
@@ -88,7 +88,7 @@ ApplicationWindow {
 
 			clip: true
 
-			initialItem: `pages/${KISS.pages[0]}/Page.qml`
+			initialItem: `${KISS.pages[0]}.qml`
 			property real aniFrom: (staccy.mirrored ? -1 : 1) * staccy.width
 			property real aniTo: (staccy.mirrored ? -1 : 1) * -staccy.width
 

@@ -28,4 +28,4 @@ set(DefaultPermissions
 	WORLD_READ WORLD_EXECUTE
 )
 
-add_subdirectory(KDEInitialSystemSetup)
+add_subdirectory(src)

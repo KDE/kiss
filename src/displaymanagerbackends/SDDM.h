@@ -3,9 +3,9 @@
 #include <KConfig>
 #include <KConfigGroup>
 
-#include "../Backend.h"
+#include "../backend.h"
 #include "../systemd.h"
-#include "../Settings.h"
+#include "../settings.h"
 
 class SDDMBackend : public Backend {
 	public: SDDMBackend() {}

@@ -3,7 +3,7 @@
 #include <QQmlContext>
 #include <QQuickStyle>
 
-#include "KISS.h"
+#include "kiss.h"
 
 int main(int argc, char *argv[])
 {
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		url = QStringLiteral("qrc:/MobileMain.qml");
 		QQuickStyle::setStyle("plasma");
 	} else {
-		url = QStringLiteral("qrc:/Main.qml");
+		url = QStringLiteral("qrc:/main.qml");
 		QQuickStyle::setStyle("org.kde.desktop");
 	}
 

@@ -12,9 +12,9 @@
 #undef org
 
 #include "systemd.h"
-#include "Backend.h"
-#include "Settings.h"
-#include "DisplayManagerBackends/SDDM.h"
+#include "backend.h"
+#include "settings.h"
+#include "displaymanagerbackends/SDDM.h"
 
 #include <crack.h>
 

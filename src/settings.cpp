@@ -3,7 +3,7 @@
 //
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include "Settings.h"
+#include "settings.h"
 
 Settings::Settings()
 {
@@ -12,11 +12,11 @@ Settings::Settings()
 	GVariantIter *iter;
 	gchar *str;
 
-	m_pages << "locale";
+	m_pages << "LocalePage";
 	g_settings_get(m_settings, "stages", "as", &iter);
 	while (g_variant_iter_loop (iter, "s", &str))
 		m_pages << QString::fromLocal8Bit(str);
-	m_pages << "ready";
+	m_pages << "ReadyPage";
 
 	g_variant_iter_free(iter);
 
