@@ -20,8 +20,6 @@ find_package(KF5I18n)
 find_package(KF5Config)
 find_package(PkgConfig REQUIRED)
 
-pkg_check_modules(GIO REQUIRED IMPORTED_TARGET gio-2.0)
-
 set(DefaultPermissions
 	OWNER_WRITE OWNER_READ OWNER_EXECUTE
 	GROUP_READ GROUP_EXECUTE

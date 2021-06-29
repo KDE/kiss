@@ -22,10 +22,11 @@ target_compile_definitions(org.kde.initialsystemsetup
 target_link_libraries(org.kde.initialsystemsetup
 	PRIVATE
 		Qt5::Core Qt5::Widgets Qt5::Quick Qt5::QuickControls2 Qt5::DBus
-		KF5::I18n KF5::ConfigCore
-		PkgConfig::GIO
+		KF5::I18n KF5::ConfigCore KF5::ConfigGui
 		crack
 )
+
+kconfig_add_kcfg_files(org.kde.initialsystemsetup initialsystemsetup.kcfgc)
 
 configure_file(org.kde.initialsystemsetup.service.in org.kde.initialsystemsetup.service @ONLY)
 
@@ -33,13 +34,6 @@ install(
 	FILES ${CMAKE_CURRENT_BINARY_DIR}/org.kde.initialsystemsetup.service
 	DESTINATION ${KDE_INSTALL_SYSTEMDUNITDIR}/system
 )
-
-install(
-	FILES org.kde.initialsystemsetup.gschema.xml
-	DESTINATION ${KDE_INSTALL_DATADIR}/glib-2.0/schemas
-)
-
-install(CODE "execute_process(COMMAND glib-compile-schemas ${KDE_INSTALL_FULL_DATADIR}/glib-2.0/schemas)")
 
 install(TARGETS org.kde.initialsystemsetup
 	PERMISSIONS ${DefaultPermissions} SETUID

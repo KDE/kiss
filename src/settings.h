@@ -5,10 +5,9 @@
 
 #pragma once
 
-#undef signals
-#include <gio/gio.h>
 #include <QString>
 #include <QStringList>
+#include <QScopedPointer>
 
 /// Settings for KISS
 class Settings
@@ -17,6 +16,9 @@ private:
 	Settings();
 	~Settings();
 
+	struct Private;
+	QScopedPointer<Private> d;
+
 public:
 	static Settings *instance();
 	QString displayManager() const;
@@ -24,8 +26,6 @@ public:
 	QStringList pages() const;
 
 private:
-	GSettings* m_settings;
 	QStringList m_pages;
-	QString m_dm;
-	QString m_session;
+
 };

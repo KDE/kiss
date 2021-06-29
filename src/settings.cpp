@@ -3,35 +3,25 @@
 //
 // SPDX-License-Identifier: GPL-2.0-or-later
 
+#include "initialsystemsetup.h"
 #include "settings.h"
 
-Settings::Settings()
+struct Settings::Private
 {
-	m_settings = g_settings_new("org.kde.initialsystemsetup");
+	QScopedPointer<Config> cfg;
+};
 
-	GVariantIter *iter;
-	gchar *str;
+Settings::Settings() : d(new Private)
+{
+	d->cfg.reset(new Config());
 
-	m_pages << "LocalePage";
-	g_settings_get(m_settings, "stages", "as", &iter);
-	while (g_variant_iter_loop (iter, "s", &str))
-		m_pages << QString::fromLocal8Bit(str);
-	m_pages << "ReadyPage";
-
-	g_variant_iter_free(iter);
-
-	auto session = g_settings_get_string(m_settings, "desktop-session");
-	m_session = QString::fromLocal8Bit(session);
-	g_free(session);
-
-	auto dm = g_settings_get_string(m_settings, "display-manager-backend");
-	m_dm = QString::fromLocal8Bit(dm);
-	g_free(dm);
+	m_pages = d->cfg->stages();
+	m_pages.prepend("LocalePage");
+	m_pages.append("ReadyPage");
 }
 
 Settings::~Settings()
 {
-	g_free(m_settings);
 }
 
 Settings *Settings::instance()
@@ -45,12 +35,17 @@ Settings *Settings::instance()
 
 QString Settings::displayManager() const
 {
-	return m_dm;
+	switch (d->cfg->displayManagerBackend()) {
+	case Config::EnumDisplayManagerBackend::SDDM:
+		return "sddm";
+	default:
+		Q_UNREACHABLE();
+	}
 }
 
 QString Settings::session() const
 {
-	return m_session;
+	return d->cfg->desktopSession();
 }
 
 QStringList Settings::pages() const
