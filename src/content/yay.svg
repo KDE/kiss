@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2021 Carson Black <uhhadd@gmail.com>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 <svg width="302" height="318" viewBox="0 0 302 318" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="150" cy="150" r="150" fill="url(#paint0_linear)"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M299.934 145.5C297.554 226.261 231.337 291 150 291C68.6626 291 2.44572 226.261 0.0662095 145.5C0.0221728 146.995 0 148.495 0 150C0 232.843 67.1573 300 150 300C232.843 300 300 232.843 300 150C300 148.495 299.978 146.995 299.934 145.5Z" fill="black" fill-opacity="0.1"/>
