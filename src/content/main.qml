@@ -103,6 +103,8 @@ ApplicationWindow {
 						horizontalAlignment: Text.AlignHCenter
 						level: 4
 
+						visible: opacity !== 0.0
+
 						Behavior on opacity {
 							NumberAnimation {
 								duration: Kirigami.Units.shortDuration

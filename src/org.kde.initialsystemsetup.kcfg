@@ -27,7 +27,7 @@
 			</label>
 		</entry>
 		<entry name="Stages" type="StringList">
-			<default>UserPage</default>
+			<default>LicensePage,UserPage</default>
 			<label>
 				This tells KISS which pages it should show. The language selection page
 				is always shown first, and the ready page is always shown last. The user
