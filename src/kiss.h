@@ -25,6 +25,9 @@
 #include <optional>
 #include <memory>
 
+#include <QQuickItem>
+#include "plugins/ipage.h"
+
 static auto backends = QMap<QString,std::function<std::unique_ptr<Backend>()>> {
 	{"sddm", []() -> std::unique_ptr<Backend> {return std::unique_ptr<Backend>(new SDDMBackend); } }
 };
@@ -45,7 +48,7 @@ class KISS : public QObject
 {
 	Q_OBJECT
 	Q_PROPERTY(QVariantList locales READ locales CONSTANT)
-	Q_PROPERTY(QStringList pages READ pages CONSTANT)
+	Q_PROPERTY(QList<QQuickItem*> pages READ pages CONSTANT)
 
 #define synth_prop(kind, name, default) Q_PROPERTY(kind name READ name WRITE set_ ## name RESET reset_ ## name NOTIFY name ## _changed) \
 std::optional<kind> m_ ## name;\
@@ -70,15 +73,18 @@ public: void reset_ ## name() {\
 	synth_prop(QString, password, QString())
 	synth_prop(bool, admin, true)
 
+	QList<QSharedPointer<Page>> m_pages;
+	QList<QQuickItem*> m_pageItems;
+
 public:
-	explicit KISS(QObject *parent = nullptr);
+	explicit KISS(QQmlEngine* engine, QObject *parent = nullptr);
 	~KISS();
 
 	Q_INVOKABLE void disableSelf();
 	Q_INVOKABLE QString checkPassword(const QString& username, const QString& realname, const QString& password);
 
 	QVariantList locales() const;
-	QStringList pages() const;
+	QList<QQuickItem*> pages() const;
 
 private:
 	QVariantList m_locales;

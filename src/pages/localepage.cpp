@@ -2,7 +2,7 @@
 
 #include "localepage.h"
 
-LocalePage::LocalePage(QObject* parent)
+LocalePage::LocalePage(KISS* kiss, QObject* parent) : Page(kiss, parent)
 {
 
 }
@@ -20,7 +20,7 @@ QString LocalePage::title() const
 
 QString LocalePage::subtitle() const
 {
-    return i18n("Let's get started...");
+    return i18n("Select a language to begin setup");
 }
 
 QQuickItem* LocalePage::createItem(QQmlEngine* engine)

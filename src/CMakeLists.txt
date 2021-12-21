@@ -9,6 +9,7 @@ set(SOURCES
     plugins/pageloader.cpp
     plugins/ipage.cpp
     pages/localepage.cpp
+    pages/readypage.cpp
     resources.qrc
 )
 

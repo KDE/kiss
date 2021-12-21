@@ -15,7 +15,6 @@ int main(int argc, char *argv[])
 	QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 
 	QGuiApplication app(argc, argv);
-	QScopedPointer<KISS> kiss(new KISS);
 
 	QCommandLineParser parser;
 	QCommandLineOption mobileOpt("m", "mobile");
@@ -32,6 +31,7 @@ int main(int argc, char *argv[])
 	}
 
 	QQmlApplicationEngine engine;
+	QScopedPointer<KISS> kiss(new KISS(&engine));
 	engine.rootContext()->setContextProperty("KISS", kiss.data());
 	QObject::connect(
 		&engine, &QQmlApplicationEngine::objectCreated,

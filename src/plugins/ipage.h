@@ -5,15 +5,18 @@
 
 class QQuickItem;
 class QQmlEngine;
+class KISS;
 
 class Page : public QObject
 {
 
     Q_OBJECT
     Q_PROPERTY(bool canGoNext READ canGoNext NOTIFY canGoNextChanged)
+    Q_PROPERTY(QString title READ title CONSTANT)
+    Q_PROPERTY(QString subtitle READ subtitle CONSTANT)
 
 public:
-    explicit Page(QObject* parent = nullptr);
+    explicit Page(KISS* kiss, QObject* parent = nullptr);
     virtual ~Page();
 
     virtual QString title() const { qFatal("unimplemented title"); };

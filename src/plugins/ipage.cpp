@@ -4,7 +4,7 @@
 
 #include "ipage.h"
 
-Page::Page(QObject* parent)
+Page::Page(KISS* kiss, QObject* parent)
 {
 
 }

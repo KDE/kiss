@@ -8,13 +8,8 @@ import org.kde.kirigami 2.10 as Kirigami
 
 ListView {
 	model: KISS.locales
-	property string title: "Welcome"
-	property string description: "Select a language to begin setup"
-	property bool canNext: true
 
-	function apply() {
-		KISS.targetLanguage = currentItem.code
-	}
+	required property var page
 
 	delegate: Kirigami.BasicListItem {
 		text: modelData.name

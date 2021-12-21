@@ -24,8 +24,7 @@ ApplicationWindow {
 			goingForward = false
 		}
 		oldPage = currentPage
-		staccy.currentItem.apply()
-		staccy.replace(`qrc:${KISS.pages[currentPage]}.qml`)
+		staccy.replace(KISS.pages[currentPage])
 	}
 
 	Rectangle {
@@ -53,7 +52,7 @@ ApplicationWindow {
 
 		Button {
 			text: "Next"
-			visible: (staccy.currentItem.canNext) && (appWindow.currentPage + 1 != KISS.pages.length)
+			visible: (staccy.currentItem.page.canGoNext) && (appWindow.currentPage + 1 != KISS.pages.length)
 			onClicked: appWindow.currentPage++
 		}
 	}
@@ -90,7 +89,7 @@ ApplicationWindow {
 
 				contentItem: ColumnLayout {
 					Kirigami.Heading {
-						text: staccy.currentItem.title ?? "yeet"
+						text: staccy.currentItem.page.title ?? "error"
 						horizontalAlignment: Text.AlignHCenter
 
 						Layout.fillWidth: true
@@ -99,7 +98,7 @@ ApplicationWindow {
 						opacity: text !== "" ? 0.7 : 0
 						Layout.preferredHeight: text !== "" ? -1 : 0
 
-						text: staccy.currentItem.description ?? ""
+						text: staccy.currentItem.page.subtitle ?? "error"
 						horizontalAlignment: Text.AlignHCenter
 						level: 4
 
@@ -125,7 +124,7 @@ ApplicationWindow {
 
 				clip: true
 
-				initialItem: `${KISS.pages[0]}.qml`
+				initialItem: KISS.pages[0]
 				property real aniFrom: (staccy.mirrored ? -1 : 1) * staccy.width
 				property real aniTo: (staccy.mirrored ? -1 : 1) * -staccy.width
 

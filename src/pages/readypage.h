@@ -2,15 +2,15 @@
 
 #include "plugins/ipage.h"
 
-class LocalePage : public Page
+class ReadyPage : public Page
 {
 
     Q_OBJECT
 
 public:
 
-    explicit LocalePage(KISS* kiss, QObject* parent = nullptr);
-    ~LocalePage();
+    explicit ReadyPage(KISS* kiss, QObject* parent = nullptr);
+    ~ReadyPage();
 
     QString title() const override;
     QString subtitle() const override;
