@@ -22,7 +22,10 @@ include(KDEInstallDirs)
 find_package(Qt5 COMPONENTS Core Widgets Quick QuickControls2 DBus REQUIRED)
 find_package(KF5I18n)
 find_package(KF5Config)
+find_package(KF5CoreAddons)
 find_package(PkgConfig REQUIRED)
+
+pkg_check_modules(Croutons REQUIRED IMPORTED_TARGET croutons)
 
 set(DefaultPermissions
 	OWNER_WRITE OWNER_READ OWNER_EXECUTE

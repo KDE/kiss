@@ -6,6 +6,9 @@ set(SOURCES
     main.cpp
     settings.cpp
     kiss.cpp
+    plugins/pageloader.cpp
+    plugins/ipage.cpp
+    pages/localepage.cpp
     resources.qrc
 )
 
@@ -26,7 +29,8 @@ target_compile_definitions(org.kde.initialsystemsetup
 target_link_libraries(org.kde.initialsystemsetup
 	PRIVATE
 		Qt5::Core Qt5::Widgets Qt5::Quick Qt5::QuickControls2 Qt5::DBus
-		KF5::I18n KF5::ConfigCore KF5::ConfigGui
+		KF5::I18n KF5::ConfigCore KF5::ConfigGui KF5::CoreAddons
+		PkgConfig::Croutons
 		crack
 )
 
