@@ -8,20 +8,9 @@ import QtQuick.Layouts 1.10
 import org.kde.kirigami 2.10 as Kirigami
 
 Item {
-	property string title: "User Setup"
-	property string description: "Let's set up your user account"
-	property bool canNext: (
-		name.text !== "" &&
-		user.text !== "" &&
-		pass.text !== ""
-	)
+	id: _root
 
-	function apply() {
-		KISS.realname = name.text
-		KISS.username = user.text
-		KISS.password = pass.text
-		KISS.admin = true
-	}
+	required property var page
 
 	Kirigami.FormLayout {
 		anchors.verticalCenter: parent.verticalCenter
@@ -31,26 +20,29 @@ Item {
 		TextField {
 			id: name
 
-			text: KISS.realname
+			text: _root.page.dataStore.realname || ""
+            onTextChanged: _root.page.dataStore.realname = text
 
 			Kirigami.FormData.label: "Realname:"
 		}
 		TextField {
 			id: user
 
-			text: KISS.username
+			text: _root.page.dataStore.username || ""
+            onTextChanged: _root.page.dataStore.username = text
 
 			Kirigami.FormData.label: "Username:"
 		}
 		Kirigami.PasswordField {
 			id: pass
 
-			text: KISS.password
+			text: _root.page.dataStore.password || ""
+            onTextChanged: _root.page.dataStore.password = text
 
 			Kirigami.FormData.label: "Password:"
 		}
 		Kirigami.InlineMessage {
-			text: KISS.checkPassword(user.text, name.text, pass.text)
+			text: _root.page.checkPassword(user.text, name.text, pass.text)
 			type: Kirigami.MessageType.Error
 			visible: pass.text !== "" && text !== ""
 

@@ -2,24 +2,16 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
+add_subdirectory(plugins)
+add_subdirectory(plugins/users)
+
 set(SOURCES
     main.cpp
     settings.cpp
     kiss.cpp
-    plugins/pageloader.cpp
-    plugins/ipage.cpp
     pages/localepage.cpp
     pages/readypage.cpp
     resources.qrc
-)
-
-qt5_add_dbus_interface(SOURCES
-    dbus/org.freedesktop.Accounts.Service.xml
-    AccountsService
-)
-qt5_add_dbus_interface(SOURCES
-    dbus/org.freedesktop.Accounts.User.xml
-    User
 )
 
 add_executable(org.kde.initialsystemsetup ${SOURCES})
@@ -33,6 +25,7 @@ target_link_libraries(org.kde.initialsystemsetup
 		KF5::I18n KF5::ConfigCore KF5::ConfigGui KF5::CoreAddons
 		PkgConfig::Croutons
 		crack
+        kissplugins
 )
 
 kconfig_add_kcfg_files(org.kde.initialsystemsetup initialsystemsetup.kcfgc)

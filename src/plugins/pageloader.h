@@ -2,4 +2,6 @@
 
 #include "ipage.h"
 
-QSharedPointer<Page> loadPage(const QString& name);
+class QQmlPropertyMap;
+
+QSharedPointer<Page> loadPage(const QString& name, QQmlPropertyMap* store);

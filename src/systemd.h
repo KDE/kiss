@@ -4,6 +4,7 @@
 
 #pragma once
 
+#include <QDebug>
 #include <QDBusConnection>
 #include <QDBusInterface>
 

@@ -1,12 +1,19 @@
 #include <QCoreApplication>
 #include <QQmlComponent>
 #include <QQuickItem>
+#include <QQmlPropertyMap>
 
 #include "ipage.h"
 
-Page::Page(KISS* kiss, QObject* parent)
+Page::Page(QObject* parent, const QVariantList& args)
 {
+    if (args.length() < 1)
+        qFatal("invalid args length. expected at least 1, got %d", args.length());
 
+    m_dataStore = qvariant_cast<QQmlPropertyMap*>(args[0]);
+    if (!m_dataStore) {
+        qFatal("invalid datastore. did you forget to pass args?");
+    }
 }
 
 Page::~Page()

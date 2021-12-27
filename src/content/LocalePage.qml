@@ -7,7 +7,9 @@ import QtQuick.Controls 2.10
 import org.kde.kirigami 2.10 as Kirigami
 
 ListView {
-	model: KISS.locales
+	id: root
+
+	model: page.locales
 
 	required property var page
 
@@ -17,8 +19,7 @@ ListView {
 		property string code: modelData.code
 
 		onClicked: {
-			KISS.targetLanguage = modelData.code
-			appWindow.currentPage++
+			root.page.dataStore.targetLanguage = modelData.code
 		}
 	}
 }

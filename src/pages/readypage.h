@@ -9,7 +9,7 @@ class ReadyPage : public Page
 
 public:
 
-    explicit ReadyPage(KISS* kiss, QObject* parent = nullptr);
+    explicit ReadyPage(QQmlPropertyMap* map, QObject* parent = nullptr);
     ~ReadyPage();
 
     QString title() const override;

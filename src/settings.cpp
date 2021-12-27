@@ -17,8 +17,6 @@ Settings::Settings() : d(new Private)
 	d->cfg.reset(new Config());
 
 	m_pages = d->cfg->stages();
-	m_pages.prepend("LocalePage");
-	m_pages.append("ReadyPage");
 }
 
 Settings::~Settings()

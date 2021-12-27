@@ -8,7 +8,6 @@ SPDX-License-Identifier: GPL-3.0-or-later
   <qresource prefix="/">
     <file alias="main.qml">content/main.qml</file>
     <file alias="MobileMain.qml">content/MobileMain.qml</file>
-    <file alias="UserPage.qml">content/UserPage.qml</file>
     <file alias="LocalePage.qml">content/LocalePage.qml</file>
     <file alias="ReadyPage.qml">content/ReadyPage.qml</file>
     <file alias="yay.svg">content/yay.svg</file>

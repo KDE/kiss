@@ -2,14 +2,29 @@
 
 #include "plugins/ipage.h"
 
+struct Language
+{
+	Q_GADGET
+
+public:
+	Q_PROPERTY(QString name MEMBER m_name CONSTANT)
+	QString m_name;
+
+	Q_PROPERTY(QString code MEMBER m_code CONSTANT)
+	QString m_code;
+};
+
 class LocalePage : public Page
 {
 
     Q_OBJECT
+    Q_PROPERTY(QVariantList locales READ locales CONSTANT)
+
+    QVariantList m_locales;
 
 public:
 
-    explicit LocalePage(KISS* kiss, QObject* parent = nullptr);
+    explicit LocalePage(QQmlPropertyMap* map, QObject* parent = nullptr);
     ~LocalePage();
 
     QString title() const override;
@@ -19,5 +34,7 @@ public:
     Croutons::FutureResult<> apply() override;
 
     bool canGoNext() const override;
+
+    QVariantList locales() const;
 
 };
