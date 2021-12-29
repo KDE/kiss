@@ -3,6 +3,7 @@
 #include <QtPlugin>
 #include <QQmlPropertyMap>
 #include <Croutons/Future>
+#include <KPluginMetaData>
 
 class QQuickItem;
 class QQmlEngine;
@@ -21,18 +22,18 @@ class Page : public QObject
     QQmlPropertyMap* m_dataStore;
 
 public:
-    explicit Page(QObject* parent = nullptr, const QVariantList& args = {});
+    explicit Page(QObject* parent = nullptr, const KPluginMetaData& md = {}, const QVariantList& args = {});
     virtual ~Page();
 
-    virtual QString title() const { qFatal("unimplemented title"); };
-    virtual QString subtitle() const { qFatal("unimplemented subtitle"); };
+    virtual QString title() const = 0;
+    virtual QString subtitle() const = 0;
 
-    virtual QQuickItem* createItem(QQmlEngine* engine) { qFatal("unimplemented item"); };
-    virtual Croutons::FutureResult<> apply() { qFatal("unimplemented apply"); };
+    virtual QQuickItem* createItem(QQmlEngine* engine) = 0;
+    virtual Croutons::FutureResult<> apply() = 0;
 
     QQmlPropertyMap* dataStore() const { return m_dataStore; }
 
-    virtual bool canGoNext() const { qFatal("unimplemented cangonext"); };
+    virtual bool canGoNext() const = 0;
     Q_SIGNAL void canGoNextChanged();
 
 };

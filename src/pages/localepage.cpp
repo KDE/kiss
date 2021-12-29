@@ -2,7 +2,7 @@
 
 #include "localepage.h"
 
-LocalePage::LocalePage(QQmlPropertyMap* map, QObject* parent) : Page(parent, {QVariant::fromValue(map)})
+LocalePage::LocalePage(QQmlPropertyMap* map, QObject* parent) : Page(parent, {}, {QVariant::fromValue(map)})
 {
 	auto locs = KLocalizedString::availableDomainTranslations("plasmashell").values();
 	std::transform(locs.begin(), locs.end(), std::back_inserter(m_locales), [](const QString& locale) -> QVariant {

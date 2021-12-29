@@ -5,9 +5,9 @@
 
 #include "userpage.h"
 
-K_PLUGIN_FACTORY_WITH_JSON(UserPageFactory, "page_user.json", registerPlugin<UserPage>();)
+K_PLUGIN_CLASS_WITH_JSON(UserPage, "page_user.json")
 
-UserPage::UserPage(QObject* parent, const KPluginMetaData& data, const QVariantList& args) : Page(parent, args)
+UserPage::UserPage(QObject* parent, const KPluginMetaData& data, const QVariantList& args) : Page(parent, data, args)
 {
     auto eval = [this, ds = this->dataStore()]() {
         const auto realname = ds->value("realname").toString();

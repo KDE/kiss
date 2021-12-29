@@ -12,14 +12,14 @@ qt5_add_dbus_interface(users_SOURCES
 )
 
 kcoreaddons_add_plugin(
-    page_user
+    page_UserPage
     SOURCES
         ${users_SOURCES}
     INSTALL_NAMESPACE
         "kisspages"
 )
 target_link_libraries(
-    page_user
+    page_UserPage
 
 PRIVATE
     Qt5::Core Qt5::Widgets Qt5::Quick Qt5::QuickControls2 Qt5::DBus

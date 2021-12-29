@@ -5,8 +5,7 @@
 
 QSharedPointer<Page> loadPage(const QString& name, QQmlPropertyMap* store)
 {
-    const auto md =
-        KPluginMetaData::findPluginById("kisspages", name);
+    const KPluginMetaData md("kisspages/" + name);
 
     if (!md.isValid())
         return nullptr;

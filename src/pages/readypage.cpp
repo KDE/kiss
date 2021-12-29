@@ -2,7 +2,7 @@
 
 #include "readypage.h"
 
-ReadyPage::ReadyPage(QQmlPropertyMap* map, QObject* parent) : Page(parent, {QVariant::fromValue(map)})
+ReadyPage::ReadyPage(QQmlPropertyMap* map, QObject* parent) : Page(parent, {}, {QVariant::fromValue(map)})
 {
 
 }

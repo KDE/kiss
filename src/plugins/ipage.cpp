@@ -5,7 +5,7 @@
 
 #include "ipage.h"
 
-Page::Page(QObject* parent, const QVariantList& args)
+Page::Page(QObject* parent, const KPluginMetaData&, const QVariantList& args)
 {
     if (args.length() < 1)
         qFatal("invalid args length. expected at least 1, got %d", args.length());
