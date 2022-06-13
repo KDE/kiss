@@ -33,7 +33,7 @@ Item {
 		QQC2.CheckBox {
 			id: acceptBox
 
-			text: "I Accept These Terms"
+			text: i18n("I Accept These Terms")
 
 			Layout.margins: 8
 		}
