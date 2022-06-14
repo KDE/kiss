@@ -124,7 +124,7 @@ ApplicationWindow {
 
 			contentItem: RowLayout {
 				Button {
-					text: "Previous"
+					text: i18n("Previous")
 					visible: appWindow.currentPage > 0
 					onClicked: appWindow.currentPage--
 				}
@@ -134,7 +134,7 @@ ApplicationWindow {
 				}
 
 				Button {
-					text: "Next"
+					text: i18n("Next")
 					visible: (staccy.currentItem.canNext) && (appWindow.currentPage + 1 != KISS.pages.length)
 					onClicked: appWindow.currentPage++
 				}

@@ -44,7 +44,7 @@ ColumnLayout {
 	}
 
 	CheckBox {
-		text: "I accept these terms and conditions"
+		text: i18n("I accept these terms and conditions")
 		onToggled: _root.page.setCanGoNext(checked)
 		Layout.margins: 8
 	}

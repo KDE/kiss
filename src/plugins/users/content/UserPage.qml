@@ -23,7 +23,7 @@ Item {
 			text: _root.page.dataStore.realname || ""
             onTextChanged: _root.page.dataStore.realname = text
 
-			Kirigami.FormData.label: "Realname:"
+			Kirigami.FormData.label: i18n("Realname:")
 		}
 		TextField {
 			id: user
@@ -31,7 +31,7 @@ Item {
 			text: _root.page.dataStore.username || ""
             onTextChanged: _root.page.dataStore.username = text
 
-			Kirigami.FormData.label: "Username:"
+			Kirigami.FormData.label: i18n("Username:")
 		}
 		Kirigami.PasswordField {
 			id: pass
@@ -39,7 +39,7 @@ Item {
 			text: _root.page.dataStore.password || ""
             onTextChanged: _root.page.dataStore.password = text
 
-			Kirigami.FormData.label: "Password:"
+			Kirigami.FormData.label: i18n("Password:")
 		}
 		Kirigami.InlineMessage {
 			text: _root.page.checkPassword(user.text, name.text, pass.text)

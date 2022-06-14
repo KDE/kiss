@@ -15,7 +15,7 @@ Item {
 		spacing: Kirigami.Units.largeSpacing * 2
 
 		Kirigami.Heading {
-			text: "All Done!"
+			text: i18n("All Done!")
 			horizontalAlignment: Text.AlignHCenter
 			Layout.fillWidth: true
 		}
@@ -26,7 +26,7 @@ Item {
 			Layout.preferredHeight: 150
 		}
 		Button {
-			text: "Let's get started"
+			text: i18n("Let's get started")
 			Layout.fillWidth: Qt.AlignHCenter
 
 			onClicked: {
