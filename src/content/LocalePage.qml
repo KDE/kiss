@@ -6,20 +6,24 @@ import QtQuick 2.5
 import QtQuick.Controls 2.10
 import org.kde.kirigami 2.10 as Kirigami
 
-ListView {
+ScrollView {
 	id: root
-
-	model: page.locales
 
 	required property var page
 
-	delegate: Kirigami.BasicListItem {
-		text: modelData.name
+	ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
 
-		property string code: modelData.code
+	ListView {
+		model: root.page.locales
 
-		onClicked: {
-			root.page.dataStore.targetLanguage = modelData.code
+		delegate: Kirigami.BasicListItem {
+			text: modelData.name
+
+			property string code: modelData.code
+
+			onClicked: {
+				root.page.dataStore.targetLanguage = modelData.code
+			}
 		}
 	}
 }

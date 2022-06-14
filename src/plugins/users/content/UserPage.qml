@@ -47,6 +47,9 @@ Item {
 			visible: pass.text !== "" && text !== ""
 
 			Layout.fillWidth: true
+			Layout.column: 1
+			Layout.columnSpan: 2
+			Kirigami.FormData.isSection: true
 		}
 	}
 }
