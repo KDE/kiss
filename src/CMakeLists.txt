@@ -4,6 +4,7 @@
 
 add_subdirectory(plugins)
 add_subdirectory(plugins/users)
+add_subdirectory(plugins/license)
 add_subdirectory(plugins/sample)
 
 set(SOURCES

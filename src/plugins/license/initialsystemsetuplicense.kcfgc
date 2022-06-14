@@ -1,0 +1,4 @@
+File=org.kde.initialsystemsetup.license.kcfg
+ClassName=Config
+Mutators=true
+DefaultValueGetters=true
