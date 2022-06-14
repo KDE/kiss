@@ -31,6 +31,8 @@ int main(int argc, char *argv[])
 		QQuickStyle::setStyle("org.kde.desktop");
 	}
 
+	qmlRegisterUncreatableType<KISS>("org.kde.plasma.plasmoid", 2, 0, "KISS", "dummy register to get PlasmoidHeading working");
+
 	QQmlApplicationEngine engine;
 	QScopedPointer<KISS> kiss(new KISS(&engine));
 	engine.rootContext()->setContextProperty("KISS", kiss.data());

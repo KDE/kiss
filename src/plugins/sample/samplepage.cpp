@@ -3,7 +3,7 @@
 
 #include <crack.h>
 
-#include "SamplePage.h"
+#include "samplepage.h"
 
 K_PLUGIN_CLASS_WITH_JSON(SamplePage, "page_sample.json")
 
@@ -55,9 +55,9 @@ bool SamplePage::canGoNext() const
     return m_canNext;
 }
 
-QString SamplePage::setCanGoNext(bool val)
+void SamplePage::setCanGoNext(bool val)
 {
-    m_canGoNext = val;
+    m_canNext = val;
     Q_EMIT canGoNextChanged();
 }
 
