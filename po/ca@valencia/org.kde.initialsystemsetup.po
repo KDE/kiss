@@ -1,104 +1,105 @@
-# Copyright (C) YEAR This file is copyright:
-# This file is distributed under the same license as the kiss package.
+# Translation of org.kde.initialsystemsetup.po to Catalan (Valencian)
+# Copyright (C) 2024 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
 #
-# Fracture dept <yurchor@ukr.net>, 2024.
+# SPDX-FileCopyrightText: 2024 Josep M. Ferrer <txemaq@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-14 01:43+0000\n"
-"PO-Revision-Date: 2024-07-14 08:34+0300\n"
-"Last-Translator: Fracture dept <yurchor@ukr.net>\n"
-"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
-"Language: uk\n"
+"PO-Revision-Date: 2024-07-14 08:54+0200\n"
+"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: ca@valencia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
-"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 23.04.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 24.05.2\n"
 
 #: src/content/main.qml:44 src/content/MobileMain.qml:127
 #, kde-format
 msgid "Previous"
-msgstr "Назад"
+msgstr "Anterior"
 
 #: src/content/main.qml:54 src/content/MobileMain.qml:137
 #, kde-format
 msgid "Next"
-msgstr "Далі"
+msgstr "Següent"
 
 #: src/content/ReadyPage.qml:18
 #, kde-format
 msgid "All Done!"
-msgstr "Завершено!"
+msgstr "Fet!"
 
 #: src/content/ReadyPage.qml:29
 #, kde-format
 msgid "Let's get started"
-msgstr "Почнімо"
+msgstr "Comencem"
 
 #: src/pages/localepage.cpp:27
 #, kde-format
 msgid "Welcome"
-msgstr "Вітаємо"
+msgstr "Us donem la benvinguda"
 
 #: src/pages/localepage.cpp:32
 #, kde-format
 msgid "Select a language to begin setup"
-msgstr "Виберіть мову, щоб розпочати налаштовування"
+msgstr "Seleccioneu un idioma per a començar la configuració"
 
 #: src/plugins/license/content/LicensePage.qml:47
 #, kde-format
 msgid "I accept these terms and conditions"
-msgstr "Як приймають ці умови"
+msgstr "Voleu acceptar estes clàusules i condicions"
 
 #: src/plugins/license/licensepage.cpp:35
 #, kde-format
 msgid "Legal Terms"
-msgstr "Юридичні умови"
+msgstr "Clàusules legals"
 
 #: src/plugins/license/licensepage.cpp:40
 #, kde-format
 msgid "Let's get the legalese out of the way..."
-msgstr "Між тим, легалізуймося…"
+msgstr "Eliminem la burocràcia legal del mig…"
 
 #: src/plugins/sample/content/SamplePage.qml:21
 #, kde-format
 msgid "Hello World!"
-msgstr "Привіт, світе!"
+msgstr "Hola món!"
 
 #: src/plugins/sample/samplepage.cpp:22
 #, kde-format
 msgid "Sample Page"
-msgstr "Зразок сторінки"
+msgstr "Pàgina d'exemple"
 
 #: src/plugins/sample/samplepage.cpp:27
 #, kde-format
 msgid "This is an example page"
-msgstr "Це приклад сторінки"
+msgstr "Esta és una pàgina d'exemple"
 
 #: src/plugins/users/content/UserPage.qml:26
 #, kde-format
 msgid "Realname:"
-msgstr "Справжнє ім'я:"
+msgstr "Nom real:"
 
 #: src/plugins/users/content/UserPage.qml:34
 #, kde-format
 msgid "Username:"
-msgstr "Користувач:"
+msgstr "Nom d'usuari:"
 
 #: src/plugins/users/content/UserPage.qml:42
 #, kde-format
 msgid "Password:"
-msgstr "Пароль:"
+msgstr "Contrasenya:"
 
 #: src/plugins/users/userpage.cpp:40
 #, kde-format
 msgid "User Setup"
-msgstr "Налаштовування користувача"
+msgstr "Configureu l'usuari/a"
 
 #: src/plugins/users/userpage.cpp:45
 #, kde-format
 msgid "Let's set up your user account"
-msgstr "Налаштуймо ваш обліковий запис користувача"
+msgstr "Anem a configurar el compte d'usuari"
