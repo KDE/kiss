@@ -1,0 +1,105 @@
+# Spanish translations for org.kde.initialsystemsetup.po package.
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the kiss package.
+# Automatically generated, 2024.
+#
+# SPDX-FileCopyrightText: 2024 Eloy Cuadra <ecuadra@eloihr.net>
+msgid ""
+msgstr ""
+"Project-Id-Version: org\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-07-14 01:43+0000\n"
+"PO-Revision-Date: 2024-07-16 16:21+0200\n"
+"Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
+"Language-Team: Spanish <kde-l10n-es@kde.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 24.05.2\n"
+
+#: src/content/main.qml:44 src/content/MobileMain.qml:127
+#, kde-format
+msgid "Previous"
+msgstr "Anterior"
+
+#: src/content/main.qml:54 src/content/MobileMain.qml:137
+#, kde-format
+msgid "Next"
+msgstr "Siguiente"
+
+#: src/content/ReadyPage.qml:18
+#, kde-format
+msgid "All Done!"
+msgstr "Todo terminado"
+
+#: src/content/ReadyPage.qml:29
+#, kde-format
+msgid "Let's get started"
+msgstr "Empecemos"
+
+#: src/pages/localepage.cpp:27
+#, kde-format
+msgid "Welcome"
+msgstr "Bienvenido"
+
+#: src/pages/localepage.cpp:32
+#, kde-format
+msgid "Select a language to begin setup"
+msgstr "Seleccione un idioma para empezar la configuración"
+
+#: src/plugins/license/content/LicensePage.qml:47
+#, kde-format
+msgid "I accept these terms and conditions"
+msgstr "Acepto estos términos y condiciones"
+
+#: src/plugins/license/licensepage.cpp:35
+#, kde-format
+msgid "Legal Terms"
+msgstr "Términos legales"
+
+#: src/plugins/license/licensepage.cpp:40
+#, kde-format
+msgid "Let's get the legalese out of the way..."
+msgstr "Dejemos de lado la jerga legal..."
+
+#: src/plugins/sample/content/SamplePage.qml:21
+#, kde-format
+msgid "Hello World!"
+msgstr "¡Hola, mundo!"
+
+#: src/plugins/sample/samplepage.cpp:22
+#, kde-format
+msgid "Sample Page"
+msgstr "Página de muestra"
+
+#: src/plugins/sample/samplepage.cpp:27
+#, kde-format
+msgid "This is an example page"
+msgstr "Esto es una página de ejemplo"
+
+#: src/plugins/users/content/UserPage.qml:26
+#, kde-format
+msgid "Realname:"
+msgstr "Nombre real:"
+
+#: src/plugins/users/content/UserPage.qml:34
+#, kde-format
+msgid "Username:"
+msgstr "Nombre de usuario:"
+
+#: src/plugins/users/content/UserPage.qml:42
+#, kde-format
+msgid "Password:"
+msgstr "Contraseña:"
+
+#: src/plugins/users/userpage.cpp:40
+#, kde-format
+msgid "User Setup"
+msgstr "Configuración del usuario"
+
+#: src/plugins/users/userpage.cpp:45
+#, kde-format
+msgid "Let's set up your user account"
+msgstr "Configuremos tu cuenta de usuario"
