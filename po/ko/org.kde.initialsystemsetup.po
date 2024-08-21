@@ -1,0 +1,103 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the kiss package.
+# SPDX-FileCopyrightText: 2024 Shinjo Park <kde@peremen.name>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kiss\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-07-14 01:43+0000\n"
+"PO-Revision-Date: 2024-08-20 23:37+0200\n"
+"Last-Translator: Shinjo Park <kde@peremen.name>\n"
+"Language-Team: Korean <kde-kr@kde.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 23.08.5\n"
+
+#: src/content/main.qml:44 src/content/MobileMain.qml:127
+#, kde-format
+msgid "Previous"
+msgstr "이전"
+
+#: src/content/main.qml:54 src/content/MobileMain.qml:137
+#, kde-format
+msgid "Next"
+msgstr "다음"
+
+#: src/content/ReadyPage.qml:18
+#, kde-format
+msgid "All Done!"
+msgstr "완료되었습니다!"
+
+#: src/content/ReadyPage.qml:29
+#, kde-format
+msgid "Let's get started"
+msgstr "이제 시작합니다"
+
+#: src/pages/localepage.cpp:27
+#, kde-format
+msgid "Welcome"
+msgstr "환영합니다"
+
+#: src/pages/localepage.cpp:32
+#, kde-format
+msgid "Select a language to begin setup"
+msgstr "설정을 시작하려면 언어를 선택하십시오"
+
+#: src/plugins/license/content/LicensePage.qml:47
+#, kde-format
+msgid "I accept these terms and conditions"
+msgstr "이용 약관에 동의합니다"
+
+#: src/plugins/license/licensepage.cpp:35
+#, kde-format
+msgid "Legal Terms"
+msgstr "법적 조항"
+
+#: src/plugins/license/licensepage.cpp:40
+#, kde-format
+msgid "Let's get the legalese out of the way..."
+msgstr "법적 조항을 확인하십시오..."
+
+#: src/plugins/sample/content/SamplePage.qml:21
+#, kde-format
+msgid "Hello World!"
+msgstr "Hello World!"
+
+#: src/plugins/sample/samplepage.cpp:22
+#, kde-format
+msgid "Sample Page"
+msgstr "예제 페이지"
+
+#: src/plugins/sample/samplepage.cpp:27
+#, kde-format
+msgid "This is an example page"
+msgstr "예제 페이지입니다"
+
+#: src/plugins/users/content/UserPage.qml:26
+#, kde-format
+msgid "Realname:"
+msgstr "실명:"
+
+#: src/plugins/users/content/UserPage.qml:34
+#, kde-format
+msgid "Username:"
+msgstr "사용자 이름:"
+
+#: src/plugins/users/content/UserPage.qml:42
+#, kde-format
+msgid "Password:"
+msgstr "암호:"
+
+#: src/plugins/users/userpage.cpp:40
+#, kde-format
+msgid "User Setup"
+msgstr "사용자 설정"
+
+#: src/plugins/users/userpage.cpp:45
+#, kde-format
+msgid "Let's set up your user account"
+msgstr "사용자 계정을 설정합니다"
