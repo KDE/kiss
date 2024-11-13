@@ -1,29 +1,29 @@
 # translation of org.kde.initialsystemsetup.po to Slovak
-# Roman Paholik <wizzardsk@gmail.com>, 2024.
+# SPDX-FileCopyrightText: 2024 Roman Paholik <wizzardsk@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: org.kde.initialsystemsetup\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-14 01:43+0000\n"
-"PO-Revision-Date: 2017-11-01 11:06+0100\n"
-"Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
+"PO-Revision-Date: 2024-11-12 17:03+0100\n"
+"Last-Translator: Roman Paholík <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 24.08.3\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #: src/content/main.qml:44 src/content/MobileMain.qml:127
 #, kde-format
 msgid "Previous"
-msgstr ""
+msgstr "Predchádzajúci"
 
 #: src/content/main.qml:54 src/content/MobileMain.qml:137
 #, kde-format
 msgid "Next"
-msgstr ""
+msgstr "Nasledujúci"
 
 #: src/content/ReadyPage.qml:18
 #, kde-format
@@ -38,7 +38,7 @@ msgstr ""
 #: src/pages/localepage.cpp:27
 #, kde-format
 msgid "Welcome"
-msgstr ""
+msgstr "Vitajte"
 
 #: src/pages/localepage.cpp:32
 #, kde-format
@@ -83,12 +83,12 @@ msgstr ""
 #: src/plugins/users/content/UserPage.qml:34
 #, kde-format
 msgid "Username:"
-msgstr ""
+msgstr "Užívateľské meno:"
 
 #: src/plugins/users/content/UserPage.qml:42
 #, kde-format
 msgid "Password:"
-msgstr ""
+msgstr "Heslo:"
 
 #: src/plugins/users/userpage.cpp:40
 #, kde-format
