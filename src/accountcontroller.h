@@ -4,16 +4,20 @@
 #pragma once
 
 #include <QObject>
+#include <QDBusObjectPath>
 #include <qqmlintegration.h>
+
 class OrgFreedesktopAccountsInterface;
 
 class AccountController: public QObject
 {
     Q_OBJECT
     QML_ELEMENT
+    QML_SINGLETON
 
     Q_PROPERTY(QString username READ username WRITE setUsername NOTIFY usernameChanged)
     Q_PROPERTY(QString fullName READ fullName WRITE setFullName NOTIFY fullNameChanged)
+    Q_PROPERTY(QString password READ password WRITE setPassword NOTIFY passwordChanged)
 
 public:
     explicit AccountController(QObject *parent = nullptr);
@@ -25,15 +29,21 @@ public:
     QString fullName() const;
     void setFullName(const QString &fullName);
 
+    QString password() const;
+    void setPassword(const QString &password);
+
     Q_INVOKABLE bool createUser();
 
 Q_SIGNALS:
     void usernameChanged();
     void fullNameChanged();
+    void passwordChanged();
 
 private:
     OrgFreedesktopAccountsInterface *const m_dbusInterface;
 
     QString m_username;
     QString m_fullName;
+    QString m_password;
+    QDBusObjectPath m_dbusPath;
 };

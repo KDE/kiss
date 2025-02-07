@@ -2,7 +2,19 @@
 # SPDX-License-Identifier: BSD-2-Clause
 
 add_subdirectory(packagestructure)
-add_subdirectory(pages)
+
+set_source_files_properties(org.freedesktop.Accounts.xml PROPERTIES NO_NAMESPACE TRUE)
+set_source_files_properties(org.freedesktop.Accounts.User.xml PROPERTIES NO_NAMESPACE TRUE)
+
+qt_add_dbus_interface(initialstart_DBUS_SRCS
+    org.freedesktop.Accounts.xml
+    accounts_interface
+)
+
+qt_add_dbus_interface(initialstart_DBUS_SRCS
+    org.freedesktop.Accounts.User.xml
+    user_interface
+)
 
 add_executable(plasma-initialstart
     main.cpp
@@ -10,7 +22,24 @@ add_executable(plasma-initialstart
     pagesmodel.h
     initialstart.cpp
     initialstart.h
+    accountcontroller.cpp
+    accountcontroller.h
+    user.cpp
+    user.h
+    ${initialstart_DBUS_SRCS}
 )
+
+# FreeBSD systems might have libxcrypt but their shadow equivalent doesn't use it
+if(CMAKE_SYSTEM_NAME MATCHES "Linux")
+    pkg_check_modules(libxcrypt libxcrypt>=4)
+    if(libxcrypt_FOUND)
+        target_compile_definitions(plasma-initialstart PRIVATE -DHAVE_CRYPT_GENSALT=true)
+    else()
+        target_compile_definitions(plasma-initialstart PRIVATE -DHAVE_CRYPT_GENSALT=false)
+    endif()
+else()
+    target_compile_definitions(plasma-initialstart PRIVATE -DHAVE_CRYPT_GENSALT=false)
+endif()
 
 ecm_add_qml_module(plasma-initialstart GENERATE_PLUGIN_SOURCE
     URI org.kde.plasma.initialstart
@@ -19,6 +48,8 @@ ecm_add_qml_module(plasma-initialstart GENERATE_PLUGIN_SOURCE
 qt_target_qml_sources(plasma-initialstart
     QML_FILES
         qml/Main.qml
+        qml/Wizard.qml
+        qml/LandingComponent.qml
 )
 
 target_link_libraries(plasma-initialstart
@@ -29,8 +60,11 @@ target_link_libraries(plasma-initialstart
         Qt::Qml
         Qt::Quick
         Qt::QuickControls2
+        Qt::DBus
         Qt::Svg
         KF6::I18n
         KF6::Package
+        KF6::ConfigGui
+        crypt
 )
 install(TARGETS plasma-initialstart ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})

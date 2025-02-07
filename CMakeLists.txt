@@ -11,6 +11,9 @@ set(KF_MIN_VERSION "6.5.0")
 
 include(FeatureSummary)
 
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 ################# set KDE specific information #################
 find_package(ECM ${KF_MIN_VERSION} REQUIRED NO_MODULE)
 
@@ -23,11 +26,13 @@ set_package_properties(Qt6 PROPERTIES
     TYPE REQUIRED
     PURPOSE "Required application components"
 )
-find_package(KF6 ${KF_MIN_VERSION} COMPONENTS I18n Package)
+find_package(KF6 ${KF_MIN_VERSION} COMPONENTS I18n Package Config)
 set_package_properties(KF6 PROPERTIES
     TYPE REQUIRED
     PURPOSE "Required application components"
 )
+
+find_package(KF6Screen CONFIG REQUIRED)
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
@@ -40,7 +45,6 @@ include(ECMGenerateHeaders)
 include(ECMPoQmTools)
 include(ECMQmlModule)
 
-
 ################# build and install #################
 
 add_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_URL_CAST_FROM_STRING)
@@ -49,6 +53,7 @@ add_definitions(-DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT)
 add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x050d00)
 
 add_subdirectory(src)
+add_subdirectory(pages)
 
 install(PROGRAMS org.kde.arkade.desktop DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES org.kde.arkade.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})

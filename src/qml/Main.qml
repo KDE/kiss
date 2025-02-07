@@ -13,22 +13,14 @@ Kirigami.AbstractApplicationWindow {
 
     title: i18n("Initial Start")
 
-    PagesModel {
-        id: pagesModel
+    visibility: "Windowed"
 
-        Component.onCompleted: reload();
-
-        onLoaded: () => {
-            console.log("called")
-            if (rowCount() > 0) {
-                stackView.push(pageItem(0));
-            } else {
-                console.error("Pages model is empty.")
-            }
-        }
+    Wizard {
+        anchors.fill: parent
     }
 
-    ColumnLayout {
+
+    /*ColumnLayout {
         spacing: 0
         anchors.fill: parent
 
@@ -46,5 +38,5 @@ Kirigami.AbstractApplicationWindow {
             Layout.fillWidth: true
             Layout.fillHeight: true
         }
-    }
+    }*/
 }

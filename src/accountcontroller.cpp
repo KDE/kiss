@@ -7,6 +7,7 @@
 #include <QDBusObjectPath>
 
 #include "accounts_interface.h"
+#include "user.h"
 
 using namespace Qt::StringLiterals;
 
@@ -56,7 +57,27 @@ bool AccountController::createUser()
     QDBusPendingReply<QDBusObjectPath> reply = m_dbusInterface->CreateUser(m_username, m_fullName, static_cast<qint32>(isAdmin));
     reply.waitForFinished();
     if (reply.isValid()) {
+        m_dbusPath = reply.value();
         return true;
     }
     return false;
+}
+
+QString AccountController::password() const
+{
+    return m_password;
+}
+
+void AccountController::setPassword(const QString &password)
+{
+    if (m_password == password && !m_dbusPath.path().isEmpty()) {
+        return;
+    }
+
+    m_password = password;
+    Q_EMIT passwordChanged();
+
+    User createdUser;
+    createdUser.setPath(m_dbusPath);
+    createdUser.setPassword(m_password);
 }

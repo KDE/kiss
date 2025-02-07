@@ -22,35 +22,20 @@ class InitialStart : public QObject
 {
     Q_OBJECT
     QML_ELEMENT
+    QML_SINGLETON
 
-    Q_PROPERTY(PagesModel *pagesModel READ pagesModel NOTIFY pagesModelChanged)
-    Q_PROPERTY(QString pageId READ pageId WRITE setPageId NOTIFY pageIdChanged)
-    Q_PROPERTY(QQuickItem *pageItem READ pageItem NOTIFY pageItemChanged)
+    Q_PROPERTY(QString username READ username WRITE setUsername NOTIFY usernameChanged)
 
 public:
     InitialStart(QObject *parent = nullptr);
     ~InitialStart() = default;
 
-    PagesModel *pagesModel() const;
-    void setPagesModel(PagesModel *pagesModel);
-
-    QString pageId() const;
-    void setPageId(const QString &pageId);
-
-    QQuickItem *pageItem();
-    QString qmlPath();
+    QString username() const;
+    void setUsername(const QString &username);
 
 Q_SIGNALS:
-    void pagesModelChanged();
-    void pageIdChanged();
-    void pageItemChanged();
+    void usernameChanged();
 
 private:
-    QQuickItem *createGui(const QString &qmlPath);
-
-    PagesModel *m_pagesModel;
-    QQmlEngine *m_engine;
-    KLocalizedContext *m_contextObj = nullptr;
-    QString m_pageId;
-    KPackage::Package m_pagePackage;
+    QString m_username;
 };

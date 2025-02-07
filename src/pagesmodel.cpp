@@ -9,6 +9,8 @@
 #include <KLocalizedString>
 #include <KPluginMetaData>
 
+using namespace Qt::StringLiterals;
+
 PagesModel::PagesModel(QObject *parent)
     : QStandardItemModel(parent)
 {
@@ -18,12 +20,17 @@ void PagesModel::reload()
 {
     clear();
 
-    const auto packages = KPackage::PackageLoader::self()->listKPackages(QStringLiteral("Plasma/InitialStart"));
+    auto packages = KPackage::PackageLoader::self()->listKPackages(QStringLiteral("Plasma/InitialStart"));
 
-    for (const auto &package : packages) {
+    std::ranges::sort(packages, [](const KPackage::Package &left, const KPackage::Package &right) {
+        const auto leftData = left.metadata().rawData() ;
+        const auto rightData = right.metadata().rawData();
+        return leftData["X-KDE-Weight"_L1].toString().toInt() < rightData["X-KDE-Weight"_L1].toString().toInt();
+    });
+
+    for (const auto &package : std::as_const(packages)) {
         const auto plugin = package.metadata();
         auto item = new QStandardItem(plugin.name());
-        qWarning() << plugin.name();
         item->setData(plugin.pluginId(), PagesModel::PluginIdRole);
         item->setData(QVariant::fromValue(package), PagesModel::PackageRole);
         appendRow(item);
