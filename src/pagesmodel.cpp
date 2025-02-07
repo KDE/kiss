@@ -25,7 +25,7 @@ void PagesModel::reload()
     std::ranges::sort(packages, [](const KPackage::Package &left, const KPackage::Package &right) {
         const auto leftData = left.metadata().rawData() ;
         const auto rightData = right.metadata().rawData();
-        return leftData["X-KDE-Weight"_L1].toString().toInt() < rightData["X-KDE-Weight"_L1].toString().toInt();
+        return leftData["X-KDE-Weight"_L1].toInt() < rightData["X-KDE-Weight"_L1].toInt();
     });
 
     for (const auto &package : std::as_const(packages)) {
