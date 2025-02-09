@@ -76,7 +76,7 @@ QQuickItem *PagesModel::createGui(const QString &qmlPath)
     QObject *guiObject = component->create();
     QQuickItem *gui = qobject_cast<QQuickItem *>(guiObject);
     if (!gui) {
-        qWarning() << "ERROR: QML gui" << guiObject << "not a QQuickItem instance";
+        qWarning() << "ERROR: QML gui" << guiObject << "not a QQuickItem instance" << qmlPath;
         guiObject->deleteLater();
         return nullptr;
     }

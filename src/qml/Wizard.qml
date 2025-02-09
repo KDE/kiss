@@ -7,6 +7,7 @@ import QtQuick.Layouts
 
 import org.kde.kirigami as Kirigami
 import org.kde.plasma.initialstart
+import org.kde.plasma.initialstart.components as InitialStartComponents
 
 Kirigami.Page {
     id: root
@@ -21,9 +22,10 @@ Kirigami.Page {
     property bool showingLanding: true
 
     // filled by items
-    property var currentStepItem
-    property var nextStepItem
-    property var previousStepItem
+    property Control currentStepItem: null
+    property Control nextStepItem: null
+    property Control previousStepItem: null
+    property InitialStartComponents.Module currentModule: null
 
     readonly property bool onFinalPage: currentIndex === (stepCount - 1)
 
@@ -252,6 +254,7 @@ Kirigami.Page {
 
                             // pass up the property
                             property int currentIndex: index
+                            readonly property InitialStartComponents.Module module: contentItem as InitialStartComponents.Module
 
                             visible: index === 0 // the binding is broken later
                             contentItem: pagesModel.pageItem(index)
@@ -278,6 +281,7 @@ Kirigami.Page {
                             function updateRootItems(): void {
                                 if (index === root.currentIndex) {
                                     root.currentStepItem = item;
+                                    root.currentModule = module;
                                 } else if (index === root.currentIndex - 1) {
                                     root.previousStepItem = item;
                                 } else if (index === root.currentIndex + 1) {
@@ -341,6 +345,8 @@ Kirigami.Page {
                         text: i18nc("@action:button", "Next")
                         icon.name: "arrow-right-symbolic"
 
+                        enabled: root.currentModule.nextEnabled
+
                         onClicked: root.requestNextPage();
                     }
 
@@ -357,6 +363,8 @@ Kirigami.Page {
                         visible: root.onFinalPage
                         text: i18nc("@action:button", "Finish")
                         icon.name: "dialog-ok-symbolic"
+
+                        enabled: root.currentModule.nextEnabled
 
                         onClicked: root.finishFinalPage();
                     }

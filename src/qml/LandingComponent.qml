@@ -8,6 +8,7 @@ import QtQuick.Layouts
 
 import org.kde.kirigami as Kirigami
 import org.kde.plasma.initialstart.prepare.private as Prepare
+import org.kde.plasma.initialstart
 
 Item {
     id: root

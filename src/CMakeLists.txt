@@ -2,6 +2,7 @@
 # SPDX-License-Identifier: BSD-2-Clause
 
 add_subdirectory(packagestructure)
+add_subdirectory(components)
 
 set_source_files_properties(org.freedesktop.Accounts.xml PROPERTIES NO_NAMESPACE TRUE)
 set_source_files_properties(org.freedesktop.Accounts.User.xml PROPERTIES NO_NAMESPACE TRUE)
@@ -26,6 +27,8 @@ add_executable(plasma-initialstart
     accountcontroller.h
     user.cpp
     user.h
+    initialstartutil.cpp
+    initialstartutil.h
     ${initialstart_DBUS_SRCS}
 )
 
