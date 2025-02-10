@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include "initialstartmodule.h"
 #include <QQuickItem>
 #include <qqmlregistration.h>
 #include <QStandardItemModel>
@@ -27,11 +28,11 @@ public:
 
     QHash<int, QByteArray> roleNames() const override;
 
-    Q_INVOKABLE QQuickItem *pageItem(int row);
+    Q_INVOKABLE InitialStartModule *pageItem(int row);
 
 Q_SIGNALS:
     void loaded();
 
 private:
-    QQuickItem *createGui(const QString &qmlPath);
+    InitialStartModule *createGui(const QString &qmlPath);
 };

@@ -254,10 +254,16 @@ Kirigami.Page {
 
                             // pass up the property
                             property int currentIndex: index
-                            readonly property InitialStartComponents.Module module: contentItem as InitialStartComponents.Module
+                            readonly property InitialStartComponents.Module module: pagesModel.pageItem(index)
 
                             visible: index === 0 // the binding is broken later
-                            contentItem: pagesModel.pageItem(index)
+                            contentItem: module.contentItem
+
+                            Binding {
+                                target: module
+                                property: 'cardWidth'
+                                value: Math.min(Kirigami.Units.gridUnit * 30, contentItem.width - Kirigami.Units.gridUnit * 2)
+                            }
 
                             leftPadding: 0
                             rightPadding: 0

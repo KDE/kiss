@@ -40,8 +40,9 @@ include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(KDEClangFormat)
+
 include(ECMSetupVersion)
-include(ECMGenerateHeaders)
+include(ECMGenerateExportHeader)
 include(ECMPoQmTools)
 include(ECMQmlModule)
 
@@ -53,7 +54,7 @@ add_definitions(-DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT)
 add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x050d00)
 
 add_subdirectory(src)
-add_subdirectory(pages)
+add_subdirectory(modules)
 
 install(PROGRAMS org.kde.arkade.desktop DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES org.kde.arkade.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})

@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: LGPL-2.0-or-later
 
 #include "pagesmodel.h"
+#include "initialstartmodule.h"
 
 #include <QDebug>
 
@@ -53,35 +54,33 @@ QHash<int, QByteArray> PagesModel::roleNames() const
     return roles;
 }
 
-QQuickItem *PagesModel::pageItem(int row)
+InitialStartModule *PagesModel::pageItem(int row)
 {
     const auto package = data(index(row, 0), PackageRole).value<KPackage::Package>();
     return createGui(package.filePath("ui", QStringLiteral("main.qml")));
 }
 
-QQuickItem *PagesModel::createGui(const QString &qmlPath)
+InitialStartModule *PagesModel::createGui(const QString &qmlPath)
 {
     QQmlEngine *engine = qmlEngine(this);
     auto component = new QQmlComponent(engine, QUrl(qmlPath), nullptr);
+    QObject *guiObject = component->create();
+
     if (component->status() != QQmlComponent::Ready) {
-        qCritical() << "Error creating component:";
-        const auto errors = component->errors();
-        for (const auto &err : errors) {
-            qWarning() << err.toString();
-        }
+        qCritical() << "Error creating component:" << component->errors();
         component->deleteLater();
         return nullptr;
     }
 
-    QObject *guiObject = component->create();
-    QQuickItem *gui = qobject_cast<QQuickItem *>(guiObject);
-    if (!gui) {
+    auto module = qobject_cast<InitialStartModule *>(guiObject);
+
+    if (!module) {
         qWarning() << "ERROR: QML gui" << guiObject << "not a QQuickItem instance" << qmlPath;
         guiObject->deleteLater();
         return nullptr;
     }
-    gui->setParent(this);
-    return gui;
+    module->setParent(this);
+    return module;
 }
 
 #include "moc_pagesmodel.cpp"

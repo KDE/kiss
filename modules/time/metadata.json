@@ -1,0 +1,17 @@
+{
+    "KPackageStructure": "Plasma/InitialStart",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "devin@kde.org",
+                "Name": "Devin Lin"
+            }
+        ],
+        "Id": "org.kde.plasma.plasmainitialstart.time",
+        "License": "LGPL-2.0-or-later",
+        "Name": "Time and Date",
+        "Version": "1.0"
+    },
+    "X-KDE-ParentApp": "org.kde.plasma.initialstart",
+    "X-KDE-Weight": 40
+}

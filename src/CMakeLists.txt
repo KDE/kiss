@@ -1,8 +1,8 @@
 # SPDX-FileCopyrightText: 2025 Carl Schwan <carl@carlschwan.eu>
 # SPDX-License-Identifier: BSD-2-Clause
 
-add_subdirectory(packagestructure)
 add_subdirectory(components)
+add_subdirectory(packagestructure)
 
 set_source_files_properties(org.freedesktop.Accounts.xml PROPERTIES NO_NAMESPACE TRUE)
 set_source_files_properties(org.freedesktop.Accounts.User.xml PROPERTIES NO_NAMESPACE TRUE)
@@ -69,5 +69,7 @@ target_link_libraries(plasma-initialstart
         KF6::Package
         KF6::ConfigGui
         crypt
+        componentsplugin
+        componentspluginplugin
 )
 install(TARGETS plasma-initialstart ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
