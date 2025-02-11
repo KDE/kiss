@@ -6,11 +6,19 @@ ecm_add_qml_module(initialstart_time
     GENERATE_PLUGIN_SOURCE
 )
 
+set_source_files_properties(org.freedesktop.timedate1.xml PROPERTIES NO_NAMESPACE TRUE)
+
+qt_add_dbus_interface(initialstart_time_DBUS_SRCS
+    org.freedesktop.timedate1.xml
+    timedate_interface
+)
+
 target_sources(initialstart_time PRIVATE
     timeutil.cpp
     timeutil.h
     timezonemodel.cpp
     timezonemodel.h
+    ${initialstart_time_DBUS_SRCS}
 )
 
 target_link_libraries(initialstart_time PUBLIC

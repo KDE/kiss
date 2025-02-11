@@ -3,9 +3,12 @@
 
 #include "timeutil.h"
 
+#include "timedate_interface.h"
+
 #include <QDebug>
 #include <QRegularExpression>
 #include <QTimeZone>
+#include <QDBusPendingCallWatcher>
 
 #include <KConfigGroup>
 #include <KSharedConfig>
@@ -15,17 +18,20 @@ using namespace Qt::StringLiterals;
 static const QString format24hours = u"HH:mm:ss"_s;
 static const QString format12hours = u"HH:mm:ss ap"_s;
 
-
 TimeUtil::TimeUtil(QObject *parent)
     : QObject{parent}
+    , m_dbusInterface(new OrgFreedesktopTimedate1Interface(u"org.freedesktop.timedate1"_s,
+                                                          u"/org/freedesktop/timedate1"_s,
+                                                     QDBusConnection::systemBus(),
+                                                          this))
     , m_timeZoneModel{new TimeZoneModel{this}}
     , m_filterModel{new TimeZoneFilterProxy{this}}
 {
     m_filterModel->setSourceModel(m_timeZoneModel);
 
     // retrieve is24HourTime
-    auto config = KSharedConfig::openConfig(u"kdeglobals"_s, KConfig::SimpleConfig);
-    auto group = KConfigGroup(config, "Locale"_L1);
+    const auto config = KSharedConfig::openConfig(u"kdeglobals"_s, KConfig::SimpleConfig);
+    const auto group = KConfigGroup(config, "Locale"_L1);
     m_is24HourTime = group.readEntry(u"TimeFormat"_s, format24hours) == format24hours;
 }
 

@@ -95,7 +95,7 @@ InitialStartComponents.Module {
                         width: ListView.view.width
                         text: timeZoneId
                         checked: Time.TimeUtil.currentTimeZone === timeZoneId
-                        onCheckedChanged: {
+                        onToggled: {
                             if (checked && timeZoneId !== Time.TimeUtil.currentTimeZone) {
                                 Time.TimeUtil.currentTimeZone = timeZoneId;
                                 checked = Qt.binding(() => Time.TimeUtil.currentTimeZone === timeZoneId);

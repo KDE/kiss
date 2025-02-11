@@ -9,6 +9,8 @@
 
 #include "timezonemodel.h"
 
+class OrgFreedesktopTimedate1Interface;
+
 class TimeUtil : public QObject
 {
     Q_OBJECT
@@ -33,10 +35,13 @@ public:
 Q_SIGNALS:
     void is24HourTimeChanged();
     void currentTimeZoneChanged();
+    void userChanged();
 
 private:
     bool m_is24HourTime;
 
-    TimeZoneModel *m_timeZoneModel;
-    TimeZoneFilterProxy *m_filterModel;
+    OrgFreedesktopTimedate1Interface * const m_dbusInterface;
+    QString m_user;
+    TimeZoneModel * const m_timeZoneModel;
+    TimeZoneFilterProxy * const m_filterModel;
 };
