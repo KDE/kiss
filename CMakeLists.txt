@@ -33,6 +33,7 @@ set_package_properties(KF6 PROPERTIES
 )
 
 find_package(KF6Screen CONFIG REQUIRED)
+find_package(PkgConfig REQUIRED)
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
