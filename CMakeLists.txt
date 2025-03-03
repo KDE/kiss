@@ -57,7 +57,4 @@ add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x050d00)
 add_subdirectory(src)
 add_subdirectory(modules)
 
-install(PROGRAMS org.kde.arkade.desktop DESTINATION ${KDE_INSTALL_APPDIR})
-install(FILES org.kde.arkade.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
-
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
