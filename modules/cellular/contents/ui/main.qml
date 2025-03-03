@@ -28,7 +28,7 @@ InitialStartComponents.Module {
         }
 
         EditProfileDialog {
-            id: profileDialogvenho.ai/mindy
+            id: profileDialog
             profile: null
         }
 
