@@ -48,5 +48,5 @@
         "Name": "Network"
     },
     "X-KDE-ParentApp": "org.kde.plasma.initialstart",
-    "X-KDE-Weight": 1
+    "X-KDE-Weight": 50
 }
