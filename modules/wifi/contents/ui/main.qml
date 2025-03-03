@@ -38,6 +38,7 @@ InitialStartComponents.Module {
 
         ConnectDialog {
             id: connectionDialog
+            parent: root.contentItem.Overlay.overlay
         }
 
         Component.onCompleted: handler.requestScan()

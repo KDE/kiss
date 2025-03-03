@@ -1,13 +1,15 @@
 // SPDX-FileCopyrightText: 2020-2024 Devin Lin <espidev@gmail.com>
 // SPDX-License-Identifier: LGPL-2.0-or-later
 
-import QtQuick 2.6
-import QtQuick.Layouts 1.2
-import QtQuick.Controls 2.2 as Controls
+import QtQuick
+import QtQuick.Layouts
+import QtQuick.Controls as Controls
 import org.kde.kirigami as Kirigami
+import org.kde.kirigamiaddons.components as Components
 
-Kirigami.PromptDialog {
-    id: dialogRoot
+Components.MessageDialog {
+    id: root
+
     title: headingText
 
     property int securityType
@@ -17,46 +19,35 @@ Kirigami.PromptDialog {
 
     signal donePressed(string password)
 
-    function openAndClear() {
-        warning.visible = false;
+    function openAndClear(): void {
         this.open();
         passwordField.text = "";
         passwordField.focus = true;
     }
 
+    implicitWidth: Math.min(parent.width - Kirigami.Units.gridUnit * 2, Kirigami.Units.gridUnit * 22)
+
+    iconName: 'dialog-password'
+
     standardButtons: Controls.Dialog.Ok | Controls.Dialog.Cancel
 
     onOpened: passwordField.forceActiveFocus()
     onRejected: {
-        dialogRoot.close();
+        root.close();
         passwordField.focus = false;
     }
     onAccepted: {
         if (passwordField.acceptableInput) {
-            dialogRoot.close();
+            root.close();
             handler.addAndActivateConnection(devicePath, specificPath, passwordField.text);
-        } else {
-            warning.visible = true;
         }
         passwordField.focus = false;
     }
 
-    ColumnLayout {
-        id: column
-        spacing: Kirigami.Units.largeSpacing
-
-        PasswordField {
-            id: passwordField
-            Layout.fillWidth: true
-            securityType: dialogRoot.securityType
-            onAccepted: dialogRoot.accept()
-        }
-
-        Controls.Label {
-            id: warning
-            text: i18n("Invalid input.")
-            visible: false
-        }
+    PasswordField {
+        id: passwordField
+        Layout.fillWidth: true
+        securityType: root.securityType
+        onAccepted: root.accept()
     }
-
 }
