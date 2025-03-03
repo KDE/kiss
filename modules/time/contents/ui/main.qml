@@ -77,8 +77,8 @@ InitialStartComponents.Module {
             ScrollView {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
-                Layout.minimumHeight: Kirigami.Units.gridUnit * 10
-                Layout.maximumHeight: Kirigami.Units.gridUnit * 10
+                Layout.minimumHeight: Kirigami.Units.gridUnit * 14
+                Layout.maximumHeight: Kirigami.Units.gridUnit * 14
 
                 ListView {
                     id: listView

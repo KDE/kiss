@@ -21,11 +21,18 @@ class TimeUtil : public QObject
     Q_PROPERTY(QString currentTimeZone READ currentTimeZone WRITE setCurrentTimeZone NOTIFY currentTimeZoneChanged)
     Q_PROPERTY(TimeZoneFilterProxy *timeZones READ timeZones CONSTANT)
 
+    /// This property holds the current user whose time information should be modified.
+    /// \note In case it is empty, assume this is the current user.
+    Q_PROPERTY(QString user READ user WRITE setUser NOTIFY userChanged)
+
 public:
     explicit TimeUtil(QObject *parent = nullptr);
 
-    bool is24HourTime() const;
+    [[nodiscard]] bool is24HourTime() const;
     void setIs24HourTime(bool is24HourTime);
+
+    [[nodiscard]] QString user() const;
+    void setUser(const QString &user);
 
     QString currentTimeZone() const;
     void setCurrentTimeZone(const QString &timeZone);

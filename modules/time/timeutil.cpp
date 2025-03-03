@@ -60,11 +60,30 @@ QString TimeUtil::currentTimeZone() const
 
 void TimeUtil::setCurrentTimeZone(const QString &timeZone)
 {
-    QProcess::execute(u"timedatectl"_s, {u"set-timezone"_s, timeZone});
-    Q_EMIT currentTimeZoneChanged();
+    auto reply = m_dbusInterface->SetTimezone(timeZone, false);
+    auto watcher = new QDBusPendingCallWatcher(reply, nullptr);
+    connect(watcher, &QDBusPendingCallWatcher::finished, this, [this, reply]() {
+        if (reply.isValid()) {
+            Q_EMIT currentTimeZoneChanged();
+        }
+     });
 }
 
 TimeZoneFilterProxy *TimeUtil::timeZones() const
 {
     return m_filterModel;
+}
+
+QString TimeUtil::user() const
+{
+    return m_user;
+}
+
+void TimeUtil::setUser(const QString &user)
+{
+    if (m_user == user) {
+        return;
+    }
+    m_user = user;
+    Q_EMIT userChanged();
 }
