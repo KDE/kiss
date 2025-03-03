@@ -38,6 +38,7 @@ InitialStartComponents.Module {
 
         ConnectDialog {
             id: connectionDialog
+            handler: handler
             parent: root.contentItem.Overlay.overlay
         }
 

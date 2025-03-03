@@ -6,6 +6,7 @@ import QtQuick.Layouts
 import QtQuick.Controls as Controls
 import org.kde.kirigami as Kirigami
 import org.kde.kirigamiaddons.components as Components
+import org.kde.plasma.networkmanagement as PlasmaNM
 
 Components.MessageDialog {
     id: root
@@ -16,6 +17,7 @@ Components.MessageDialog {
     property string headingText
     property string devicePath
     property string specificPath
+    property PlasmaNM.Handler handler
 
     signal donePressed(string password)
 
@@ -39,7 +41,7 @@ Components.MessageDialog {
     onAccepted: {
         if (passwordField.acceptableInput) {
             root.close();
-            handler.addAndActivateConnection(devicePath, specificPath, passwordField.text);
+            root.handler.addAndActivateConnection(devicePath, specificPath, passwordField.text, PlasmaNM.Handler.StoreForAllUsers);
         }
         passwordField.focus = false;
     }
