@@ -1,5 +1,5 @@
 {
-    "KPackageStructure": "Plasma/InitialStart",
+    "KPackageStructure": "KDE/InitialSystemSetup",
     "KPlugin": {
         "Authors": [
             {
@@ -43,10 +43,10 @@
                 "Name[zh_TW]": "Devin Lin"
             }
         ],
-        "Id": "org.kde.plasma.initialsetup.wifi",
+        "Id": "org.kde.initialsystemsetup.wifi",
         "License": "GPL-2.0+",
         "Name": "Network"
     },
-    "X-KDE-ParentApp": "org.kde.plasma.initialstart",
+    "X-KDE-ParentApp": "org.kde.initialsystemsetup",
     "X-KDE-Weight": 50
 }

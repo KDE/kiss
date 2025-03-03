@@ -1,5 +1,5 @@
 {
-    "KPackageStructure": "Plasma/InitialStart",
+    "KPackageStructure": "KDE/InitialSystemSetup",
     "KPlugin": {
         "Authors": [
             {
@@ -12,6 +12,6 @@
         "Name": "Set a Password",
         "Version": "1.0"
     },
-    "X-KDE-ParentApp": "org.kde.plasma.initialstart",
+    "X-KDE-ParentApp": "org.kde.initialsystemsetup",
     "X-KDE-Weight": 30
 }

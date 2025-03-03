@@ -4,7 +4,7 @@
 
 cmake_minimum_required(VERSION 3.20)
 
-project(plasma-initialstart)
+project(kiss VERSION "0.1.0")
 
 set(QT_MIN_VERSION "6.6.0")
 set(KF_MIN_VERSION "6.5.0")
@@ -20,6 +20,16 @@ find_package(ECM ${KF_MIN_VERSION} REQUIRED NO_MODULE)
 # where to look first for cmake modules, before ${CMAKE_ROOT}/Modules/ is checked
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ECM_MODULE_PATH})
 
+include(KDEInstallDirs)
+include(KDECMakeSettings)
+include(KDECompilerSettings NO_POLICY_SCOPE)
+include(KDEClangFormat)
+
+include(ECMSetupVersion)
+include(ECMGenerateExportHeader)
+include(ECMPoQmTools)
+include(ECMQmlModule)
+
 ################# Find dependencies #################
 find_package(Qt6 ${QT_MIN_VERSION} NO_MODULE COMPONENTS Core Gui Qml QuickControls2 Svg Widgets Dbus)
 set_package_properties(Qt6 PROPERTIES
@@ -32,20 +42,15 @@ set_package_properties(KF6 PROPERTIES
     PURPOSE "Required application components"
 )
 
+ecm_setup_version(${PROJECT_VERSION}
+    VARIABLE_PREFIX KISS
+    VERSION_HEADER ${CMAKE_CURRENT_BINARY_DIR}/kiss-version.h
+)
+
 find_package(KF6Screen CONFIG REQUIRED)
 find_package(PkgConfig REQUIRED)
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
-
-include(KDEInstallDirs)
-include(KDECMakeSettings)
-include(KDECompilerSettings NO_POLICY_SCOPE)
-include(KDEClangFormat)
-
-include(ECMSetupVersion)
-include(ECMGenerateExportHeader)
-include(ECMPoQmTools)
-include(ECMQmlModule)
 
 ################# build and install #################
 

@@ -1,5 +1,5 @@
 {
-    "KPackageStructure": "Plasma/InitialStart",
+    "KPackageStructure": "KDE/InitialSystemSetup",
     "KPlugin": {
         "Authors": [
             {
@@ -80,6 +80,6 @@
         "Name[zh_CN]": "蜂窝数据",
         "Name[zh_TW]": "行動電話"
     },
-    "X-KDE-ParentApp": "org.kde.plasma.initialstart",
+    "X-KDE-ParentApp": "org.kde.initialsystemsetup",
     "X-KDE-Weight": 60
 }

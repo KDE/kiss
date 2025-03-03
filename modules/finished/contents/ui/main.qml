@@ -7,8 +7,8 @@ import QtQuick.Layouts
 
 import org.kde.kirigami as Kirigami
 
-import org.kde.plasma.initialstart.components as InitialStartComponents
-import org.kde.plasma.initialstart
+import org.kde.initialsystemsetup.components as InitialStartComponents
+import org.kde.initialsystemsetup
 
 InitialStartComponents.Module {
     id: root

@@ -9,7 +9,7 @@ import org.kde.kirigami as Kirigami
 import org.kde.kirigamiaddons.formcard as FormCard
 import org.kde.plasma.mm as PlasmaMM
 
-import org.kde.plasma.initialstart.components as InitialStartComponents
+import org.kde.initialsystemsetup.components as InitialStartComponents
 
 InitialStartComponents.Module {
     id: root

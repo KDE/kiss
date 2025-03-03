@@ -8,7 +8,7 @@
 #include <QQuickItem>
 #include <qqmlintegration.h>
 
-class InitialStartModule : public QObject
+class SetupModule : public QObject
 {
     Q_OBJECT
     QML_NAMED_ELEMENT(Module)
@@ -21,7 +21,7 @@ class InitialStartModule : public QObject
     Q_CLASSINFO("DefaultProperty", "children")
 
 public:
-    explicit InitialStartModule(QObject *parent = nullptr);
+    explicit SetupModule(QObject *parent = nullptr);
 
     [[nodiscard]] bool available() const;
     void setAvailable(bool available);

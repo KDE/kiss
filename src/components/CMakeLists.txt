@@ -10,7 +10,7 @@ add_library(componentsplugin STATIC)
 #)
 
 ecm_add_qml_module(componentsplugin
-    URI "org.kde.plasma.initialstart.components"
+    URI "org.kde.initialsystemsetup.components"
     GENERATE_PLUGIN_SOURCE
 )
 

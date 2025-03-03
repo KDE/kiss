@@ -7,8 +7,8 @@ import QtQuick.Controls
 import QtQuick.Layouts
 
 import org.kde.kirigami as Kirigami
-import org.kde.plasma.initialstart.prepare.private as Prepare
-import org.kde.plasma.initialstart
+import org.kde.initialsystemsetup.prepare.private as Prepare
+import org.kde.initialsystemsetup
 
 Item {
     id: root

@@ -2,13 +2,13 @@
 # SPDX-License-Identifier: LGPL-2.0-or-later
 
 add_subdirectory(prepare)
-kpackage_install_package(prepare org.kde.plasma.initialstart.prepare packages plasma)
+kpackage_install_package(prepare org.kde.initialsystemsetup.prepare packages plasma)
 
 add_subdirectory(time)
-kpackage_install_package(time org.kde.plasma.initialstart.time packages plasma)
+kpackage_install_package(time org.kde.initialsystemsetup.time packages plasma)
 
-kpackage_install_package(account org.kde.plasma.initialstart.account packages plasma)
-kpackage_install_package(password org.kde.plasma.initialstart.password packages plasma)
-kpackage_install_package(finished org.kde.plasma.initialstart.finished packages plasma)
-kpackage_install_package(wifi org.kde.plasma.initialsetup.wifi packages plasma)
-kpackage_install_package(cellular org.kde.plasma.initialsetup.cellular packages plasma)
+kpackage_install_package(account org.kde.initialsystemsetup.account packages plasma)
+kpackage_install_package(password org.kde.initialsystemsetup.password packages plasma)
+kpackage_install_package(finished org.kde.initialsystemsetup.finished packages plasma)
+kpackage_install_package(wifi org.kde.initialsystemsetup.wifi packages plasma)
+kpackage_install_package(cellular org.kde.initialsystemsetup.cellular packages plasma)

@@ -10,9 +10,9 @@ import QtCore as Core
 import org.kde.kirigami as Kirigami
 import org.kde.kirigamiaddons.formcard as FormCard
 import org.kde.kirigamiaddons.components as KirigamiComponents
-import org.kde.plasma.initialstart.components as InitialStartComponents
+import org.kde.initialsystemsetup.components as InitialStartComponents
 
-import org.kde.plasma.initialstart
+import org.kde.initialsystemsetup
 
 InitialStartComponents.Module {
     id: root

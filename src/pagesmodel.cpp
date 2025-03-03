@@ -21,7 +21,7 @@ void PagesModel::reload()
 {
     clear();
 
-    auto packages = KPackage::PackageLoader::self()->listKPackages(QStringLiteral("Plasma/InitialStart"));
+    auto packages = KPackage::PackageLoader::self()->listKPackages(QStringLiteral("KDE/InitialSystemSetup"));
 
     std::ranges::sort(packages, [](const KPackage::Package &left, const KPackage::Package &right) {
         const auto leftData = left.metadata().rawData() ;
@@ -48,19 +48,19 @@ QString PagesModel::pluginId(int row)
 QHash<int, QByteArray> PagesModel::roleNames() const
 {
     QHash<int, QByteArray> roles = QAbstractItemModel::roleNames();
- 
+
     roles[PluginIdRole] = "pluginId";
     roles[Qt::DisplayRole] = "name";
     return roles;
 }
 
-InitialStartModule *PagesModel::pageItem(int row)
+SetupModule *PagesModel::pageItem(int row)
 {
     const auto package = data(index(row, 0), PackageRole).value<KPackage::Package>();
     return createGui(package.filePath("ui", QStringLiteral("main.qml")));
 }
 
-InitialStartModule *PagesModel::createGui(const QString &qmlPath)
+SetupModule *PagesModel::createGui(const QString &qmlPath)
 {
     QQmlEngine *engine = qmlEngine(this);
     auto component = new QQmlComponent(engine, QUrl(qmlPath), nullptr);
@@ -72,7 +72,7 @@ InitialStartModule *PagesModel::createGui(const QString &qmlPath)
         return nullptr;
     }
 
-    auto module = qobject_cast<InitialStartModule *>(guiObject);
+    auto module = qobject_cast<SetupModule *>(guiObject);
 
     if (!module) {
         qWarning() << "ERROR: QML gui" << guiObject << "not a QQuickItem instance" << qmlPath;

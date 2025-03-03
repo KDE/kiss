@@ -6,8 +6,8 @@ import QtQuick.Controls
 import QtQuick.Layouts
 
 import org.kde.kirigami as Kirigami
-import org.kde.plasma.initialstart
-import org.kde.plasma.initialstart.components as InitialStartComponents
+import org.kde.initialsystemsetup
+import org.kde.initialsystemsetup.components as InitialStartComponents
 
 Kirigami.Page {
     id: root
@@ -240,7 +240,7 @@ Kirigami.Page {
                     Layout.minimumHeight: stepsRepeater.itemAt(root.currentIndex)?.implicitHeight ?? 0
                     Layout.fillHeight: Kirigami.Settings.isMobile
 
-                    // setup stepsorg.kde.plasma.initialstart.prepare.private
+                    // setup stepsorg.kde.initialsystemsetup.prepare.private
                     Repeater {
                         id: stepsRepeater
 

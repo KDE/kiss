@@ -6,7 +6,7 @@ import QtQuick.Layouts
 import QtQuick.Controls as Controls
 import org.kde.kirigami as Kirigami
 import org.kde.kirigamiaddons.delegates as Delegates
-import org.kde.plasma.initialstart
+import org.kde.initialsystemsetup
 
 Kirigami.AbstractApplicationWindow {
     id: root

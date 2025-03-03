@@ -3,10 +3,10 @@
 
 #include "prepareutil.h"
 
-#include <kscreen/configmonitor.h>
-#include <kscreen/getconfigoperation.h>
-#include <kscreen/output.h>
-#include <kscreen/setconfigoperation.h>
+#include <KScreen/ConfigMonitor>
+#include <KScreen/GetConfigOperation>
+#include <KScreen/Output>
+#include <KScreen/SetConfigOperation>
 
 #include <QDBusPendingCallWatcher>
 #include <QDBusPendingReply>
@@ -67,7 +67,7 @@ void PrepareUtil::setScaling(int scaling)
 
 QStringList PrepareUtil::scalingOptions()
 {
-    return {u"50%"_s, u"75%"_s, u"100%"_s, u"125%"_s, u"150%"_s, u"175%"_s, u"200%"_s, u"225%"_s, u"250%"_s, u"275%"_s, u"300%"_s};
+    return {u"50%"_s, u"75%"_s, u"100%"_s, u"125%"_s, u"150%"_s, u"175%"_s, u"200%"_s, u"225%"_s, u"250%"_s, u"275%"_s, u"300%"_s,};
 }
 
 bool PrepareUtil::usingDarkTheme() const

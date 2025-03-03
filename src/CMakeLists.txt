@@ -17,7 +17,7 @@ qt_add_dbus_interface(initialstart_DBUS_SRCS
     user_interface
 )
 
-add_executable(plasma-initialstart
+add_executable(kde-initial-system-setup
     main.cpp
     pagesmodel.cpp
     pagesmodel.h
@@ -36,26 +36,26 @@ add_executable(plasma-initialstart
 if(CMAKE_SYSTEM_NAME MATCHES "Linux")
     pkg_check_modules(libxcrypt libxcrypt>=4)
     if(libxcrypt_FOUND)
-        target_compile_definitions(plasma-initialstart PRIVATE -DHAVE_CRYPT_GENSALT=true)
+        target_compile_definitions(kde-initial-system-setup PRIVATE -DHAVE_CRYPT_GENSALT=true)
     else()
-        target_compile_definitions(plasma-initialstart PRIVATE -DHAVE_CRYPT_GENSALT=false)
+        target_compile_definitions(kde-initial-system-setup PRIVATE -DHAVE_CRYPT_GENSALT=false)
     endif()
 else()
-    target_compile_definitions(plasma-initialstart PRIVATE -DHAVE_CRYPT_GENSALT=false)
+    target_compile_definitions(kde-initial-system-setup PRIVATE -DHAVE_CRYPT_GENSALT=false)
 endif()
 
-ecm_add_qml_module(plasma-initialstart GENERATE_PLUGIN_SOURCE
-    URI org.kde.plasma.initialstart
+ecm_add_qml_module(kde-initial-system-setup GENERATE_PLUGIN_SOURCE
+    URI org.kde.initialsystemsetup
 )
 
-qt_target_qml_sources(plasma-initialstart
+qt_target_qml_sources(kde-initial-system-setup
     QML_FILES
         qml/Main.qml
         qml/Wizard.qml
         qml/LandingComponent.qml
 )
 
-target_link_libraries(plasma-initialstart
+target_link_libraries(kde-initial-system-setup
     PUBLIC
         Qt::Widgets
         Qt::Core
@@ -72,4 +72,4 @@ target_link_libraries(plasma-initialstart
         componentsplugin
         componentspluginplugin
 )
-install(TARGETS plasma-initialstart ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS kde-initial-system-setup ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})

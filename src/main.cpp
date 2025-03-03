@@ -8,27 +8,35 @@
 #include <QQuickStyle>
 #include <KLocalizedContext>
 #include <KLocalizedString>
+#include <KAboutData>
 #include <KPackage/PackageLoader>
 
 #include "initialstart.h"
+#include "../kiss-version.h"
 
 using namespace Qt::StringLiterals;
 
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
-    QCoreApplication::setApplicationName(QStringLiteral("InitialStart"));
+
     if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
         QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
     }
 
-    KLocalizedString::setApplicationDomain("arkade");
+    KAboutData about(QStringLiteral("tokodon"),
+                     i18n("Tokodon"),
+                     QStringLiteral(KISS_VERSION_STRING),
+                     i18n("Browse the Fediverse"),
+                     KAboutLicense::GPL_V3,
+                     i18n("© 2021-2024 KDE Community"));
+
+    KLocalizedString::setApplicationDomain("initialsystemsetup");
 
     QQmlApplicationEngine engine;
 
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
-    engine.loadFromModule("org.kde.plasma.initialstart"_L1, "Main"_L1);
+    engine.loadFromModule("org.kde.initialsystemsetup"_L1, "Main"_L1);
 
     if (engine.rootObjects().isEmpty()) {
         return -1;

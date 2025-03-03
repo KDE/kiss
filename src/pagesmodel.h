@@ -28,11 +28,11 @@ public:
 
     QHash<int, QByteArray> roleNames() const override;
 
-    Q_INVOKABLE InitialStartModule *pageItem(int row);
+    Q_INVOKABLE SetupModule *pageItem(int row);
 
 Q_SIGNALS:
     void loaded();
 
 private:
-    InitialStartModule *createGui(const QString &qmlPath);
+    SetupModule *createGui(const QString &qmlPath);
 };

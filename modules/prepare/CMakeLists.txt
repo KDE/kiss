@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
 
 ecm_add_qml_module(initialstart_prepare
-    URI "org.kde.plasma.initialstart.prepare.private"
+    URI "org.kde.initialsystemsetup.prepare.private"
     GENERATE_PLUGIN_SOURCE
 )
 

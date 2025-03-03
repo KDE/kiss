@@ -11,7 +11,7 @@
         ],
         "Version": "1"
     },
-    "X-KDE-ParentApp": "org.kde.plasma.initialstart",
-    "KPackageStructure": "Plasma/InitialStart"
+    "X-KDE-ParentApp": "org.kde.initialsystemsetup",
+    "KPackageStructure": "KDE/InitialSystemSetup"
 }
 

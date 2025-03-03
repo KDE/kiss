@@ -3,17 +3,17 @@
 
 #include "initialstartmodule.h"
 
-InitialStartModule::InitialStartModule(QObject *parent)
+SetupModule::SetupModule(QObject *parent)
     : QObject{parent}
 {
 }
 
-bool InitialStartModule::nextEnabled() const
+bool SetupModule::nextEnabled() const
 {
     return m_nextEnabled;
 }
 
-void InitialStartModule::setNextEnabled(bool nextEnabled)
+void SetupModule::setNextEnabled(bool nextEnabled)
 {
     if (m_nextEnabled == nextEnabled) {
         return;
@@ -22,12 +22,12 @@ void InitialStartModule::setNextEnabled(bool nextEnabled)
     Q_EMIT nextEnabledChanged();
 }
 
-bool InitialStartModule::available() const
+bool SetupModule::available() const
 {
     return m_available;
 }
 
-void InitialStartModule::setAvailable(bool available)
+void SetupModule::setAvailable(bool available)
 {
     if (m_available == available) {
         return;
@@ -36,12 +36,12 @@ void InitialStartModule::setAvailable(bool available)
     Q_EMIT availableChanged();
 }
 
-QQuickItem *InitialStartModule::contentItem() const
+QQuickItem *SetupModule::contentItem() const
 {
     return m_contentItem;
 }
 
-void InitialStartModule::setContentItem(QQuickItem *contentItem)
+void SetupModule::setContentItem(QQuickItem *contentItem)
 {
     if (m_contentItem == contentItem) {
         return;
@@ -50,12 +50,12 @@ void InitialStartModule::setContentItem(QQuickItem *contentItem)
     Q_EMIT contentItemChanged();
 }
 
-qreal InitialStartModule::cardWidth() const
+qreal SetupModule::cardWidth() const
 {
     return m_cardWidth;
 }
 
-void InitialStartModule::setCardsWith(qreal cardWidth)
+void SetupModule::setCardsWith(qreal cardWidth)
 {
     if (m_cardWidth == cardWidth) {
         return;
@@ -64,7 +64,7 @@ void InitialStartModule::setCardsWith(qreal cardWidth)
     Q_EMIT cardWidthChanged();
 }
 
-QQmlListProperty<QObject> InitialStartModule::children()
+QQmlListProperty<QObject> SetupModule::children()
 {
     return QQmlListProperty<QObject>(this, &m_children);
 }

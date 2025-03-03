@@ -7,8 +7,8 @@ import QtQuick.Layouts
 
 import org.kde.kirigami as Kirigami
 import org.kde.kirigamiaddons.formcard as FormCard
-import org.kde.plasma.initialstart.prepare.private as Prepare
-import org.kde.plasma.initialstart.components as InitialStartComponents
+import org.kde.initialsystemsetup.prepare.private as Prepare
+import org.kde.initialsystemsetup.components as InitialStartComponents
 import org.kde.plasma.private.mobileshell.screenbrightnessplugin as ScreenBrightness
 
 InitialStartComponents.Module {
