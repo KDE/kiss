@@ -47,8 +47,8 @@ Q_SIGNALS:
 private:
     bool m_is24HourTime;
 
-    OrgFreedesktopTimedate1Interface * const m_dbusInterface;
+    OrgFreedesktopTimedate1Interface *const m_dbusInterface;
     QString m_user;
-    TimeZoneModel * const m_timeZoneModel;
-    TimeZoneFilterProxy * const m_filterModel;
+    TimeZoneModel *const m_timeZoneModel;
+    TimeZoneFilterProxy *const m_filterModel;
 };

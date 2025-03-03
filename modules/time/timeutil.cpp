@@ -5,10 +5,10 @@
 
 #include "timedate_interface.h"
 
+#include <QDBusPendingCallWatcher>
 #include <QDebug>
 #include <QRegularExpression>
 #include <QTimeZone>
-#include <QDBusPendingCallWatcher>
 
 #include <KConfigGroup>
 #include <KSharedConfig>
@@ -20,10 +20,7 @@ static const QString format12hours = u"HH:mm:ss ap"_s;
 
 TimeUtil::TimeUtil(QObject *parent)
     : QObject{parent}
-    , m_dbusInterface(new OrgFreedesktopTimedate1Interface(u"org.freedesktop.timedate1"_s,
-                                                          u"/org/freedesktop/timedate1"_s,
-                                                     QDBusConnection::systemBus(),
-                                                          this))
+    , m_dbusInterface(new OrgFreedesktopTimedate1Interface(u"org.freedesktop.timedate1"_s, u"/org/freedesktop/timedate1"_s, QDBusConnection::systemBus(), this))
     , m_timeZoneModel{new TimeZoneModel{this}}
     , m_filterModel{new TimeZoneFilterProxy{this}}
 {
@@ -66,7 +63,7 @@ void TimeUtil::setCurrentTimeZone(const QString &timeZone)
         if (reply.isValid()) {
             Q_EMIT currentTimeZoneChanged();
         }
-     });
+    });
 }
 
 TimeZoneFilterProxy *TimeUtil::timeZones() const

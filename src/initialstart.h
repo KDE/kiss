@@ -4,8 +4,8 @@
 
 #pragma once
 
-#include <QObject>
 #include <KPackage/Package>
+#include <QObject>
 #include <qqmlintegration.h>
 
 #include "pagesmodel.h"
@@ -13,7 +13,6 @@
 class QQmlEngine;
 class QQuickItem;
 class KLocalizedContext;
-
 
 /**
  * Singleton class exposing global variables to the QML application.

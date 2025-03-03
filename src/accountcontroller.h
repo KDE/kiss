@@ -3,13 +3,13 @@
 
 #pragma once
 
-#include <QObject>
 #include <QDBusObjectPath>
+#include <QObject>
 #include <qqmlintegration.h>
 
 class OrgFreedesktopAccountsInterface;
 
-class AccountController: public QObject
+class AccountController : public QObject
 {
     Q_OBJECT
     QML_ELEMENT

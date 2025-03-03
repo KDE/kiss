@@ -3,8 +3,8 @@
 
 #include "accountcontroller.h"
 
-#include <QDebug>
 #include <QDBusObjectPath>
+#include <QDebug>
 
 #include "accounts_interface.h"
 #include "user.h"
@@ -13,10 +13,7 @@ using namespace Qt::StringLiterals;
 
 AccountController::AccountController(QObject *parent)
     : QObject(parent)
-    , m_dbusInterface(new OrgFreedesktopAccountsInterface(u"org.freedesktop.Accounts"_s,
-                                                          u"/org/freedesktop/Accounts"_s,
-                                                          QDBusConnection::systemBus(),
-                                                          this))
+    , m_dbusInterface(new OrgFreedesktopAccountsInterface(u"org.freedesktop.Accounts"_s, u"/org/freedesktop/Accounts"_s, QDBusConnection::systemBus(), this))
 {
 }
 

@@ -4,10 +4,10 @@
 #pragma once
 
 #include "initialstartmodule.h"
-#include <QQuickItem>
-#include <qqmlregistration.h>
-#include <QStandardItemModel>
 #include <KLocalizedContext>
+#include <QQuickItem>
+#include <QStandardItemModel>
+#include <qqmlregistration.h>
 
 class PagesModel : public QStandardItemModel
 {

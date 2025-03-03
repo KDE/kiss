@@ -1,18 +1,18 @@
 // SPDX-FileCopyrightText: 2025 Carl Schwan <carl@carlschwan.eu>
 // SPDX-License-Identifier: LGPL-2.0-or-later
 
+#include <KAboutData>
+#include <KLocalizedContext>
+#include <KLocalizedString>
+#include <KPackage/PackageLoader>
 #include <QApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
-#include <QUrl>
 #include <QQuickStyle>
-#include <KLocalizedContext>
-#include <KLocalizedString>
-#include <KAboutData>
-#include <KPackage/PackageLoader>
+#include <QUrl>
 
-#include "initialstart.h"
 #include "../kiss-version.h"
+#include "initialstart.h"
 
 using namespace Qt::StringLiterals;
 

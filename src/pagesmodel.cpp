@@ -6,8 +6,8 @@
 
 #include <QDebug>
 
-#include <KPackage/PackageLoader>
 #include <KLocalizedString>
+#include <KPackage/PackageLoader>
 #include <KPluginMetaData>
 
 using namespace Qt::StringLiterals;
@@ -24,7 +24,7 @@ void PagesModel::reload()
     auto packages = KPackage::PackageLoader::self()->listKPackages(QStringLiteral("KDE/InitialSystemSetup"));
 
     std::ranges::sort(packages, [](const KPackage::Package &left, const KPackage::Package &right) {
-        const auto leftData = left.metadata().rawData() ;
+        const auto leftData = left.metadata().rawData();
         const auto rightData = right.metadata().rawData();
         return leftData["X-KDE-Weight"_L1].toInt() < rightData["X-KDE-Weight"_L1].toInt();
     });
