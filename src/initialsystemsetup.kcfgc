@@ -1,4 +1,0 @@
-File=org.kde.initialsystemsetup.kcfg
-ClassName=Config
-Mutators=true
-DefaultValueGetters=true
