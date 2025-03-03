@@ -13,30 +13,9 @@ Kirigami.AbstractApplicationWindow {
 
     title: i18n("Initial Start")
 
-    visibility: "Windowed"
+    visibility: Window.FullScreen
 
     Wizard {
         anchors.fill: parent
     }
-
-
-    /*ColumnLayout {
-        spacing: 0
-        anchors.fill: parent
-
-        Controls.ToolBar {
-            Layout.fillWidth: true
-
-            contentItem: Kirigami.Heading {
-                text: root.title
-            }
-        }
-
-        Controls.StackView {
-            id: stackView
-
-            Layout.fillWidth: true
-            Layout.fillHeight: true
-        }
-    }*/
 }

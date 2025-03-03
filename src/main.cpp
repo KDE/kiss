@@ -5,7 +5,7 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QUrl>
-#include <QDebug>
+#include <QQuickStyle>
 #include <KLocalizedContext>
 #include <KLocalizedString>
 #include <KPackage/PackageLoader>
@@ -19,6 +19,9 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
     QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
     QCoreApplication::setApplicationName(QStringLiteral("InitialStart"));
+    if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
+        QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
+    }
 
     KLocalizedString::setApplicationDomain("arkade");
 
