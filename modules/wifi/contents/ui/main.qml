@@ -84,8 +84,6 @@ InitialStartComponents.Module {
                 id: connectedRepeater
                 model: mobileProxyModel
                 delegate: ConnectionItemDelegate {
-                    editMode: false
-
                     // connected or saved
                     property bool shouldDisplay: (Uuid != "") || ConnectionState === PlasmaNM.Enums.Activated
                     onShouldDisplayChanged: savedCard.updateCount()
@@ -115,7 +113,6 @@ InitialStartComponents.Module {
 
                     delegate: ConnectionItemDelegate {
                         width: ListView.view.width
-                        editMode: false
                         height: visible ? implicitHeight : 0
                         visible: !((Uuid != "") || ConnectionState === PlasmaNM.Enums.Activated)
                     }

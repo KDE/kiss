@@ -15,7 +15,6 @@ import org.kde.kirigamiaddons.formcard 1 as FormCard
 FormCard.AbstractFormDelegate {
     id: root
 
-    property bool editMode
     property var map : []
     property bool predictableWirelessPassword: !Uuid && Type == PlasmaNM.Enums.Wireless &&
                                                     (SecurityType == PlasmaNM.Enums.StaticWep ||
@@ -72,36 +71,6 @@ FormCard.AbstractFormDelegate {
                 implicitWidth: 0
                 icon.name: 'network-connect'
                 enabled: false
-            }
-            Controls.ToolButton {
-                icon.name: "network-connect"
-                text: i18n('Connect')
-                visible: ConnectionState != PlasmaNM.Enums.Activated && root.editMode
-                display: Controls.ToolButton.IconOnly
-                onClicked: changeState()
-            }
-            Controls.ToolButton {
-                icon.name: "network-disconnect"
-                text: i18n('Disconnect')
-                visible: ConnectionState == PlasmaNM.Enums.Activated && root.editMode
-                display: Controls.ToolButton.IconOnly
-                onClicked: handler.deactivateConnection(ConnectionPath, DevicePath)
-            }
-            Controls.ToolButton {
-                icon.name: "configure"
-                text: i18n('Configure')
-                visible: (Uuid != "") && root.editMode
-                display: Controls.ToolButton.IconOnly
-                onClicked: {
-                    kcm.push("NetworkSettings.qml", {path: ConnectionPath})
-                }
-            }
-            Controls.ToolButton {
-                icon.name: "entry-delete"
-                text: i18n('Delete')
-                visible: (Uuid != "") && root.editMode
-                display: Controls.ToolButton.IconOnly
-                onClicked: handler.removeConnection(ConnectionPath)
             }
         }
     }
