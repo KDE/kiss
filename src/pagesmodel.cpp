@@ -2,11 +2,7 @@
 // SPDX-License-Identifier: LGPL-2.0-or-later
 
 #include "pagesmodel.h"
-#include "initialstartmodule.h"
 
-#include <QDebug>
-
-#include <KLocalizedString>
 #include <KPackage/PackageLoader>
 #include <KPluginMetaData>
 

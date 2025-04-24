@@ -11,7 +11,7 @@
 class SetupModule : public QObject
 {
     Q_OBJECT
-    QML_NAMED_ELEMENT(Module)
+    QML_ELEMENT
 
     Q_PROPERTY(bool available READ available WRITE setAvailable NOTIFY availableChanged)
     Q_PROPERTY(qreal cardWidth READ cardWidth WRITE setCardsWith NOTIFY cardWidthChanged)

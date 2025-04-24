@@ -3,11 +3,11 @@
 
 #pragma once
 
-#include "initialstartmodule.h"
-#include <KLocalizedContext>
 #include <QQuickItem>
 #include <QStandardItemModel>
 #include <qqmlregistration.h>
+
+#include "setupmodule.h"
 
 class PagesModel : public QStandardItemModel
 {

@@ -7,7 +7,7 @@ import QtQuick.Layouts
 
 import org.kde.kirigami as Kirigami
 import org.kde.initialsystemsetup
-import org.kde.initialsystemsetup.components as InitialStartComponents
+import org.kde.initialsystemsetup.components as KissComponents
 
 Kirigami.Page {
     id: root
@@ -25,7 +25,7 @@ Kirigami.Page {
     property Control currentStepItem: null
     property Control nextStepItem: null
     property Control previousStepItem: null
-    property InitialStartComponents.Module currentModule: null
+    property KissComponents.SetupModule currentModule: null
 
     readonly property bool onFinalPage: currentIndex === (stepCount - 1)
 
@@ -254,7 +254,7 @@ Kirigami.Page {
 
                             // pass up the property
                             property int currentIndex: index
-                            readonly property InitialStartComponents.Module module: pagesModel.pageItem(index)
+                            readonly property KissComponents.SetupModule module: pagesModel.pageItem(index)
 
                             visible: index === 0 // the binding is broken later
                             contentItem: module.contentItem

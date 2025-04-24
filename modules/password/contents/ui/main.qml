@@ -10,11 +10,11 @@ import QtCore as Core
 import org.kde.kirigami as Kirigami
 import org.kde.kirigamiaddons.formcard as FormCard
 import org.kde.kirigamiaddons.components as KirigamiComponents
-import org.kde.initialsystemsetup.components as InitialStartComponents
+import org.kde.initialsystemsetup.components as KissComponents
 
 import org.kde.initialsystemsetup
 
-InitialStartComponents.Module {
+KissComponents.SetupModule {
     id: root
 
     nextEnabled: paswordField.text.length > 0 && repeatField.text === paswordField.text

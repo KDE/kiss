@@ -12,7 +12,6 @@
 #include <QUrl>
 
 #include "../kiss-version.h"
-#include "initialstart.h"
 
 using namespace Qt::StringLiterals;
 

@@ -21,8 +21,8 @@ add_executable(kde-initial-system-setup
     main.cpp
     pagesmodel.cpp
     pagesmodel.h
-    initialstart.cpp
-    initialstart.h
+    controller.cpp
+    controller.h
     accountcontroller.cpp
     accountcontroller.h
     user.cpp

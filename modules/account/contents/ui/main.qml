@@ -12,9 +12,9 @@ import org.kde.kirigamiaddons.formcard as FormCard
 import org.kde.kirigamiaddons.components as KirigamiComponents
 
 import org.kde.initialsystemsetup
-import org.kde.initialsystemsetup.components as InitialStartComponents
+import org.kde.initialsystemsetup.components as KissComponents
 
-InitialStartComponents.Module {
+KissComponents.SetupModule {
     id: root
 
     nextEnabled: usernameField.text.length > 0

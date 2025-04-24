@@ -1,14 +1,14 @@
 // SPDX-FileCopyrightText: 2025 Carl Schwan <carl@carlschwan.eu>
 // SPDX-License-Identifier: LGPL-2.0-or-later
 
-#include "initialstart.h"
+#include "controller.h"
 
-InitialStart::InitialStart(QObject *parent)
+Controller::Controller(QObject *parent)
     : QObject(parent)
 {
 }
 
-void InitialStart::setUsername(const QString &username)
+void Controller::setUsername(const QString &username)
 {
     if (m_username == username) {
         return;
@@ -17,9 +17,9 @@ void InitialStart::setUsername(const QString &username)
     Q_EMIT usernameChanged();
 }
 
-QString InitialStart::username() const
+QString Controller::username() const
 {
     return m_username;
 }
 
-#include "moc_initialstart.cpp"
+#include "moc_controller.cpp"

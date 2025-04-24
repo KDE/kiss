@@ -9,9 +9,9 @@ import org.kde.kirigami as Kirigami
 import org.kde.kirigamiaddons.formcard as FormCard
 import org.kde.plasma.mm as PlasmaMM
 
-import org.kde.initialsystemsetup.components as InitialStartComponents
+import org.kde.initialsystemsetup.components as KissComponents
 
-InitialStartComponents.Module {
+KissComponents.SetupModule {
     id: root
 
     available: PlasmaMM.SignalIndicator.modemAvailable

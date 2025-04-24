@@ -1,7 +1,7 @@
 // SPDX-FileCopyrightText: 2024 Devin Lin <devin@kde.org>
 // SPDX-License-Identifier: LGPL-2.0-or-later
 
-#include "initialstartmodule.h"
+#include "setupmodule.h"
 
 SetupModule::SetupModule(QObject *parent)
     : QObject{parent}

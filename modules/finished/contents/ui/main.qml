@@ -7,10 +7,10 @@ import QtQuick.Layouts
 
 import org.kde.kirigami as Kirigami
 
-import org.kde.initialsystemsetup.components as InitialStartComponents
+import org.kde.initialsystemsetup.components as KissComponents
 import org.kde.initialsystemsetup
 
-InitialStartComponents.Module {
+KissComponents.SetupModule {
     id: root
 
     nextEnabled: true

@@ -8,10 +8,10 @@ import QtQuick.Layouts
 import org.kde.kirigami as Kirigami
 import org.kde.kirigamiaddons.formcard as FormCard
 import org.kde.initialsystemsetup.prepare.private as Prepare
-import org.kde.initialsystemsetup.components as InitialStartComponents
+import org.kde.initialsystemsetup.components as KissComponents
 import org.kde.plasma.private.mobileshell.screenbrightnessplugin as ScreenBrightness
 
-InitialStartComponents.Module {
+KissComponents.SetupModule {
     id: root
 
     cardWidth: Math.min(Kirigami.Units.gridUnit * 30, root.contentItem.width - Kirigami.Units.gridUnit * 2)

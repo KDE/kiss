@@ -9,9 +9,9 @@ import org.kde.kirigami as Kirigami
 import org.kde.kirigamiaddons.formcard as FormCard
 import org.kde.initialsystemsetup.time.private as Time
 
-import org.kde.initialsystemsetup.components as InitialStartComponents
+import org.kde.initialsystemsetup.components as KissComponents
 
-InitialStartComponents.Module {
+KissComponents.SetupModule {
     id: root
 
     contentItem: ColumnLayout {
