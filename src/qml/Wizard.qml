@@ -240,7 +240,7 @@ Kirigami.Page {
                     Layout.minimumHeight: stepsRepeater.itemAt(root.currentIndex)?.implicitHeight ?? 0
                     Layout.fillHeight: Kirigami.Settings.isMobile
 
-                    // setup stepsorg.kde.initialsystemsetup.prepare.private
+                    // setup steps
                     Repeater {
                         id: stepsRepeater
 
