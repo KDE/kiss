@@ -9,7 +9,6 @@ ecm_add_qml_module(initialstart_prepare
 kconfig_add_kcfg_files(initialstart_prepare colorssettings.kcfgc GENERATE_MOC)
 
 target_sources(initialstart_prepare PRIVATE
-    ${prepareplugin_SRCS}
     prepareutil.cpp
     prepareutil.h
 )
