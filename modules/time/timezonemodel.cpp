@@ -28,13 +28,13 @@ bool TimeZoneFilterProxy::filterAcceptsRow(int source_row, const QModelIndex &so
 
 void TimeZoneFilterProxy::setFilterString(const QString &filterString)
 {
-#if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)
+#if QT_VERSION >= QT_VERSION_CHECK(6, 10, 0)
     beginFilterChange();
 #endif
     m_filterString = filterString;
     m_stringMatcher.setPattern(filterString);
     Q_EMIT filterStringChanged();
-#if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)
+#if QT_VERSION >= QT_VERSION_CHECK(6, 10, 0)
     endFilterChange();
 #else
     invalidateFilter();
