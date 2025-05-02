@@ -9,7 +9,7 @@ import org.kde.kirigami as Kirigami
 import org.kde.kirigamiaddons.formcard as FormCard
 import org.kde.initialsystemsetup.prepare.private as Prepare
 import org.kde.initialsystemsetup.components as KissComponents
-import org.kde.plasma.private.mobileshell.screenbrightnessplugin as ScreenBrightness
+import org.kde.initialsystemsetup.screenbrightnessplugin as ScreenBrightness
 
 KissComponents.SetupModule {
     id: root

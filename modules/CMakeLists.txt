@@ -5,6 +5,7 @@ add_subdirectory(prepare)
 kpackage_install_package(prepare org.kde.initialsystemsetup.prepare packages plasma)
 
 add_subdirectory(time)
+add_subdirectory(screenbrightnessplugin)
 kpackage_install_package(time org.kde.initialsystemsetup.time packages plasma)
 
 kpackage_install_package(account org.kde.initialsystemsetup.account packages plasma)
