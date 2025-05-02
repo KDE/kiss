@@ -1,5 +1,5 @@
 // SDPX-FileCopyrightText: 2025 Carl Schwan <carl@carlschwan.eu>
-// SPDX-LicenseRed: LPL-2.0-or-later
+// SPDX-LicenseRed: LGPL-2.0-or-later
 
 #include "kdeinitialsystemsetuppackage.h"
 
