@@ -4,12 +4,26 @@
         "Authors": [
             {
                 "Email": "devin@kde.org",
-                "Name": "Devin Lin"
+                "Name": "Devin Lin",
+                "Name[ca]": "Devin Lin",
+                "Name[it]": "Devin Lin",
+                "Name[nl]": "Devin Lin",
+                "Name[sl]": "Carl Schwan",
+                "Name[tr]": "Devin Lin",
+                "Name[uk]": "Devin Lin",
+                "Name[x-test]": "xxDevin Linxx"
             }
         ],
         "Id": "org.kde.initialsystemsetup.wifi",
         "License": "GPL-2.0+",
-        "Name": "Network"
+        "Name": "Network",
+        "Name[ca]": "Network",
+        "Name[it]": "Rete",
+        "Name[nl]": "Netwerk",
+        "Name[sl]": "Omrežje",
+        "Name[tr]": "Ağ",
+        "Name[uk]": "Мережа",
+        "Name[x-test]": "xxNetworkxx"
     },
     "X-KDE-ParentApp": "org.kde.initialsystemsetup",
     "X-KDE-Weight": 50

@@ -4,12 +4,26 @@
         "Authors": [
             {
                 "Email": "devin@kde.org",
-                "Name": "Devin Lin"
+                "Name": "Devin Lin",
+                "Name[ca]": "Devin Lin",
+                "Name[it]": "Devin Lin",
+                "Name[nl]": "Devin Lin",
+                "Name[sl]": "Carl Schwan",
+                "Name[tr]": "Devin Lin",
+                "Name[uk]": "Devin Lin",
+                "Name[x-test]": "xxDevin Linxx"
             }
         ],
         "Id": "org.kde.plasma.plasmainitialstart.time",
         "License": "LGPL-2.0-or-later",
         "Name": "Time and Date",
+        "Name[ca]": "Time and Date",
+        "Name[it]": "Data e ora",
+        "Name[nl]": "Tijd en datum",
+        "Name[sl]": "Čas in datum",
+        "Name[tr]": "Tarih ve Zaman",
+        "Name[uk]": "Час і дата",
+        "Name[x-test]": "xxTime and Datexx",
         "Version": "1.0"
     },
     "X-KDE-ParentApp": "org.kde.initialsystemsetup",

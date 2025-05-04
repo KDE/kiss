@@ -4,12 +4,26 @@
         "Authors": [
             {
                 "Email": "devin@kde.org",
-                "Name": "Devin Lin"
+                "Name": "Devin Lin",
+                "Name[ca]": "Devin Lin",
+                "Name[it]": "Devin Lin",
+                "Name[nl]": "Devin Lin",
+                "Name[sl]": "Carl Schwan",
+                "Name[tr]": "Devin Lin",
+                "Name[uk]": "Devin Lin",
+                "Name[x-test]": "xxDevin Linxx"
             }
         ],
         "Id": "org.kde.plasma.plasmainitialstart.finished",
         "License": "LGPL-2.0-or-later",
         "Name": "Completed!",
+        "Name[ca]": "Completat!",
+        "Name[it]": "Completato!",
+        "Name[nl]": "Voltooid!",
+        "Name[sl]": "Končano!",
+        "Name[tr]": "Tamamlandı!",
+        "Name[uk]": "Завершено!",
+        "Name[x-test]": "xxCompleted!xx",
         "Version": "1.0"
     },
     "X-KDE-ParentApp": "org.kde.initialsystemsetup",

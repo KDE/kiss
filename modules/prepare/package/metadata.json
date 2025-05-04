@@ -4,12 +4,26 @@
         "Authors": [
             {
                 "Email": "devin@kde.org",
-                "Name": "Devin Lin"
+                "Name": "Devin Lin",
+                "Name[ca]": "Devin Lin",
+                "Name[it]": "Devin Lin",
+                "Name[nl]": "Devin Lin",
+                "Name[sl]": "Carl Schwan",
+                "Name[tr]": "Devin Lin",
+                "Name[uk]": "Devin Lin",
+                "Name[x-test]": "xxDevin Linxx"
             }
         ],
         "Id": "org.kde.plasma.mobileinitialstart.prepare",
         "License": "GPL-2.0+",
         "Name": "Prepare",
+        "Name[ca]": "Prepara",
+        "Name[it]": "Prepara",
+        "Name[nl]": "Voorbereiden",
+        "Name[sl]": "Pripravi",
+        "Name[tr]": "Hazırlan",
+        "Name[uk]": "Приготування",
+        "Name[x-test]": "xxPreparexx",
         "Website": "https://kde.org"
     }
 }

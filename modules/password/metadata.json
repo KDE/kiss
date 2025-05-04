@@ -4,12 +4,26 @@
         "Authors": [
             {
                 "Email": "carl@carlschwan.eu",
-                "Name": "Carl Schwan"
+                "Name": "Carl Schwan",
+                "Name[ca]": "Carl Schwan",
+                "Name[it]": "Carl Schwan",
+                "Name[nl]": "Carl Schwan",
+                "Name[sl]": "Carl Schwan",
+                "Name[tr]": "Carl Schwan",
+                "Name[uk]": "Carl Schwan",
+                "Name[x-test]": "xxCarl Schwanxx"
             }
         ],
         "Id": "org.kde.plasma.plasmainitialstart.password",
         "License": "LGPL-2.0-or-later",
         "Name": "Set a Password",
+        "Name[ca]": "Estableix una contrasenya",
+        "Name[it]": "Imposta una password",
+        "Name[nl]": "Zet een wachtwoord",
+        "Name[sl]": "Nastavi geslo",
+        "Name[tr]": "Parola Ayarla",
+        "Name[uk]": "Вказати пароль",
+        "Name[x-test]": "xxSet a Passwordxx",
         "Version": "1.0"
     },
     "X-KDE-ParentApp": "org.kde.initialsystemsetup",
