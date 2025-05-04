@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the kiss package.
-# SPDX-FileCopyrightText: 2024 Valter Mura <valtermura@gmail.com>
+# SPDX-FileCopyrightText: 2024, 2025 Valter Mura <valtermura@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-03 01:55+0000\n"
-"PO-Revision-Date: 2024-08-17 21:38+0200\n"
+"PO-Revision-Date: 2025-05-03 22:14+0200\n"
 "Last-Translator: Valter Mura <valtermura@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -15,118 +15,117 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Valter Mura"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "valtermura@gmail.com"
 
 #: modules/account/contents/ui/main.qml:63
 #, kde-format
 msgid "Upload new avatar"
-msgstr ""
+msgstr "Carica nuovo avatar"
 
 #: modules/account/contents/ui/main.qml:80
 #, kde-format
 msgid "Remove current avatar"
-msgstr ""
+msgstr "Rimuovi avatar attuale"
 
 #: modules/account/contents/ui/main.qml:106
 #, kde-format
 msgid "We need a few details to complete the setup."
-msgstr ""
+msgstr "Sono necessari alcuni dettagli per completare la configurazione."
 
 #: modules/account/contents/ui/main.qml:119
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Full Name"
-msgstr ""
+msgstr "Nome completo"
 
 #: modules/account/contents/ui/main.qml:140
-#, fuzzy, kde-format
-#| msgid "Username:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Username"
-msgstr "Nome utente:"
+msgstr "Nome utente"
 
 #: modules/account/contents/ui/main.qml:150
 #, kde-format
 msgctxt "@info"
 msgid "This will be used to name your home folder and can't be changed."
 msgstr ""
+"Sarà utilizzato per nominare la tua cartella principale e non può essere "
+"cambiato."
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:14
 #, kde-format
 msgid "Edit APN"
-msgstr ""
+msgstr "Modifica APN"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:38
 #, kde-format
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:43
 #, kde-format
 msgid "APN"
-msgstr ""
+msgstr "APN"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:48
-#, fuzzy, kde-format
-#| msgid "Username:"
+#, kde-format
 msgid "Username"
-msgstr "Nome utente:"
+msgstr "Nome utente"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:53
-#, fuzzy, kde-format
-#| msgid "Password:"
+#, kde-format
 msgid "Password"
-msgstr "Password:"
+msgstr "Password"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:58
 #, kde-format
 msgid "Network type"
-msgstr ""
+msgstr "Tipo di rete"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "4G/3G/2G"
-msgstr ""
+msgstr "4G/3G/2G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "3G/2G"
-msgstr ""
+msgstr "3G/2G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "2G"
-msgstr ""
+msgstr "2G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 4G"
-msgstr ""
+msgstr "Solo 4G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 3G"
-msgstr ""
+msgstr "Solo 3G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 2G"
-msgstr ""
+msgstr "Solo 2G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Any"
-msgstr ""
+msgstr "Qualsiasi"
 
 #: modules/cellular/contents/ui/main.qml:45
 #, kde-format
@@ -134,112 +133,114 @@ msgid ""
 "Please configure your APN below for mobile data, further information will be "
 "available with your carrier."
 msgstr ""
+"Configura la tua APN sotto per i dati mobili, ulteriori informazioni saranno "
+"disponibili col tuo fornitore di telefonia mobile."
 
 #: modules/cellular/contents/ui/main.qml:47
 #, kde-format
 msgid "You are connected to the mobile network."
-msgstr ""
+msgstr "Sei connesso alla rete mobile."
 
 #: modules/cellular/contents/ui/main.qml:49
 #, kde-format
 msgid "Please insert a SIM card into your device."
-msgstr ""
+msgstr "Inserisci una carta SIM nel tuo dispositivo."
 
 #: modules/cellular/contents/ui/main.qml:51
 #, kde-format
 msgid "Your device does not have a modem available."
-msgstr ""
+msgstr "Il tuo dispositivo non dispone di un modem."
 
 #: modules/cellular/contents/ui/main.qml:63
 #, kde-format
 msgid "Mobile Data"
-msgstr ""
+msgstr "Dati mobili"
 
 #: modules/cellular/contents/ui/main.qml:109
 #, kde-format
 msgid "Edit"
-msgstr ""
+msgstr "Modifica"
 
 #: modules/cellular/contents/ui/main.qml:117
 #, kde-format
 msgid "Delete"
-msgstr ""
+msgstr "Elimina"
 
 #: modules/cellular/contents/ui/main.qml:127
 #, kde-format
 msgid "Add APN"
-msgstr ""
+msgstr "Aggiungi APN"
 
 #: modules/finished/contents/ui/main.qml:25
 #, kde-format
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
-msgstr ""
+msgstr "Il tuo dispositivo è pronto. <br /><br />Divertiti con <b>%1</b>!"
 
 #: modules/password/contents/ui/main.qml:33
 #, kde-format
 msgid "Be careful not to lose your password."
-msgstr ""
+msgstr "Fai attenzione a non perdere la password."
 
 #: modules/password/contents/ui/main.qml:46
-#, fuzzy, kde-format
-#| msgid "Password:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Password"
-msgstr "Password:"
+msgstr "Password"
 
 #: modules/password/contents/ui/main.qml:57
-#, fuzzy, kde-format
-#| msgid "Password:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Confirm Password"
-msgstr "Password:"
+msgstr "Conferma password"
 
 #: modules/password/contents/ui/main.qml:58
 #, kde-format
 msgctxt "@info:status"
 msgid "The passwords do not match."
-msgstr ""
+msgstr "Le password non corrispondono."
 
 #: modules/prepare/contents/ui/main.qml:42
 #, kde-format
 msgid ""
 "Adjust the screen brightness to be comfortable for the installation process."
 msgstr ""
+"Regola la luminosità dello schermo in modo da risultare comoda per il "
+"processo di installazione."
 
 #: modules/prepare/contents/ui/main.qml:100
 #, kde-format
 msgid "Adjust the size of elements on the screen."
-msgstr ""
+msgstr "Regola la dimensione degli elementi sullo schermo."
 
 #: modules/prepare/contents/ui/main.qml:111
 #, kde-format
 msgid "Display Scaling"
-msgstr ""
+msgstr "Risoluzione di visualizzazione"
 
 #: modules/prepare/contents/ui/main.qml:129
 #, kde-format
 msgid "Dark Theme"
-msgstr ""
+msgstr "Tema scuro"
 
 #: modules/time/contents/ui/main.qml:28
 #, kde-format
 msgid "Select your time zone and preferred time format."
-msgstr ""
+msgstr "Seleziona il tuo fuso orario e il formato ora preferito."
 
 #: modules/time/contents/ui/main.qml:39
 #, kde-format
 msgid "24-Hour Format"
-msgstr ""
+msgstr "Formato 24 ore"
 
 #: modules/wifi/contents/ui/ConnectionItemDelegate.qml:94
 #, kde-format
 msgid "Connect to"
-msgstr ""
+msgstr "Connetti a"
 
 #: modules/wifi/contents/ui/main.qml:64
 #, kde-format
 msgid "Connect to a WiFi network for network access."
-msgstr ""
+msgstr "Connettiti a una rete WiFi per l'accesso di rete."
 
 #: modules/wifi/contents/ui/PasswordField.qml:14
 #, kde-format
@@ -249,37 +250,37 @@ msgstr "Password:"
 #: modules/wifi/contents/ui/PasswordField.qml:26
 #, kde-format
 msgid "Invalid input."
-msgstr ""
+msgstr "Digitazione non valida."
 
 #: src/main.cpp:27
 #, kde-format
 msgid "Tokodon"
-msgstr ""
+msgstr "Tokodon"
 
 #: src/main.cpp:29
 #, kde-format
 msgid "Browse the Fediverse"
-msgstr ""
+msgstr "Naviga nel Fediverso"
 
 #: src/main.cpp:31
 #, kde-format
 msgid "© 2021-2024 KDE Community"
-msgstr ""
+msgstr "© 2021-2024 La Comunità di KDE"
 
 #: src/qml/LandingComponent.qml:103
 #, kde-format
 msgid "Welcome to<br/><b>Plasma Mobile</b>"
-msgstr ""
+msgstr "Benvenuto in<br/><b>Plasma Mobile</b>"
 
 #: src/qml/LandingComponent.qml:103
 #, kde-format
 msgid "Welcome to<br/><b>Plasma Desktop</b>"
-msgstr ""
+msgstr "Benvenuto in<br/><b>Plasma Desktop</b>"
 
 #: src/qml/LandingComponent.qml:128
 #, kde-format
 msgid "Powered by<br/><b>%1</b>"
-msgstr ""
+msgstr "Fornito da<br/><b>%1</b>"
 
 #: src/qml/LandingComponent.qml:152
 #, kde-format
@@ -289,17 +290,16 @@ msgstr "Successivo"
 #: src/qml/Main.qml:14
 #, kde-format
 msgid "Initial Start"
-msgstr ""
+msgstr "Avvio iniziale"
 
 #: src/qml/Wizard.qml:330
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
-msgstr ""
+msgstr "Indietro"
 
 #: src/qml/Wizard.qml:351
-#, fuzzy, kde-format
-#| msgid "Next"
+#, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Successivo"
@@ -308,33 +308,37 @@ msgstr "Successivo"
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"
-msgstr ""
+msgstr "Fine"
 
 #: src/user.cpp:123
 #, kde-format
 msgctxt "@info"
 msgid "Failed to crop image: %1"
-msgstr ""
+msgstr "Ritaglio dell'immagine non riuscito: %1"
 
 #: src/user.cpp:304
 #, kde-format
 msgid "Could not get permission to save user %1"
-msgstr ""
+msgstr "Impossibile ottenere i permessi per salvare l'utente %1"
 
 #: src/user.cpp:309
 #, kde-format
 msgid "There was an error while saving changes"
-msgstr ""
+msgstr "Si è verificato un errore durante il salvataggio delle modifiche"
 
 #: src/user.cpp:410
 #, kde-format
 msgid "Failed to resize image: opening temp file failed"
 msgstr ""
+"Ridimensionamento immagine non riuscito: impossibile aprire il file "
+"temporaneo"
 
 #: src/user.cpp:418
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
+"Ridimensionamento immagine non riuscito: impossibile scrivere nel file "
+"temporaneo"
 
 #~ msgid "Previous"
 #~ msgstr "Precedente"

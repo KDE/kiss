@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the kiss package.
 #
-# SPDX-FileCopyrightText: 2024 Yaron Shahrabani <sh.yaron@gmail.com>
+# SPDX-FileCopyrightText: 2024, 2025 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-03 01:55+0000\n"
-"PO-Revision-Date: 2024-10-10 09:03+0300\n"
+"PO-Revision-Date: 2025-05-03 16:07+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -15,118 +15,115 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.08.1\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "צוות התרגום של KDE ישראל"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "kde-l10n-he@kde.org"
 
 #: modules/account/contents/ui/main.qml:63
 #, kde-format
 msgid "Upload new avatar"
-msgstr ""
+msgstr "העלאת תמונה ייצוגית חדשה"
 
 #: modules/account/contents/ui/main.qml:80
 #, kde-format
 msgid "Remove current avatar"
-msgstr ""
+msgstr "הסרת התמונה הייצוגית הנוכחית"
 
 #: modules/account/contents/ui/main.qml:106
 #, kde-format
 msgid "We need a few details to complete the setup."
-msgstr ""
+msgstr "יש להוסיף כמה פרטים כדי להשלים את ההקמה."
 
 #: modules/account/contents/ui/main.qml:119
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Full Name"
-msgstr ""
+msgstr "שם מלא"
 
 #: modules/account/contents/ui/main.qml:140
-#, fuzzy, kde-format
-#| msgid "Username:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Username"
-msgstr "שם משתמש:"
+msgstr "שם משתמש"
 
 #: modules/account/contents/ui/main.qml:150
 #, kde-format
 msgctxt "@info"
 msgid "This will be used to name your home folder and can't be changed."
-msgstr ""
+msgstr "השם הזה ישמש כשם תיקיית הבית שלך ואי אפשר לשנות אותו."
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:14
 #, kde-format
 msgid "Edit APN"
-msgstr ""
+msgstr "עריכת נקודת גישה (APN)"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:38
 #, kde-format
 msgid "Name"
-msgstr ""
+msgstr "שם"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:43
 #, kde-format
 msgid "APN"
-msgstr ""
+msgstr "נקודת גישה (APN)"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:48
-#, fuzzy, kde-format
-#| msgid "Username:"
+#, kde-format
 msgid "Username"
-msgstr "שם משתמש:"
+msgstr "שם משתמש"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:53
-#, fuzzy, kde-format
-#| msgid "Password:"
+#, kde-format
 msgid "Password"
-msgstr "סיסמה:"
+msgstr "סיסמה"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:58
 #, kde-format
 msgid "Network type"
-msgstr ""
+msgstr "סוג רשת"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "4G/3G/2G"
-msgstr ""
+msgstr "דור 4/3/2"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "3G/2G"
-msgstr ""
+msgstr "דור 3/2"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "2G"
-msgstr ""
+msgstr "דור 2"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 4G"
-msgstr ""
+msgstr "דור 4 בלבד"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 3G"
-msgstr ""
+msgstr "דור 3 בלבד"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 2G"
-msgstr ""
+msgstr "דור 2 בלבד"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Any"
-msgstr ""
+msgstr "כלשהו"
 
 #: modules/cellular/contents/ui/main.qml:45
 #, kde-format
@@ -134,112 +131,112 @@ msgid ""
 "Please configure your APN below for mobile data, further information will be "
 "available with your carrier."
 msgstr ""
+"נא להגדיר את נקודת הגישה (APN) שלך להלן לטובת חיבור סלולרי, פרטים נוספים "
+"יהיו זמינים מול ספק התקשורת שלך."
 
 #: modules/cellular/contents/ui/main.qml:47
 #, kde-format
 msgid "You are connected to the mobile network."
-msgstr ""
+msgstr "התחברת לרשת נתונים סלולרית."
 
 #: modules/cellular/contents/ui/main.qml:49
 #, kde-format
 msgid "Please insert a SIM card into your device."
-msgstr ""
+msgstr "נא להכניס כרטיס SIM לתוך המכשיר שלך."
 
 #: modules/cellular/contents/ui/main.qml:51
 #, kde-format
 msgid "Your device does not have a modem available."
-msgstr ""
+msgstr "למכשיר שלך אין מודם זמין."
 
 #: modules/cellular/contents/ui/main.qml:63
 #, kde-format
 msgid "Mobile Data"
-msgstr ""
+msgstr "פס רחב סלולרי"
 
 #: modules/cellular/contents/ui/main.qml:109
 #, kde-format
 msgid "Edit"
-msgstr ""
+msgstr "עריכה"
 
 #: modules/cellular/contents/ui/main.qml:117
 #, kde-format
 msgid "Delete"
-msgstr ""
+msgstr "מחיקה"
 
 #: modules/cellular/contents/ui/main.qml:127
 #, kde-format
 msgid "Add APN"
-msgstr ""
+msgstr "הוספת נקודת גישה (APN)"
 
 #: modules/finished/contents/ui/main.qml:25
 #, kde-format
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
-msgstr ""
+msgstr "המכשיר שלך מוכן כעת. <br /><br />בהצלחה <b>%1</b>!"
 
 #: modules/password/contents/ui/main.qml:33
 #, kde-format
 msgid "Be careful not to lose your password."
-msgstr ""
+msgstr "חשוב לא לאבד את הסיסמה שלך."
 
 #: modules/password/contents/ui/main.qml:46
-#, fuzzy, kde-format
-#| msgid "Password:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Password"
-msgstr "סיסמה:"
+msgstr "סיסמה"
 
 #: modules/password/contents/ui/main.qml:57
-#, fuzzy, kde-format
-#| msgid "Password:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Confirm Password"
-msgstr "סיסמה:"
+msgstr "אימות הסיסמה"
 
 #: modules/password/contents/ui/main.qml:58
 #, kde-format
 msgctxt "@info:status"
 msgid "The passwords do not match."
-msgstr ""
+msgstr "הסיסמאות לא תואמות."
 
 #: modules/prepare/contents/ui/main.qml:42
 #, kde-format
 msgid ""
 "Adjust the screen brightness to be comfortable for the installation process."
-msgstr ""
+msgstr "אפשר לכוון את בהירות המסך לנוחות מרבית בתהליך ההתקנה."
 
 #: modules/prepare/contents/ui/main.qml:100
 #, kde-format
 msgid "Adjust the size of elements on the screen."
-msgstr ""
+msgstr "אפשר לכוון את גודל הרכיבים שעל המסך."
 
 #: modules/prepare/contents/ui/main.qml:111
 #, kde-format
 msgid "Display Scaling"
-msgstr ""
+msgstr "קנה מידה לתצוגה"
 
 #: modules/prepare/contents/ui/main.qml:129
 #, kde-format
 msgid "Dark Theme"
-msgstr ""
+msgstr "ערכת עיצוב כהה"
 
 #: modules/time/contents/ui/main.qml:28
 #, kde-format
 msgid "Select your time zone and preferred time format."
-msgstr ""
+msgstr "נא לבחור את אזור הזמן ואת תבנית השעה המועדפת עליך."
 
 #: modules/time/contents/ui/main.qml:39
 #, kde-format
 msgid "24-Hour Format"
-msgstr ""
+msgstr "תבנית 24 שעות"
 
 #: modules/wifi/contents/ui/ConnectionItemDelegate.qml:94
 #, kde-format
 msgid "Connect to"
-msgstr ""
+msgstr "להתחבר אל"
 
 #: modules/wifi/contents/ui/main.qml:64
 #, kde-format
 msgid "Connect to a WiFi network for network access."
-msgstr ""
+msgstr "אפשר להתחבר לרשת אלחוטית כדי לגשת לאינטרנט."
 
 #: modules/wifi/contents/ui/PasswordField.qml:14
 #, kde-format
@@ -249,37 +246,37 @@ msgstr "סיסמה:"
 #: modules/wifi/contents/ui/PasswordField.qml:26
 #, kde-format
 msgid "Invalid input."
-msgstr ""
+msgstr "קלט שגוי."
 
 #: src/main.cpp:27
 #, kde-format
 msgid "Tokodon"
-msgstr ""
+msgstr "Tokodon"
 
 #: src/main.cpp:29
 #, kde-format
 msgid "Browse the Fediverse"
-msgstr ""
+msgstr "מסע בפדיברס"
 
 #: src/main.cpp:31
 #, kde-format
 msgid "© 2021-2024 KDE Community"
-msgstr ""
+msgstr "© 2021‏-2024 קהילת KDE"
 
 #: src/qml/LandingComponent.qml:103
 #, kde-format
 msgid "Welcome to<br/><b>Plasma Mobile</b>"
-msgstr ""
+msgstr "ברוך בואך אל<br/><b>פלזמה לניידים</b>"
 
 #: src/qml/LandingComponent.qml:103
 #, kde-format
 msgid "Welcome to<br/><b>Plasma Desktop</b>"
-msgstr ""
+msgstr "ברוך בואך<br/><b>לשולחן העבודה פלזמה</b>"
 
 #: src/qml/LandingComponent.qml:128
 #, kde-format
 msgid "Powered by<br/><b>%1</b>"
-msgstr ""
+msgstr "פועל על גבי<br/><b>%1</b>"
 
 #: src/qml/LandingComponent.qml:152
 #, kde-format
@@ -289,17 +286,16 @@ msgstr "הבא"
 #: src/qml/Main.qml:14
 #, kde-format
 msgid "Initial Start"
-msgstr ""
+msgstr "הפעלה ראשונה"
 
 #: src/qml/Wizard.qml:330
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
-msgstr ""
+msgstr "חזרה"
 
 #: src/qml/Wizard.qml:351
-#, fuzzy, kde-format
-#| msgid "Next"
+#, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "הבא"
@@ -308,33 +304,33 @@ msgstr "הבא"
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"
-msgstr ""
+msgstr "סיום"
 
 #: src/user.cpp:123
 #, kde-format
 msgctxt "@info"
 msgid "Failed to crop image: %1"
-msgstr ""
+msgstr "חיתוך התמונה נכשל: %1"
 
 #: src/user.cpp:304
 #, kde-format
 msgid "Could not get permission to save user %1"
-msgstr ""
+msgstr "לא ניתן לקבל הרשאה לשמירת המשתמש %1"
 
 #: src/user.cpp:309
 #, kde-format
 msgid "There was an error while saving changes"
-msgstr ""
+msgstr "אירעה שגיאה בשמירת השינויים"
 
 #: src/user.cpp:410
 #, kde-format
 msgid "Failed to resize image: opening temp file failed"
-msgstr ""
+msgstr "שינוי גודל התמונה נכשל: פתיחת הקובץ הזמני נכשלה"
 
 #: src/user.cpp:418
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
-msgstr ""
+msgstr "שינוי גודל התמונה נכשל: כתיבה לקובץ הזמני נכשלה"
 
 #~ msgid "Previous"
 #~ msgstr "הקודם"
