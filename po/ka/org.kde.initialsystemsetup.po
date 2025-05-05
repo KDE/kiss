@@ -1,77 +1,77 @@
-# Copyright (C) 2024 This file is copyright:
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the kiss package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# SPDX-FileCopyrightText: 2024, 2025 Matjaž Jeran <matjaz.jeran@amis.net>
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-03 01:55+0000\n"
-"PO-Revision-Date: 2025-05-04 07:13+0200\n"
-"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
-"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
-"Language: sl\n"
+"PO-Revision-Date: 2025-05-04 04:16+0200\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
+"Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
-"%100==4 ? 3 : 0);\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Matjaž Jeran"
+msgstr "Temuri Doghonadze"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "matjaz.jeran@amis.net"
+msgstr "temuri.doghonadze@gmail.com"
 
 #: modules/account/contents/ui/main.qml:63
 #, kde-format
 msgid "Upload new avatar"
-msgstr "Naloži nov avatar"
+msgstr "ახალი ავატარის ატვირთვა"
 
 #: modules/account/contents/ui/main.qml:80
 #, kde-format
 msgid "Remove current avatar"
-msgstr "Odstrani trenutni avatar"
+msgstr "მიმდინარე ავატარის წაშლა"
 
 #: modules/account/contents/ui/main.qml:106
 #, kde-format
 msgid "We need a few details to complete the setup."
-msgstr "Za dokončanje nastavitve potrebujemo nekaj podrobnosti."
+msgstr "მორგების დასასრულებლად რამდენიმე დეტალი დაგვჭირდება."
 
 #: modules/account/contents/ui/main.qml:119
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Full Name"
-msgstr "Polno ime"
+msgstr "სრული სახელი"
 
 #: modules/account/contents/ui/main.qml:140
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Username"
-msgstr "Uporabniško ime"
+msgstr "მომხმარებლის სახელი"
 
 #: modules/account/contents/ui/main.qml:150
 #, kde-format
 msgctxt "@info"
 msgid "This will be used to name your home folder and can't be changed."
 msgstr ""
-"To bo uporabljeno za poimenovanje vaše domače mape in ga ni mogoče "
-"spremeniti."
+"ეს გამოყენებული იქნება თქვენი საწყისი საქაღალდის სახელისთვის და მას ვერ "
+"შეცვლით."
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:14
 #, kde-format
 msgid "Edit APN"
-msgstr "Uredi APN"
+msgstr "APN-ის ჩასწორება"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:38
 #, kde-format
 msgid "Name"
-msgstr "Ime"
+msgstr "სახელი"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:43
 #, kde-format
@@ -81,17 +81,17 @@ msgstr "APN"
 #: modules/cellular/contents/ui/EditProfileDialog.qml:48
 #, kde-format
 msgid "Username"
-msgstr "Uporabniško ime"
+msgstr "მომხმარებლის სახელი"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:53
 #, kde-format
 msgid "Password"
-msgstr "Geslo"
+msgstr "პაროლი"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:58
 #, kde-format
 msgid "Network type"
-msgstr "Vrsta omrežja"
+msgstr "ქსელის ტიპი"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
@@ -111,22 +111,22 @@ msgstr "2G"
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 4G"
-msgstr "Samo 4G"
+msgstr "მხოლოდ 4G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 3G"
-msgstr "Samo 3G"
+msgstr "მხოლოდ 3G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 2G"
-msgstr "Samo 2G"
+msgstr "მხოლოდ 2G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Any"
-msgstr "Katerikoli"
+msgstr "ნებისმიერი"
 
 #: modules/cellular/contents/ui/main.qml:45
 #, kde-format
@@ -134,122 +134,122 @@ msgid ""
 "Please configure your APN below for mobile data, further information will be "
 "available with your carrier."
 msgstr ""
-"Spodaj konfigurirajte svoj APN za mobilne podatke. Več informacij bo na "
-"voljo pri vašem operaterju."
+"ფართოზოლოვანი ინტერნეტ-შეერთებისთვის ქვემოთ აუცილებელია APN მიუთითოთ. მეტ "
+"ინფორმაციას თქვენი პროვაიდერისგან მიიღებთ."
 
 #: modules/cellular/contents/ui/main.qml:47
 #, kde-format
 msgid "You are connected to the mobile network."
-msgstr "Povezani ste z mobilnim omrežjem."
+msgstr "ახლა მიერთებული ბრძანდებით მობილურ ინტერნეტთან."
 
 #: modules/cellular/contents/ui/main.qml:49
 #, kde-format
 msgid "Please insert a SIM card into your device."
-msgstr "Vstavite kartico SIM v napravo."
+msgstr "თქვენს მოწყობილობაში SIM ბარათი არ დევს."
 
 #: modules/cellular/contents/ui/main.qml:51
 #, kde-format
 msgid "Your device does not have a modem available."
-msgstr "Vaša naprava nima na voljo modema."
+msgstr "თქვენს მოწყობილობას მოდემი არ აქვს."
 
 #: modules/cellular/contents/ui/main.qml:63
 #, kde-format
 msgid "Mobile Data"
-msgstr "Mobilni podatki"
+msgstr "მობილური ინტერნეტი"
 
 #: modules/cellular/contents/ui/main.qml:109
 #, kde-format
 msgid "Edit"
-msgstr "Uredi"
+msgstr "ჩასწორება"
 
 #: modules/cellular/contents/ui/main.qml:117
 #, kde-format
 msgid "Delete"
-msgstr "Zbriši"
+msgstr "წაშლა"
 
 #: modules/cellular/contents/ui/main.qml:127
 #, kde-format
 msgid "Add APN"
-msgstr "Dodaj APN"
+msgstr "APN-ის დამატება"
 
 #: modules/finished/contents/ui/main.qml:25
 #, kde-format
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
-msgstr "Vaša naprava je zdaj pripravljena. <br /><br />Uživajte <b>%1</b>!"
+msgstr "თქვენი მოწყობილობა ახლა მზადაა. <br /><br />ისიამოვნეთ <b>%1-ით</b>!"
 
 #: modules/password/contents/ui/main.qml:33
 #, kde-format
 msgid "Be careful not to lose your password."
-msgstr "Pazite, da ne izgubite gesla."
+msgstr "ფრთხილად, ნუ გადაკარგავთ თქვენს პაროლს."
 
 #: modules/password/contents/ui/main.qml:46
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Password"
-msgstr "Geslo"
+msgstr "პაროლი"
 
 #: modules/password/contents/ui/main.qml:57
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Confirm Password"
-msgstr "Potrdite geslo"
+msgstr "გაიმეორეთ პაროლი"
 
 #: modules/password/contents/ui/main.qml:58
 #, kde-format
 msgctxt "@info:status"
 msgid "The passwords do not match."
-msgstr "Gesli se ne ujemata."
+msgstr "პაროლები არ ემთხვევა."
 
 #: modules/prepare/contents/ui/main.qml:42
 #, kde-format
 msgid ""
 "Adjust the screen brightness to be comfortable for the installation process."
-msgstr "Prilagodite svetlost zaslona, ​​da bo udobna za postopek namestitve."
+msgstr "მოირგეთ ეკრანის სიკაშკაშე დაყენების პროცესისთვის."
 
 #: modules/prepare/contents/ui/main.qml:100
 #, kde-format
 msgid "Adjust the size of elements on the screen."
-msgstr "Prilagodite velikost elementov na zaslonu."
+msgstr "მოირგეთ ეკრანზე არსებული ელემენტების ზომები."
 
 #: modules/prepare/contents/ui/main.qml:111
 #, kde-format
 msgid "Display Scaling"
-msgstr "Prikaži merilo"
+msgstr "ეკრანის მასშტაბი"
 
 #: modules/prepare/contents/ui/main.qml:129
 #, kde-format
 msgid "Dark Theme"
-msgstr "Temna tema"
+msgstr "მუქი თემა"
 
 #: modules/time/contents/ui/main.qml:28
 #, kde-format
 msgid "Select your time zone and preferred time format."
-msgstr "Izberite svoj časovni pas in želeno obliko zapisa časa."
+msgstr "აირჩიეთ თქვენი დროის სარტყელი და რჩეული დროის ფორმატი."
 
 #: modules/time/contents/ui/main.qml:39
 #, kde-format
 msgid "24-Hour Format"
-msgstr "24-urni format"
+msgstr "24-საათიანი ფორმატი"
 
 #: modules/wifi/contents/ui/ConnectionItemDelegate.qml:94
 #, kde-format
 msgid "Connect to"
-msgstr "Povežite se na"
+msgstr "დაკავშირება"
 
 #: modules/wifi/contents/ui/main.qml:64
 #, kde-format
 msgid "Connect to a WiFi network for network access."
-msgstr "Za dostop do omrežja se povežite z omrežjem WiFi."
+msgstr "ქსელთან წვდომისთვის მიუერთდით WiFi-ს."
 
 #: modules/wifi/contents/ui/PasswordField.qml:14
 #, kde-format
 msgid "Password:"
-msgstr "Geslo:"
+msgstr "პაროლი:"
 
 #: modules/wifi/contents/ui/PasswordField.qml:26
 #, kde-format
 msgid "Invalid input."
-msgstr "Neveljaven vhod."
+msgstr "არასწორი შეყვანა."
 
 #: src/main.cpp:27
 #, kde-format
@@ -259,122 +259,78 @@ msgstr "Tokodon"
 #: src/main.cpp:29
 #, kde-format
 msgid "Browse the Fediverse"
-msgstr "Brskajte po fediversu"
+msgstr "Fediverse-ის დათვალიერება"
 
 #: src/main.cpp:31
 #, kde-format
 msgid "© 2021-2024 KDE Community"
-msgstr "© 2021-2024 Skupnost KDE"
+msgstr "© 2021-2024 KDE-ის საზოგადოება"
 
 #: src/qml/LandingComponent.qml:103
 #, kde-format
 msgid "Welcome to<br/><b>Plasma Mobile</b>"
-msgstr "Dobrodošli v<br/><b>Plasma Mobile</b>"
+msgstr "მოგესალმებათ <b>Plasma Mobile</b>"
 
 #: src/qml/LandingComponent.qml:103
 #, kde-format
 msgid "Welcome to<br/><b>Plasma Desktop</b>"
-msgstr "Dobrodošli na<br/><b>namizju Plasma</b>"
+msgstr "მოგესალმებათ<br/><b>Plasma Desktop</b>"
 
 #: src/qml/LandingComponent.qml:128
 #, kde-format
 msgid "Powered by<br/><b>%1</b>"
-msgstr "Poganja<br/><b>%1</b>"
+msgstr "<br/><b>%1</b>-ის მიერ"
 
 #: src/qml/LandingComponent.qml:152
 #, kde-format
 msgid "Next"
-msgstr "Naslednji"
+msgstr "შემდეგი"
 
 #: src/qml/Main.qml:14
 #, kde-format
 msgid "Initial Start"
-msgstr "Začetni zagon"
+msgstr "საწყისი გაშვება"
 
 #: src/qml/Wizard.qml:330
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
-msgstr "Nazaj"
+msgstr "უკან"
 
 #: src/qml/Wizard.qml:351
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
-msgstr "Naslednji"
+msgstr "შემდეგი"
 
 #: src/qml/Wizard.qml:370
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"
-msgstr "Končaj"
+msgstr "დასრულება"
 
 #: src/user.cpp:123
 #, kde-format
 msgctxt "@info"
 msgid "Failed to crop image: %1"
-msgstr "Obrezovanje slike ni uspelo: %1"
+msgstr "გამოსახულების ამოჭრის შეცდომა: %1"
 
 #: src/user.cpp:304
 #, kde-format
 msgid "Could not get permission to save user %1"
-msgstr "Ni bilo mogoče pridobiti dovoljenja za shranjevanje uporabnika %1"
+msgstr "მომხმარებლის (%1) ჩაწერის წვდომა აკრძალულია"
 
 #: src/user.cpp:309
 #, kde-format
 msgid "There was an error while saving changes"
-msgstr "Pri shranjevanju sprememb je prišlo do napake"
+msgstr "ცვლილებების შენახვის შეცდომა"
 
 #: src/user.cpp:410
 #, kde-format
 msgid "Failed to resize image: opening temp file failed"
-msgstr ""
-"Spreminjanje velikosti slike ni uspelo: odpiranje začasne datoteke ni uspelo"
+msgstr "გამოსახულების ზომის შეცვლის შეცდომა: დროებითი ფაილის გახსნის შეცდომა"
 
 #: src/user.cpp:418
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
-msgstr ""
-"Spreminjanje velikosti slike ni uspelo: pisanje v začasno datoteko ni uspelo"
-
-#~ msgid "Previous"
-#~ msgstr "Prejšnji"
-
-#~ msgid "All Done!"
-#~ msgstr "Vse opravljeno!"
-
-#~ msgid "Let's get started"
-#~ msgstr "Pa začnimo"
-
-#~ msgid "Welcome"
-#~ msgstr "Dobrodošli"
-
-#~ msgid "Select a language to begin setup"
-#~ msgstr "Izberite jezik za začetek nastavitev"
-
-#~ msgid "I accept these terms and conditions"
-#~ msgstr "Sprejemam te določbe in pogoje"
-
-#~ msgid "Legal Terms"
-#~ msgstr "Pravne določbe"
-
-#~ msgid "Let's get the legalese out of the way..."
-#~ msgstr "Spravimo pravniške podrobnosti s poti..."
-
-#~ msgid "Hello World!"
-#~ msgstr "Pozdravljen svet!"
-
-#~ msgid "Sample Page"
-#~ msgstr "Vzorčna stran"
-
-#~ msgid "This is an example page"
-#~ msgstr "To je stran primera"
-
-#~ msgid "Realname:"
-#~ msgstr "Pravo ime:"
-
-#~ msgid "User Setup"
-#~ msgstr "Uporabniške nastavitve"
-
-#~ msgid "Let's set up your user account"
-#~ msgstr "Nastavimo vaš uporabniški račun"
+msgstr "გამოსახულების ზომის შეცვლის შეცდომა: დროებითი ფაილის ჩაწერის შეცდომა"
