@@ -7,13 +7,15 @@
                 "Name": "Devin Lin",
                 "Name[ca]": "Devin Lin",
                 "Name[es]": "Devin Lin",
+                "Name[he]": "דווין לין",
                 "Name[it]": "Devin Lin",
                 "Name[ka]": "Devin Lin",
                 "Name[nl]": "Devin Lin",
                 "Name[sl]": "Carl Schwan",
                 "Name[tr]": "Devin Lin",
                 "Name[uk]": "Devin Lin",
-                "Name[x-test]": "xxDevin Linxx"
+                "Name[x-test]": "xxDevin Linxx",
+                "Name[zh_TW]": "Devin Lin"
             }
         ],
         "Id": "org.kde.plasma.mobileinitialstart.prepare",
@@ -21,6 +23,7 @@
         "Name": "Prepare",
         "Name[ca]": "Prepara",
         "Name[es]": "Preparativos",
+        "Name[he]": "הכנה",
         "Name[it]": "Prepara",
         "Name[ka]": "მომზადება",
         "Name[nl]": "Voorbereiden",
@@ -28,6 +31,7 @@
         "Name[tr]": "Hazırlan",
         "Name[uk]": "Приготування",
         "Name[x-test]": "xxPreparexx",
+        "Name[zh_TW]": "準備",
         "Website": "https://kde.org"
     }
 }

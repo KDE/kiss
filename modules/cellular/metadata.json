@@ -7,13 +7,15 @@
                 "Name": "Devin Lin",
                 "Name[ca]": "Devin Lin",
                 "Name[es]": "Devin Lin",
+                "Name[he]": "דווין לין",
                 "Name[it]": "Devin Lin",
                 "Name[ka]": "Devin Lin",
                 "Name[nl]": "Devin Lin",
                 "Name[sl]": "Carl Schwan",
                 "Name[tr]": "Devin Lin",
                 "Name[uk]": "Devin Lin",
-                "Name[x-test]": "xxDevin Linxx"
+                "Name[x-test]": "xxDevin Linxx",
+                "Name[zh_TW]": "Devin Lin"
             }
         ],
         "Id": "org.kde.plasma.initialsetup.cellular",
@@ -21,13 +23,15 @@
         "Name": "Cellular",
         "Name[ca]": "Mòbil",
         "Name[es]": "Móvil",
+        "Name[he]": "סלולרי",
         "Name[it]": "Cellulare",
         "Name[ka]": "მობილური",
         "Name[nl]": "Cellulair",
         "Name[sl]": "Mobilni",
         "Name[tr]": "Hücresel",
         "Name[uk]": "Стільниковий",
-        "Name[x-test]": "xxCellularxx"
+        "Name[x-test]": "xxCellularxx",
+        "Name[zh_TW]": "行動電話"
     },
     "X-KDE-ParentApp": "org.kde.initialsystemsetup",
     "X-KDE-Weight": 60

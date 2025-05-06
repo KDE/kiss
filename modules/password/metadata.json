@@ -7,13 +7,15 @@
                 "Name": "Carl Schwan",
                 "Name[ca]": "Carl Schwan",
                 "Name[es]": "Carl Schwan",
+                "Name[he]": "קארל שוואן",
                 "Name[it]": "Carl Schwan",
                 "Name[ka]": "Carl Schwan",
                 "Name[nl]": "Carl Schwan",
                 "Name[sl]": "Carl Schwan",
                 "Name[tr]": "Carl Schwan",
                 "Name[uk]": "Carl Schwan",
-                "Name[x-test]": "xxCarl Schwanxx"
+                "Name[x-test]": "xxCarl Schwanxx",
+                "Name[zh_TW]": "Carl Schwan"
             }
         ],
         "Id": "org.kde.plasma.plasmainitialstart.password",
@@ -21,6 +23,7 @@
         "Name": "Set a Password",
         "Name[ca]": "Estableix una contrasenya",
         "Name[es]": "Define una contraseña",
+        "Name[he]": "הגדרת סיסמה",
         "Name[it]": "Imposta una password",
         "Name[ka]": "პაროლის დაყენება",
         "Name[nl]": "Zet een wachtwoord",
@@ -28,6 +31,7 @@
         "Name[tr]": "Parola Ayarla",
         "Name[uk]": "Вказати пароль",
         "Name[x-test]": "xxSet a Passwordxx",
+        "Name[zh_TW]": "設定密碼",
         "Version": "1.0"
     },
     "X-KDE-ParentApp": "org.kde.initialsystemsetup",

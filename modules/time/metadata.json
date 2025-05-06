@@ -7,13 +7,15 @@
                 "Name": "Devin Lin",
                 "Name[ca]": "Devin Lin",
                 "Name[es]": "Devin Lin",
+                "Name[he]": "דווין לין",
                 "Name[it]": "Devin Lin",
                 "Name[ka]": "Devin Lin",
                 "Name[nl]": "Devin Lin",
                 "Name[sl]": "Carl Schwan",
                 "Name[tr]": "Devin Lin",
                 "Name[uk]": "Devin Lin",
-                "Name[x-test]": "xxDevin Linxx"
+                "Name[x-test]": "xxDevin Linxx",
+                "Name[zh_TW]": "Devin Lin"
             }
         ],
         "Id": "org.kde.plasma.plasmainitialstart.time",
@@ -21,6 +23,7 @@
         "Name": "Time and Date",
         "Name[ca]": "Time and Date",
         "Name[es]": "Fecha y hora",
+        "Name[he]": "שעה ותאריך",
         "Name[it]": "Data e ora",
         "Name[ka]": "თარიღი და დრო",
         "Name[nl]": "Tijd en datum",
@@ -28,6 +31,7 @@
         "Name[tr]": "Tarih ve Zaman",
         "Name[uk]": "Час і дата",
         "Name[x-test]": "xxTime and Datexx",
+        "Name[zh_TW]": "時間與日期",
         "Version": "1.0"
     },
     "X-KDE-ParentApp": "org.kde.initialsystemsetup",

@@ -7,13 +7,15 @@
                 "Name": "Carl Schwan",
                 "Name[ca]": "Carl Schwan",
                 "Name[es]": "Carl Schwan",
+                "Name[he]": "קארל שוואן",
                 "Name[it]": "Carl Schwan",
                 "Name[ka]": "Carl Schwan",
                 "Name[nl]": "Carl Schwan",
                 "Name[sl]": "Carl Schwan",
                 "Name[tr]": "Carl Schwan",
                 "Name[uk]": "Carl Schwan",
-                "Name[x-test]": "xxCarl Schwanxx"
+                "Name[x-test]": "xxCarl Schwanxx",
+                "Name[zh_TW]": "Carl Schwan"
             }
         ],
         "Id": "org.kde.plasma.plasmainitialstart.account",
@@ -21,6 +23,7 @@
         "Name": "About You",
         "Name[ca]": "Quant a vós",
         "Name[es]": "Acerca de ti",
+        "Name[he]": "עליך",
         "Name[it]": "Informazioni su di te",
         "Name[ka]": "თქვენს შესახებ",
         "Name[nl]": "Over u",
@@ -28,6 +31,7 @@
         "Name[tr]": "Senin Hakkında",
         "Name[uk]": "Про себе",
         "Name[x-test]": "xxAbout Youxx",
+        "Name[zh_TW]": "關於您",
         "Version": "1.0"
     },
     "X-KDE-ParentApp": "org.kde.initialsystemsetup",

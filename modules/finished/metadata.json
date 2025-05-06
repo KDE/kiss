@@ -7,13 +7,15 @@
                 "Name": "Devin Lin",
                 "Name[ca]": "Devin Lin",
                 "Name[es]": "Devin Lin",
+                "Name[he]": "דווין לין",
                 "Name[it]": "Devin Lin",
                 "Name[ka]": "Devin Lin",
                 "Name[nl]": "Devin Lin",
                 "Name[sl]": "Carl Schwan",
                 "Name[tr]": "Devin Lin",
                 "Name[uk]": "Devin Lin",
-                "Name[x-test]": "xxDevin Linxx"
+                "Name[x-test]": "xxDevin Linxx",
+                "Name[zh_TW]": "Devin Lin"
             }
         ],
         "Id": "org.kde.plasma.plasmainitialstart.finished",
@@ -21,6 +23,7 @@
         "Name": "Completed!",
         "Name[ca]": "Completat!",
         "Name[es]": "Completado",
+        "Name[he]": "הושלם!",
         "Name[it]": "Completato!",
         "Name[ka]": "დასრულდა!",
         "Name[nl]": "Voltooid!",
@@ -28,6 +31,7 @@
         "Name[tr]": "Tamamlandı!",
         "Name[uk]": "Завершено!",
         "Name[x-test]": "xxCompleted!xx",
+        "Name[zh_TW]": "已完成！",
         "Version": "1.0"
     },
     "X-KDE-ParentApp": "org.kde.initialsystemsetup",

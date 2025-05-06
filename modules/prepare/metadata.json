@@ -7,13 +7,15 @@
                 "Name": "Carl Schwan",
                 "Name[ca]": "Carl Schwan",
                 "Name[es]": "Carl Schwan",
+                "Name[he]": "קארל שוואן",
                 "Name[it]": "Carl Schwan",
                 "Name[ka]": "Carl Schwan",
                 "Name[nl]": "Carl Schwan",
                 "Name[sl]": "Carl Schwan",
                 "Name[tr]": "Carl Schwan",
                 "Name[uk]": "Carl Schwan",
-                "Name[x-test]": "xxCarl Schwanxx"
+                "Name[x-test]": "xxCarl Schwanxx",
+                "Name[zh_TW]": "Carl Schwan"
             }
         ],
         "Id": "org.kde.plasma.plasmainitialstart.account",
@@ -21,6 +23,7 @@
         "Name": "Before we get started…",
         "Name[ca]": "Abans de començar…",
         "Name[es]": "Antes de empezar…",
+        "Name[he]": "לפני שנתחיל…",
         "Name[it]": "Prima di iniziare...",
         "Name[ka]": "სანამ დავიწყებთ…",
         "Name[nl]": "Voordat we verder gaan…",
@@ -28,6 +31,7 @@
         "Name[tr]": "Başlamadan Önce…",
         "Name[uk]": "Перш, ніж ми почнемо.",
         "Name[x-test]": "xxBefore we get started…xx",
+        "Name[zh_TW]": "開始之前…",
         "Version": "1.0"
     },
     "X-KDE-ParentApp": "org.kde.initialsystemsetup",

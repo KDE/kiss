@@ -7,13 +7,15 @@
                 "Name": "Devin Lin",
                 "Name[ca]": "Devin Lin",
                 "Name[es]": "Devin Lin",
+                "Name[he]": "דווין לין",
                 "Name[it]": "Devin Lin",
                 "Name[ka]": "Devin Lin",
                 "Name[nl]": "Devin Lin",
                 "Name[sl]": "Carl Schwan",
                 "Name[tr]": "Devin Lin",
                 "Name[uk]": "Devin Lin",
-                "Name[x-test]": "xxDevin Linxx"
+                "Name[x-test]": "xxDevin Linxx",
+                "Name[zh_TW]": "Devin Lin"
             }
         ],
         "Id": "org.kde.initialsystemsetup.wifi",
@@ -21,13 +23,15 @@
         "Name": "Network",
         "Name[ca]": "Network",
         "Name[es]": "Red",
+        "Name[he]": "רשת",
         "Name[it]": "Rete",
         "Name[ka]": "ქსელი",
         "Name[nl]": "Netwerk",
         "Name[sl]": "Omrežje",
         "Name[tr]": "Ağ",
         "Name[uk]": "Мережа",
-        "Name[x-test]": "xxNetworkxx"
+        "Name[x-test]": "xxNetworkxx",
+        "Name[zh_TW]": "網路"
     },
     "X-KDE-ParentApp": "org.kde.initialsystemsetup",
     "X-KDE-Weight": 50
