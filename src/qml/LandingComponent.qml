@@ -107,6 +107,23 @@ Item {
             font.pointSize: 18
             color: "white"
         }
+
+        Button {
+            id: button
+
+            Layout.alignment: Qt.AlignHCenter
+
+            opacity: root.contentOpacity
+            text: i18n("Begin Setup")
+            icon.name: "plasma-symbolic"
+
+            onClicked: {
+                backgroundImage.scale = scaleSteps;
+                contentOpacityAnim.to = 0;
+                contentOpacityAnim.restart();
+                root.requestNextPage()
+            }
+        }
     }
 
     ColumnLayout {
@@ -122,7 +139,6 @@ Item {
             bottomMargin: Kirigami.Units.gridUnit * 2
         }
 
-
         Kirigami.Heading {
             Layout.fillWidth: true
             text: i18n("Powered by<br/><b>%1</b>", InitialStartUtil.distroName)
@@ -131,32 +147,6 @@ Item {
 
             level: 5
             color: "white"
-        }
-    }
-
-    Button {
-        id: button
-
-        anchors {
-            bottom: parent.bottom
-            right: parent.right
-            margins: Kirigami.Units.gridUnit
-        }
-
-        topPadding: Kirigami.Units.largeSpacing
-        bottomPadding: Kirigami.Units.largeSpacing
-        leftPadding: Kirigami.Units.largeSpacing
-        rightPadding: Kirigami.Units.largeSpacing
-
-        opacity: root.contentOpacity
-        text: i18n("Next")
-        icon.name: "go-next-symbolic"
-
-        onClicked: {
-            backgroundImage.scale = scaleSteps;
-            contentOpacityAnim.to = 0;
-            contentOpacityAnim.restart();
-            root.requestNextPage()
         }
     }
 }
