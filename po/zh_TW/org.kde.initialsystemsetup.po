@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the kiss package.
 #
-# SPDX-FileCopyrightText: 2024 Kisaragi Hiu <mail@kisaragi-hiu.com>
+# SPDX-FileCopyrightText: 2024, 2025 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-03 01:55+0000\n"
-"PO-Revision-Date: 2024-07-14 16:43+0900\n"
+"PO-Revision-Date: 2025-05-05 23:04+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -15,231 +15,226 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 24.04.70\n"
+"X-Generator: Lokalize 25.07.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Kisaragi Hiu"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "mail@kisaragi-hiu.com"
 
 #: modules/account/contents/ui/main.qml:63
 #, kde-format
 msgid "Upload new avatar"
-msgstr ""
+msgstr "上傳新的頭貼"
 
 #: modules/account/contents/ui/main.qml:80
 #, kde-format
 msgid "Remove current avatar"
-msgstr ""
+msgstr "移除目前頭貼"
 
 #: modules/account/contents/ui/main.qml:106
 #, kde-format
 msgid "We need a few details to complete the setup."
-msgstr ""
+msgstr "我們需要一些細節來完成設定。"
 
 #: modules/account/contents/ui/main.qml:119
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Full Name"
-msgstr ""
+msgstr "全名"
 
 #: modules/account/contents/ui/main.qml:140
-#, fuzzy, kde-format
-#| msgid "Username:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Username"
-msgstr "使用者名稱："
+msgstr "使用者名稱"
 
 #: modules/account/contents/ui/main.qml:150
 #, kde-format
 msgctxt "@info"
 msgid "This will be used to name your home folder and can't be changed."
-msgstr ""
+msgstr "這會用來命名您的家目錄，並且不能變更。"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:14
 #, kde-format
 msgid "Edit APN"
-msgstr ""
+msgstr "編輯 APN"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:38
 #, kde-format
 msgid "Name"
-msgstr ""
+msgstr "名稱"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:43
 #, kde-format
 msgid "APN"
-msgstr ""
+msgstr "APN"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:48
-#, fuzzy, kde-format
-#| msgid "Username:"
+#, kde-format
 msgid "Username"
-msgstr "使用者名稱："
+msgstr "使用者名稱"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:53
-#, fuzzy, kde-format
-#| msgid "Password:"
+#, kde-format
 msgid "Password"
-msgstr "密碼："
+msgstr "密碼"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:58
 #, kde-format
 msgid "Network type"
-msgstr ""
+msgstr "網路類型"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "4G/3G/2G"
-msgstr ""
+msgstr "4G/3G/2G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "3G/2G"
-msgstr ""
+msgstr "3G/2G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "2G"
-msgstr ""
+msgstr "2G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 4G"
-msgstr ""
+msgstr "僅 4G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 3G"
-msgstr ""
+msgstr "僅 3G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 2G"
-msgstr ""
+msgstr "僅 2G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Any"
-msgstr ""
+msgstr "任何"
 
 #: modules/cellular/contents/ui/main.qml:45
 #, kde-format
 msgid ""
 "Please configure your APN below for mobile data, further information will be "
 "available with your carrier."
-msgstr ""
+msgstr "請在下方為行動資料設定您的 APN，更多訊息會由您的電信提供。"
 
 #: modules/cellular/contents/ui/main.qml:47
 #, kde-format
 msgid "You are connected to the mobile network."
-msgstr ""
+msgstr "您目前已連線至行動網路。"
 
 #: modules/cellular/contents/ui/main.qml:49
 #, kde-format
 msgid "Please insert a SIM card into your device."
-msgstr ""
+msgstr "請插入 SIM 卡到您的裝置中。"
 
 #: modules/cellular/contents/ui/main.qml:51
 #, kde-format
 msgid "Your device does not have a modem available."
-msgstr ""
+msgstr "您的裝置沒有可用的數據晶片。"
 
 #: modules/cellular/contents/ui/main.qml:63
 #, kde-format
 msgid "Mobile Data"
-msgstr ""
+msgstr "行動資料"
 
 #: modules/cellular/contents/ui/main.qml:109
 #, kde-format
 msgid "Edit"
-msgstr ""
+msgstr "編輯"
 
 #: modules/cellular/contents/ui/main.qml:117
 #, kde-format
 msgid "Delete"
-msgstr ""
+msgstr "刪除"
 
 #: modules/cellular/contents/ui/main.qml:127
 #, kde-format
 msgid "Add APN"
-msgstr ""
+msgstr "新增 APN"
 
 #: modules/finished/contents/ui/main.qml:25
 #, kde-format
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
-msgstr ""
+msgstr "您的裝置現已就緒。<br /><br />享受 <b>%1</b> 吧！"
 
 #: modules/password/contents/ui/main.qml:33
 #, kde-format
 msgid "Be careful not to lose your password."
-msgstr ""
+msgstr "請小心不要遺失您的密碼。"
 
 #: modules/password/contents/ui/main.qml:46
-#, fuzzy, kde-format
-#| msgid "Password:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Password"
-msgstr "密碼："
+msgstr "密碼"
 
 #: modules/password/contents/ui/main.qml:57
-#, fuzzy, kde-format
-#| msgid "Password:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Confirm Password"
-msgstr "密碼："
+msgstr "確認密碼"
 
 #: modules/password/contents/ui/main.qml:58
 #, kde-format
 msgctxt "@info:status"
 msgid "The passwords do not match."
-msgstr ""
+msgstr "密碼不符。"
 
 #: modules/prepare/contents/ui/main.qml:42
 #, kde-format
 msgid ""
 "Adjust the screen brightness to be comfortable for the installation process."
-msgstr ""
+msgstr "請為安裝過程調整螢幕亮度到舒服的程度。"
 
 #: modules/prepare/contents/ui/main.qml:100
 #, kde-format
 msgid "Adjust the size of elements on the screen."
-msgstr ""
+msgstr "請調整螢幕上元素的大小。"
 
 #: modules/prepare/contents/ui/main.qml:111
 #, kde-format
 msgid "Display Scaling"
-msgstr ""
+msgstr "顯示縮放"
 
 #: modules/prepare/contents/ui/main.qml:129
 #, kde-format
 msgid "Dark Theme"
-msgstr ""
+msgstr "暗色主題"
 
 #: modules/time/contents/ui/main.qml:28
 #, kde-format
 msgid "Select your time zone and preferred time format."
-msgstr ""
+msgstr "選取您的時區與偏好的時間格式。"
 
 #: modules/time/contents/ui/main.qml:39
 #, kde-format
 msgid "24-Hour Format"
-msgstr ""
+msgstr "24 時制"
 
 #: modules/wifi/contents/ui/ConnectionItemDelegate.qml:94
 #, kde-format
 msgid "Connect to"
-msgstr ""
+msgstr "連線到"
 
 #: modules/wifi/contents/ui/main.qml:64
 #, kde-format
 msgid "Connect to a WiFi network for network access."
-msgstr ""
+msgstr "連線到 WiFi 網路來存取網路。"
 
 #: modules/wifi/contents/ui/PasswordField.qml:14
 #, kde-format
@@ -249,92 +244,91 @@ msgstr "密碼："
 #: modules/wifi/contents/ui/PasswordField.qml:26
 #, kde-format
 msgid "Invalid input."
-msgstr ""
+msgstr "無效輸入。"
 
 #: src/main.cpp:27
 #, kde-format
 msgid "Tokodon"
-msgstr ""
+msgstr "Tokodon"
 
 #: src/main.cpp:29
 #, kde-format
 msgid "Browse the Fediverse"
-msgstr ""
+msgstr "瀏覽聯邦宇宙"
 
 #: src/main.cpp:31
 #, kde-format
 msgid "© 2021-2024 KDE Community"
-msgstr ""
+msgstr "© 2021-2024 KDE 社群"
 
 #: src/qml/LandingComponent.qml:103
 #, kde-format
 msgid "Welcome to<br/><b>Plasma Mobile</b>"
-msgstr ""
+msgstr "歡迎來到<br/><b>Plasma 行動</b>"
 
 #: src/qml/LandingComponent.qml:103
 #, kde-format
 msgid "Welcome to<br/><b>Plasma Desktop</b>"
-msgstr ""
+msgstr "歡迎來到<br/><b>Plasma 桌面</b>"
 
 #: src/qml/LandingComponent.qml:128
 #, kde-format
 msgid "Powered by<br/><b>%1</b>"
-msgstr ""
+msgstr "基於<br/><b>%1</b>"
 
 #: src/qml/LandingComponent.qml:152
 #, kde-format
 msgid "Next"
-msgstr "下一頁"
+msgstr "下一步"
 
 #: src/qml/Main.qml:14
 #, kde-format
 msgid "Initial Start"
-msgstr ""
+msgstr "初次啟動"
 
 #: src/qml/Wizard.qml:330
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
-msgstr ""
+msgstr "返回"
 
 #: src/qml/Wizard.qml:351
-#, fuzzy, kde-format
-#| msgid "Next"
+#, kde-format
 msgctxt "@action:button"
 msgid "Next"
-msgstr "下一頁"
+msgstr "下一步"
 
 #: src/qml/Wizard.qml:370
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"
-msgstr ""
+msgstr "完成"
 
 #: src/user.cpp:123
 #, kde-format
 msgctxt "@info"
 msgid "Failed to crop image: %1"
-msgstr ""
+msgstr "裁剪影像失敗：%1"
 
 #: src/user.cpp:304
 #, kde-format
 msgid "Could not get permission to save user %1"
-msgstr ""
+msgstr "無法取得權限儲存使用者 %1"
 
 #: src/user.cpp:309
 #, kde-format
 msgid "There was an error while saving changes"
-msgstr ""
+msgstr "儲存變更時出現錯誤"
 
 #: src/user.cpp:410
 #, kde-format
 msgid "Failed to resize image: opening temp file failed"
-msgstr ""
+msgstr "圖片尺寸調整失敗：無法開啟暫存檔"
 
 #: src/user.cpp:418
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
-msgstr ""
+msgstr "圖片尺寸調整失敗：無法寫入至暫存檔"
 
 #~ msgid "Previous"
 #~ msgstr "上一頁"
