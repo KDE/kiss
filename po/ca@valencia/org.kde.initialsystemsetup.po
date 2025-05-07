@@ -1,15 +1,15 @@
 # Translation of org.kde.initialsystemsetup.po to Catalan (Valencian)
-# Copyright (C) 2024 This_file_is_part_of_KDE
+# Copyright (C) 2024-2025 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# SPDX-FileCopyrightText: 2024 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2024, 2025 Josep M. Ferrer <txemaq@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-03 01:55+0000\n"
-"PO-Revision-Date: 2024-07-14 08:54+0200\n"
+"PO-Revision-Date: 2025-05-03 10:08+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -17,118 +17,115 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.05.2\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Josep M. Ferrer"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "txemaq@gmail.com"
 
 #: modules/account/contents/ui/main.qml:63
 #, kde-format
 msgid "Upload new avatar"
-msgstr ""
+msgstr "Puja un avatar nou"
 
 #: modules/account/contents/ui/main.qml:80
 #, kde-format
 msgid "Remove current avatar"
-msgstr ""
+msgstr "Elimina l'avatar actual"
 
 #: modules/account/contents/ui/main.qml:106
 #, kde-format
 msgid "We need a few details to complete the setup."
-msgstr ""
+msgstr "Cal alguns detalls per a completar la configuració."
 
 #: modules/account/contents/ui/main.qml:119
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Full Name"
-msgstr ""
+msgstr "Nom complet"
 
 #: modules/account/contents/ui/main.qml:140
-#, fuzzy, kde-format
-#| msgid "Username:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Username"
-msgstr "Nom d'usuari:"
+msgstr "Nom d'usuari"
 
 #: modules/account/contents/ui/main.qml:150
 #, kde-format
 msgctxt "@info"
 msgid "This will be used to name your home folder and can't be changed."
-msgstr ""
+msgstr "Açò s'utilitzarà per anomenar la carpeta d'inici i no es pot canviar."
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:14
 #, kde-format
 msgid "Edit APN"
-msgstr ""
+msgstr "Edita l'APN"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:38
 #, kde-format
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:43
 #, kde-format
 msgid "APN"
-msgstr ""
+msgstr "APN"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:48
-#, fuzzy, kde-format
-#| msgid "Username:"
+#, kde-format
 msgid "Username"
-msgstr "Nom d'usuari:"
+msgstr "Nom d'usuari"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:53
-#, fuzzy, kde-format
-#| msgid "Password:"
+#, kde-format
 msgid "Password"
-msgstr "Contrasenya:"
+msgstr "Contrasenya"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:58
 #, kde-format
 msgid "Network type"
-msgstr ""
+msgstr "Tipus de xarxa"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "4G/3G/2G"
-msgstr ""
+msgstr "4G/3G/2G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "3G/2G"
-msgstr ""
+msgstr "3G/2G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "2G"
-msgstr ""
+msgstr "2G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 4G"
-msgstr ""
+msgstr "Només 4G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 3G"
-msgstr ""
+msgstr "Només 3G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 2G"
-msgstr ""
+msgstr "Només 2G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Any"
-msgstr ""
+msgstr "Qualsevol"
 
 #: modules/cellular/contents/ui/main.qml:45
 #, kde-format
@@ -136,112 +133,114 @@ msgid ""
 "Please configure your APN below for mobile data, further information will be "
 "available with your carrier."
 msgstr ""
+"Configureu l'APN següent per a les dades mòbils, la informació addicional "
+"estarà disponible en el vostre operador."
 
 #: modules/cellular/contents/ui/main.qml:47
 #, kde-format
 msgid "You are connected to the mobile network."
-msgstr ""
+msgstr "Esteu connectat/da a la xarxa mòbil."
 
 #: modules/cellular/contents/ui/main.qml:49
 #, kde-format
 msgid "Please insert a SIM card into your device."
-msgstr ""
+msgstr "Inseriu una targeta SIM en el vostre dispositiu."
 
 #: modules/cellular/contents/ui/main.qml:51
 #, kde-format
 msgid "Your device does not have a modem available."
-msgstr ""
+msgstr "El dispositiu no té cap mòdem disponible."
 
 #: modules/cellular/contents/ui/main.qml:63
 #, kde-format
 msgid "Mobile Data"
-msgstr ""
+msgstr "Dades mòbils"
 
 #: modules/cellular/contents/ui/main.qml:109
 #, kde-format
 msgid "Edit"
-msgstr ""
+msgstr "Edita"
 
 #: modules/cellular/contents/ui/main.qml:117
 #, kde-format
 msgid "Delete"
-msgstr ""
+msgstr "Suprimix"
 
 #: modules/cellular/contents/ui/main.qml:127
 #, kde-format
 msgid "Add APN"
-msgstr ""
+msgstr "Afig un APN"
 
 #: modules/finished/contents/ui/main.qml:25
 #, kde-format
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
-msgstr ""
+msgstr "El dispositiu ara està llest. <br /><br />Gaudiu <b>%1</b>!"
 
 #: modules/password/contents/ui/main.qml:33
 #, kde-format
 msgid "Be careful not to lose your password."
-msgstr ""
+msgstr "Aneu amb compte de no perdre la contrasenya."
 
 #: modules/password/contents/ui/main.qml:46
-#, fuzzy, kde-format
-#| msgid "Password:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Password"
-msgstr "Contrasenya:"
+msgstr "Contrasenya"
 
 #: modules/password/contents/ui/main.qml:57
-#, fuzzy, kde-format
-#| msgid "Password:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Confirm Password"
-msgstr "Contrasenya:"
+msgstr "Confirmeu la contrasenya"
 
 #: modules/password/contents/ui/main.qml:58
 #, kde-format
 msgctxt "@info:status"
 msgid "The passwords do not match."
-msgstr ""
+msgstr "Les contrasenyes no coincidixen."
 
 #: modules/prepare/contents/ui/main.qml:42
 #, kde-format
 msgid ""
 "Adjust the screen brightness to be comfortable for the installation process."
 msgstr ""
+"Ajusteu la brillantor de la pantalla perquè siga confortable durant el "
+"procés d'instal·lació."
 
 #: modules/prepare/contents/ui/main.qml:100
 #, kde-format
 msgid "Adjust the size of elements on the screen."
-msgstr ""
+msgstr "Ajusteu la mida dels elements a la pantalla."
 
 #: modules/prepare/contents/ui/main.qml:111
 #, kde-format
 msgid "Display Scaling"
-msgstr ""
+msgstr "Escalat de la pantalla"
 
 #: modules/prepare/contents/ui/main.qml:129
 #, kde-format
 msgid "Dark Theme"
-msgstr ""
+msgstr "Tema fosc"
 
 #: modules/time/contents/ui/main.qml:28
 #, kde-format
 msgid "Select your time zone and preferred time format."
-msgstr ""
+msgstr "Seleccioneu la zona horària i el format de l'hora."
 
 #: modules/time/contents/ui/main.qml:39
 #, kde-format
 msgid "24-Hour Format"
-msgstr ""
+msgstr "Format de 24 hores"
 
 #: modules/wifi/contents/ui/ConnectionItemDelegate.qml:94
 #, kde-format
 msgid "Connect to"
-msgstr ""
+msgstr "Connecta a"
 
 #: modules/wifi/contents/ui/main.qml:64
 #, kde-format
 msgid "Connect to a WiFi network for network access."
-msgstr ""
+msgstr "Connecta amb una xarxa Wi-Fi per a l'accés a la xarxa."
 
 #: modules/wifi/contents/ui/PasswordField.qml:14
 #, kde-format
@@ -251,37 +250,37 @@ msgstr "Contrasenya:"
 #: modules/wifi/contents/ui/PasswordField.qml:26
 #, kde-format
 msgid "Invalid input."
-msgstr ""
+msgstr "Entrada no vàlida."
 
 #: src/main.cpp:27
 #, kde-format
 msgid "Tokodon"
-msgstr ""
+msgstr "Tokodon"
 
 #: src/main.cpp:29
 #, kde-format
 msgid "Browse the Fediverse"
-msgstr ""
+msgstr "Navegueu per Fedivers"
 
 #: src/main.cpp:31
 #, kde-format
 msgid "© 2021-2024 KDE Community"
-msgstr ""
+msgstr "© 2021-2024 Comunitat KDE"
 
 #: src/qml/LandingComponent.qml:103
 #, kde-format
 msgid "Welcome to<br/><b>Plasma Mobile</b>"
-msgstr ""
+msgstr "Us donem la benvinguda a<br/><b>Plasma Mobile</b>"
 
 #: src/qml/LandingComponent.qml:103
 #, kde-format
 msgid "Welcome to<br/><b>Plasma Desktop</b>"
-msgstr ""
+msgstr "Us donem la benvinguda a <br/>l'<b>escriptori Plasma </b>"
 
 #: src/qml/LandingComponent.qml:128
 #, kde-format
 msgid "Powered by<br/><b>%1</b>"
-msgstr ""
+msgstr "Funciona amb<br/><b>%1</b>"
 
 #: src/qml/LandingComponent.qml:152
 #, kde-format
@@ -291,17 +290,16 @@ msgstr "Següent"
 #: src/qml/Main.qml:14
 #, kde-format
 msgid "Initial Start"
-msgstr ""
+msgstr "Començament inicial"
 
 #: src/qml/Wizard.qml:330
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
-msgstr ""
+msgstr "Arrere"
 
 #: src/qml/Wizard.qml:351
-#, fuzzy, kde-format
-#| msgid "Next"
+#, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Següent"
@@ -310,72 +308,34 @@ msgstr "Següent"
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"
-msgstr ""
+msgstr "Finalitza"
 
 #: src/user.cpp:123
 #, kde-format
 msgctxt "@info"
 msgid "Failed to crop image: %1"
-msgstr ""
+msgstr "No s'ha pogut escapçar la imatge: %1"
 
 #: src/user.cpp:304
 #, kde-format
 msgid "Could not get permission to save user %1"
-msgstr ""
+msgstr "No s'ha pogut obtindre el permís per a guardar l'usuari %1"
 
 #: src/user.cpp:309
 #, kde-format
 msgid "There was an error while saving changes"
-msgstr ""
+msgstr "S'ha produït un error en guardar els canvis"
 
 #: src/user.cpp:410
 #, kde-format
 msgid "Failed to resize image: opening temp file failed"
 msgstr ""
+"No s'ha pogut redimensionar la imatge: ha fallat l'obertura del fitxer "
+"temporal"
 
 #: src/user.cpp:418
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
-
-#~ msgid "Previous"
-#~ msgstr "Anterior"
-
-#~ msgid "All Done!"
-#~ msgstr "Fet!"
-
-#~ msgid "Let's get started"
-#~ msgstr "Comencem"
-
-#~ msgid "Welcome"
-#~ msgstr "Us donem la benvinguda"
-
-#~ msgid "Select a language to begin setup"
-#~ msgstr "Seleccioneu un idioma per a començar la configuració"
-
-#~ msgid "I accept these terms and conditions"
-#~ msgstr "Voleu acceptar estes clàusules i condicions"
-
-#~ msgid "Legal Terms"
-#~ msgstr "Clàusules legals"
-
-#~ msgid "Let's get the legalese out of the way..."
-#~ msgstr "Eliminem la burocràcia legal del mig…"
-
-#~ msgid "Hello World!"
-#~ msgstr "Hola món!"
-
-#~ msgid "Sample Page"
-#~ msgstr "Pàgina d'exemple"
-
-#~ msgid "This is an example page"
-#~ msgstr "Esta és una pàgina d'exemple"
-
-#~ msgid "Realname:"
-#~ msgstr "Nom real:"
-
-#~ msgid "User Setup"
-#~ msgstr "Configureu l'usuari/a"
-
-#~ msgid "Let's set up your user account"
-#~ msgstr "Anem a configurar el compte d'usuari"
+"No s'ha pogut redimensionar la imatge: ha fallat en escriure en el fitxer "
+"temporal"
