@@ -5,6 +5,7 @@
             {
                 "Email": "devin@kde.org",
                 "Name": "Devin Lin",
+                "Name[ca@valencia]": "Devin Lin",
                 "Name[ca]": "Devin Lin",
                 "Name[es]": "Devin Lin",
                 "Name[he]": "דווין לין",
@@ -21,6 +22,7 @@
         "Id": "org.kde.plasma.plasmainitialstart.finished",
         "License": "LGPL-2.0-or-later",
         "Name": "Completed!",
+        "Name[ca@valencia]": "Completat!",
         "Name[ca]": "Completat!",
         "Name[es]": "Completado",
         "Name[he]": "הושלם!",

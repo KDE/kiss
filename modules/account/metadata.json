@@ -5,6 +5,7 @@
             {
                 "Email": "carl@carlschwan.eu",
                 "Name": "Carl Schwan",
+                "Name[ca@valencia]": "Carl Schwan",
                 "Name[ca]": "Carl Schwan",
                 "Name[es]": "Carl Schwan",
                 "Name[he]": "קארל שוואן",
@@ -21,6 +22,7 @@
         "Id": "org.kde.plasma.plasmainitialstart.account",
         "License": "LGPL-2.0-or-later",
         "Name": "About You",
+        "Name[ca@valencia]": "Quant a vós",
         "Name[ca]": "Quant a vós",
         "Name[es]": "Acerca de ti",
         "Name[he]": "עליך",

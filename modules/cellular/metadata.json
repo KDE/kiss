@@ -5,6 +5,7 @@
             {
                 "Email": "devin@kde.org",
                 "Name": "Devin Lin",
+                "Name[ca@valencia]": "Devin Lin",
                 "Name[ca]": "Devin Lin",
                 "Name[es]": "Devin Lin",
                 "Name[he]": "דווין לין",
@@ -21,6 +22,7 @@
         "Id": "org.kde.plasma.initialsetup.cellular",
         "License": "GPL-2.0-or-later",
         "Name": "Cellular",
+        "Name[ca@valencia]": "Mòbil",
         "Name[ca]": "Mòbil",
         "Name[es]": "Móvil",
         "Name[he]": "סלולרי",
