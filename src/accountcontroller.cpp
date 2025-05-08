@@ -4,7 +4,6 @@
 #include "accountcontroller.h"
 
 #include <QDBusObjectPath>
-#include <QDebug>
 
 #include "accounts_interface.h"
 #include "user.h"
@@ -26,6 +25,8 @@ QString AccountController::username() const
 
 void AccountController::setUsername(const QString &username)
 {
+    qWarning() << "Setting username to" << username;
+
     if (m_username == username) {
         return;
     }
@@ -40,6 +41,8 @@ QString AccountController::fullName() const
 
 void AccountController::setFullName(const QString &fullName)
 {
+    qWarning() << "Setting full name to" << fullName;
+
     if (m_fullName == fullName) {
         return;
     }
@@ -50,14 +53,22 @@ void AccountController::setFullName(const QString &fullName)
 
 bool AccountController::createUser()
 {
+    qWarning() << "Creating user" << m_username << "with full name" << m_fullName;
+
     bool isAdmin = false;
     QDBusPendingReply<QDBusObjectPath> reply = m_dbusInterface->CreateUser(m_username, m_fullName, static_cast<qint32>(isAdmin));
     reply.waitForFinished();
     if (reply.isValid()) {
-        m_dbusPath = reply.value();
+        qWarning() << "User created with path" << reply.value().path();
+        User *createdUser = new User(this);
+        createdUser->setPath(reply.value());
+        createdUser->setPassword(m_password);
+        delete createdUser;
         return true;
+    } else {
+        qWarning() << "Failed to create user:" << reply.error().message();
+        return false;
     }
-    return false;
 }
 
 QString AccountController::password() const
@@ -67,14 +78,6 @@ QString AccountController::password() const
 
 void AccountController::setPassword(const QString &password)
 {
-    if (m_password == password && !m_dbusPath.path().isEmpty()) {
-        return;
-    }
-
     m_password = password;
     Q_EMIT passwordChanged();
-
-    User createdUser;
-    createdUser.setPath(m_dbusPath);
-    createdUser.setPassword(m_password);
 }

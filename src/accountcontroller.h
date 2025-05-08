@@ -45,5 +45,4 @@ private:
     QString m_username;
     QString m_fullName;
     QString m_password;
-    QDBusObjectPath m_dbusPath;
 };

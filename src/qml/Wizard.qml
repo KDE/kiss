@@ -69,6 +69,7 @@ Kirigami.Page {
     }
 
     function finishFinalPage(): void {
+        AccountController.createUser();
         // the app exits
         InitialStart.Wizard.wizardFinished();
     }
@@ -379,4 +380,3 @@ Kirigami.Page {
         }
     }
 }
-

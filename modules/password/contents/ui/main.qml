@@ -17,8 +17,6 @@ import org.kde.initialsystemsetup
 KissComponents.SetupModule {
     id: root
 
-    nextEnabled: paswordField.text.length > 0 && repeatField.text === paswordField.text
-
     contentItem: ScrollView {
         ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
         contentWidth: -1
@@ -57,8 +55,22 @@ KissComponents.SetupModule {
                     label: i18ndc("plasma-initial-start-account", "@label:textfield", "Confirm Password")
                     statusMessage: text.length > 0 && text !== paswordField.text ? i18nc("@info:status", "The passwords do not match.") : ''
                     status: Kirigami.MessageType.Error
+
+                    onEditingFinished: function() {
+                        if (text.length < 1 || text !== paswordField.text) {
+                            statusMessage = i18nc("@info:status", "The passwords do not match.");
+                            status = Kirigami.MessageType.Error;
+                        } else {
+                            statusMessage = '';
+                            status = Kirigami.MessageType.Information;
+                            AccountController.password = text;
+                            return;
+                        }
+                    }
                 }
             }
         }
     }
+
+    nextEnabled: paswordField.text.length > 0 && repeatField.text === paswordField.text
 }
