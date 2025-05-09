@@ -20,6 +20,7 @@
             }
         ],
         "Id": "org.kde.initialsystemsetup.wifi",
+        "Description": "Allow the user to connect to a Wi-Fi network.",
         "License": "GPL-2.0+",
         "Name": "Network",
         "Name[ca@valencia]": "Network",

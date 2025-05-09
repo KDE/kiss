@@ -20,6 +20,7 @@
             }
         ],
         "Id": "org.kde.plasma.plasmainitialstart.account",
+        "Description": "Allows the user to configure the environment before using it.",
         "License": "LGPL-2.0-or-later",
         "Name": "Before we get started…",
         "Name[ca@valencia]": "Abans de començar…",

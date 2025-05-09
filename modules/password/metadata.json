@@ -20,6 +20,7 @@
             }
         ],
         "Id": "org.kde.plasma.plasmainitialstart.password",
+        "Description": "Allow the user to set a password for the user account.",
         "License": "LGPL-2.0-or-later",
         "Name": "Set a Password",
         "Name[ca@valencia]": "Establix una contrasenya",

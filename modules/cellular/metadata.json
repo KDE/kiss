@@ -20,6 +20,7 @@
             }
         ],
         "Id": "org.kde.plasma.initialsetup.cellular",
+        "Description": "Allow the user to configure the cellular network.",
         "License": "GPL-2.0-or-later",
         "Name": "Cellular",
         "Name[ca@valencia]": "Mòbil",
