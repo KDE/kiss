@@ -32,7 +32,7 @@ include(ECMPoQmTools)
 include(ECMQmlModule)
 
 ################# Find dependencies #################
-find_package(Qt6 ${QT_MIN_VERSION} NO_MODULE COMPONENTS Core Gui Qml QuickControls2 Svg Widgets Dbus)
+find_package(Qt6 ${QT_MIN_VERSION} NO_MODULE COMPONENTS Core Gui Qml QuickControls2 Svg Widgets DBus)
 set_package_properties(Qt6 PROPERTIES
     TYPE REQUIRED
     PURPOSE "Required application components"
