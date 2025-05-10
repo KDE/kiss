@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-03 01:55+0000\n"
+"POT-Creation-Date: 2025-05-10 00:45+0000\n"
 "PO-Revision-Date: 2025-05-04 04:16+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -177,24 +177,25 @@ msgstr "APN-ის დამატება"
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr "თქვენი მოწყობილობა ახლა მზადაა. <br /><br />ისიამოვნეთ <b>%1-ით</b>!"
 
-#: modules/password/contents/ui/main.qml:33
+#: modules/password/contents/ui/main.qml:31
 #, kde-format
 msgid "Be careful not to lose your password."
 msgstr "ფრთხილად, ნუ გადაკარგავთ თქვენს პაროლს."
 
-#: modules/password/contents/ui/main.qml:46
+#: modules/password/contents/ui/main.qml:44
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Password"
 msgstr "პაროლი"
 
-#: modules/password/contents/ui/main.qml:57
+#: modules/password/contents/ui/main.qml:55
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Confirm Password"
 msgstr "გაიმეორეთ პაროლი"
 
-#: modules/password/contents/ui/main.qml:58
+#: modules/password/contents/ui/main.qml:56
+#: modules/password/contents/ui/main.qml:61
 #, kde-format
 msgctxt "@info:status"
 msgid "The passwords do not match."
@@ -291,19 +292,19 @@ msgstr "შემდეგი"
 msgid "Initial Start"
 msgstr "საწყისი გაშვება"
 
-#: src/qml/Wizard.qml:330
+#: src/qml/Wizard.qml:331
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
 msgstr "უკან"
 
-#: src/qml/Wizard.qml:351
+#: src/qml/Wizard.qml:352
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "შემდეგი"
 
-#: src/qml/Wizard.qml:370
+#: src/qml/Wizard.qml:371
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"

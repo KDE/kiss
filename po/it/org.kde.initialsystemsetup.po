@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-03 01:55+0000\n"
+"POT-Creation-Date: 2025-05-10 00:45+0000\n"
 "PO-Revision-Date: 2025-05-03 22:14+0200\n"
 "Last-Translator: Valter Mura <valtermura@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -176,24 +176,25 @@ msgstr "Aggiungi APN"
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr "Il tuo dispositivo è pronto. <br /><br />Divertiti con <b>%1</b>!"
 
-#: modules/password/contents/ui/main.qml:33
+#: modules/password/contents/ui/main.qml:31
 #, kde-format
 msgid "Be careful not to lose your password."
 msgstr "Fai attenzione a non perdere la password."
 
-#: modules/password/contents/ui/main.qml:46
+#: modules/password/contents/ui/main.qml:44
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Password"
 msgstr "Password"
 
-#: modules/password/contents/ui/main.qml:57
+#: modules/password/contents/ui/main.qml:55
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Confirm Password"
 msgstr "Conferma password"
 
-#: modules/password/contents/ui/main.qml:58
+#: modules/password/contents/ui/main.qml:56
+#: modules/password/contents/ui/main.qml:61
 #, kde-format
 msgctxt "@info:status"
 msgid "The passwords do not match."
@@ -292,19 +293,19 @@ msgstr "Successivo"
 msgid "Initial Start"
 msgstr "Avvio iniziale"
 
-#: src/qml/Wizard.qml:330
+#: src/qml/Wizard.qml:331
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
 msgstr "Indietro"
 
-#: src/qml/Wizard.qml:351
+#: src/qml/Wizard.qml:352
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Successivo"
 
-#: src/qml/Wizard.qml:370
+#: src/qml/Wizard.qml:371
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"
