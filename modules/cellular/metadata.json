@@ -19,8 +19,8 @@
                 "Name[zh_TW]": "Devin Lin"
             }
         ],
-        "Id": "org.kde.plasma.initialsetup.cellular",
         "Description": "Allow the user to configure the cellular network.",
+        "Id": "org.kde.plasma.initialsetup.cellular",
         "License": "GPL-2.0-or-later",
         "Name": "Cellular",
         "Name[ca@valencia]": "Mòbil",

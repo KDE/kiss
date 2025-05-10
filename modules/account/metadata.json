@@ -19,8 +19,8 @@
                 "Name[zh_TW]": "Carl Schwan"
             }
         ],
-        "Id": "org.kde.plasma.plasmainitialstart.account",
         "Description": "Allow the user to set the account name.",
+        "Id": "org.kde.plasma.plasmainitialstart.account",
         "License": "LGPL-2.0-or-later",
         "Name": "About You",
         "Name[ca@valencia]": "Quant a vós",

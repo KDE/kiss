@@ -19,8 +19,8 @@
                 "Name[zh_TW]": "Devin Lin"
             }
         ],
-        "Id": "org.kde.plasma.plasmainitialstart.finished",
         "Description": "Shown when the initial system setup is completed, and the user can commit the changes.",
+        "Id": "org.kde.plasma.plasmainitialstart.finished",
         "License": "LGPL-2.0-or-later",
         "Name": "Completed!",
         "Name[ca@valencia]": "Completat!",

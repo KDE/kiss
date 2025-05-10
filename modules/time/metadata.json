@@ -19,8 +19,8 @@
                 "Name[zh_TW]": "Devin Lin"
             }
         ],
-        "Id": "org.kde.plasma.plasmainitialstart.time",
         "Description": "Allow the user to set the timezone.",
+        "Id": "org.kde.plasma.plasmainitialstart.time",
         "License": "LGPL-2.0-or-later",
         "Name": "Time and Date",
         "Name[ca@valencia]": "Time and Date",
