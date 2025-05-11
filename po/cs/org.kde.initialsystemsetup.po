@@ -30,7 +30,7 @@ msgstr ""
 #: modules/account/contents/ui/main.qml:63
 #, kde-format
 msgid "Upload new avatar"
-msgstr ""
+msgstr "Odeslat nového avatara"
 
 #: modules/account/contents/ui/main.qml:80
 #, kde-format
@@ -64,69 +64,68 @@ msgstr ""
 #: modules/cellular/contents/ui/EditProfileDialog.qml:14
 #, kde-format
 msgid "Edit APN"
-msgstr ""
+msgstr "Upravit APN"
 
+# Tohle vypadá na název vlastnosti. Jméno bycvh nechal pro lidi a zvířata.
 #: modules/cellular/contents/ui/EditProfileDialog.qml:38
 #, kde-format
 msgid "Name"
-msgstr ""
+msgstr "Název"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:43
 #, kde-format
 msgid "APN"
-msgstr ""
+msgstr "APN"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:48
-#, fuzzy, kde-format
-#| msgid "Username:"
+#, kde-format
 msgid "Username"
-msgstr "Uživatelské jméno:"
+msgstr "Uživatelské jméno"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:53
-#, fuzzy, kde-format
-#| msgid "Password:"
+#, kde-format
 msgid "Password"
-msgstr "Heslo:"
+msgstr "Heslo"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:58
 #, kde-format
 msgid "Network type"
-msgstr ""
+msgstr "Typ sítě"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "4G/3G/2G"
-msgstr ""
+msgstr "4G/3G/2G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "3G/2G"
-msgstr ""
+msgstr "3G/2G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "2G"
-msgstr ""
+msgstr "2G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 4G"
-msgstr ""
+msgstr "Pouze 4G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 3G"
-msgstr ""
+msgstr "Pouze 3G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 2G"
-msgstr ""
+msgstr "Pouze 2G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Any"
-msgstr ""
+msgstr "Cokoliv"
 
 #: modules/cellular/contents/ui/main.qml:45
 #, kde-format
@@ -153,22 +152,22 @@ msgstr ""
 #: modules/cellular/contents/ui/main.qml:63
 #, kde-format
 msgid "Mobile Data"
-msgstr ""
+msgstr "Mobilní data"
 
 #: modules/cellular/contents/ui/main.qml:109
 #, kde-format
 msgid "Edit"
-msgstr ""
+msgstr "Upravit"
 
 #: modules/cellular/contents/ui/main.qml:117
 #, kde-format
 msgid "Delete"
-msgstr ""
+msgstr "Smazat"
 
 #: modules/cellular/contents/ui/main.qml:127
 #, kde-format
 msgid "Add APN"
-msgstr ""
+msgstr "Přidat APN"
 
 #: modules/finished/contents/ui/main.qml:25
 #, kde-format
@@ -220,7 +219,7 @@ msgstr ""
 #: modules/prepare/contents/ui/main.qml:129
 #, kde-format
 msgid "Dark Theme"
-msgstr ""
+msgstr "Tmavý motiv"
 
 #: modules/time/contents/ui/main.qml:28
 #, kde-format
@@ -230,12 +229,12 @@ msgstr ""
 #: modules/time/contents/ui/main.qml:39
 #, kde-format
 msgid "24-Hour Format"
-msgstr ""
+msgstr "24-hodinový formát"
 
 #: modules/wifi/contents/ui/ConnectionItemDelegate.qml:94
 #, kde-format
 msgid "Connect to"
-msgstr ""
+msgstr "Připojit se k"
 
 #: modules/wifi/contents/ui/main.qml:64
 #, kde-format
@@ -250,12 +249,12 @@ msgstr "Heslo:"
 #: modules/wifi/contents/ui/PasswordField.qml:26
 #, kde-format
 msgid "Invalid input."
-msgstr ""
+msgstr "Neplatný vstup."
 
 #: src/main.cpp:27
 #, kde-format
 msgid "Tokodon"
-msgstr ""
+msgstr "Tokodon"
 
 #: src/main.cpp:29
 #, kde-format
@@ -296,20 +295,19 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
-msgstr ""
+msgstr "Zpět"
 
 #: src/qml/Wizard.qml:352
-#, fuzzy, kde-format
-#| msgid "Next"
+#, kde-format
 msgctxt "@action:button"
 msgid "Next"
-msgstr "Následující"
+msgstr "Další"
 
 #: src/qml/Wizard.qml:371
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"
-msgstr ""
+msgstr "Dokončit"
 
 #: src/user.cpp:123
 #, kde-format
@@ -320,22 +318,22 @@ msgstr ""
 #: src/user.cpp:304
 #, kde-format
 msgid "Could not get permission to save user %1"
-msgstr ""
+msgstr "Pro uložení uživatele %1 chybí oprávnění"
 
 #: src/user.cpp:309
 #, kde-format
 msgid "There was an error while saving changes"
-msgstr ""
+msgstr "Při ukládání změn došlo k chybě"
 
 #: src/user.cpp:410
 #, kde-format
 msgid "Failed to resize image: opening temp file failed"
-msgstr ""
+msgstr "Změna velikosti obrázku selhala: otevření dočasného souboru selhalo"
 
 #: src/user.cpp:418
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
-msgstr ""
+msgstr "Změna velikosti obrázku selhala: zápis do dočasného souboru selhal"
 
 #~ msgid "Previous"
 #~ msgstr "Předchozí"
