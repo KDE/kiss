@@ -17,8 +17,8 @@ class PrepareUtil : public QObject
     QML_ELEMENT
     QML_SINGLETON
 
-    Q_PROPERTY(int scaling READ scaling WRITE setScaling NOTIFY scalingChanged);
-    Q_PROPERTY(QStringList scalingOptions READ scalingOptions CONSTANT);
+    Q_PROPERTY(int scaling READ scaling WRITE setScaling NOTIFY scalingChanged)
+    Q_PROPERTY(QStringList scalingOptions READ scalingOptions CONSTANT)
     Q_PROPERTY(bool usingDarkTheme READ usingDarkTheme WRITE setUsingDarkTheme NOTIFY usingDarkThemeChanged)
 
 public:
