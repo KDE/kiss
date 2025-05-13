@@ -16,6 +16,7 @@
                 "Name[tr]": "Devin Lin",
                 "Name[uk]": "Devin Lin",
                 "Name[x-test]": "xxDevin Linxx",
+                "Name[zh_CN]": "Devin Lin",
                 "Name[zh_TW]": "Devin Lin"
             }
         ],
@@ -30,6 +31,7 @@
         "Description[tr]": "Kullanıcının zaman dilimini ayarlamasına olanak tanır.",
         "Description[uk]": "Дозволити користувачеві встановлювати часовий пояс.",
         "Description[x-test]": "xxAllow the user to set the timezone.xx",
+        "Description[zh_CN]": "允许用户设置时区。",
         "Id": "org.kde.plasma.plasmainitialstart.time",
         "License": "LGPL-2.0-or-later",
         "Name": "Time and Date",
@@ -44,6 +46,7 @@
         "Name[tr]": "Tarih ve Zaman",
         "Name[uk]": "Час і дата",
         "Name[x-test]": "xxTime and Datexx",
+        "Name[zh_CN]": "时间和日期",
         "Name[zh_TW]": "時間與日期",
         "Version": "1.0"
     },

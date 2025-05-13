@@ -16,6 +16,7 @@
                 "Name[tr]": "Carl Schwan",
                 "Name[uk]": "Carl Schwan",
                 "Name[x-test]": "xxCarl Schwanxx",
+                "Name[zh_CN]": "Carl Schwan",
                 "Name[zh_TW]": "Carl Schwan"
             }
         ],
@@ -30,6 +31,7 @@
         "Description[tr]": "Kullanıcının kullanıcı hesabı için bir parola ayarlamasına olanak tanır.",
         "Description[uk]": "Дозволити користувачеві встановлювати пароль до облікового запису.",
         "Description[x-test]": "xxAllow the user to set a password for the user account.xx",
+        "Description[zh_CN]": "允许用户为其用户账户设置密码。",
         "Id": "org.kde.plasma.plasmainitialstart.password",
         "License": "LGPL-2.0-or-later",
         "Name": "Set a Password",
@@ -44,6 +46,7 @@
         "Name[tr]": "Parola Ayarla",
         "Name[uk]": "Вказати пароль",
         "Name[x-test]": "xxSet a Passwordxx",
+        "Name[zh_CN]": "设置密码",
         "Name[zh_TW]": "設定密碼",
         "Version": "1.0"
     },

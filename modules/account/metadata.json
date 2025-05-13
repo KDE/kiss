@@ -16,6 +16,7 @@
                 "Name[tr]": "Carl Schwan",
                 "Name[uk]": "Carl Schwan",
                 "Name[x-test]": "xxCarl Schwanxx",
+                "Name[zh_CN]": "Carl Schwan",
                 "Name[zh_TW]": "Carl Schwan"
             }
         ],
@@ -30,6 +31,7 @@
         "Description[tr]": "Kullanıcının hesap adını ayarlamasına olanak tanır.",
         "Description[uk]": "Дозволити користувачеві встановлювати назву облікового запису.",
         "Description[x-test]": "xxAllow the user to set the account name.xx",
+        "Description[zh_CN]": "允许用户设置账户名称。",
         "Id": "org.kde.plasma.plasmainitialstart.account",
         "License": "LGPL-2.0-or-later",
         "Name": "About You",
@@ -44,6 +46,7 @@
         "Name[tr]": "Senin Hakkında",
         "Name[uk]": "Про себе",
         "Name[x-test]": "xxAbout Youxx",
+        "Name[zh_CN]": "个人信息",
         "Name[zh_TW]": "關於您",
         "Version": "1.0"
     },

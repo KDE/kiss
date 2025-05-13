@@ -16,6 +16,7 @@
                 "Name[tr]": "Devin Lin",
                 "Name[uk]": "Devin Lin",
                 "Name[x-test]": "xxDevin Linxx",
+                "Name[zh_CN]": "Devin Lin",
                 "Name[zh_TW]": "Devin Lin"
             }
         ],
@@ -33,6 +34,7 @@
         "Name[tr]": "Hazırlan",
         "Name[uk]": "Приготування",
         "Name[x-test]": "xxPreparexx",
+        "Name[zh_CN]": "准备",
         "Name[zh_TW]": "準備",
         "Website": "https://kde.org"
     }

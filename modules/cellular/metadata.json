@@ -16,6 +16,7 @@
                 "Name[tr]": "Devin Lin",
                 "Name[uk]": "Devin Lin",
                 "Name[x-test]": "xxDevin Linxx",
+                "Name[zh_CN]": "Devin Lin",
                 "Name[zh_TW]": "Devin Lin"
             }
         ],
@@ -30,6 +31,7 @@
         "Description[tr]": "Kullanıcının hücresel ağı yapılandırmasına olanak tanır.",
         "Description[uk]": "Дозволити користувачеві налаштовувати стільникову мережу.",
         "Description[x-test]": "xxAllow the user to configure the cellular network.xx",
+        "Description[zh_CN]": "允许用户配置移动网络。",
         "Id": "org.kde.plasma.initialsetup.cellular",
         "License": "GPL-2.0-or-later",
         "Name": "Cellular",
@@ -44,6 +46,7 @@
         "Name[tr]": "Hücresel",
         "Name[uk]": "Стільниковий",
         "Name[x-test]": "xxCellularxx",
+        "Name[zh_CN]": "移动网络",
         "Name[zh_TW]": "行動電話"
     },
     "X-KDE-ParentApp": "org.kde.initialsystemsetup",

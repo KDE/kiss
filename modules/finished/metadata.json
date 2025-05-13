@@ -16,6 +16,7 @@
                 "Name[tr]": "Devin Lin",
                 "Name[uk]": "Devin Lin",
                 "Name[x-test]": "xxDevin Linxx",
+                "Name[zh_CN]": "Devin Lin",
                 "Name[zh_TW]": "Devin Lin"
             }
         ],
@@ -30,6 +31,7 @@
         "Description[tr]": "İlk sistem ayarlaması tamamlandığında gösterilir ve kullanıcı ayarları işleyebilir.",
         "Description[uk]": "Буде показано після завершення початкового налаштовування системи, і користувач зможе вносити зміни.",
         "Description[x-test]": "xxShown when the initial system setup is completed, and the user can commit the changes.xx",
+        "Description[zh_CN]": "在初始系统设置完成后显示，此时用户可以提交更改。",
         "Id": "org.kde.plasma.plasmainitialstart.finished",
         "License": "LGPL-2.0-or-later",
         "Name": "Completed!",
@@ -44,6 +46,7 @@
         "Name[tr]": "Tamamlandı!",
         "Name[uk]": "Завершено!",
         "Name[x-test]": "xxCompleted!xx",
+        "Name[zh_CN]": "已完成",
         "Name[zh_TW]": "已完成！",
         "Version": "1.0"
     },

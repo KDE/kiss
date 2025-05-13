@@ -16,6 +16,7 @@
                 "Name[tr]": "Carl Schwan",
                 "Name[uk]": "Carl Schwan",
                 "Name[x-test]": "xxCarl Schwanxx",
+                "Name[zh_CN]": "Carl Schwan",
                 "Name[zh_TW]": "Carl Schwan"
             }
         ],
@@ -30,6 +31,7 @@
         "Description[tr]": "Kullanıcının onu kullanmadan önce ortamı yapılandırmasına olanak tanır.",
         "Description[uk]": "Дозволяє користувачеві налаштовувати середовище до його використання.",
         "Description[x-test]": "xxAllows the user to configure the environment before using it.xx",
+        "Description[zh_CN]": "允许用户在使用系统环境之前对其进行配置。",
         "Id": "org.kde.plasma.plasmainitialstart.account",
         "License": "LGPL-2.0-or-later",
         "Name": "Before we get started…",
@@ -44,6 +46,7 @@
         "Name[tr]": "Başlamadan Önce…",
         "Name[uk]": "Перш, ніж ми почнемо.",
         "Name[x-test]": "xxBefore we get started…xx",
+        "Name[zh_CN]": "在开始之前…",
         "Name[zh_TW]": "開始之前…",
         "Version": "1.0"
     },
