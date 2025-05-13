@@ -49,11 +49,10 @@ msgid "Full Name"
 msgstr ""
 
 #: modules/account/contents/ui/main.qml:140
-#, fuzzy, kde-format
-#| msgid "Username:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Username"
-msgstr "Uživatelské jméno:"
+msgstr ""
 
 #: modules/account/contents/ui/main.qml:150
 #, kde-format
@@ -180,18 +179,16 @@ msgid "Be careful not to lose your password."
 msgstr ""
 
 #: modules/password/contents/ui/main.qml:44
-#, fuzzy, kde-format
-#| msgid "Password:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Password"
-msgstr "Heslo:"
+msgstr ""
 
 #: modules/password/contents/ui/main.qml:55
-#, fuzzy, kde-format
-#| msgid "Password:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Confirm Password"
-msgstr "Heslo:"
+msgstr ""
 
 #: modules/password/contents/ui/main.qml:56
 #: modules/password/contents/ui/main.qml:61
@@ -334,21 +331,3 @@ msgstr "Změna velikosti obrázku selhala: otevření dočasného souboru selhal
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "Změna velikosti obrázku selhala: zápis do dočasného souboru selhal"
-
-#~ msgid "Previous"
-#~ msgstr "Předchozí"
-
-#~ msgid "All Done!"
-#~ msgstr "Vše hotovo!"
-
-#~ msgid "Let's get started"
-#~ msgstr "Začněme"
-
-#~ msgid "Welcome"
-#~ msgstr "Vítejte"
-
-#~ msgid "Sample Page"
-#~ msgstr "Vzorová stránka"
-
-#~ msgid "User Setup"
-#~ msgstr "Nastavení uživatele"
