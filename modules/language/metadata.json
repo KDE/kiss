@@ -1,0 +1,18 @@
+{
+    "KPackageStructure": "KDE/InitialSystemSetup",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "kristen@kde.org",
+                "Name": "Kristen McWilliam"
+            }
+        ],
+        "Id": "org.kde.initialsystemsetup.language",
+        "License": "LGPL-2.1-or-later",
+        "Description": "Allow the user to set the system language.",
+        "Name": "Language",
+        "Website": "https://kde.org"
+    },
+    "X-KDE-ParentApp": "org.kde.initialsystemsetup",
+    "X-KDE-Weight": 0
+}

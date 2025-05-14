@@ -1,6 +1,9 @@
 # SPDX-FileCopyrightText: 2025 Carl Schwan <carl@carlschwan.eu>
 # SPDX-License-Identifier: LGPL-2.0-or-later
 
+add_subdirectory(language)
+kpackage_install_package(language org.kde.initialsystemsetup.language packages plasma)
+
 add_subdirectory(prepare)
 kpackage_install_package(prepare org.kde.initialsystemsetup.prepare packages plasma)
 
