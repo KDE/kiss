@@ -55,6 +55,11 @@ void PrepareUtil::setScaling(int scaling)
     qreal scalingNum = ((double)scaling) / 100;
 
     for (KScreen::OutputPtr output : outputs) {
+        // TODO: Find the display the app is on and only set the scaling for that display instead.
+        // Setting for all displays is not ideal since they can have different densities.
+        if (!output->isPrimary()) {
+            continue;
+        }
         output->setScale(scalingNum);
     }
 
