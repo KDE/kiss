@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-10 00:45+0000\n"
+"POT-Creation-Date: 2025-05-16 00:44+0000\n"
 "PO-Revision-Date: 2025-05-03 14:19+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -176,6 +176,21 @@ msgstr "APN toevoegen"
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr "Uw apparaat is nu gereed. <br /><br />Veel plezier <b>%1</b>!"
 
+#: modules/language/contents/ui/main.qml:45
+#, kde-format
+msgid "Please select your preferred language."
+msgstr ""
+
+#: modules/language/contents/ui/main.qml:65
+#, kde-format
+msgid "Language"
+msgstr ""
+
+#: modules/language/contents/ui/main.qml:82
+#, kde-format
+msgid "Search languages..."
+msgstr ""
+
 #: modules/password/contents/ui/main.qml:31
 #, kde-format
 msgid "Be careful not to lose your password."
@@ -277,15 +292,16 @@ msgstr "Welkome bij<br/><b>Plasma Mobile</b>"
 msgid "Welcome to<br/><b>Plasma Desktop</b>"
 msgstr "Welkom bij<br/><b>Plasma bureaublad</b>"
 
-#: src/qml/LandingComponent.qml:128
+#: src/qml/LandingComponent.qml:117
+#, fuzzy, kde-format
+#| msgid "User Setup"
+msgid "Begin Setup"
+msgstr "Opzetten van gebruiker"
+
+#: src/qml/LandingComponent.qml:144
 #, kde-format
 msgid "Powered by<br/><b>%1</b>"
 msgstr "Aangedreven door<br/><b>%1</b>"
-
-#: src/qml/LandingComponent.qml:152
-#, kde-format
-msgid "Next"
-msgstr "Volgende"
 
 #: src/qml/Main.qml:14
 #, kde-format
@@ -340,6 +356,9 @@ msgstr ""
 "Afbeelding van grootte wijzigen is mislukt: schrijven naar tijdelijk bestand "
 "is mislukt "
 
+#~ msgid "Next"
+#~ msgstr "Volgende"
+
 #~ msgid "Previous"
 #~ msgstr "Vorige"
 
@@ -375,9 +394,6 @@ msgstr ""
 
 #~ msgid "Realname:"
 #~ msgstr "Echte naam:"
-
-#~ msgid "User Setup"
-#~ msgstr "Opzetten van gebruiker"
 
 #~ msgid "Let's set up your user account"
 #~ msgstr "Laten we uw gebruikersaccount opzetten"

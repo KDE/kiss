@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-10 00:45+0000\n"
+"POT-Creation-Date: 2025-05-16 00:44+0000\n"
 "PO-Revision-Date: 2025-05-05 23:04+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -172,6 +172,21 @@ msgstr "新增 APN"
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr "您的裝置現已就緒。<br /><br />享受 <b>%1</b> 吧！"
 
+#: modules/language/contents/ui/main.qml:45
+#, kde-format
+msgid "Please select your preferred language."
+msgstr ""
+
+#: modules/language/contents/ui/main.qml:65
+#, kde-format
+msgid "Language"
+msgstr ""
+
+#: modules/language/contents/ui/main.qml:82
+#, kde-format
+msgid "Search languages..."
+msgstr ""
+
 #: modules/password/contents/ui/main.qml:31
 #, kde-format
 msgid "Be careful not to lose your password."
@@ -272,15 +287,16 @@ msgstr "歡迎來到<br/><b>Plasma 行動</b>"
 msgid "Welcome to<br/><b>Plasma Desktop</b>"
 msgstr "歡迎來到<br/><b>Plasma 桌面</b>"
 
-#: src/qml/LandingComponent.qml:128
+#: src/qml/LandingComponent.qml:117
+#, fuzzy, kde-format
+#| msgid "User Setup"
+msgid "Begin Setup"
+msgstr "使用者初始設定"
+
+#: src/qml/LandingComponent.qml:144
 #, kde-format
 msgid "Powered by<br/><b>%1</b>"
 msgstr "基於<br/><b>%1</b>"
-
-#: src/qml/LandingComponent.qml:152
-#, kde-format
-msgid "Next"
-msgstr "下一步"
 
 #: src/qml/Main.qml:14
 #, kde-format
@@ -331,6 +347,9 @@ msgstr "圖片尺寸調整失敗：無法開啟暫存檔"
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "圖片尺寸調整失敗：無法寫入至暫存檔"
 
+#~ msgid "Next"
+#~ msgstr "下一步"
+
 #~ msgid "Previous"
 #~ msgstr "上一頁"
 
@@ -366,9 +385,6 @@ msgstr "圖片尺寸調整失敗：無法寫入至暫存檔"
 
 #~ msgid "Realname:"
 #~ msgstr "實名："
-
-#~ msgid "User Setup"
-#~ msgstr "使用者初始設定"
 
 #~ msgid "Let's set up your user account"
 #~ msgstr "讓我們設定您的使用者帳號吧"

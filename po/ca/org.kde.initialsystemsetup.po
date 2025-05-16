@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-10 00:45+0000\n"
+"POT-Creation-Date: 2025-05-16 00:44+0000\n"
 "PO-Revision-Date: 2025-05-03 10:08+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -176,6 +176,21 @@ msgstr "Afegeix un APN"
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr "El dispositiu ara està llest. <br /><br />Gaudiu el <b>%1</b>!"
 
+#: modules/language/contents/ui/main.qml:45
+#, kde-format
+msgid "Please select your preferred language."
+msgstr ""
+
+#: modules/language/contents/ui/main.qml:65
+#, kde-format
+msgid "Language"
+msgstr ""
+
+#: modules/language/contents/ui/main.qml:82
+#, kde-format
+msgid "Search languages..."
+msgstr ""
+
 #: modules/password/contents/ui/main.qml:31
 #, kde-format
 msgid "Be careful not to lose your password."
@@ -278,15 +293,15 @@ msgstr "Us donem la benvinguda al<br/><b>Plasma Mobile</b>"
 msgid "Welcome to<br/><b>Plasma Desktop</b>"
 msgstr "Us donem la benvinguda a <br/>l'<b>escriptori Plasma </b>"
 
-#: src/qml/LandingComponent.qml:128
+#: src/qml/LandingComponent.qml:117
+#, kde-format
+msgid "Begin Setup"
+msgstr ""
+
+#: src/qml/LandingComponent.qml:144
 #, kde-format
 msgid "Powered by<br/><b>%1</b>"
 msgstr "Funciona amb<br/><b>%1</b>"
-
-#: src/qml/LandingComponent.qml:152
-#, kde-format
-msgid "Next"
-msgstr "Següent"
 
 #: src/qml/Main.qml:14
 #, kde-format
@@ -340,3 +355,6 @@ msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "Ha fallat en redimensionar la imatge: ha fallat en escriure al fitxer "
 "temporal"
+
+#~ msgid "Next"
+#~ msgstr "Següent"

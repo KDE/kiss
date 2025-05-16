@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: org.kde.initialsystemsetup\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-10 00:45+0000\n"
+"POT-Creation-Date: 2025-05-16 00:44+0000\n"
 "PO-Revision-Date: 2024-07-14 10:54+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -173,6 +173,21 @@ msgstr ""
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr ""
 
+#: modules/language/contents/ui/main.qml:45
+#, kde-format
+msgid "Please select your preferred language."
+msgstr ""
+
+#: modules/language/contents/ui/main.qml:65
+#, kde-format
+msgid "Language"
+msgstr ""
+
+#: modules/language/contents/ui/main.qml:82
+#, kde-format
+msgid "Search languages..."
+msgstr ""
+
 #: modules/password/contents/ui/main.qml:31
 #, kde-format
 msgid "Be careful not to lose your password."
@@ -273,14 +288,14 @@ msgstr ""
 msgid "Welcome to<br/><b>Plasma Desktop</b>"
 msgstr ""
 
-#: src/qml/LandingComponent.qml:128
+#: src/qml/LandingComponent.qml:117
 #, kde-format
-msgid "Powered by<br/><b>%1</b>"
+msgid "Begin Setup"
 msgstr ""
 
-#: src/qml/LandingComponent.qml:152
+#: src/qml/LandingComponent.qml:144
 #, kde-format
-msgid "Next"
+msgid "Powered by<br/><b>%1</b>"
 msgstr ""
 
 #: src/qml/Main.qml:14

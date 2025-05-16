@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-10 00:45+0000\n"
+"POT-Creation-Date: 2025-05-16 00:44+0000\n"
 "PO-Revision-Date: 2024-07-16 15:46+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -173,6 +173,21 @@ msgstr "Přidat APN"
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr ""
 
+#: modules/language/contents/ui/main.qml:45
+#, kde-format
+msgid "Please select your preferred language."
+msgstr ""
+
+#: modules/language/contents/ui/main.qml:65
+#, kde-format
+msgid "Language"
+msgstr ""
+
+#: modules/language/contents/ui/main.qml:82
+#, kde-format
+msgid "Search languages..."
+msgstr ""
+
 #: modules/password/contents/ui/main.qml:31
 #, kde-format
 msgid "Be careful not to lose your password."
@@ -273,15 +288,15 @@ msgstr ""
 msgid "Welcome to<br/><b>Plasma Desktop</b>"
 msgstr ""
 
-#: src/qml/LandingComponent.qml:128
+#: src/qml/LandingComponent.qml:117
+#, kde-format
+msgid "Begin Setup"
+msgstr ""
+
+#: src/qml/LandingComponent.qml:144
 #, kde-format
 msgid "Powered by<br/><b>%1</b>"
 msgstr ""
-
-#: src/qml/LandingComponent.qml:152
-#, kde-format
-msgid "Next"
-msgstr "Následující"
 
 #: src/qml/Main.qml:14
 #, kde-format
@@ -331,3 +346,6 @@ msgstr "Změna velikosti obrázku selhala: otevření dočasného souboru selhal
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "Změna velikosti obrázku selhala: zápis do dočasného souboru selhal"
+
+#~ msgid "Next"
+#~ msgstr "Následující"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-10 00:45+0000\n"
+"POT-Creation-Date: 2025-05-16 00:44+0000\n"
 "PO-Revision-Date: 2025-05-03 16:07+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -175,6 +175,21 @@ msgstr "הוספת נקודת גישה (APN)"
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr "המכשיר שלך מוכן כעת. <br /><br />בהצלחה <b>%1</b>!"
 
+#: modules/language/contents/ui/main.qml:45
+#, kde-format
+msgid "Please select your preferred language."
+msgstr ""
+
+#: modules/language/contents/ui/main.qml:65
+#, kde-format
+msgid "Language"
+msgstr ""
+
+#: modules/language/contents/ui/main.qml:82
+#, kde-format
+msgid "Search languages..."
+msgstr ""
+
 #: modules/password/contents/ui/main.qml:31
 #, kde-format
 msgid "Be careful not to lose your password."
@@ -275,15 +290,16 @@ msgstr "ברוך בואך אל<br/><b>פלזמה לניידים</b>"
 msgid "Welcome to<br/><b>Plasma Desktop</b>"
 msgstr "ברוך בואך<br/><b>לשולחן העבודה פלזמה</b>"
 
-#: src/qml/LandingComponent.qml:128
+#: src/qml/LandingComponent.qml:117
+#, fuzzy, kde-format
+#| msgid "User Setup"
+msgid "Begin Setup"
+msgstr "הקמת משתמש"
+
+#: src/qml/LandingComponent.qml:144
 #, kde-format
 msgid "Powered by<br/><b>%1</b>"
 msgstr "פועל על גבי<br/><b>%1</b>"
-
-#: src/qml/LandingComponent.qml:152
-#, kde-format
-msgid "Next"
-msgstr "הבא"
 
 #: src/qml/Main.qml:14
 #, kde-format
@@ -334,6 +350,9 @@ msgstr "שינוי גודל התמונה נכשל: פתיחת הקובץ הזמ�
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "שינוי גודל התמונה נכשל: כתיבה לקובץ הזמני נכשלה"
 
+#~ msgid "Next"
+#~ msgstr "הבא"
+
 #~ msgid "Previous"
 #~ msgstr "הקודם"
 
@@ -369,9 +388,6 @@ msgstr "שינוי גודל התמונה נכשל: כתיבה לקובץ הזמ�
 
 #~ msgid "Realname:"
 #~ msgstr "שם אמיתי:"
-
-#~ msgid "User Setup"
-#~ msgstr "הקמת משתמש"
 
 #~ msgid "Let's set up your user account"
 #~ msgstr "הבה נגדיר את חשבון המשתמש שלך"

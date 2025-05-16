@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-10 00:45+0000\n"
+"POT-Creation-Date: 2025-05-16 00:44+0000\n"
 "PO-Revision-Date: 2025-05-03 09:01+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -175,6 +175,21 @@ msgstr "Додати APN"
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr "Тепер ваш пристрій готовий. <br /><br />Насолоджуйтеся <b>%1</b>!"
 
+#: modules/language/contents/ui/main.qml:45
+#, kde-format
+msgid "Please select your preferred language."
+msgstr ""
+
+#: modules/language/contents/ui/main.qml:65
+#, kde-format
+msgid "Language"
+msgstr ""
+
+#: modules/language/contents/ui/main.qml:82
+#, kde-format
+msgid "Search languages..."
+msgstr ""
+
 #: modules/password/contents/ui/main.qml:31
 #, kde-format
 msgid "Be careful not to lose your password."
@@ -277,15 +292,16 @@ msgstr "Вітаємо у<br/><b>Plasma Mobile</b>"
 msgid "Welcome to<br/><b>Plasma Desktop</b>"
 msgstr "Вітаємо у<br/><b>стільниці Плазми</b>"
 
-#: src/qml/LandingComponent.qml:128
+#: src/qml/LandingComponent.qml:117
+#, fuzzy, kde-format
+#| msgid "User Setup"
+msgid "Begin Setup"
+msgstr "Налаштовування користувача"
+
+#: src/qml/LandingComponent.qml:144
 #, kde-format
 msgid "Powered by<br/><b>%1</b>"
 msgstr "На основі<br/><b>%1</b>"
-
-#: src/qml/LandingComponent.qml:152
-#, kde-format
-msgid "Next"
-msgstr "Далі"
 
 #: src/qml/Main.qml:14
 #, kde-format
@@ -340,6 +356,9 @@ msgstr ""
 "Не вдалося змінити розміри зображення: не вдалося виконати запис до "
 "тимчасового файла"
 
+#~ msgid "Next"
+#~ msgstr "Далі"
+
 #~ msgid "Previous"
 #~ msgstr "Назад"
 
@@ -375,9 +394,6 @@ msgstr ""
 
 #~ msgid "Realname:"
 #~ msgstr "Справжнє ім'я:"
-
-#~ msgid "User Setup"
-#~ msgstr "Налаштовування користувача"
 
 #~ msgid "Let's set up your user account"
 #~ msgstr "Налаштуймо ваш обліковий запис користувача"

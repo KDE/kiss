@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-10 00:45+0000\n"
+"POT-Creation-Date: 2025-05-16 00:44+0000\n"
 "PO-Revision-Date: 2024-07-14 08:49+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -175,6 +175,21 @@ msgstr ""
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr ""
 
+#: modules/language/contents/ui/main.qml:45
+#, kde-format
+msgid "Please select your preferred language."
+msgstr ""
+
+#: modules/language/contents/ui/main.qml:65
+#, kde-format
+msgid "Language"
+msgstr ""
+
+#: modules/language/contents/ui/main.qml:82
+#, kde-format
+msgid "Search languages..."
+msgstr ""
+
 #: modules/password/contents/ui/main.qml:31
 #, kde-format
 msgid "Be careful not to lose your password."
@@ -277,15 +292,16 @@ msgstr ""
 msgid "Welcome to<br/><b>Plasma Desktop</b>"
 msgstr ""
 
-#: src/qml/LandingComponent.qml:128
+#: src/qml/LandingComponent.qml:117
+#, fuzzy, kde-format
+#| msgid "User Setup"
+msgid "Begin Setup"
+msgstr "Användarinställning"
+
+#: src/qml/LandingComponent.qml:144
 #, kde-format
 msgid "Powered by<br/><b>%1</b>"
 msgstr ""
-
-#: src/qml/LandingComponent.qml:152
-#, kde-format
-msgid "Next"
-msgstr "Nästa"
 
 #: src/qml/Main.qml:14
 #, kde-format
@@ -337,6 +353,9 @@ msgstr ""
 msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 
+#~ msgid "Next"
+#~ msgstr "Nästa"
+
 #~ msgid "Previous"
 #~ msgstr "Föregående"
 
@@ -372,9 +391,6 @@ msgstr ""
 
 #~ msgid "Realname:"
 #~ msgstr "Riktigt namn:"
-
-#~ msgid "User Setup"
-#~ msgstr "Användarinställning"
 
 #~ msgid "Let's set up your user account"
 #~ msgstr "Låt oss ställa in ditt användarkonto"
