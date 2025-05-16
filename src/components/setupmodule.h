@@ -1,4 +1,5 @@
 // SPDX-FileCopyrightText: 2024 Devin Lin <devin@kde.org>
+// SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
 // SPDX-License-Identifier: LGPL-2.0-or-later
 
 #pragma once
@@ -14,7 +15,7 @@ class SetupModule : public QObject
     QML_ELEMENT
 
     Q_PROPERTY(bool available READ available WRITE setAvailable NOTIFY availableChanged)
-    Q_PROPERTY(qreal cardWidth READ cardWidth WRITE setCardsWith NOTIFY cardWidthChanged)
+    Q_PROPERTY(qreal cardWidth READ cardWidth WRITE setCardWidth NOTIFY cardWidthChanged)
     Q_PROPERTY(bool nextEnabled READ nextEnabled WRITE setNextEnabled NOTIFY nextEnabledChanged)
     Q_PROPERTY(QQuickItem *contentItem READ contentItem WRITE setContentItem REQUIRED NOTIFY contentItemChanged)
     Q_PROPERTY(QQmlListProperty<QObject> children READ children CONSTANT)
@@ -27,7 +28,7 @@ public:
     void setAvailable(bool available);
 
     [[nodiscard]] qreal cardWidth() const;
-    void setCardsWith(qreal cardWidth);
+    void setCardWidth(qreal cardWidth);
 
     [[nodiscard]] QQuickItem *contentItem() const;
     void setContentItem(QQuickItem *contentItem);

@@ -1,4 +1,5 @@
 // SPDX-FileCopyrightText: 2024 Devin Lin <devin@kde.org>
+// SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
 // SPDX-License-Identifier: LGPL-2.0-or-later
 
 #include "setupmodule.h"
@@ -55,7 +56,7 @@ qreal SetupModule::cardWidth() const
     return m_cardWidth;
 }
 
-void SetupModule::setCardsWith(qreal cardWidth)
+void SetupModule::setCardWidth(qreal cardWidth)
 {
     if (m_cardWidth == cardWidth) {
         return;
