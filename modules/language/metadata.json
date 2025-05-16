@@ -7,9 +7,9 @@
                 "Name": "Kristen McWilliam"
             }
         ],
+        "Description": "Allow the user to set the system language.",
         "Id": "org.kde.initialsystemsetup.language",
         "License": "LGPL-2.1-or-later",
-        "Description": "Allow the user to set the system language.",
         "Name": "Language",
         "Website": "https://kde.org"
     },
