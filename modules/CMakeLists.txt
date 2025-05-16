@@ -6,7 +6,7 @@ add_subdirectory(account)
 kpackage_install_package(account org.kde.initialsystemsetup.account packages plasma)
 
 # add_subdirectory(cellular)
-kpackage_install_package(cellular org.kde.initialsystemsetup.cellular packages plasma)
+# kpackage_install_package(cellular org.kde.initialsystemsetup.cellular packages plasma)
 
 add_subdirectory(finished)
 kpackage_install_package(finished org.kde.initialsystemsetup.finished packages plasma)
