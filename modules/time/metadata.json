@@ -5,6 +5,7 @@
             {
                 "Email": "devin@kde.org",
                 "Name": "Devin Lin",
+                "Name[ar]": "ديفين لين",
                 "Name[ca@valencia]": "Devin Lin",
                 "Name[ca]": "Devin Lin",
                 "Name[es]": "Devin Lin",
@@ -24,6 +25,7 @@
             }
         ],
         "Description": "Allow the user to set the timezone.",
+        "Description[ar]": "اسمح للمستخدم بتعيين المنطقة الزمنية.",
         "Description[ca@valencia]": "Permet a l'usuari establir el fus horari.",
         "Description[ca]": "Permet a l'usuari establir el fus horari.",
         "Description[es]": "Permitir que el usuario defina la zona horaria.",
@@ -38,9 +40,11 @@
         "Description[uk]": "Дозволити користувачеві встановлювати часовий пояс.",
         "Description[x-test]": "xxAllow the user to set the timezone.xx",
         "Description[zh_CN]": "允许用户设置时区。",
+        "Description[zh_TW]": "允許使用者設定時區。",
         "Id": "org.kde.plasma.plasmainitialstart.time",
         "License": "LGPL-2.0-or-later",
         "Name": "Time and Date",
+        "Name[ar]": "الوقت والتّاريخ",
         "Name[ca@valencia]": "Time and Date",
         "Name[ca]": "Time and Date",
         "Name[es]": "Fecha y hora",

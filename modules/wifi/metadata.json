@@ -5,6 +5,7 @@
             {
                 "Email": "devin@kde.org",
                 "Name": "Devin Lin",
+                "Name[ar]": "ديفين لين",
                 "Name[ca@valencia]": "Devin Lin",
                 "Name[ca]": "Devin Lin",
                 "Name[es]": "Devin Lin",
@@ -24,6 +25,7 @@
             }
         ],
         "Description": "Allow the user to connect to a Wi-Fi network.",
+        "Description[ar]": "اسمح للمستخدم بالاتصال بشبكة واي فاي.",
         "Description[ca@valencia]": "Permet a l'usuari connectar a una xarxa Wi-Fi.",
         "Description[ca]": "Permet a l'usuari connectar a una xarxa Wi-Fi.",
         "Description[es]": "Permitir que el usuario pueda conectarse a una red wifi.",
@@ -38,9 +40,11 @@
         "Description[uk]": "Дозволити користувачеві встановлювати з'єднання з мережею Wi-Fi.",
         "Description[x-test]": "xxAllow the user to connect to a Wi-Fi network.xx",
         "Description[zh_CN]": "允许用户连接到 Wi-Fi 网络。",
+        "Description[zh_TW]": "允許使用者連線到 Wi-Fi 網路。",
         "Id": "org.kde.initialsystemsetup.wifi",
         "License": "GPL-2.0+",
         "Name": "Network",
+        "Name[ar]": "الشبكة",
         "Name[ca@valencia]": "Network",
         "Name[ca]": "Network",
         "Name[es]": "Red",

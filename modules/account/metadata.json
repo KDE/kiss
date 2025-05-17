@@ -5,6 +5,7 @@
             {
                 "Email": "carl@carlschwan.eu",
                 "Name": "Carl Schwan",
+                "Name[ar]": "كارل شوان",
                 "Name[ca@valencia]": "Carl Schwan",
                 "Name[ca]": "Carl Schwan",
                 "Name[es]": "Carl Schwan",
@@ -24,6 +25,7 @@
             }
         ],
         "Description": "Allow the user to set the account name.",
+        "Description[ar]": "تسمح للمستخدم بتعيين اسم الحساب.",
         "Description[ca@valencia]": "Permet a l'usuari establir el nom del compte.",
         "Description[ca]": "Permet a l'usuari establir el nom del compte.",
         "Description[es]": "Permitir que el usuario defina el nombre de la cuenta.",
@@ -38,9 +40,11 @@
         "Description[uk]": "Дозволити користувачеві встановлювати назву облікового запису.",
         "Description[x-test]": "xxAllow the user to set the account name.xx",
         "Description[zh_CN]": "允许用户设置账户名称。",
+        "Description[zh_TW]": "允許使用者設定帳號名稱。",
         "Id": "org.kde.plasma.plasmainitialstart.account",
         "License": "LGPL-2.0-or-later",
         "Name": "About You",
+        "Name[ar]": "عنك",
         "Name[ca@valencia]": "Quant a vós",
         "Name[ca]": "Quant a vós",
         "Name[es]": "Acerca de usted",

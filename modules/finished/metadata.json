@@ -5,6 +5,7 @@
             {
                 "Email": "devin@kde.org",
                 "Name": "Devin Lin",
+                "Name[ar]": "ديفين لين",
                 "Name[ca@valencia]": "Devin Lin",
                 "Name[ca]": "Devin Lin",
                 "Name[es]": "Devin Lin",
@@ -24,6 +25,7 @@
             }
         ],
         "Description": "Shown when the initial system setup is completed, and the user can commit the changes.",
+        "Description[ar]": "يظهر عند اكتمال الإعداد الأولي للنظام، ويمكن للمستخدم الالتزام بالتغييرات.",
         "Description[ca@valencia]": "Es mostra quan s'ha completat la configuració inicial del sistema i l'usuari pot publicar els canvis.",
         "Description[ca]": "Es mostra quan s'ha completat la configuració inicial del sistema i l'usuari pot publicar els canvis.",
         "Description[es]": "Se muestra cuando se completa la configuración inicial del sistema y el usuario puede enviar los cambios.",
@@ -38,9 +40,11 @@
         "Description[uk]": "Буде показано після завершення початкового налаштовування системи, і користувач зможе вносити зміни.",
         "Description[x-test]": "xxShown when the initial system setup is completed, and the user can commit the changes.xx",
         "Description[zh_CN]": "在初始系统设置完成后显示，此时用户可以提交更改。",
+        "Description[zh_TW]": "在初始系統設定完成時顯示，讓使用者能提交變更。",
         "Id": "org.kde.plasma.plasmainitialstart.finished",
         "License": "LGPL-2.0-or-later",
         "Name": "Completed!",
+        "Name[ar]": "اكتمل!",
         "Name[ca@valencia]": "Completat!",
         "Name[ca]": "Completat!",
         "Name[es]": "Completado",

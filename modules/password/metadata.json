@@ -5,6 +5,7 @@
             {
                 "Email": "carl@carlschwan.eu",
                 "Name": "Carl Schwan",
+                "Name[ar]": "كارل شوان",
                 "Name[ca@valencia]": "Carl Schwan",
                 "Name[ca]": "Carl Schwan",
                 "Name[es]": "Carl Schwan",
@@ -24,6 +25,7 @@
             }
         ],
         "Description": "Allow the user to set a password for the user account.",
+        "Description[ar]": "تسمح للمستخدم بتعيين كلمة السر لحساب المستخدم.",
         "Description[ca@valencia]": "Permet a l'usuari establir una contrasenya per al compte de l'usuari.",
         "Description[ca]": "Permet a l'usuari establir una contrasenya per al compte de l'usuari.",
         "Description[es]": "Permitir que el usuario defina una contraseña para la cuenta.",
@@ -38,9 +40,11 @@
         "Description[uk]": "Дозволити користувачеві встановлювати пароль до облікового запису.",
         "Description[x-test]": "xxAllow the user to set a password for the user account.xx",
         "Description[zh_CN]": "允许用户为其用户账户设置密码。",
+        "Description[zh_TW]": "允許使用者為使用者帳號設定密碼。",
         "Id": "org.kde.plasma.plasmainitialstart.password",
         "License": "LGPL-2.0-or-later",
         "Name": "Set a Password",
+        "Name[ar]": "ضع كلمة سر",
         "Name[ca@valencia]": "Establix una contrasenya",
         "Name[ca]": "Estableix una contrasenya",
         "Name[es]": "Definir una contraseña",

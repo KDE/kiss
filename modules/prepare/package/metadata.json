@@ -5,6 +5,7 @@
             {
                 "Email": "devin@kde.org",
                 "Name": "Devin Lin",
+                "Name[ar]": "ديفين لين",
                 "Name[ca@valencia]": "Devin Lin",
                 "Name[ca]": "Devin Lin",
                 "Name[es]": "Devin Lin",
@@ -26,6 +27,7 @@
         "Id": "org.kde.plasma.mobileinitialstart.prepare",
         "License": "GPL-2.0+",
         "Name": "Prepare",
+        "Name[ar]": "حضّر",
         "Name[ca@valencia]": "Prepara",
         "Name[ca]": "Prepara",
         "Name[es]": "Preparativos",

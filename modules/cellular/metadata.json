@@ -5,6 +5,7 @@
             {
                 "Email": "devin@kde.org",
                 "Name": "Devin Lin",
+                "Name[ar]": "ديفين لين",
                 "Name[ca@valencia]": "Devin Lin",
                 "Name[ca]": "Devin Lin",
                 "Name[es]": "Devin Lin",
@@ -24,6 +25,7 @@
             }
         ],
         "Description": "Allow the user to configure the cellular network.",
+        "Description[ar]": "اسمح للمستخدم بضبط الشبكة الخلوية.",
         "Description[ca@valencia]": "Permet a l'usuari configurar la xarxa mòbil.",
         "Description[ca]": "Permet a l'usuari configurar la xarxa mòbil.",
         "Description[es]": "Permitir que el usuario configure la red móvil.",
@@ -38,9 +40,11 @@
         "Description[uk]": "Дозволити користувачеві налаштовувати стільникову мережу.",
         "Description[x-test]": "xxAllow the user to configure the cellular network.xx",
         "Description[zh_CN]": "允许用户配置移动网络。",
+        "Description[zh_TW]": "允許使用者設定行動網路。",
         "Id": "org.kde.plasma.initialsetup.cellular",
         "License": "GPL-2.0-or-later",
         "Name": "Cellular",
+        "Name[ar]": "هاتف خلوي",
         "Name[ca@valencia]": "Mòbil",
         "Name[ca]": "Mòbil",
         "Name[es]": "Móvil",
