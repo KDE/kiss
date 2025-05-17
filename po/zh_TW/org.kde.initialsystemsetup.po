@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-16 00:44+0000\n"
-"PO-Revision-Date: 2025-05-05 23:04+0900\n"
+"PO-Revision-Date: 2025-05-16 15:49+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -175,17 +175,17 @@ msgstr "您的裝置現已就緒。<br /><br />享受 <b>%1</b> 吧！"
 #: modules/language/contents/ui/main.qml:45
 #, kde-format
 msgid "Please select your preferred language."
-msgstr ""
+msgstr "請選擇您偏好使用的語言。"
 
 #: modules/language/contents/ui/main.qml:65
 #, kde-format
 msgid "Language"
-msgstr ""
+msgstr "語言"
 
 #: modules/language/contents/ui/main.qml:82
 #, kde-format
 msgid "Search languages..."
-msgstr ""
+msgstr "搜尋語言..."
 
 #: modules/password/contents/ui/main.qml:31
 #, kde-format
@@ -288,10 +288,10 @@ msgid "Welcome to<br/><b>Plasma Desktop</b>"
 msgstr "歡迎來到<br/><b>Plasma 桌面</b>"
 
 #: src/qml/LandingComponent.qml:117
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "User Setup"
 msgid "Begin Setup"
-msgstr "使用者初始設定"
+msgstr "開始設定"
 
 #: src/qml/LandingComponent.qml:144
 #, kde-format

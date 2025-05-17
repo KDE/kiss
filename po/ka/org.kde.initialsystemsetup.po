@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-16 00:44+0000\n"
-"PO-Revision-Date: 2025-05-04 04:16+0200\n"
+"PO-Revision-Date: 2025-05-16 03:45+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.5\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.6\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -180,17 +180,17 @@ msgstr "თქვენი მოწყობილობა ახლა მზ
 #: modules/language/contents/ui/main.qml:45
 #, kde-format
 msgid "Please select your preferred language."
-msgstr ""
+msgstr "აირჩიეთ სასურველი ენა."
 
 #: modules/language/contents/ui/main.qml:65
 #, kde-format
 msgid "Language"
-msgstr ""
+msgstr "ენა"
 
 #: modules/language/contents/ui/main.qml:82
 #, kde-format
 msgid "Search languages..."
-msgstr ""
+msgstr "ენის მოძებნა..."
 
 #: modules/password/contents/ui/main.qml:31
 #, kde-format
@@ -295,7 +295,7 @@ msgstr "მოგესალმებათ<br/><b>Plasma Desktop</b>"
 #: src/qml/LandingComponent.qml:117
 #, kde-format
 msgid "Begin Setup"
-msgstr ""
+msgstr "მორგების დაწყება"
 
 #: src/qml/LandingComponent.qml:144
 #, kde-format

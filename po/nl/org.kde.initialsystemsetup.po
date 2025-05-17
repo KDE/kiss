@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-16 00:44+0000\n"
-"PO-Revision-Date: 2025-05-03 14:19+0200\n"
+"PO-Revision-Date: 2025-05-16 12:40+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.04.0\n"
+"X-Generator: Lokalize 25.04.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -179,17 +179,17 @@ msgstr "Uw apparaat is nu gereed. <br /><br />Veel plezier <b>%1</b>!"
 #: modules/language/contents/ui/main.qml:45
 #, kde-format
 msgid "Please select your preferred language."
-msgstr ""
+msgstr "Selecteer uw taal met voorkeur."
 
 #: modules/language/contents/ui/main.qml:65
 #, kde-format
 msgid "Language"
-msgstr ""
+msgstr "Taal"
 
 #: modules/language/contents/ui/main.qml:82
 #, kde-format
 msgid "Search languages..."
-msgstr ""
+msgstr "Doorzoek talen..."
 
 #: modules/password/contents/ui/main.qml:31
 #, kde-format
@@ -293,10 +293,9 @@ msgid "Welcome to<br/><b>Plasma Desktop</b>"
 msgstr "Welkom bij<br/><b>Plasma bureaublad</b>"
 
 #: src/qml/LandingComponent.qml:117
-#, fuzzy, kde-format
-#| msgid "User Setup"
+#, kde-format
 msgid "Begin Setup"
-msgstr "Opzetten van gebruiker"
+msgstr "Begin met opzetten"
 
 #: src/qml/LandingComponent.qml:144
 #, kde-format
