@@ -289,7 +289,6 @@ msgstr "歡迎來到<br/><b>Plasma 桌面</b>"
 
 #: src/qml/LandingComponent.qml:117
 #, kde-format
-#| msgid "User Setup"
 msgid "Begin Setup"
 msgstr "開始設定"
 

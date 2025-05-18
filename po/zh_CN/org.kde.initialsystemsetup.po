@@ -175,17 +175,17 @@ msgstr "您的设备已经准备就绪。<br /><br />请随心所欲地使用 <b
 #: modules/language/contents/ui/main.qml:45
 #, kde-format
 msgid "Please select your preferred language."
-msgstr ""
+msgstr "请选择您的首选语言。"
 
 #: modules/language/contents/ui/main.qml:65
 #, kde-format
 msgid "Language"
-msgstr ""
+msgstr "语言"
 
 #: modules/language/contents/ui/main.qml:82
 #, kde-format
 msgid "Search languages..."
-msgstr ""
+msgstr "搜索语言..."
 
 #: modules/password/contents/ui/main.qml:31
 #, kde-format
@@ -290,7 +290,7 @@ msgstr "欢迎使用<br/><b>Plasma 桌面</b>"
 #: src/qml/LandingComponent.qml:117
 #, kde-format
 msgid "Begin Setup"
-msgstr ""
+msgstr "开始设置"
 
 #: src/qml/LandingComponent.qml:144
 #, kde-format
