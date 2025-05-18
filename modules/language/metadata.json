@@ -14,6 +14,7 @@
                 "Name[tr]": "Kristen McWilliam",
                 "Name[uk]": "Kristen McWilliam",
                 "Name[x-test]": "xxKristen McWilliamxx",
+                "Name[zh_CN]": "Kristen McWilliam",
                 "Name[zh_TW]": "Kristen McWilliam"
             }
         ],
@@ -27,6 +28,7 @@
         "Description[tr]": "Kullanıcının sistem dilini ayarlamasına olanak tanır.",
         "Description[uk]": "Дозволити користувачеві встановлювати мову інтерфейсу системи.",
         "Description[x-test]": "xxAllow the user to set the system language.xx",
+        "Description[zh_CN]": "允许用户设置系统语言。",
         "Description[zh_TW]": "允許使用者設定系統語言。",
         "Id": "org.kde.initialsystemsetup.language",
         "License": "LGPL-2.1-or-later",
@@ -40,6 +42,7 @@
         "Name[tr]": "Dil",
         "Name[uk]": "Мова",
         "Name[x-test]": "xxLanguagexx",
+        "Name[zh_CN]": "语言",
         "Name[zh_TW]": "語言",
         "Website": "https://kde.org"
     },
