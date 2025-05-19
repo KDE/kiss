@@ -145,10 +145,6 @@ KissComponents.SetupModule {
                     value: usernameField.text
                 }
             }
-
-            FormCard.FormSectionText {
-                text: i18nc("@info", "This will be used to name your home folder and can't be changed.")
-            }
         }
     }
 }
