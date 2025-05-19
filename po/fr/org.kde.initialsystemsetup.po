@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-16 00:44+0000\n"
-"PO-Revision-Date: 2025-05-14 13:48+0200\n"
+"PO-Revision-Date: 2025-05-17 16:58+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
@@ -27,7 +27,7 @@ msgstr "thomas.vergnaud@mailo.eu"
 #: modules/account/contents/ui/main.qml:63
 #, kde-format
 msgid "Upload new avatar"
-msgstr "Télécharger  un nouvel avatar"
+msgstr "Télécharger un nouvel avatar"
 
 #: modules/account/contents/ui/main.qml:80
 #, kde-format
@@ -49,7 +49,7 @@ msgstr "Nom et prénom"
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Username"
-msgstr "Nom d’utilisateur"
+msgstr "Nom d'utilisateur"
 
 #: modules/account/contents/ui/main.qml:150
 #, kde-format
@@ -62,7 +62,7 @@ msgstr ""
 #: modules/cellular/contents/ui/EditProfileDialog.qml:14
 #, kde-format
 msgid "Edit APN"
-msgstr "Modifier l’APN"
+msgstr "Modifier l'APN"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:38
 #, kde-format
@@ -77,7 +77,7 @@ msgstr "APN"
 #: modules/cellular/contents/ui/EditProfileDialog.qml:48
 #, kde-format
 msgid "Username"
-msgstr "Nom d’utilisateur"
+msgstr "Nom d'utilisateur"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:53
 #, kde-format
@@ -122,7 +122,7 @@ msgstr "Seulement 2G"
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Any"
-msgstr "N’importe"
+msgstr "N'importe"
 
 #: modules/cellular/contents/ui/main.qml:45
 #, kde-format
@@ -146,7 +146,7 @@ msgstr "Veuillez insérer une carte SIM dans votre appareil."
 #: modules/cellular/contents/ui/main.qml:51
 #, kde-format
 msgid "Your device does not have a modem available."
-msgstr "Votre appareil n’a pas de modem disponible."
+msgstr "Votre appareil n'a pas de modem disponible."
 
 #: modules/cellular/contents/ui/main.qml:63
 #, kde-format
@@ -177,17 +177,17 @@ msgstr ""
 #: modules/language/contents/ui/main.qml:45
 #, kde-format
 msgid "Please select your preferred language."
-msgstr ""
+msgstr "Veuillez sélectionnée votre langue préférée."
 
 #: modules/language/contents/ui/main.qml:65
 #, kde-format
 msgid "Language"
-msgstr ""
+msgstr "Langue"
 
 #: modules/language/contents/ui/main.qml:82
 #, kde-format
 msgid "Search languages..."
-msgstr ""
+msgstr "Rechercher des langues..."
 
 #: modules/password/contents/ui/main.qml:31
 #, kde-format
@@ -218,17 +218,17 @@ msgstr "Les mots de passe ne correspondent pas."
 msgid ""
 "Adjust the screen brightness to be comfortable for the installation process."
 msgstr ""
-"Ajustez la luminosité de l’écran pour faciliter le processus d'installation."
+"Ajustez la luminosité de l'écran pour faciliter le processus d'installation."
 
 #: modules/prepare/contents/ui/main.qml:100
 #, kde-format
 msgid "Adjust the size of elements on the screen."
-msgstr "Ajustez la taille des éléments à l’écran."
+msgstr "Ajustez la taille des éléments à l'écran."
 
 #: modules/prepare/contents/ui/main.qml:111
 #, kde-format
 msgid "Display Scaling"
-msgstr "Mise à l’échelle de l’affichage"
+msgstr "Mise à l'échelle de l'affichage"
 
 #: modules/prepare/contents/ui/main.qml:129
 #, kde-format
@@ -238,7 +238,7 @@ msgstr "Thème sombre"
 #: modules/time/contents/ui/main.qml:28
 #, kde-format
 msgid "Select your time zone and preferred time format."
-msgstr "Sélectionnez votre fuseau horaire et votre format d’heure préféré."
+msgstr "Sélectionnez votre fuseau horaire et votre format d'heure préféré."
 
 #: modules/time/contents/ui/main.qml:39
 #, kde-format
@@ -263,7 +263,7 @@ msgstr "Mot de passe :"
 #: modules/wifi/contents/ui/PasswordField.qml:26
 #, kde-format
 msgid "Invalid input."
-msgstr "Entrée non valide."
+msgstr "Entrée non valable."
 
 #: src/main.cpp:27
 #, kde-format
@@ -291,10 +291,9 @@ msgid "Welcome to<br/><b>Plasma Desktop</b>"
 msgstr "Bienvenue sur<br/><b>Plasma Desktop</b>"
 
 #: src/qml/LandingComponent.qml:117
-#, fuzzy, kde-format
-#| msgid "User Setup"
+#, kde-format
 msgid "Begin Setup"
-msgstr "Configuration utilisateur"
+msgstr "Commencer la configuration"
 
 #: src/qml/LandingComponent.qml:144
 #, kde-format
@@ -328,12 +327,12 @@ msgstr "Terminer"
 #, kde-format
 msgctxt "@info"
 msgid "Failed to crop image: %1"
-msgstr "Échec du recadrage de l’image : %1"
+msgstr "Échec du rognage de l'image : %1"
 
 #: src/user.cpp:304
 #, kde-format
 msgid "Could not get permission to save user %1"
-msgstr "Impossible d’obtenir l’autorisation d’enregistrer l’utilisateur %1"
+msgstr "Impossible d'obtenir l'autorisation d'enregistrer l'utilisateur %1"
 
 #: src/user.cpp:309
 #, kde-format
@@ -344,14 +343,14 @@ msgstr "Erreur : impossible de sauvegarder les changements"
 #, kde-format
 msgid "Failed to resize image: opening temp file failed"
 msgstr ""
-"Échec du redimensionnement de l’image : échec de l’ouverture du fichier "
+"Échec du redimensionnement de l'image : échec de l'ouverture du fichier "
 "temporaire"
 
 #: src/user.cpp:418
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
-"Échec du redimensionnement de l’image : échec de l’écriture dans le fichier "
+"Échec du redimensionnement de l'image : échec de l'écriture dans le fichier "
 "temporaire"
 
 #~ msgid "Next"
