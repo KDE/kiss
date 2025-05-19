@@ -53,16 +53,49 @@ KissComponents.SetupModule {
                 FormCard.FormPasswordFieldDelegate {
                     id: repeatField
                     label: i18ndc("plasma-initial-start-account", "@label:textfield", "Confirm Password")
-                    statusMessage: text.length > 0 && text !== paswordField.text ? i18nc("@info:status", "The passwords do not match.") : ''
                     status: Kirigami.MessageType.Error
+
+                    function setPasswordMatchError() {
+                        repeatField.statusMessage = i18nc("@info:status", "Passwords don’t match");
+                        repeatField.status = Kirigami.MessageType.Error;
+                    }
+
+                    function clearPasswordMatchError() {
+                        repeatField.statusMessage = '';
+                        repeatField.status = Kirigami.MessageType.Information;
+                    }
+
+                    // Timer delays validation while the user is typing.
+                    Timer {
+                        id: validationTimer
+                        interval: Kirigami.Units.humanMoment
+                        running: false
+                        repeat: false
+
+                        onTriggered: {
+                            if (repeatField.text.length > 0 && repeatField.text !== paswordField.text) {
+                                repeatField.setPasswordMatchError();
+                            } else {
+                                repeatField.clearPasswordMatchError();
+                            }
+                        }
+                    }
+
+                    // Reset timer when the user types.
+                    onTextChanged: {
+                        // If passwords match, immediately clear the error message.
+                        if (text.length > 0 && text === paswordField.text) {
+                            repeatField.clearPasswordMatchError();
+                        } else {
+                            validationTimer.restart();
+                        }
+                    }
 
                     onEditingFinished: function() {
                         if (text.length < 1 || text !== paswordField.text) {
-                            statusMessage = i18nc("@info:status", "The passwords do not match.");
-                            status = Kirigami.MessageType.Error;
+                            repeatField.setPasswordMatchError();
                         } else {
-                            statusMessage = '';
-                            status = Kirigami.MessageType.Information;
+                            repeatField.clearPasswordMatchError();
                             AccountController.password = text;
                             return;
                         }
