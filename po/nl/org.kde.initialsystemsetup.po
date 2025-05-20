@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-16 00:44+0000\n"
+"POT-Creation-Date: 2025-05-20 00:45+0000\n"
 "PO-Revision-Date: 2025-05-16 12:40+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -53,14 +53,6 @@ msgstr "Volledige naam"
 msgctxt "@label:textfield"
 msgid "Username"
 msgstr "Gebruikersnaam"
-
-#: modules/account/contents/ui/main.qml:150
-#, kde-format
-msgctxt "@info"
-msgid "This will be used to name your home folder and can't be changed."
-msgstr ""
-"Dit zal gebruikt worden om uw persoonlijke map een naam te geven en niet "
-"gewijzigd worden."
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:14
 #, kde-format
@@ -208,11 +200,12 @@ msgctxt "@label:textfield"
 msgid "Confirm Password"
 msgstr "Wachtwoord bevestigen"
 
-#: modules/password/contents/ui/main.qml:56
-#: modules/password/contents/ui/main.qml:61
-#, kde-format
+#: modules/password/contents/ui/main.qml:59
+#, fuzzy, kde-format
+#| msgctxt "@info:status"
+#| msgid "The passwords do not match."
 msgctxt "@info:status"
-msgid "The passwords do not match."
+msgid "Passwords don’t match"
 msgstr "Het wachtwoord komt niet overeen."
 
 #: modules/prepare/contents/ui/main.qml:42
@@ -354,6 +347,12 @@ msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "Afbeelding van grootte wijzigen is mislukt: schrijven naar tijdelijk bestand "
 "is mislukt "
+
+#~ msgctxt "@info"
+#~ msgid "This will be used to name your home folder and can't be changed."
+#~ msgstr ""
+#~ "Dit zal gebruikt worden om uw persoonlijke map een naam te geven en niet "
+#~ "gewijzigd worden."
 
 #~ msgid "Next"
 #~ msgstr "Volgende"

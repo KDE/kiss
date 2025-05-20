@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-16 00:44+0000\n"
+"POT-Creation-Date: 2025-05-20 00:45+0000\n"
 "PO-Revision-Date: 2025-05-16 09:31+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -55,12 +55,6 @@ msgstr "Nom complet"
 msgctxt "@label:textfield"
 msgid "Username"
 msgstr "Nom d'usuari"
-
-#: modules/account/contents/ui/main.qml:150
-#, kde-format
-msgctxt "@info"
-msgid "This will be used to name your home folder and can't be changed."
-msgstr "Això s'utilitzarà per anomenar la carpeta d'inici i no es pot canviar."
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:14
 #, kde-format
@@ -208,11 +202,12 @@ msgctxt "@label:textfield"
 msgid "Confirm Password"
 msgstr "Confirmació de contrasenya"
 
-#: modules/password/contents/ui/main.qml:56
-#: modules/password/contents/ui/main.qml:61
-#, kde-format
+#: modules/password/contents/ui/main.qml:59
+#, fuzzy, kde-format
+#| msgctxt "@info:status"
+#| msgid "The passwords do not match."
 msgctxt "@info:status"
-msgid "The passwords do not match."
+msgid "Passwords don’t match"
 msgstr "Les contrasenyes no coincideixen."
 
 #: modules/prepare/contents/ui/main.qml:42
@@ -355,3 +350,8 @@ msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "Ha fallat en redimensionar la imatge: ha fallat en escriure al fitxer "
 "temporal"
+
+#~ msgctxt "@info"
+#~ msgid "This will be used to name your home folder and can't be changed."
+#~ msgstr ""
+#~ "Això s'utilitzarà per anomenar la carpeta d'inici i no es pot canviar."

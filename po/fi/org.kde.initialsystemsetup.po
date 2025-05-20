@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-16 00:44+0000\n"
+"POT-Creation-Date: 2025-05-20 00:45+0000\n"
 "PO-Revision-Date: 2024-10-24 17:06+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -54,12 +54,6 @@ msgstr ""
 msgctxt "@label:textfield"
 msgid "Username"
 msgstr "Käyttäjätunnus:"
-
-#: modules/account/contents/ui/main.qml:150
-#, kde-format
-msgctxt "@info"
-msgid "This will be used to name your home folder and can't be changed."
-msgstr ""
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:14
 #, kde-format
@@ -209,11 +203,10 @@ msgctxt "@label:textfield"
 msgid "Confirm Password"
 msgstr "Salasana:"
 
-#: modules/password/contents/ui/main.qml:56
-#: modules/password/contents/ui/main.qml:61
+#: modules/password/contents/ui/main.qml:59
 #, kde-format
 msgctxt "@info:status"
-msgid "The passwords do not match."
+msgid "Passwords don’t match"
 msgstr ""
 
 #: modules/prepare/contents/ui/main.qml:42

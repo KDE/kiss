@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-16 00:44+0000\n"
+"POT-Creation-Date: 2025-05-20 00:45+0000\n"
 "PO-Revision-Date: 2025-05-16 14:08+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -54,12 +54,6 @@ msgstr "שם מלא"
 msgctxt "@label:textfield"
 msgid "Username"
 msgstr "שם משתמש"
-
-#: modules/account/contents/ui/main.qml:150
-#, kde-format
-msgctxt "@info"
-msgid "This will be used to name your home folder and can't be changed."
-msgstr "השם הזה ישמש כשם תיקיית הבית שלך ואי אפשר לשנות אותו."
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:14
 #, kde-format
@@ -207,11 +201,12 @@ msgctxt "@label:textfield"
 msgid "Confirm Password"
 msgstr "אימות הסיסמה"
 
-#: modules/password/contents/ui/main.qml:56
-#: modules/password/contents/ui/main.qml:61
-#, kde-format
+#: modules/password/contents/ui/main.qml:59
+#, fuzzy, kde-format
+#| msgctxt "@info:status"
+#| msgid "The passwords do not match."
 msgctxt "@info:status"
-msgid "The passwords do not match."
+msgid "Passwords don’t match"
 msgstr "הסיסמאות לא תואמות."
 
 #: modules/prepare/contents/ui/main.qml:42
@@ -348,6 +343,10 @@ msgstr "שינוי גודל התמונה נכשל: פתיחת הקובץ הזמ�
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "שינוי גודל התמונה נכשל: כתיבה לקובץ הזמני נכשלה"
+
+#~ msgctxt "@info"
+#~ msgid "This will be used to name your home folder and can't be changed."
+#~ msgstr "השם הזה ישמש כשם תיקיית הבית שלך ואי אפשר לשנות אותו."
 
 #~ msgid "Next"
 #~ msgstr "הבא"

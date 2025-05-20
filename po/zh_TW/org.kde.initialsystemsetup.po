@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-16 00:44+0000\n"
+"POT-Creation-Date: 2025-05-20 00:45+0000\n"
 "PO-Revision-Date: 2025-05-16 15:49+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -53,12 +53,6 @@ msgstr "全名"
 msgctxt "@label:textfield"
 msgid "Username"
 msgstr "使用者名稱"
-
-#: modules/account/contents/ui/main.qml:150
-#, kde-format
-msgctxt "@info"
-msgid "This will be used to name your home folder and can't be changed."
-msgstr "這會用來命名您的家目錄，並且不能變更。"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:14
 #, kde-format
@@ -204,11 +198,12 @@ msgctxt "@label:textfield"
 msgid "Confirm Password"
 msgstr "確認密碼"
 
-#: modules/password/contents/ui/main.qml:56
-#: modules/password/contents/ui/main.qml:61
-#, kde-format
+#: modules/password/contents/ui/main.qml:59
+#, fuzzy, kde-format
+#| msgctxt "@info:status"
+#| msgid "The passwords do not match."
 msgctxt "@info:status"
-msgid "The passwords do not match."
+msgid "Passwords don’t match"
 msgstr "密碼不符。"
 
 #: modules/prepare/contents/ui/main.qml:42
@@ -345,6 +340,10 @@ msgstr "圖片尺寸調整失敗：無法開啟暫存檔"
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "圖片尺寸調整失敗：無法寫入至暫存檔"
+
+#~ msgctxt "@info"
+#~ msgid "This will be used to name your home folder and can't be changed."
+#~ msgstr "這會用來命名您的家目錄，並且不能變更。"
 
 #~ msgid "Next"
 #~ msgstr "下一步"

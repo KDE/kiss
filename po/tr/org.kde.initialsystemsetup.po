@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-16 00:44+0000\n"
+"POT-Creation-Date: 2025-05-20 00:45+0000\n"
 "PO-Revision-Date: 2025-05-16 19:50+0300\n"
 "Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -53,13 +53,6 @@ msgstr "Tam adınız"
 msgctxt "@label:textfield"
 msgid "Username"
 msgstr "Kullanıcı adı"
-
-#: modules/account/contents/ui/main.qml:150
-#, kde-format
-msgctxt "@info"
-msgid "This will be used to name your home folder and can't be changed."
-msgstr ""
-"Bu, ana klasörünüzü adlandırmak için kullanılır ve daha sonra değiştirilemez."
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:14
 #, kde-format
@@ -207,11 +200,12 @@ msgctxt "@label:textfield"
 msgid "Confirm Password"
 msgstr "Parolayı onayla"
 
-#: modules/password/contents/ui/main.qml:56
-#: modules/password/contents/ui/main.qml:61
-#, kde-format
+#: modules/password/contents/ui/main.qml:59
+#, fuzzy, kde-format
+#| msgctxt "@info:status"
+#| msgid "The passwords do not match."
 msgctxt "@info:status"
-msgid "The passwords do not match."
+msgid "Passwords don’t match"
 msgstr "Parolalar eşleşmiyor."
 
 #: modules/prepare/contents/ui/main.qml:42
@@ -350,6 +344,12 @@ msgstr "Görsel yeniden boyutlandırılamadı: Geçici dosya açılamadı"
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "Görsel yeniden boyutlandırılamadı: Geçici dosyaya yazılamadı"
+
+#~ msgctxt "@info"
+#~ msgid "This will be used to name your home folder and can't be changed."
+#~ msgstr ""
+#~ "Bu, ana klasörünüzü adlandırmak için kullanılır ve daha sonra "
+#~ "değiştirilemez."
 
 #~ msgid "Next"
 #~ msgstr "Sonraki"

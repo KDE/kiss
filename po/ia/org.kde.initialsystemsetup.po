@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-16 00:44+0000\n"
+"POT-Creation-Date: 2025-05-20 00:45+0000\n"
 "PO-Revision-Date: 2025-05-14 16:50+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -53,14 +53,6 @@ msgstr "Nomine complete"
 msgctxt "@label:textfield"
 msgid "Username"
 msgstr "Nomine usator"
-
-#: modules/account/contents/ui/main.qml:150
-#, kde-format
-msgctxt "@info"
-msgid "This will be used to name your home folder and can't be changed."
-msgstr ""
-"Isto essera usate per nominar tu dossier domo (o initial) e nonpote esser "
-"cambiate."
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:14
 #, kde-format
@@ -208,11 +200,12 @@ msgctxt "@label:textfield"
 msgid "Confirm Password"
 msgstr "Confirma contrasigno"
 
-#: modules/password/contents/ui/main.qml:56
-#: modules/password/contents/ui/main.qml:61
-#, kde-format
+#: modules/password/contents/ui/main.qml:59
+#, fuzzy, kde-format
+#| msgctxt "@info:status"
+#| msgid "The passwords do not match."
 msgctxt "@info:status"
-msgid "The passwords do not match."
+msgid "Passwords don’t match"
 msgstr "Le contrasigno non es correspondente."
 
 #: modules/prepare/contents/ui/main.qml:42
@@ -351,6 +344,12 @@ msgstr "Falleva a redimensionar image. il falleva a aperir file temp"
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "Falleva a redimensionar image. il falleva a scriber in file temp"
+
+#~ msgctxt "@info"
+#~ msgid "This will be used to name your home folder and can't be changed."
+#~ msgstr ""
+#~ "Isto essera usate per nominar tu dossier domo (o initial) e nonpote esser "
+#~ "cambiate."
 
 #~ msgid "Next"
 #~ msgstr "Proxime"

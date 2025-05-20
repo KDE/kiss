@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-16 00:44+0000\n"
+"POT-Creation-Date: 2025-05-20 00:45+0000\n"
 "PO-Revision-Date: 2025-05-17 16:58+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
@@ -50,14 +50,6 @@ msgstr "Nom et prénom"
 msgctxt "@label:textfield"
 msgid "Username"
 msgstr "Nom d'utilisateur"
-
-#: modules/account/contents/ui/main.qml:150
-#, kde-format
-msgctxt "@info"
-msgid "This will be used to name your home folder and can't be changed."
-msgstr ""
-"Il sera utilisé pour nommer votre dossier personnel et ne peut pas être "
-"modifié."
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:14
 #, kde-format
@@ -206,11 +198,12 @@ msgctxt "@label:textfield"
 msgid "Confirm Password"
 msgstr "Confirmez le mot de passe"
 
-#: modules/password/contents/ui/main.qml:56
-#: modules/password/contents/ui/main.qml:61
-#, kde-format
+#: modules/password/contents/ui/main.qml:59
+#, fuzzy, kde-format
+#| msgctxt "@info:status"
+#| msgid "The passwords do not match."
 msgctxt "@info:status"
-msgid "The passwords do not match."
+msgid "Passwords don’t match"
 msgstr "Les mots de passe ne correspondent pas."
 
 #: modules/prepare/contents/ui/main.qml:42
@@ -352,6 +345,12 @@ msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "Échec du redimensionnement de l'image : échec de l'écriture dans le fichier "
 "temporaire"
+
+#~ msgctxt "@info"
+#~ msgid "This will be used to name your home folder and can't be changed."
+#~ msgstr ""
+#~ "Il sera utilisé pour nommer votre dossier personnel et ne peut pas être "
+#~ "modifié."
 
 #~ msgid "Next"
 #~ msgstr "Suivant"
