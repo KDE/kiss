@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-20 00:45+0000\n"
-"PO-Revision-Date: 2025-05-16 03:45+0200\n"
+"PO-Revision-Date: 2025-05-20 03:49+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -202,12 +202,10 @@ msgid "Confirm Password"
 msgstr "გაიმეორეთ პაროლი"
 
 #: modules/password/contents/ui/main.qml:59
-#, fuzzy, kde-format
-#| msgctxt "@info:status"
-#| msgid "The passwords do not match."
+#, kde-format
 msgctxt "@info:status"
 msgid "Passwords don’t match"
-msgstr "პაროლები არ ემთხვევა."
+msgstr "პაროლები არ ემთხვევა"
 
 #: modules/prepare/contents/ui/main.qml:42
 #, kde-format

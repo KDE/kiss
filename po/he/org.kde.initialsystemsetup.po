@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-20 00:45+0000\n"
-"PO-Revision-Date: 2025-05-16 14:08+0300\n"
+"PO-Revision-Date: 2025-05-20 07:53+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -202,12 +202,10 @@ msgid "Confirm Password"
 msgstr "אימות הסיסמה"
 
 #: modules/password/contents/ui/main.qml:59
-#, fuzzy, kde-format
-#| msgctxt "@info:status"
-#| msgid "The passwords do not match."
+#, kde-format
 msgctxt "@info:status"
 msgid "Passwords don’t match"
-msgstr "הסיסמאות לא תואמות."
+msgstr "הסיסמאות לא תואמות"
 
 #: modules/prepare/contents/ui/main.qml:42
 #, kde-format

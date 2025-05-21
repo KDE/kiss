@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-20 00:45+0000\n"
-"PO-Revision-Date: 2025-05-16 09:31+0200\n"
+"PO-Revision-Date: 2025-05-20 09:34+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -203,12 +203,10 @@ msgid "Confirm Password"
 msgstr "Confirmació de contrasenya"
 
 #: modules/password/contents/ui/main.qml:59
-#, fuzzy, kde-format
-#| msgctxt "@info:status"
-#| msgid "The passwords do not match."
+#, kde-format
 msgctxt "@info:status"
 msgid "Passwords don’t match"
-msgstr "Les contrasenyes no coincideixen."
+msgstr "Les contrasenyes no coincideixen"
 
 #: modules/prepare/contents/ui/main.qml:42
 #, kde-format

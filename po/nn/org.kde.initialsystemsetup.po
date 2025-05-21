@@ -339,6 +339,3 @@ msgstr ""
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
-
-#~ msgid "Next"
-#~ msgstr "Neste"

@@ -199,12 +199,10 @@ msgid "Confirm Password"
 msgstr "确认密码"
 
 #: modules/password/contents/ui/main.qml:59
-#, fuzzy, kde-format
-#| msgctxt "@info:status"
-#| msgid "The passwords do not match."
+#, kde-format
 msgctxt "@info:status"
 msgid "Passwords don’t match"
-msgstr "两次输入的密码不一致。"
+msgstr ""
 
 #: modules/prepare/contents/ui/main.qml:42
 #, kde-format
@@ -340,7 +338,3 @@ msgstr "调整图像大小失败：无法打开临时文件"
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "调整图像大小失败：无法写入临时文件"
-
-#~ msgctxt "@info"
-#~ msgid "This will be used to name your home folder and can't be changed."
-#~ msgstr "这将用于命名您的主文件夹，不能事后更改。"
