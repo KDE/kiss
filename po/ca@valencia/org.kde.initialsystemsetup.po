@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-20 00:45+0000\n"
-"PO-Revision-Date: 2025-05-03 10:08+0200\n"
+"PO-Revision-Date: 2025-05-20 09:34+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -173,17 +173,17 @@ msgstr "El dispositiu ara està llest. <br /><br />Gaudiu <b>%1</b>!"
 #: modules/language/contents/ui/main.qml:45
 #, kde-format
 msgid "Please select your preferred language."
-msgstr ""
+msgstr "Seleccioneu l'idioma preferit."
 
 #: modules/language/contents/ui/main.qml:65
 #, kde-format
 msgid "Language"
-msgstr ""
+msgstr "Idioma"
 
 #: modules/language/contents/ui/main.qml:82
 #, kde-format
 msgid "Search languages..."
-msgstr ""
+msgstr "Busca idiomes…"
 
 #: modules/password/contents/ui/main.qml:31
 #, kde-format
@@ -203,12 +203,10 @@ msgid "Confirm Password"
 msgstr "Confirmeu la contrasenya"
 
 #: modules/password/contents/ui/main.qml:59
-#, fuzzy, kde-format
-#| msgctxt "@info:status"
-#| msgid "The passwords do not match."
+#, kde-format
 msgctxt "@info:status"
 msgid "Passwords don’t match"
-msgstr "Les contrasenyes no coincidixen."
+msgstr "Les contrasenyes no coincidixen"
 
 #: modules/prepare/contents/ui/main.qml:42
 #, kde-format
@@ -291,7 +289,7 @@ msgstr "Us donem la benvinguda a <br/>l'<b>escriptori Plasma </b>"
 #: src/qml/LandingComponent.qml:117
 #, kde-format
 msgid "Begin Setup"
-msgstr ""
+msgstr "Comença la configuració"
 
 #: src/qml/LandingComponent.qml:144
 #, kde-format
@@ -350,11 +348,3 @@ msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "No s'ha pogut redimensionar la imatge: ha fallat en escriure en el fitxer "
 "temporal"
-
-#~ msgctxt "@info"
-#~ msgid "This will be used to name your home folder and can't be changed."
-#~ msgstr ""
-#~ "Açò s'utilitzarà per anomenar la carpeta d'inici i no es pot canviar."
-
-#~ msgid "Next"
-#~ msgstr "Següent"

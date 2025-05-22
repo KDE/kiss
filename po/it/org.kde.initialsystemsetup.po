@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-20 00:45+0000\n"
-"PO-Revision-Date: 2025-05-03 22:14+0200\n"
+"PO-Revision-Date: 2025-05-16 19:46+0200\n"
 "Last-Translator: Valter Mura <valtermura@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -171,17 +171,17 @@ msgstr "Il tuo dispositivo è pronto. <br /><br />Divertiti con <b>%1</b>!"
 #: modules/language/contents/ui/main.qml:45
 #, kde-format
 msgid "Please select your preferred language."
-msgstr ""
+msgstr "Seleziona la tua lingua preferita."
 
 #: modules/language/contents/ui/main.qml:65
 #, kde-format
 msgid "Language"
-msgstr ""
+msgstr "Lingua"
 
 #: modules/language/contents/ui/main.qml:82
 #, kde-format
 msgid "Search languages..."
-msgstr ""
+msgstr "Cerca lingue..."
 
 #: modules/password/contents/ui/main.qml:31
 #, kde-format
@@ -287,10 +287,9 @@ msgid "Welcome to<br/><b>Plasma Desktop</b>"
 msgstr "Benvenuto in<br/><b>Plasma Desktop</b>"
 
 #: src/qml/LandingComponent.qml:117
-#, fuzzy, kde-format
-#| msgid "User Setup"
+#, kde-format
 msgid "Begin Setup"
-msgstr "Configurazione utente"
+msgstr "Inizia la configurazione"
 
 #: src/qml/LandingComponent.qml:144
 #, kde-format

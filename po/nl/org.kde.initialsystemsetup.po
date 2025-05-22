@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-20 00:45+0000\n"
-"PO-Revision-Date: 2025-05-16 12:40+0200\n"
+"PO-Revision-Date: 2025-05-20 11:38+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -201,12 +201,10 @@ msgid "Confirm Password"
 msgstr "Wachtwoord bevestigen"
 
 #: modules/password/contents/ui/main.qml:59
-#, fuzzy, kde-format
-#| msgctxt "@info:status"
-#| msgid "The passwords do not match."
+#, kde-format
 msgctxt "@info:status"
 msgid "Passwords don’t match"
-msgstr "Het wachtwoord komt niet overeen."
+msgstr "Wachtwoorden komen niet overeen."
 
 #: modules/prepare/contents/ui/main.qml:42
 #, kde-format

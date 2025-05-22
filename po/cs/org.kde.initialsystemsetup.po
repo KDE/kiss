@@ -175,7 +175,7 @@ msgstr ""
 #: modules/language/contents/ui/main.qml:65
 #, kde-format
 msgid "Language"
-msgstr ""
+msgstr "Jazyk"
 
 #: modules/language/contents/ui/main.qml:82
 #, kde-format
