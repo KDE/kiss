@@ -33,6 +33,7 @@
         "Description[fr]": "Affiché lorsque la configuration initiale du système est terminée et que l'utilisateur peut valider les modifications.",
         "Description[he]": "מופיע כאשר הגדרות המערכת הראשוניות הושלמו והמשתמש יכול לקבע את השינויים.",
         "Description[ia]": "Monstrate quando le configuration initial de systema es completate e le usator pote  committer le modificationes.",
+        "Description[it]": "Mostrato quando la configurazione iniziale del sistema è stata completata e l'utente può inviare le modifiche.",
         "Description[ka]": "ნაჩვენებია, როცა სისტემის საწყისი მორგება დასრულდება და მომხმარებელს ცვლილებების გადაცემა შეუძლია.",
         "Description[nl]": "Getoond wanneer de initiële opzet van het systeem is voltooid en de gebruiker de wijzigingen kan vastzetten (commit).",
         "Description[sl]": "Prikazano, ko je začetna nastavitev sistema končana in lahko uporabnik potrdi spremembe.",
