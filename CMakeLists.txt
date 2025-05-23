@@ -26,6 +26,7 @@ include(KDECompilerSettings NO_POLICY_SCOPE)
 include(KDEClangFormat)
 include(KDEGitCommitHooks)
 
+include(ECMDeprecationSettings)
 include(ECMSetupVersion)
 include(ECMGenerateExportHeader)
 include(ECMPoQmTools)
@@ -54,6 +55,11 @@ find_package(PkgConfig REQUIRED)
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
 ################# build and install #################
+
+ecm_set_disabled_deprecation_versions(
+    QT 6.8.3
+    KF 6.13.0
+)
 
 add_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_URL_CAST_FROM_STRING)
 add_definitions(-DQT_USE_QSTRINGBUILDER)
