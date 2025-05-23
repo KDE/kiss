@@ -19,6 +19,8 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
 
+    KLocalizedString::setApplicationDomain("org.kde.initialsystemsetup");
+
     if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
         QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
     }
@@ -29,8 +31,6 @@ int main(int argc, char *argv[])
                      i18n("Browse the Fediverse"),
                      KAboutLicense::GPL_V3,
                      i18n("© 2021-2024 KDE Community"));
-
-    KLocalizedString::setApplicationDomain("initialsystemsetup");
 
     QQmlApplicationEngine engine;
 
