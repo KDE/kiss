@@ -41,7 +41,7 @@ KissComponents.SetupModule {
                 FormCard.FormPasswordFieldDelegate {
                     id: paswordField
 
-                    label: i18ndc("plasma-initial-start-account", "@label:textfield", "Password")
+                    label: i18nc("@label:textfield", "Password")
 
                     Component.onCompleted: showPasswordQuality = true
                 }
@@ -52,7 +52,7 @@ KissComponents.SetupModule {
 
                 FormCard.FormPasswordFieldDelegate {
                     id: repeatField
-                    label: i18ndc("plasma-initial-start-account", "@label:textfield", "Confirm Password")
+                    label: i18nc("@label:textfield", "Confirm Password")
                     status: Kirigami.MessageType.Error
 
                     function setPasswordMatchError() {

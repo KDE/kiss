@@ -116,7 +116,7 @@ KissComponents.SetupModule {
             FormCard.FormTextFieldDelegate {
                 id: fullNameField
 
-                label: i18ndc("plasma-initial-start-account", "@label:textfield", "Full Name")
+                label: i18nc("@label:textfield", "Full Name")
                 property string previousText: ''
                 onTextChanged: {
                     if (usernameField.text.length === 0 || usernameField.text === previousText) {
@@ -137,7 +137,7 @@ KissComponents.SetupModule {
 
             FormCard.FormTextFieldDelegate {
                 id: usernameField
-                label: i18ndc("plasma-initial-start-account", "@label:textfield", "Username")
+                label: i18nc("@label:textfield", "Username")
 
                 Binding {
                     target: AccountController
