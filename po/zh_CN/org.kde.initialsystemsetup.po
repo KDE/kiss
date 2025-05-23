@@ -202,7 +202,7 @@ msgstr "确认密码"
 #, kde-format
 msgctxt "@info:status"
 msgid "Passwords don’t match"
-msgstr ""
+msgstr "密码不匹配"
 
 #: modules/prepare/contents/ui/main.qml:42
 #, kde-format

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-20 00:45+0000\n"
-"PO-Revision-Date: 2025-05-16 15:49+0900\n"
+"PO-Revision-Date: 2025-05-22 13:52+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -199,12 +199,10 @@ msgid "Confirm Password"
 msgstr "確認密碼"
 
 #: modules/password/contents/ui/main.qml:59
-#, fuzzy, kde-format
-#| msgctxt "@info:status"
-#| msgid "The passwords do not match."
+#, kde-format
 msgctxt "@info:status"
 msgid "Passwords don’t match"
-msgstr "密碼不符。"
+msgstr "密碼不符"
 
 #: modules/prepare/contents/ui/main.qml:42
 #, kde-format
