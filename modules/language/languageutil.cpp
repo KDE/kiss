@@ -1,9 +1,11 @@
 // SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
 // SPDX-License-Identifier: LGPL-2.1-or-later
 
+#include "languageutil.h"
+
 #include <KLocalizedString>
 
-#include "languageutil.h"
+#include <QCoreApplication>
 
 LanguageUtil::LanguageUtil(QObject *parent)
     : QObject(parent)
@@ -36,11 +38,13 @@ void LanguageUtil::applyLanguage()
         return;
     }
 
-    qDebug() << "Applying language:" << m_currentLanguage;
+    qputenv("LANGUAGE", m_currentLanguage.toUtf8());
+    qputenv("LANG", m_currentLanguage.toUtf8());
+    QLocale::setDefault(QLocale(m_currentLanguage));
+    QCoreApplication::sendEvent(QCoreApplication::instance(), new QEvent(QEvent::LocaleChange));
+    QCoreApplication::sendEvent(QCoreApplication::instance(), new QEvent(QEvent::LanguageChange));
 
-    // TODO: Apply the language to the system settings for the new user.
-
-    qDebug() << "Language settings applied successfully";
+    Q_EMIT currentLanguageChanged();
 }
 
 void LanguageUtil::loadAvailableLanguages()

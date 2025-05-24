@@ -3,6 +3,7 @@
 
 #include <KAboutData>
 #include <KLocalizedContext>
+#include <KLocalizedQmlContext>
 #include <KLocalizedString>
 #include <KPackage/PackageLoader>
 #include <QApplication>
@@ -34,7 +35,7 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
 
-    engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
+    KLocalization::setupLocalizedContext(&engine);
     engine.loadFromModule("org.kde.initialsystemsetup"_L1, "Main"_L1);
 
     if (engine.rootObjects().isEmpty()) {

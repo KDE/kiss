@@ -66,6 +66,7 @@ target_link_libraries(kde-initial-system-setup
         Qt::DBus
         Qt::Svg
         KF6::I18n
+        KF6::I18nQml
         KF6::Package
         KF6::ConfigGui
         crypt

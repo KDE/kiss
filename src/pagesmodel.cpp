@@ -11,6 +11,7 @@ using namespace Qt::StringLiterals;
 PagesModel::PagesModel(QObject *parent)
     : QStandardItemModel(parent)
 {
+    QCoreApplication::instance()->installEventFilter(this);
 }
 
 void PagesModel::reload()
@@ -54,6 +55,35 @@ SetupModule *PagesModel::pageItem(int row)
 {
     const auto package = data(index(row, 0), PackageRole).value<KPackage::Package>();
     return createGui(package.filePath("ui", QStringLiteral("main.qml")));
+}
+
+bool PagesModel::eventFilter(QObject *object, QEvent *event)
+{
+    if (event->type() == QEvent::LanguageChange && object == QCoreApplication::instance()) {
+        updateTranslations();
+    }
+
+    // Standard event processing
+    return QObject::eventFilter(object, event);
+}
+
+void PagesModel::updateTranslations()
+{
+    // Update only the text for display, without rebuilding the entire model.
+    for (int row = 0; row < rowCount(); ++row) {
+        QStandardItem *item = this->item(row, 0);
+        if (item) {
+            // Get the package to access fresh translations
+            const auto package = item->data(PackageRole).value<KPackage::Package>();
+            const KPluginMetaData plugin = package.metadata();
+
+            // Update only the display text with fresh translation
+            item->setText(plugin.name());
+        }
+    }
+
+    // Notify views that data has changed
+    Q_EMIT dataChanged(index(0, 0), index(rowCount() - 1, 0));
 }
 
 SetupModule *PagesModel::createGui(const QString &qmlPath)
