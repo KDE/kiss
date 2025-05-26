@@ -5,7 +5,6 @@
 
 #include <QQuickItem>
 #include <QStandardItemModel>
-#include <qqmlregistration.h>
 
 #include "setupmodule.h"
 
@@ -34,5 +33,22 @@ Q_SIGNALS:
     void loaded();
 
 private:
+    /**
+     * Listening for language changes so we can trigger a reload of the translations.
+     *
+     * The language module will emit the language change event when it changes the language.
+     *
+     * This is primarily needed because we fetch the module name from the package metadata,
+     * and we have the translations from the previous language cached.
+     */
+    bool eventFilter(QObject *object, QEvent *event) override;
+
+    /**
+     * Updates translations for all items in the model when the language changes.
+     *
+     * This way we avoid reloading the entire model when only the translations need to be updated.
+     */
+    void updateTranslations();
+
     SetupModule *createGui(const QString &qmlPath);
 };

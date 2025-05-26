@@ -135,6 +135,20 @@ Kirigami.Page {
         onLoaded: root.currentIndex = 0
     }
 
+    Connections {
+        target: pagesModel
+
+        // onDataChanged will be emitted if the model reloads the translations
+        // after the user chooses a language. We need to catch that since we are
+        // using `changeText()` instead of a property binding.
+        function onDataChanged(): void {
+        if (root.currentIndex >= 0 && !root.showingLanding) {
+            // Update the heading with the fresh translation from the model
+            stepHeading.changeText(root.currentStepItem.name);
+            }
+        }
+    }
+
     Item {
         id: stepsComponent
         anchors.fill: parent
