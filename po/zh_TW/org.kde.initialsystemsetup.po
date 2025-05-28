@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-20 00:45+0000\n"
+"POT-Creation-Date: 2025-05-28 00:45+0000\n"
 "PO-Revision-Date: 2025-05-22 13:52+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -255,17 +255,17 @@ msgstr "密碼："
 msgid "Invalid input."
 msgstr "無效輸入。"
 
-#: src/main.cpp:27
+#: src/main.cpp:30
 #, kde-format
 msgid "Tokodon"
 msgstr "Tokodon"
 
-#: src/main.cpp:29
+#: src/main.cpp:32
 #, kde-format
 msgid "Browse the Fediverse"
 msgstr "瀏覽聯邦宇宙"
 
-#: src/main.cpp:31
+#: src/main.cpp:34
 #, kde-format
 msgid "© 2021-2024 KDE Community"
 msgstr "© 2021-2024 KDE 社群"
@@ -295,19 +295,19 @@ msgstr "基於<br/><b>%1</b>"
 msgid "Initial Start"
 msgstr "初次啟動"
 
-#: src/qml/Wizard.qml:331
+#: src/qml/Wizard.qml:345
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
 msgstr "返回"
 
-#: src/qml/Wizard.qml:352
+#: src/qml/Wizard.qml:366
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "下一步"
 
-#: src/qml/Wizard.qml:371
+#: src/qml/Wizard.qml:385
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"

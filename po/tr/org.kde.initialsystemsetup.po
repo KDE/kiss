@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-20 00:45+0000\n"
+"POT-Creation-Date: 2025-05-28 00:45+0000\n"
 "PO-Revision-Date: 2025-05-20 22:06+0300\n"
 "Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -259,17 +259,17 @@ msgstr "Parola:"
 msgid "Invalid input."
 msgstr "Geçersiz giriş."
 
-#: src/main.cpp:27
+#: src/main.cpp:30
 #, kde-format
 msgid "Tokodon"
 msgstr "Tokodon"
 
-#: src/main.cpp:29
+#: src/main.cpp:32
 #, kde-format
 msgid "Browse the Fediverse"
 msgstr "Fedi evrenine göz atın"
 
-#: src/main.cpp:31
+#: src/main.cpp:34
 #, kde-format
 msgid "© 2021-2024 KDE Community"
 msgstr "© 2021–2024 KDE Topluluğu"
@@ -299,19 +299,19 @@ msgstr "<b>%1</b><br/>tarafından sağlanır"
 msgid "Initial Start"
 msgstr "İlk Başlangıç"
 
-#: src/qml/Wizard.qml:331
+#: src/qml/Wizard.qml:345
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
 msgstr "Geri"
 
-#: src/qml/Wizard.qml:352
+#: src/qml/Wizard.qml:366
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Sonraki"
 
-#: src/qml/Wizard.qml:371
+#: src/qml/Wizard.qml:385
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"

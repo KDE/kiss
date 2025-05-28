@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-20 00:45+0000\n"
-"PO-Revision-Date: 2025-05-14 16:50+0200\n"
+"POT-Creation-Date: 2025-05-28 00:45+0000\n"
+"PO-Revision-Date: 2025-05-27 11:44+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -171,17 +171,17 @@ msgstr "Tu dispositivo es nunc preste. <br /><br /> Gaude de <b>%1</b>!"
 #: modules/language/contents/ui/main.qml:45
 #, kde-format
 msgid "Please select your preferred language."
-msgstr ""
+msgstr "Pro favor selige tu linguage preferite."
 
 #: modules/language/contents/ui/main.qml:65
 #, kde-format
 msgid "Language"
-msgstr ""
+msgstr "Linguage"
 
 #: modules/language/contents/ui/main.qml:82
 #, kde-format
 msgid "Search languages..."
-msgstr ""
+msgstr "Cerca linguages..."
 
 #: modules/password/contents/ui/main.qml:31
 #, kde-format
@@ -201,12 +201,10 @@ msgid "Confirm Password"
 msgstr "Confirma contrasigno"
 
 #: modules/password/contents/ui/main.qml:59
-#, fuzzy, kde-format
-#| msgctxt "@info:status"
-#| msgid "The passwords do not match."
+#, kde-format
 msgctxt "@info:status"
 msgid "Passwords don’t match"
-msgstr "Le contrasigno non es correspondente."
+msgstr "Le contrasignos non coincide"
 
 #: modules/prepare/contents/ui/main.qml:42
 #, kde-format
@@ -261,17 +259,17 @@ msgstr "Contrasigno:"
 msgid "Invalid input."
 msgstr "Entrata invalide."
 
-#: src/main.cpp:27
+#: src/main.cpp:30
 #, kde-format
 msgid "Tokodon"
 msgstr "Tokodon"
 
-#: src/main.cpp:29
+#: src/main.cpp:32
 #, kde-format
 msgid "Browse the Fediverse"
 msgstr "Naviga le Fediverse"
 
-#: src/main.cpp:31
+#: src/main.cpp:34
 #, kde-format
 msgid "© 2021-2024 KDE Community"
 msgstr "© 2021-2024 Communitate de KDE"
@@ -289,7 +287,7 @@ msgstr "Benvenite a <br><b>Plasma Desktop (Scriptorio de Plasma)</b>"
 #: src/qml/LandingComponent.qml:117
 #, kde-format
 msgid "Begin Setup"
-msgstr ""
+msgstr "Initia configuration"
 
 #: src/qml/LandingComponent.qml:144
 #, kde-format
@@ -301,19 +299,19 @@ msgstr "Potentiate per <br/><b>%1</b>"
 msgid "Initial Start"
 msgstr "Startar initial"
 
-#: src/qml/Wizard.qml:331
+#: src/qml/Wizard.qml:345
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
 msgstr "Retro"
 
-#: src/qml/Wizard.qml:352
+#: src/qml/Wizard.qml:366
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Proxime"
 
-#: src/qml/Wizard.qml:371
+#: src/qml/Wizard.qml:385
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"

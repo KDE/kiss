@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-20 00:45+0000\n"
+"POT-Creation-Date: 2025-05-28 00:45+0000\n"
 "PO-Revision-Date: 2024-08-03 13:36+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
@@ -260,17 +260,17 @@ msgstr "Password:"
 msgid "Invalid input."
 msgstr ""
 
-#: src/main.cpp:27
+#: src/main.cpp:30
 #, kde-format
 msgid "Tokodon"
 msgstr ""
 
-#: src/main.cpp:29
+#: src/main.cpp:32
 #, kde-format
 msgid "Browse the Fediverse"
 msgstr ""
 
-#: src/main.cpp:31
+#: src/main.cpp:34
 #, kde-format
 msgid "© 2021-2024 KDE Community"
 msgstr ""
@@ -301,20 +301,20 @@ msgstr ""
 msgid "Initial Start"
 msgstr ""
 
-#: src/qml/Wizard.qml:331
+#: src/qml/Wizard.qml:345
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
 msgstr ""
 
-#: src/qml/Wizard.qml:352
+#: src/qml/Wizard.qml:366
 #, fuzzy, kde-format
 #| msgid "Next"
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Next"
 
-#: src/qml/Wizard.qml:371
+#: src/qml/Wizard.qml:385
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"

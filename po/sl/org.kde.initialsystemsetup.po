@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-20 00:45+0000\n"
+"POT-Creation-Date: 2025-05-28 00:45+0000\n"
 "PO-Revision-Date: 2025-05-20 07:29+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -258,17 +258,17 @@ msgstr "Geslo:"
 msgid "Invalid input."
 msgstr "Neveljaven vhod."
 
-#: src/main.cpp:27
+#: src/main.cpp:30
 #, kde-format
 msgid "Tokodon"
 msgstr "Tokodon"
 
-#: src/main.cpp:29
+#: src/main.cpp:32
 #, kde-format
 msgid "Browse the Fediverse"
 msgstr "Brskajte po fediversu"
 
-#: src/main.cpp:31
+#: src/main.cpp:34
 #, kde-format
 msgid "© 2021-2024 KDE Community"
 msgstr "© 2021-2024 Skupnost KDE"
@@ -298,19 +298,19 @@ msgstr "Poganja<br/><b>%1</b>"
 msgid "Initial Start"
 msgstr "Začetni zagon"
 
-#: src/qml/Wizard.qml:331
+#: src/qml/Wizard.qml:345
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
 msgstr "Nazaj"
 
-#: src/qml/Wizard.qml:352
+#: src/qml/Wizard.qml:366
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Naslednji"
 
-#: src/qml/Wizard.qml:371
+#: src/qml/Wizard.qml:385
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"
