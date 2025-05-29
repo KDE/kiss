@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the kiss package.
-# SPDX-FileCopyrightText: 2024 Tommi Nieminen <translator@legisign.org>
+# SPDX-FileCopyrightText: 2024, 2025 Tommi Nieminen <translator@legisign.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-28 00:45+0000\n"
-"PO-Revision-Date: 2024-10-24 17:06+0300\n"
+"PO-Revision-Date: 2025-05-28 17:14+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -20,235 +20,230 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Tommi Nieminen"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "translator@legisign.org"
 
 #: modules/account/contents/ui/main.qml:63
 #, kde-format
 msgid "Upload new avatar"
-msgstr ""
+msgstr "Lähetä uusi avatar"
 
 #: modules/account/contents/ui/main.qml:80
 #, kde-format
 msgid "Remove current avatar"
-msgstr ""
+msgstr "Poista nykyinen avatar"
 
 #: modules/account/contents/ui/main.qml:106
 #, kde-format
 msgid "We need a few details to complete the setup."
-msgstr ""
+msgstr "Asetuksen viimeistelyyn tarvitaan vielä vähän tietoja."
 
 #: modules/account/contents/ui/main.qml:119
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Full Name"
-msgstr ""
+msgstr "Koko nimi"
 
 #: modules/account/contents/ui/main.qml:140
-#, fuzzy, kde-format
-#| msgid "Username:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Username"
-msgstr "Käyttäjätunnus:"
+msgstr "Käyttäjätunnus"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:14
 #, kde-format
 msgid "Edit APN"
-msgstr ""
+msgstr "Muokkaa APN:ää"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:38
 #, kde-format
 msgid "Name"
-msgstr ""
+msgstr "Nimi"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:43
 #, kde-format
 msgid "APN"
-msgstr ""
+msgstr "APN"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:48
-#, fuzzy, kde-format
-#| msgid "Username:"
+#, kde-format
 msgid "Username"
-msgstr "Käyttäjätunnus:"
+msgstr "Käyttäjätunnus"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:53
-#, fuzzy, kde-format
-#| msgid "Password:"
+#, kde-format
 msgid "Password"
-msgstr "Salasana:"
+msgstr "Salasana"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:58
 #, kde-format
 msgid "Network type"
-msgstr ""
+msgstr "Verkon tyyppi"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "4G/3G/2G"
-msgstr ""
+msgstr "4G/3G/2G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "3G/2G"
-msgstr ""
+msgstr "3G/2G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "2G"
-msgstr ""
+msgstr "2G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 4G"
-msgstr ""
+msgstr "Vain 4G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 3G"
-msgstr ""
+msgstr "Vain 3G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 2G"
-msgstr ""
+msgstr "Vain 2G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Any"
-msgstr ""
+msgstr "Mikä tahansa"
 
 #: modules/cellular/contents/ui/main.qml:45
 #, kde-format
 msgid ""
 "Please configure your APN below for mobile data, further information will be "
 "available with your carrier."
-msgstr ""
+msgstr "Aseta mobiilidatan APN alla: lisätietoa saa palveluntarjoajalta."
 
 #: modules/cellular/contents/ui/main.qml:47
 #, kde-format
 msgid "You are connected to the mobile network."
-msgstr ""
+msgstr "Olet yhteydessä mobiiliverkkoon."
 
 #: modules/cellular/contents/ui/main.qml:49
 #, kde-format
 msgid "Please insert a SIM card into your device."
-msgstr ""
+msgstr "Anna laitteen SIM-kortti."
 
 #: modules/cellular/contents/ui/main.qml:51
 #, kde-format
 msgid "Your device does not have a modem available."
-msgstr ""
+msgstr "Laitteessa ei vaikuta olevan modeemia."
 
 #: modules/cellular/contents/ui/main.qml:63
 #, kde-format
 msgid "Mobile Data"
-msgstr ""
+msgstr "Mobiilidata"
 
 #: modules/cellular/contents/ui/main.qml:109
 #, kde-format
 msgid "Edit"
-msgstr ""
+msgstr "Muokkaa"
 
 #: modules/cellular/contents/ui/main.qml:117
 #, kde-format
 msgid "Delete"
-msgstr ""
+msgstr "Poista"
 
 #: modules/cellular/contents/ui/main.qml:127
 #, kde-format
 msgid "Add APN"
-msgstr ""
+msgstr "Lisää APN"
 
 #: modules/finished/contents/ui/main.qml:25
 #, kde-format
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
-msgstr ""
+msgstr "Laite on nyt valmis.<br /><br />Tämä on <b>%1</b>, nauti!"
 
 #: modules/language/contents/ui/main.qml:45
 #, kde-format
 msgid "Please select your preferred language."
-msgstr ""
+msgstr "Valitse suosimasi kieli."
 
 #: modules/language/contents/ui/main.qml:65
 #, kde-format
 msgid "Language"
-msgstr ""
+msgstr "Kieli"
 
 #: modules/language/contents/ui/main.qml:82
 #, kde-format
 msgid "Search languages..."
-msgstr ""
+msgstr "Etsi kieliä…"
 
 #: modules/password/contents/ui/main.qml:31
 #, kde-format
 msgid "Be careful not to lose your password."
-msgstr ""
+msgstr "Älä hukkaa salasanaasi."
 
 #: modules/password/contents/ui/main.qml:44
-#, fuzzy, kde-format
-#| msgid "Password:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Password"
-msgstr "Salasana:"
+msgstr "Salasana"
 
 #: modules/password/contents/ui/main.qml:55
-#, fuzzy, kde-format
-#| msgid "Password:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Confirm Password"
-msgstr "Salasana:"
+msgstr "Vahvista salasana"
 
 #: modules/password/contents/ui/main.qml:59
 #, kde-format
 msgctxt "@info:status"
 msgid "Passwords don’t match"
-msgstr ""
+msgstr "Salasanat eivät täsmää"
 
 #: modules/prepare/contents/ui/main.qml:42
 #, kde-format
 msgid ""
 "Adjust the screen brightness to be comfortable for the installation process."
-msgstr ""
+msgstr "Säädä näytön kirkkaus asennukseen sopivaksi."
 
 #: modules/prepare/contents/ui/main.qml:100
 #, kde-format
 msgid "Adjust the size of elements on the screen."
-msgstr ""
+msgstr "Säädä näyttöalkioiden kokoa."
 
 #: modules/prepare/contents/ui/main.qml:111
 #, kde-format
 msgid "Display Scaling"
-msgstr ""
+msgstr "Näytön mittakaava"
 
 #: modules/prepare/contents/ui/main.qml:129
 #, kde-format
 msgid "Dark Theme"
-msgstr ""
+msgstr "Tumma teema"
 
 #: modules/time/contents/ui/main.qml:28
 #, kde-format
 msgid "Select your time zone and preferred time format."
-msgstr ""
+msgstr "Valitse aikavyöhyke ja haluttu ajan esitysmuoto."
 
 #: modules/time/contents/ui/main.qml:39
 #, kde-format
 msgid "24-Hour Format"
-msgstr ""
+msgstr "24-tuntinen kello"
 
 #: modules/wifi/contents/ui/ConnectionItemDelegate.qml:94
 #, kde-format
 msgid "Connect to"
-msgstr ""
+msgstr "Yhdistä"
 
 #: modules/wifi/contents/ui/main.qml:64
 #, kde-format
 msgid "Connect to a WiFi network for network access."
-msgstr ""
+msgstr "Yhdistä verkkoyhteyttä varten langattomaan verkkoon."
 
 #: modules/wifi/contents/ui/PasswordField.qml:14
 #, kde-format
@@ -258,58 +253,56 @@ msgstr "Salasana:"
 #: modules/wifi/contents/ui/PasswordField.qml:26
 #, kde-format
 msgid "Invalid input."
-msgstr ""
+msgstr "Virheellinen syöte."
 
 #: src/main.cpp:30
 #, kde-format
 msgid "Tokodon"
-msgstr ""
+msgstr "Tokodon"
 
 #: src/main.cpp:32
 #, kde-format
 msgid "Browse the Fediverse"
-msgstr ""
+msgstr "Selaa fediversumia"
 
 #: src/main.cpp:34
 #, kde-format
 msgid "© 2021-2024 KDE Community"
-msgstr ""
+msgstr "© 2021–2024 KDE-yhteisö"
 
 #: src/qml/LandingComponent.qml:103
 #, kde-format
 msgid "Welcome to<br/><b>Plasma Mobile</b>"
-msgstr ""
+msgstr "Tervetuloa<br/><b>Plasma Mobileen</b>"
 
 #: src/qml/LandingComponent.qml:103
 #, kde-format
 msgid "Welcome to<br/><b>Plasma Desktop</b>"
-msgstr ""
+msgstr "Tervetuloa<br/><b>Plasma-työpöydälle</b>"
 
 #: src/qml/LandingComponent.qml:117
-#, fuzzy, kde-format
-#| msgid "User Setup"
+#, kde-format
 msgid "Begin Setup"
-msgstr "Käyttäjän asetus"
+msgstr "Aloita asetus"
 
 #: src/qml/LandingComponent.qml:144
 #, kde-format
 msgid "Powered by<br/><b>%1</b>"
-msgstr ""
+msgstr "Kaiken takana on<br/><b>%1</b>"
 
 #: src/qml/Main.qml:14
 #, kde-format
 msgid "Initial Start"
-msgstr ""
+msgstr "Ensikäynnistys"
 
 #: src/qml/Wizard.qml:345
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
-msgstr ""
+msgstr "Takaisin"
 
 #: src/qml/Wizard.qml:366
-#, fuzzy, kde-format
-#| msgid "Next"
+#, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Seuraava"
@@ -318,33 +311,34 @@ msgstr "Seuraava"
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"
-msgstr ""
+msgstr "Viimeistele"
 
 #: src/user.cpp:123
 #, kde-format
 msgctxt "@info"
 msgid "Failed to crop image: %1"
-msgstr ""
+msgstr "Kuvan rajaaminen epäonnistui: %1"
 
 #: src/user.cpp:304
 #, kde-format
 msgid "Could not get permission to save user %1"
-msgstr ""
+msgstr "Ei saatu käyttöoikeutta tallentaa käyttäjää %1"
 
 #: src/user.cpp:309
 #, kde-format
 msgid "There was an error while saving changes"
-msgstr ""
+msgstr "Muutoksia tallennettaessa tapahtui virhe"
 
 #: src/user.cpp:410
 #, kde-format
 msgid "Failed to resize image: opening temp file failed"
-msgstr ""
+msgstr "Kuvan koon muuttaminen epäonnistui: väliaikaistiedostoa ei voi avata"
 
 #: src/user.cpp:418
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
+"Kuvan koon muuttaminen epäonnistui: väliaikaistiedostoon ei voi kirjoittaa"
 
 #~ msgid "Next"
 #~ msgstr "Seuraava"

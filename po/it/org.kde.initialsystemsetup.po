@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-28 00:45+0000\n"
-"PO-Revision-Date: 2025-05-16 19:46+0200\n"
+"PO-Revision-Date: 2025-05-25 11:08+0200\n"
 "Last-Translator: Valter Mura <valtermura@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.04.0\n"
+"X-Generator: Lokalize 25.04.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -201,12 +201,10 @@ msgid "Confirm Password"
 msgstr "Conferma password"
 
 #: modules/password/contents/ui/main.qml:59
-#, fuzzy, kde-format
-#| msgctxt "@info:status"
-#| msgid "The passwords do not match."
+#, kde-format
 msgctxt "@info:status"
 msgid "Passwords don’t match"
-msgstr "Le password non corrispondono."
+msgstr "Le password non corrispondono"
 
 #: modules/prepare/contents/ui/main.qml:42
 #, kde-format
