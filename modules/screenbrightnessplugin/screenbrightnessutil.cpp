@@ -3,6 +3,8 @@
 
 #include "screenbrightnessutil.h"
 
+#include "screenbrightnessplugin_debug.h"
+
 #include <QDBusPendingCallWatcher>
 #include <QDBusPendingReply>
 
@@ -72,7 +74,7 @@ void ScreenBrightnessUtil::fetchBrightness()
     connect(watcher, &QDBusPendingCallWatcher::finished, this, [this](QDBusPendingCallWatcher *watcher) {
         QDBusPendingReply<int> reply = *watcher;
         if (reply.isError()) {
-            qWarning() << "Getting brightness failed:" << reply.error().name() << reply.error().message();
+            qCWarning(ScreenBrightnessPlugin) << "Getting brightness failed:" << reply.error().name() << reply.error().message();
         } else if (m_brightness != reply.value()) {
             m_brightness = reply.value();
             Q_EMIT brightnessChanged();
@@ -89,7 +91,7 @@ void ScreenBrightnessUtil::fetchMaxBrightness()
     connect(watcher, &QDBusPendingCallWatcher::finished, this, [this](QDBusPendingCallWatcher *watcher) {
         QDBusPendingReply<int> reply = *watcher;
         if (reply.isError()) {
-            qWarning() << "Getting max brightness failed:" << reply.error().name() << reply.error().message();
+            qCWarning(ScreenBrightnessPlugin) << "Getting max brightness failed:" << reply.error().name() << reply.error().message();
         } else if (m_maxBrightness != reply.value()) {
             m_maxBrightness = reply.value();
             Q_EMIT maxBrightnessChanged();

@@ -3,6 +3,8 @@
 
 #include "pagesmodel.h"
 
+#include "initialsystemsetup_debug.h"
+
 #include <KPackage/PackageLoader>
 #include <KPluginMetaData>
 
@@ -96,7 +98,7 @@ SetupModule *PagesModel::createGui(const QString &qmlPath)
     auto module = qobject_cast<SetupModule *>(guiObject);
 
     if (!module) {
-        qWarning() << "ERROR: QML gui" << guiObject << "not a QQuickItem instance" << qmlPath;
+        qCCritical(KDEInitialSystemSetup) << "ERROR: QML gui" << guiObject << "not a QQuickItem instance" << qmlPath;
         guiObject->deleteLater();
         return nullptr;
     }

@@ -1,4 +1,5 @@
 # SPDX-FileCopyrightText: (C) 2020 Carl Schwan <carl@carlschwan.eu>
+# SPDX-FileCopyrightText: (C) 2025 Kristen McWilliam <kristen@kde.org>
 #
 # SPDX-License-Identifier: BSD-2-Clause
 
@@ -31,6 +32,7 @@ include(ECMSetupVersion)
 include(ECMGenerateExportHeader)
 include(ECMPoQmTools)
 include(ECMQmlModule)
+include(ECMQtDeclareLoggingCategory)
 
 ################# Find dependencies #################
 find_package(Qt6 ${QT_MIN_VERSION} NO_MODULE COMPONENTS Core Gui Qml QuickControls2 Svg Widgets DBus)
@@ -77,3 +79,9 @@ kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
 ki18n_install(po)
+
+ecm_qt_install_logging_categories(
+    EXPORT INITIALSYSTEMSETUP
+    FILE initialsystemsetup.categories
+    DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR}
+)

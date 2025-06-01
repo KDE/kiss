@@ -7,6 +7,8 @@
 */
 
 #include "user.h"
+
+#include "initialsystemsetup_debug.h"
 #include "user_interface.h"
 #include <KLocalizedString>
 #include <QDir>
@@ -372,7 +374,7 @@ void UserApplyJob::start()
         setAccount.waitForFinished();
         if (setAccount.isError()) {
             setError(setAccount.error());
-            qWarning() << setAccount.error().name() << setAccount.error().message();
+            qCWarning(KDEInitialSystemSetup) << setAccount.error().name() << setAccount.error().message();
             emitResult();
             return;
         }
@@ -393,7 +395,7 @@ void UserApplyJob::start()
         resp.waitForFinished();
         if (resp.isError()) {
             setError(resp.error());
-            qWarning() << resp.error().name() << resp.error().message();
+            qCWarning(KDEInitialSystemSetup) << resp.error().name() << resp.error().message();
             emitResult();
             return;
         }
@@ -408,7 +410,7 @@ void UserApplyJob::start()
         QTemporaryFile file;
         if (!file.open()) {
             setErrorText(i18n("Failed to resize image: opening temp file failed"));
-            qWarning() << "Failed to resize image: opening temp file failed";
+            qCWarning(KDEInitialSystemSetup) << "Failed to resize image: opening temp file failed";
             KJob::setError(static_cast<int>(Error::UserFacing));
             emitResult();
             return;
@@ -416,7 +418,7 @@ void UserApplyJob::start()
 
         if (!scaled.save(&file, "png")) {
             setErrorText(i18n("Failed to resize image: writing to temp file failed"));
-            qWarning() << "Failed to resize image: writing to temp file failed";
+            qCWarning(KDEInitialSystemSetup) << "Failed to resize image: writing to temp file failed";
             KJob::setError(static_cast<int>(Error::UserFacing));
             emitResult();
             return;
@@ -429,7 +431,7 @@ void UserApplyJob::start()
         resp.waitForFinished();
         if (resp.isError()) {
             setError(resp.error());
-            qWarning() << resp.error().name() << resp.error().message();
+            qCWarning(KDEInitialSystemSetup) << resp.error().name() << resp.error().message();
             emitResult();
             return;
         }
