@@ -46,6 +46,10 @@ set_package_properties(KF6 PROPERTIES
     PURPOSE "Required application components"
 )
 
+if (QT_KNOWN_POLICY_QTP0004)
+    qt_policy(SET QTP0004 NEW)
+endif ()
+
 ecm_setup_version(${PROJECT_VERSION}
     VARIABLE_PREFIX KISS
     VERSION_HEADER ${CMAKE_CURRENT_BINARY_DIR}/kiss-version.h
