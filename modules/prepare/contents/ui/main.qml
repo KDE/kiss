@@ -110,8 +110,15 @@ KissComponents.SetupModule {
                     id: displayScaling
                     text: i18n("Display Scaling")
                     displayMode: FormCard.FormComboBoxDelegate.Dialog
-                    currentIndex: Prepare.PrepareUtil.scalingOptions.indexOf(Prepare.PrepareUtil.scaling.toString() + "%");
                     model: Prepare.PrepareUtil.scalingOptions
+
+                    Connections {
+                        target: Prepare.PrepareUtil
+
+                        function onScalingChanged(): void {
+                        displayScaling.currentIndex = Prepare.PrepareUtil.scalingOptions.indexOf(Prepare.PrepareUtil.scaling.toString() + "%");
+                    }
+                    }
 
                     // remove % suffix
                     onCurrentValueChanged: Prepare.PrepareUtil.scaling = parseInt(currentValue.substring(0, currentValue.length - 1));
