@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-28 00:45+0000\n"
+"POT-Creation-Date: 2025-06-03 00:45+0000\n"
 "PO-Revision-Date: 2024-08-20 23:37+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -320,28 +320,28 @@ msgctxt "@action:button"
 msgid "Finish"
 msgstr ""
 
-#: src/user.cpp:123
+#: src/user.cpp:125
 #, kde-format
 msgctxt "@info"
 msgid "Failed to crop image: %1"
 msgstr ""
 
-#: src/user.cpp:304
+#: src/user.cpp:306
 #, kde-format
 msgid "Could not get permission to save user %1"
 msgstr ""
 
-#: src/user.cpp:309
+#: src/user.cpp:311
 #, kde-format
 msgid "There was an error while saving changes"
 msgstr ""
 
-#: src/user.cpp:410
+#: src/user.cpp:412
 #, kde-format
 msgid "Failed to resize image: opening temp file failed"
 msgstr ""
 
-#: src/user.cpp:418
+#: src/user.cpp:420
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-28 00:45+0000\n"
+"POT-Creation-Date: 2025-06-03 00:45+0000\n"
 "PO-Revision-Date: 2025-05-20 03:49+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -316,28 +316,28 @@ msgctxt "@action:button"
 msgid "Finish"
 msgstr "დასრულება"
 
-#: src/user.cpp:123
+#: src/user.cpp:125
 #, kde-format
 msgctxt "@info"
 msgid "Failed to crop image: %1"
 msgstr "გამოსახულების ამოჭრის შეცდომა: %1"
 
-#: src/user.cpp:304
+#: src/user.cpp:306
 #, kde-format
 msgid "Could not get permission to save user %1"
 msgstr "მომხმარებლის (%1) ჩაწერის წვდომა აკრძალულია"
 
-#: src/user.cpp:309
+#: src/user.cpp:311
 #, kde-format
 msgid "There was an error while saving changes"
 msgstr "ცვლილებების შენახვის შეცდომა"
 
-#: src/user.cpp:410
+#: src/user.cpp:412
 #, kde-format
 msgid "Failed to resize image: opening temp file failed"
 msgstr "გამოსახულების ზომის შეცვლის შეცდომა: დროებითი ფაილის გახსნის შეცდომა"
 
-#: src/user.cpp:418
+#: src/user.cpp:420
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "გამოსახულების ზომის შეცვლის შეცდომა: დროებითი ფაილის ჩაწერის შეცდომა"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-28 00:45+0000\n"
+"POT-Creation-Date: 2025-06-03 00:45+0000\n"
 "PO-Revision-Date: 2025-05-20 22:06+0300\n"
 "Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -317,28 +317,28 @@ msgctxt "@action:button"
 msgid "Finish"
 msgstr "Bitir"
 
-#: src/user.cpp:123
+#: src/user.cpp:125
 #, kde-format
 msgctxt "@info"
 msgid "Failed to crop image: %1"
 msgstr "Görsel kırpılamadı: %1"
 
-#: src/user.cpp:304
+#: src/user.cpp:306
 #, kde-format
 msgid "Could not get permission to save user %1"
 msgstr "%1 kullanıcısını kaydetmek için izin alınamadı"
 
-#: src/user.cpp:309
+#: src/user.cpp:311
 #, kde-format
 msgid "There was an error while saving changes"
 msgstr "Değişiklikler kaydedilirken bir hata oluştu"
 
-#: src/user.cpp:410
+#: src/user.cpp:412
 #, kde-format
 msgid "Failed to resize image: opening temp file failed"
 msgstr "Görsel yeniden boyutlandırılamadı: Geçici dosya açılamadı"
 
-#: src/user.cpp:418
+#: src/user.cpp:420
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "Görsel yeniden boyutlandırılamadı: Geçici dosyaya yazılamadı"

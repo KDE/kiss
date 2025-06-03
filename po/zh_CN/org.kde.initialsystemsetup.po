@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-28 00:45+0000\n"
+"POT-Creation-Date: 2025-06-03 00:45+0000\n"
 "PO-Revision-Date: 2024-07-15 19:45\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -313,28 +313,28 @@ msgctxt "@action:button"
 msgid "Finish"
 msgstr "完成"
 
-#: src/user.cpp:123
+#: src/user.cpp:125
 #, kde-format
 msgctxt "@info"
 msgid "Failed to crop image: %1"
 msgstr "裁剪图像失败：%1"
 
-#: src/user.cpp:304
+#: src/user.cpp:306
 #, kde-format
 msgid "Could not get permission to save user %1"
 msgstr "无法获取保存用户 %1 的权限"
 
-#: src/user.cpp:309
+#: src/user.cpp:311
 #, kde-format
 msgid "There was an error while saving changes"
 msgstr "保存更改时出错"
 
-#: src/user.cpp:410
+#: src/user.cpp:412
 #, kde-format
 msgid "Failed to resize image: opening temp file failed"
 msgstr "调整图像大小失败：无法打开临时文件"
 
-#: src/user.cpp:418
+#: src/user.cpp:420
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "调整图像大小失败：无法写入临时文件"
