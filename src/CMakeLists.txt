@@ -56,6 +56,9 @@ endif()
 
 ecm_add_qml_module(kde-initial-system-setup GENERATE_PLUGIN_SOURCE
     URI org.kde.initialsystemsetup
+    DEPENDENCIES
+        QtGui
+        QtQuick
 )
 
 qt_target_qml_sources(kde-initial-system-setup
