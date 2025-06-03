@@ -269,10 +269,15 @@ Kirigami.Page {
 
                             // pass up the property
                             property int currentIndex: index
-                            readonly property KissComponents.SetupModule module: pagesModel.pageItem(index)
+                            property KissComponents.SetupModule module: null
+
+                            Component.onCompleted: {
+                                module = pagesModel.pageItem(currentIndex)
+                                updateRootItems();
+                            }
 
                             visible: index === 0 // the binding is broken later
-                            contentItem: module.contentItem
+                            contentItem: module?.contentItem
 
                             Binding {
                                 target: module
@@ -308,10 +313,6 @@ Kirigami.Page {
                                 } else if (index === root.currentIndex + 1) {
                                     root.nextStepItem = item;
                                 }
-                            }
-
-                            Component.onCompleted: {
-                                updateRootItems();
                             }
 
                             // keep root properties updated
