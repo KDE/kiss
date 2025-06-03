@@ -7,6 +7,8 @@
 #include <KLocalizedString>
 #include <KPackage/PackageLoader>
 #include <QApplication>
+#include <QCommandLineOption>
+#include <QCommandLineParser>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QQuickStyle>
@@ -26,14 +28,21 @@ int main(int argc, char *argv[])
         QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
     }
 
-    KAboutData about(QStringLiteral("tokodon"),
-                     i18n("Tokodon"),
+    KAboutData about(QStringLiteral("kiss"),
+                     i18n("KDE Initial System Setup"),
                      QStringLiteral(KISS_VERSION_STRING),
-                     i18n("Browse the Fediverse"),
+                     i18n("Make Plasma yours"),
                      KAboutLicense::GPL_V3,
                      i18n("© 2021-2024 KDE Community"));
 
     QQmlApplicationEngine engine;
+
+    {
+        QCommandLineParser parser;
+        about.setupCommandLine(&parser);
+        parser.process(app);
+        about.processCommandLine(&parser);
+    }
 
     KLocalization::setupLocalizedContext(&engine);
     engine.loadFromModule("org.kde.initialsystemsetup"_L1, "Main"_L1);
