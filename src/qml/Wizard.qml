@@ -132,7 +132,7 @@ Kirigami.Page {
     PagesModel {
         id: pagesModel
 
-        Component.onCompleted: reload();
+        Component.onCompleted: reload()
 
         onLoaded: root.currentIndex = 0
     }
@@ -144,9 +144,9 @@ Kirigami.Page {
         // after the user chooses a language. We need to catch that since we are
         // using `changeText()` instead of a property binding.
         function onDataChanged(): void {
-        if (root.currentIndex >= 0 && !root.showingLanding) {
-            // Update the heading with the fresh translation from the model
-            stepHeading.changeText(root.currentStepItem.name);
+            if (root.currentIndex >= 0 && !root.showingLanding) {
+                // Update the heading with the fresh translation from the model
+                stepHeading.changeText(root.currentStepItem.name);
             }
         }
     }
@@ -173,7 +173,9 @@ Kirigami.Page {
             }
         }
 
-        transform: Translate { y: stepsComponent.translateY }
+        transform: Translate {
+            y: stepsComponent.translateY
+        }
 
         // heading for all the wizard steps
         Label {
@@ -274,7 +276,7 @@ Kirigami.Page {
                             property KissComponents.SetupModule module: null
 
                             Component.onCompleted: {
-                                module = pagesModel.pageItem(currentIndex)
+                                module = pagesModel.pageItem(currentIndex);
                                 updateRootItems();
                             }
 
@@ -371,7 +373,7 @@ Kirigami.Page {
 
                         enabled: root.currentModule.nextEnabled
 
-                        onClicked: root.requestNextPage();
+                        onClicked: root.requestNextPage()
                     }
 
                     Button {
@@ -390,7 +392,7 @@ Kirigami.Page {
 
                         enabled: root.currentModule.nextEnabled
 
-                        onClicked: root.finishFinalPage();
+                        onClicked: root.finishFinalPage()
                     }
                 }
             }
