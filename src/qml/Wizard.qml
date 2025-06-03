@@ -1,6 +1,8 @@
 // SPDX-FileCopyrightText: 2023 Devin Lin <devin@kde.org>
 // SPDX-License-Identifier: GPL-2.0-or-later
 
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
@@ -280,9 +282,9 @@ Kirigami.Page {
                             contentItem: module?.contentItem
 
                             Binding {
-                                target: module
+                                target: item.module
                                 property: 'cardWidth'
-                                value: Math.min(Kirigami.Units.gridUnit * 30, contentItem.width - Kirigami.Units.gridUnit * 2)
+                                value: Math.min(Kirigami.Units.gridUnit * 30, item.contentItem.width - Kirigami.Units.gridUnit * 2)
                             }
 
                             leftPadding: 0
@@ -292,11 +294,11 @@ Kirigami.Page {
                             transform: Translate {
                                 x: {
                                     if (item.currentIndex === root.currentIndex - 1) {
-                                        return previousStepItemX;
+                                        return root.previousStepItemX;
                                     } else if (item.currentIndex === root.currentIndex + 1) {
-                                        return nextStepItemX;
+                                        return root.nextStepItemX;
                                     } else if (item.currentIndex === root.currentIndex) {
-                                        return currentStepItemX;
+                                        return root.currentStepItemX;
                                     }
                                     return 0;
                                 }
@@ -343,7 +345,7 @@ Kirigami.Page {
                         leftPadding: Kirigami.Units.gridUnit
                         rightPadding: Kirigami.Units.gridUnit
 
-                        text: i18nc("@action:button", "Back")
+                        text: i18nc("@action:button", "Back") // qmllint disable unqualified
                         icon.name: "arrow-left-symbolic"
 
                         onClicked: root.requestPreviousPage()
@@ -364,7 +366,7 @@ Kirigami.Page {
                         rightPadding: Kirigami.Units.gridUnit
 
                         visible: !root.onFinalPage
-                        text: i18nc("@action:button", "Next")
+                        text: i18nc("@action:button", "Next") // qmllint disable unqualified
                         icon.name: "arrow-right-symbolic"
 
                         enabled: root.currentModule.nextEnabled
@@ -383,7 +385,7 @@ Kirigami.Page {
                         rightPadding: Kirigami.Units.gridUnit
 
                         visible: root.onFinalPage
-                        text: i18nc("@action:button", "Finish")
+                        text: i18nc("@action:button", "Finish") // qmllint disable unqualified
                         icon.name: "dialog-ok-symbolic"
 
                         enabled: root.currentModule.nextEnabled
