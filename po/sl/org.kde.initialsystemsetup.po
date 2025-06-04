@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-03 00:45+0000\n"
+"POT-Creation-Date: 2025-06-04 00:45+0000\n"
 "PO-Revision-Date: 2025-05-20 07:29+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -223,7 +223,7 @@ msgstr "Prilagodite velikost elementov na zaslonu."
 msgid "Display Scaling"
 msgstr "Prikaži merilo"
 
-#: modules/prepare/contents/ui/main.qml:129
+#: modules/prepare/contents/ui/main.qml:136
 #, kde-format
 msgid "Dark Theme"
 msgstr "Temna tema"
@@ -258,17 +258,17 @@ msgstr "Geslo:"
 msgid "Invalid input."
 msgstr "Neveljaven vhod."
 
-#: src/main.cpp:30
-#, kde-format
-msgid "Tokodon"
-msgstr "Tokodon"
-
 #: src/main.cpp:32
 #, kde-format
-msgid "Browse the Fediverse"
-msgstr "Brskajte po fediversu"
+msgid "KDE Initial System Setup"
+msgstr ""
 
 #: src/main.cpp:34
+#, kde-format
+msgid "Make Plasma yours"
+msgstr ""
+
+#: src/main.cpp:36
 #, kde-format
 msgid "© 2021-2024 KDE Community"
 msgstr "© 2021-2024 Skupnost KDE"
@@ -343,6 +343,12 @@ msgstr ""
 msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "Spreminjanje velikosti slike ni uspelo: pisanje v začasno datoteko ni uspelo"
+
+#~ msgid "Tokodon"
+#~ msgstr "Tokodon"
+
+#~ msgid "Browse the Fediverse"
+#~ msgstr "Brskajte po fediversu"
 
 #~ msgctxt "@info"
 #~ msgid "This will be used to name your home folder and can't be changed."

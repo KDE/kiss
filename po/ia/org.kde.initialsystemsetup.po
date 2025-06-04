@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-03 00:45+0000\n"
+"POT-Creation-Date: 2025-06-04 00:45+0000\n"
 "PO-Revision-Date: 2025-05-27 11:44+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -224,7 +224,7 @@ msgstr "Adapta le grandor de elementos sur le schermo."
 msgid "Display Scaling"
 msgstr "Scalar de monstrator"
 
-#: modules/prepare/contents/ui/main.qml:129
+#: modules/prepare/contents/ui/main.qml:136
 #, kde-format
 msgid "Dark Theme"
 msgstr "Thema obscur"
@@ -259,17 +259,17 @@ msgstr "Contrasigno:"
 msgid "Invalid input."
 msgstr "Entrata invalide."
 
-#: src/main.cpp:30
-#, kde-format
-msgid "Tokodon"
-msgstr "Tokodon"
-
 #: src/main.cpp:32
 #, kde-format
-msgid "Browse the Fediverse"
-msgstr "Naviga le Fediverse"
+msgid "KDE Initial System Setup"
+msgstr ""
 
 #: src/main.cpp:34
+#, kde-format
+msgid "Make Plasma yours"
+msgstr ""
+
+#: src/main.cpp:36
 #, kde-format
 msgid "© 2021-2024 KDE Community"
 msgstr "© 2021-2024 Communitate de KDE"
@@ -342,6 +342,12 @@ msgstr "Falleva a redimensionar image. il falleva a aperir file temp"
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "Falleva a redimensionar image. il falleva a scriber in file temp"
+
+#~ msgid "Tokodon"
+#~ msgstr "Tokodon"
+
+#~ msgid "Browse the Fediverse"
+#~ msgstr "Naviga le Fediverse"
 
 #~ msgctxt "@info"
 #~ msgid "This will be used to name your home folder and can't be changed."

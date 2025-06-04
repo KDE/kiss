@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-03 00:45+0000\n"
+"POT-Creation-Date: 2025-06-04 00:45+0000\n"
 "PO-Revision-Date: 2025-05-20 09:34+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -226,7 +226,7 @@ msgstr "Ajusteu la mida dels elements a la pantalla."
 msgid "Display Scaling"
 msgstr "Escalat de la pantalla"
 
-#: modules/prepare/contents/ui/main.qml:129
+#: modules/prepare/contents/ui/main.qml:136
 #, kde-format
 msgid "Dark Theme"
 msgstr "Tema fosc"
@@ -261,17 +261,17 @@ msgstr "Contrasenya:"
 msgid "Invalid input."
 msgstr "Entrada no vàlida."
 
-#: src/main.cpp:30
-#, kde-format
-msgid "Tokodon"
-msgstr "Tokodon"
-
 #: src/main.cpp:32
 #, kde-format
-msgid "Browse the Fediverse"
-msgstr "Navegueu per Fedivers"
+msgid "KDE Initial System Setup"
+msgstr ""
 
 #: src/main.cpp:34
+#, kde-format
+msgid "Make Plasma yours"
+msgstr ""
+
+#: src/main.cpp:36
 #, kde-format
 msgid "© 2021-2024 KDE Community"
 msgstr "© 2021-2024 Comunitat KDE"
@@ -348,3 +348,9 @@ msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "No s'ha pogut redimensionar la imatge: ha fallat en escriure en el fitxer "
 "temporal"
+
+#~ msgid "Tokodon"
+#~ msgstr "Tokodon"
+
+#~ msgid "Browse the Fediverse"
+#~ msgstr "Navegueu per Fedivers"

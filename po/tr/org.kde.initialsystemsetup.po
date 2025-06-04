@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-03 00:45+0000\n"
+"POT-Creation-Date: 2025-06-04 00:45+0000\n"
 "PO-Revision-Date: 2025-05-20 22:06+0300\n"
 "Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -224,7 +224,7 @@ msgstr "Ekrandaki ögelerin boyutunu ayarlayın."
 msgid "Display Scaling"
 msgstr "Görüntü Ölçeklendirme"
 
-#: modules/prepare/contents/ui/main.qml:129
+#: modules/prepare/contents/ui/main.qml:136
 #, kde-format
 msgid "Dark Theme"
 msgstr "Koyu Tema"
@@ -259,17 +259,17 @@ msgstr "Parola:"
 msgid "Invalid input."
 msgstr "Geçersiz giriş."
 
-#: src/main.cpp:30
-#, kde-format
-msgid "Tokodon"
-msgstr "Tokodon"
-
 #: src/main.cpp:32
 #, kde-format
-msgid "Browse the Fediverse"
-msgstr "Fedi evrenine göz atın"
+msgid "KDE Initial System Setup"
+msgstr ""
 
 #: src/main.cpp:34
+#, kde-format
+msgid "Make Plasma yours"
+msgstr ""
+
+#: src/main.cpp:36
 #, kde-format
 msgid "© 2021-2024 KDE Community"
 msgstr "© 2021–2024 KDE Topluluğu"
@@ -342,6 +342,12 @@ msgstr "Görsel yeniden boyutlandırılamadı: Geçici dosya açılamadı"
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "Görsel yeniden boyutlandırılamadı: Geçici dosyaya yazılamadı"
+
+#~ msgid "Tokodon"
+#~ msgstr "Tokodon"
+
+#~ msgid "Browse the Fediverse"
+#~ msgstr "Fedi evrenine göz atın"
 
 #~ msgctxt "@info"
 #~ msgid "This will be used to name your home folder and can't be changed."

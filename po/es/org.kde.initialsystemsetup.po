@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: org.kde.initialsystemsetup\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-03 00:45+0000\n"
+"POT-Creation-Date: 2025-06-04 00:45+0000\n"
 "PO-Revision-Date: 2025-05-21 01:10+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -226,7 +226,7 @@ msgstr "Ajuste el tamaño de los elementos de la pantalla."
 msgid "Display Scaling"
 msgstr "Escalado de la pantalla"
 
-#: modules/prepare/contents/ui/main.qml:129
+#: modules/prepare/contents/ui/main.qml:136
 #, kde-format
 msgid "Dark Theme"
 msgstr "Tema oscuro"
@@ -261,17 +261,17 @@ msgstr "Contraseña:"
 msgid "Invalid input."
 msgstr "Entrada no válida."
 
-#: src/main.cpp:30
-#, kde-format
-msgid "Tokodon"
-msgstr "Tokodon"
-
 #: src/main.cpp:32
 #, kde-format
-msgid "Browse the Fediverse"
-msgstr "Explore el Fediverso"
+msgid "KDE Initial System Setup"
+msgstr ""
 
 #: src/main.cpp:34
+#, kde-format
+msgid "Make Plasma yours"
+msgstr ""
+
+#: src/main.cpp:36
 #, kde-format
 msgid "© 2021-2024 KDE Community"
 msgstr "© 2021-2024 La Comunidad KDE"
@@ -348,3 +348,9 @@ msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "Ha ocurrido un error al cambiar el tamaño de la imagen: ha fallado la "
 "escritura en el archivo temporal"
+
+#~ msgid "Tokodon"
+#~ msgstr "Tokodon"
+
+#~ msgid "Browse the Fediverse"
+#~ msgstr "Explore el Fediverso"

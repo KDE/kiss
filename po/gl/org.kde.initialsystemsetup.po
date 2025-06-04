@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-03 00:45+0000\n"
+"POT-Creation-Date: 2025-06-04 00:45+0000\n"
 "PO-Revision-Date: 2024-07-15 22:52+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
@@ -225,7 +225,7 @@ msgstr ""
 msgid "Display Scaling"
 msgstr ""
 
-#: modules/prepare/contents/ui/main.qml:129
+#: modules/prepare/contents/ui/main.qml:136
 #, kde-format
 msgid "Dark Theme"
 msgstr ""
@@ -260,17 +260,17 @@ msgstr "Contrasinal:"
 msgid "Invalid input."
 msgstr ""
 
-#: src/main.cpp:30
-#, kde-format
-msgid "Tokodon"
-msgstr ""
-
 #: src/main.cpp:32
 #, kde-format
-msgid "Browse the Fediverse"
+msgid "KDE Initial System Setup"
 msgstr ""
 
 #: src/main.cpp:34
+#, kde-format
+msgid "Make Plasma yours"
+msgstr ""
+
+#: src/main.cpp:36
 #, kde-format
 msgid "© 2021-2024 KDE Community"
 msgstr ""

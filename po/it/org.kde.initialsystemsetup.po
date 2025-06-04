@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-03 00:45+0000\n"
+"POT-Creation-Date: 2025-06-04 00:45+0000\n"
 "PO-Revision-Date: 2025-05-25 11:08+0200\n"
 "Last-Translator: Valter Mura <valtermura@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -224,7 +224,7 @@ msgstr "Regola la dimensione degli elementi sullo schermo."
 msgid "Display Scaling"
 msgstr "Risoluzione di visualizzazione"
 
-#: modules/prepare/contents/ui/main.qml:129
+#: modules/prepare/contents/ui/main.qml:136
 #, kde-format
 msgid "Dark Theme"
 msgstr "Tema scuro"
@@ -259,17 +259,17 @@ msgstr "Password:"
 msgid "Invalid input."
 msgstr "Digitazione non valida."
 
-#: src/main.cpp:30
-#, kde-format
-msgid "Tokodon"
-msgstr "Tokodon"
-
 #: src/main.cpp:32
 #, kde-format
-msgid "Browse the Fediverse"
-msgstr "Naviga nel Fediverso"
+msgid "KDE Initial System Setup"
+msgstr ""
 
 #: src/main.cpp:34
+#, kde-format
+msgid "Make Plasma yours"
+msgstr ""
+
+#: src/main.cpp:36
 #, kde-format
 msgid "© 2021-2024 KDE Community"
 msgstr "© 2021-2024 La Comunità di KDE"
@@ -346,6 +346,12 @@ msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "Ridimensionamento immagine non riuscito: impossibile scrivere nel file "
 "temporaneo"
+
+#~ msgid "Tokodon"
+#~ msgstr "Tokodon"
+
+#~ msgid "Browse the Fediverse"
+#~ msgstr "Naviga nel Fediverso"
 
 #~ msgctxt "@info"
 #~ msgid "This will be used to name your home folder and can't be changed."
