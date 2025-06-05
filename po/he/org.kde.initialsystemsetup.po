@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-04 00:45+0000\n"
-"PO-Revision-Date: 2025-05-20 07:53+0300\n"
+"POT-Creation-Date: 2025-06-05 00:45+0000\n"
+"PO-Revision-Date: 2025-06-04 10:23+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -261,12 +261,12 @@ msgstr "קלט שגוי."
 #: src/main.cpp:32
 #, kde-format
 msgid "KDE Initial System Setup"
-msgstr ""
+msgstr "הגדרות מערכות ראשוניות של KDE"
 
 #: src/main.cpp:34
 #, kde-format
 msgid "Make Plasma yours"
-msgstr ""
+msgstr "להתאים את פלזמה לטעמך"
 
 #: src/main.cpp:36
 #, kde-format
@@ -298,19 +298,19 @@ msgstr "פועל על גבי<br/><b>%1</b>"
 msgid "Initial Start"
 msgstr "הפעלה ראשונה"
 
-#: src/qml/Wizard.qml:345
+#: src/qml/Wizard.qml:350
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
 msgstr "חזרה"
 
-#: src/qml/Wizard.qml:366
+#: src/qml/Wizard.qml:371
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "הבא"
 
-#: src/qml/Wizard.qml:385
+#: src/qml/Wizard.qml:390
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"

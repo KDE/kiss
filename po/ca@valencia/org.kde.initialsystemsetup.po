@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-04 00:45+0000\n"
-"PO-Revision-Date: 2025-05-20 09:34+0200\n"
+"POT-Creation-Date: 2025-06-05 00:45+0000\n"
+"PO-Revision-Date: 2025-06-04 09:02+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -264,12 +264,12 @@ msgstr "Entrada no vàlida."
 #: src/main.cpp:32
 #, kde-format
 msgid "KDE Initial System Setup"
-msgstr ""
+msgstr "Configuració inicial del sistema KDE"
 
 #: src/main.cpp:34
 #, kde-format
 msgid "Make Plasma yours"
-msgstr ""
+msgstr "Feu vostre Plasma"
 
 #: src/main.cpp:36
 #, kde-format
@@ -301,19 +301,19 @@ msgstr "Funciona amb<br/><b>%1</b>"
 msgid "Initial Start"
 msgstr "Començament inicial"
 
-#: src/qml/Wizard.qml:345
+#: src/qml/Wizard.qml:350
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
 msgstr "Arrere"
 
-#: src/qml/Wizard.qml:366
+#: src/qml/Wizard.qml:371
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Següent"
 
-#: src/qml/Wizard.qml:385
+#: src/qml/Wizard.qml:390
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"
@@ -348,9 +348,3 @@ msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "No s'ha pogut redimensionar la imatge: ha fallat en escriure en el fitxer "
 "temporal"
-
-#~ msgid "Tokodon"
-#~ msgstr "Tokodon"
-
-#~ msgid "Browse the Fediverse"
-#~ msgstr "Navegueu per Fedivers"

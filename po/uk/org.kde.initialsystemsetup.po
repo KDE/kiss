@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-04 00:45+0000\n"
-"PO-Revision-Date: 2025-05-20 09:07+0300\n"
+"POT-Creation-Date: 2025-06-05 00:45+0000\n"
+"PO-Revision-Date: 2025-06-04 22:28+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -263,12 +263,12 @@ msgstr "Некоректні вхідні дані."
 #: src/main.cpp:32
 #, kde-format
 msgid "KDE Initial System Setup"
-msgstr ""
+msgstr "Початкове налаштовування системи KDE"
 
 #: src/main.cpp:34
 #, kde-format
 msgid "Make Plasma yours"
-msgstr ""
+msgstr "Зробіть Плазма вашою"
 
 #: src/main.cpp:36
 #, kde-format
@@ -300,19 +300,19 @@ msgstr "На основі<br/><b>%1</b>"
 msgid "Initial Start"
 msgstr "Початковий запуск"
 
-#: src/qml/Wizard.qml:345
+#: src/qml/Wizard.qml:350
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
 msgstr "Назад"
 
-#: src/qml/Wizard.qml:366
+#: src/qml/Wizard.qml:371
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Далі"
 
-#: src/qml/Wizard.qml:385
+#: src/qml/Wizard.qml:390
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"
