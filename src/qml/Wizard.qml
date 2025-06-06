@@ -346,12 +346,10 @@ Kirigami.Page {
         required property int index
         required property string name
 
-        // pass up the property
-        property int currentIndex: index
         property KissComponents.SetupModule module: null
 
         Component.onCompleted: {
-            module = pagesModel.pageItem(currentIndex);
+            module = pagesModel.pageItem(index);
             updateRootItems();
         }
 
@@ -370,11 +368,11 @@ Kirigami.Page {
 
         transform: Translate {
             x: {
-                if (item.currentIndex === root.currentIndex - 1) {
+                if (item.index === root.currentIndex - 1) {
                     return root.previousStepItemX;
-                } else if (item.currentIndex === root.currentIndex + 1) {
+                } else if (item.index === root.currentIndex + 1) {
                     return root.nextStepItemX;
-                } else if (item.currentIndex === root.currentIndex) {
+                } else if (item.index === root.currentIndex) {
                     return root.currentStepItemX;
                 }
                 return 0;
