@@ -1,4 +1,6 @@
 // SPDX-FileCopyrightText: 2023 Devin Lin <devin@kde.org>
+// SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
+//
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 pragma ComponentBehavior: Bound
@@ -262,72 +264,8 @@ Kirigami.Page {
                     // setup steps
                     Repeater {
                         id: stepsRepeater
-
                         model: pagesModel
-
-                        delegate: Control {
-                            id: item
-
-                            required property int index
-                            required property string name
-
-                            // pass up the property
-                            property int currentIndex: index
-                            property KissComponents.SetupModule module: null
-
-                            Component.onCompleted: {
-                                module = pagesModel.pageItem(currentIndex);
-                                updateRootItems();
-                            }
-
-                            visible: index === 0 // the binding is broken later
-                            contentItem: module?.contentItem
-
-                            Binding {
-                                target: item.module
-                                property: 'cardWidth'
-                                value: Math.min(Kirigami.Units.gridUnit * 30, item.contentItem.width - Kirigami.Units.gridUnit * 2)
-                            }
-
-                            leftPadding: 0
-                            rightPadding: 0
-                            topPadding: Kirigami.Units.gridUnit
-
-                            transform: Translate {
-                                x: {
-                                    if (item.currentIndex === root.currentIndex - 1) {
-                                        return root.previousStepItemX;
-                                    } else if (item.currentIndex === root.currentIndex + 1) {
-                                        return root.nextStepItemX;
-                                    } else if (item.currentIndex === root.currentIndex) {
-                                        return root.currentStepItemX;
-                                    }
-                                    return 0;
-                                }
-                            }
-
-                            width: parent.width
-
-                            function updateRootItems(): void {
-                                if (index === root.currentIndex) {
-                                    root.currentStepItem = item;
-                                    root.currentModule = module;
-                                } else if (index === root.currentIndex - 1) {
-                                    root.previousStepItem = item;
-                                } else if (index === root.currentIndex + 1) {
-                                    root.nextStepItem = item;
-                                }
-                            }
-
-                            // keep root properties updated
-                            Connections {
-                                target: root
-
-                                function onCurrentIndexChanged(): void {
-                                    item.updateRootItems();
-                                }
-                            }
-                        }
+                        delegate: PageDelegate {}
                     }
                 }
 
@@ -395,6 +333,73 @@ Kirigami.Page {
                         onClicked: root.finishFinalPage()
                     }
                 }
+            }
+        }
+    }
+
+    /*!
+    * Delegate that represents each page in the wizard.
+    */
+    component PageDelegate: Control {
+        id: item
+
+        required property int index
+        required property string name
+
+        // pass up the property
+        property int currentIndex: index
+        property KissComponents.SetupModule module: null
+
+        Component.onCompleted: {
+            module = pagesModel.pageItem(currentIndex);
+            updateRootItems();
+        }
+
+        visible: index === 0 // the binding is broken later
+        contentItem: module?.contentItem
+
+        Binding {
+            target: item.module
+            property: 'cardWidth'
+            value: Math.min(Kirigami.Units.gridUnit * 30, item.contentItem.width - Kirigami.Units.gridUnit * 2)
+        }
+
+        leftPadding: 0
+        rightPadding: 0
+        topPadding: Kirigami.Units.gridUnit
+
+        transform: Translate {
+            x: {
+                if (item.currentIndex === root.currentIndex - 1) {
+                    return root.previousStepItemX;
+                } else if (item.currentIndex === root.currentIndex + 1) {
+                    return root.nextStepItemX;
+                } else if (item.currentIndex === root.currentIndex) {
+                    return root.currentStepItemX;
+                }
+                return 0;
+            }
+        }
+
+        width: parent.width
+
+        function updateRootItems(): void {
+            if (index === root.currentIndex) {
+                root.currentStepItem = item;
+                root.currentModule = module;
+            } else if (index === root.currentIndex - 1) {
+                root.previousStepItem = item;
+            } else if (index === root.currentIndex + 1) {
+                root.nextStepItem = item;
+            }
+        }
+
+        // keep root properties updated
+        Connections {
+            target: root
+
+            function onCurrentIndexChanged(): void {
+                item.updateRootItems();
             }
         }
     }
