@@ -258,12 +258,12 @@ msgstr "输入的内容无效。"
 #: src/main.cpp:32
 #, kde-format
 msgid "KDE Initial System Setup"
-msgstr ""
+msgstr "KDE 初始系统设置程序"
 
 #: src/main.cpp:34
 #, kde-format
 msgid "Make Plasma yours"
-msgstr ""
+msgstr "帮助您进行 Plasma 的初始系统设置"
 
 #: src/main.cpp:36
 #, kde-format
@@ -338,9 +338,3 @@ msgstr "调整图像大小失败：无法打开临时文件"
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "调整图像大小失败：无法写入临时文件"
-
-#~ msgid "Tokodon"
-#~ msgstr "Tokodon"
-
-#~ msgid "Browse the Fediverse"
-#~ msgstr "浏览 Fediverse"
