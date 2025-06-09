@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-05 00:45+0000\n"
-"PO-Revision-Date: 2025-05-22 13:52+0900\n"
+"POT-Creation-Date: 2025-06-09 00:45+0000\n"
+"PO-Revision-Date: 2025-06-08 23:59+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -258,12 +258,12 @@ msgstr "無效輸入。"
 #: src/main.cpp:32
 #, kde-format
 msgid "KDE Initial System Setup"
-msgstr ""
+msgstr "KDE 初始系統設定"
 
 #: src/main.cpp:34
 #, kde-format
 msgid "Make Plasma yours"
-msgstr ""
+msgstr "自訂 Plasma 行為"
 
 #: src/main.cpp:36
 #, kde-format
@@ -295,19 +295,19 @@ msgstr "基於<br/><b>%1</b>"
 msgid "Initial Start"
 msgstr "初次啟動"
 
-#: src/qml/Wizard.qml:350
+#: src/qml/Wizard.qml:288
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
 msgstr "返回"
 
-#: src/qml/Wizard.qml:371
+#: src/qml/Wizard.qml:309
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "下一步"
 
-#: src/qml/Wizard.qml:390
+#: src/qml/Wizard.qml:328
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-05 00:45+0000\n"
+"POT-Creation-Date: 2025-06-09 00:45+0000\n"
 "PO-Revision-Date: 2024-07-15 19:45\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -295,19 +295,19 @@ msgstr "由 <b>%1</b><br/>开发维护"
 msgid "Initial Start"
 msgstr "初始化首页"
 
-#: src/qml/Wizard.qml:350
+#: src/qml/Wizard.qml:288
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
 msgstr "后退"
 
-#: src/qml/Wizard.qml:371
+#: src/qml/Wizard.qml:309
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "下一步"
 
-#: src/qml/Wizard.qml:390
+#: src/qml/Wizard.qml:328
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"

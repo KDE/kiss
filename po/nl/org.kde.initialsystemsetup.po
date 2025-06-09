@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-05 00:45+0000\n"
+"POT-Creation-Date: 2025-06-09 00:45+0000\n"
 "PO-Revision-Date: 2025-06-04 23:29+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -298,19 +298,19 @@ msgstr "Aangedreven door<br/><b>%1</b>"
 msgid "Initial Start"
 msgstr "Initiële start"
 
-#: src/qml/Wizard.qml:350
+#: src/qml/Wizard.qml:288
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
 msgstr "Terug"
 
-#: src/qml/Wizard.qml:371
+#: src/qml/Wizard.qml:309
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Volgende"
 
-#: src/qml/Wizard.qml:390
+#: src/qml/Wizard.qml:328
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"

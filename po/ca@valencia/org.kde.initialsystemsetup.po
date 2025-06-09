@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-05 00:45+0000\n"
+"POT-Creation-Date: 2025-06-09 00:45+0000\n"
 "PO-Revision-Date: 2025-06-04 09:02+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -301,19 +301,19 @@ msgstr "Funciona amb<br/><b>%1</b>"
 msgid "Initial Start"
 msgstr "Començament inicial"
 
-#: src/qml/Wizard.qml:350
+#: src/qml/Wizard.qml:288
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
 msgstr "Arrere"
 
-#: src/qml/Wizard.qml:371
+#: src/qml/Wizard.qml:309
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Següent"
 
-#: src/qml/Wizard.qml:390
+#: src/qml/Wizard.qml:328
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"
