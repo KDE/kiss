@@ -12,6 +12,6 @@
         "Version": "1"
     },
     "X-KDE-ParentApp": "org.kde.initialsystemsetup",
-    "KPackageStructure": "KDE/InitialSystemSetup"
+    "KPackageStructure": "KDE/InitialSystemSetup",
+    "NoDisplay": true
 }
-
