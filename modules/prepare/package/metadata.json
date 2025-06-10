@@ -1,5 +1,6 @@
 {
     "KPackageStructure": "KPackage/GenericQML",
+    "NoDisplay": true,
     "KPlugin": {
         "Authors": [
             {

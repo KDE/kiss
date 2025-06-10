@@ -1,5 +1,6 @@
 {
     "KPackageStructure": "KDE/InitialSystemSetup",
+    "NoDisplay": true,
     "KPlugin": {
         "Authors": [
             {
