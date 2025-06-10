@@ -48,7 +48,7 @@
         "Description[x-test]": "xxAllows the user to configure the environment before using it.xx",
         "Description[zh_CN]": "允许用户在使用系统环境之前对其进行配置。",
         "Description[zh_TW]": "允許使用者在使用環境前先把它設定好。",
-        "Id": "org.kde.plasma.plasmainitialstart.account",
+        "Id": "org.kde.plasma.plasmainitialstart.prepare",
         "License": "LGPL-2.0-or-later",
         "Name": "Before we get started…",
         "Name[ar]": "قبل أن نبدأ…",
