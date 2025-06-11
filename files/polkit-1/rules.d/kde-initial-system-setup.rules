@@ -1,0 +1,19 @@
+// SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
+//
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
+/*
+ * Allow the initial system setup to run actions without requiring a password.
+ */
+polkit.addRule(function(action, subject) {
+    // This probably won't work, because it would allow the live session user
+    // to run any action without even prompting for authentication.
+    // 
+    // So does KISS need to run on top of the greeter, or perhaps
+    // should it run in a separate session and then switch to the
+    // liveuser / new user session after setup is complete?
+    if (subject.user == "liveuser" ||
+        subject.user == "kde-initial-system-setup") {
+        return polkit.Result.YES;
+    }
+});
