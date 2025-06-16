@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-09 00:45+0000\n"
-"PO-Revision-Date: 2025-05-25 11:08+0200\n"
+"PO-Revision-Date: 2025-06-11 20:35+0200\n"
 "Last-Translator: Valter Mura <valtermura@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.04.1\n"
+"X-Generator: Lokalize 25.04.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -262,12 +262,12 @@ msgstr "Digitazione non valida."
 #: src/main.cpp:32
 #, kde-format
 msgid "KDE Initial System Setup"
-msgstr ""
+msgstr "Configurazione iniziale del sistema di KDE"
 
 #: src/main.cpp:34
 #, kde-format
 msgid "Make Plasma yours"
-msgstr ""
+msgstr "Personalizza Plasma"
 
 #: src/main.cpp:36
 #, kde-format
