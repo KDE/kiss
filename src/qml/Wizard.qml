@@ -85,6 +85,19 @@ Kirigami.Page {
 
         previousStepItemX = 0;
 
+        // Notify the next page/module it is being activated.
+        //
+        // Requires the module to implement an `onPageActivated` function.
+        //
+        // This allows the module to perform any necessary setup, and check if
+        // any data it relies on has been updated since the last activation.
+        if (currentIndex + 1 < stepCount) {
+            let nextItem = stepsRepeater.itemAt(currentIndex + 1);
+            if (nextItem && nextItem.module && typeof nextItem.module.onPageActivated === "function") {
+                nextItem.module.onPageActivated();
+            }
+        }
+
         currentIndex++;
         stepHeading.changeText(currentStepItem.name);
 
