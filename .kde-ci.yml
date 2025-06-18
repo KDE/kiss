@@ -10,3 +10,4 @@ Dependencies:
     'frameworks/kpackage': '@latest-kf6'
     'frameworks/kconfig': '@latest-kf6'
     'plasma/libkscreen': '@latest-kf6'
+    'plasma/plasma-desktop': '@latest-kf6'

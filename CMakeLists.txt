@@ -28,6 +28,8 @@ include(KDEClangFormat)
 include(KDEGitCommitHooks)
 
 include(ECMDeprecationSettings)
+include(ECMFindQmlModule)
+include(ECMQmlModule)
 include(ECMSetupVersion)
 include(ECMGenerateExportHeader)
 include(ECMPoQmTools)

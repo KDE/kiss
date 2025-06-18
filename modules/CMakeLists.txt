@@ -11,6 +11,9 @@ kpackage_install_package(account org.kde.initialsystemsetup.account packages pla
 add_subdirectory(finished)
 kpackage_install_package(finished org.kde.initialsystemsetup.finished packages plasma)
 
+add_subdirectory(keyboard)
+kpackage_install_package(keyboard org.kde.initialsystemsetup.keyboard packages plasma)
+
 add_subdirectory(language)
 kpackage_install_package(language org.kde.initialsystemsetup.language packages plasma)
 

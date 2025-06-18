@@ -38,6 +38,8 @@ add_executable(kde-initial-system-setup
     user.h
     initialstartutil.cpp
     initialstartutil.h
+    keyboardutil.cpp
+    keyboardutil.h
     ${initialstart_DBUS_SRCS}
     ${logging_SRCS}
 )
@@ -55,7 +57,7 @@ else()
 endif()
 
 ecm_add_qml_module(kde-initial-system-setup GENERATE_PLUGIN_SOURCE
-    URI org.kde.initialsystemsetup
+    URI "org.kde.initialsystemsetup"
     DEPENDENCIES
         QtGui
         QtQuick
