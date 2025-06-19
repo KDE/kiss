@@ -170,78 +170,67 @@ KissComponents.SetupModule {
                 text: i18n("Select your keyboard layout and language.") // qmllint disable unqualified
             }
 
-            FormCard.FormCard {
-                id: keyboardLayoutCard
-                maximumWidth: root.cardWidth
+            ColumnLayout {
+                spacing: Kirigami.Units.smallSpacing
 
+                Layout.maximumWidth: root.cardWidth
                 Layout.alignment: Qt.AlignTop | Qt.AlignHCenter
-                Layout.fillWidth: true
 
-                FormCard.AbstractFormDelegate {
-                    background: null
+                Kirigami.SearchField {
+                    id: searchField
                     Layout.fillWidth: true
+                    onAccepted: {
+                        layoutSearchProxy.searchString = searchField.text.trim();
+                    }
+                }
 
-                    contentItem: ColumnLayout {
-                        spacing: Kirigami.Units.smallSpacing
-                        width: parent.width
+                RowLayout {
+                    ScrollView {
+                        clip: true
+                        implicitWidth: Math.round(mainScrollView.width / 2)
+                        Layout.fillWidth: true
+                        Layout.fillHeight: true
+                        Layout.maximumHeight: Kirigami.Units.gridUnit * 14
 
-                        Kirigami.SearchField {
-                            id: searchField
-                            Layout.fillWidth: true
-                            onAccepted: {
-                                layoutSearchProxy.searchString = searchField.text.trim();
+                        Component.onCompleted: {
+                            if (background) {
+                                background.visible = true;
                             }
                         }
 
-                        RowLayout {
-                            ScrollView {
-                                clip: true
-                                implicitWidth: Math.round(mainScrollView.width / 2)
-                                Layout.fillWidth: true
-                                Layout.fillHeight: true
-                                Layout.maximumHeight: Kirigami.Units.gridUnit * 14
+                        contentItem: ListView {
+                            id: layoutsView
+                            model: layoutsProxy
+                            delegate: LayoutDelegate {}
+                            keyNavigationEnabled: true
+                            activeFocusOnTab: true
 
-                                Component.onCompleted: {
-                                    if (background) {
-                                        background.visible = true;
-                                    }
-                                }
-
-                                contentItem: ListView {
-                                    id: layoutsView
-                                    model: layoutsProxy
-                                    delegate: LayoutDelegate {}
-                                    keyNavigationEnabled: true
-                                    activeFocusOnTab: true
-
-                                    onCurrentIndexChanged: {
-                                        variantProxy.invalidateFilter();
-                                        layoutsProxy.setLayout(currentIndex);
-                                    }
-                                }
+                            onCurrentIndexChanged: {
+                                variantProxy.invalidateFilter();
+                                layoutsProxy.setLayout(currentIndex);
                             }
+                        }
+                    }
 
-                            ScrollView {
-                                clip: true
-                                implicitWidth: Math.round(mainScrollView.width / 2)
-                                Layout.fillWidth: true
-                                Layout.fillHeight: true
-                                Layout.maximumHeight: Kirigami.Units.gridUnit * 14
+                    ScrollView {
+                        clip: true
+                        implicitWidth: Math.round(mainScrollView.width / 2)
+                        Layout.fillWidth: true
+                        Layout.fillHeight: true
+                        Layout.maximumHeight: Kirigami.Units.gridUnit * 14
 
-                                Component.onCompleted: {
-                                    if (background) {
-                                        background.visible = true;
-                                    }
-                                }
-
-                                contentItem: ListView {
-                                    id: variantView
-                                    model: layoutsView.currentItem ? variantProxy : []
-                                    delegate: LayoutDelegate {}
-                                    keyNavigationEnabled: true
-                                    activeFocusOnTab: true
-                                }
+                        Component.onCompleted: {
+                            if (background) {
+                                background.visible = true;
                             }
+                        }
+
+                        contentItem: ListView {
+                            id: variantView
+                            model: layoutsView.currentItem ? variantProxy : []
+                            delegate: LayoutDelegate {}
+                            keyNavigationEnabled: true
+                            activeFocusOnTab: true
                         }
                     }
                 }
