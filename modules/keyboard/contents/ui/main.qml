@@ -86,8 +86,6 @@ KissComponents.SetupModule {
             const locale = Qt.locale();
             const localeName = locale.name;
 
-            console.info("Searching for layout matching locale:", localeName);
-
             // Iterate through the rows to find the layout that matches the locale
             for (let i = 0; i < rowCount(); i++) {
                 const proxyIndex = index(i, 0);
@@ -98,7 +96,6 @@ KissComponents.SetupModule {
                 // For now just hardcode the English (US) layout.
                 // TODO: Add support for _actually_ finding the layout for the current locale.
                 if (description === "English (US)" && variantName === "") {
-                    console.info("Found matching layout for locale:", shortName, "at index:", i);
                     return i; // Return the index of the matching layout
                 }
             }
@@ -118,7 +115,6 @@ KissComponents.SetupModule {
 
             // Set the keyboard layout using the utility function
             KeyboardUtil.setLayout(shortName, variantName);
-            console.info("Set keyboard layout to:", shortName, "with variant:", variantName);
         }
     }
 
@@ -256,7 +252,6 @@ KissComponents.SetupModule {
         onClicked: {
             ListView.view.currentIndex = index;
             KeyboardUtil.setLayout(shortName, variantName);
-            console.info("Selected layout:", shortName, "description:", description, "variant:", variantName, "at index:", index);
         }
 
         Accessible.name: delegate.description
