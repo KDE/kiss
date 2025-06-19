@@ -51,20 +51,20 @@ KissComponents.SetupModule {
 
         filterRowCallback: function (row, parent) {
             const modelIndex = sourceModel.index(row, 0, parent);
-            const currentVariantName = sourceModel.data(modelIndex, KItemModels.KRoleNames.role("variantName"));
-            const description = sourceModel.data(modelIndex, KItemModels.KRoleNames.role("description"));
+            const currentVariantName = modelIndex.data(KItemModels.KRoleNames.role("variantName"));
+            const description = modelIndex.data(KItemModels.KRoleNames.role("description"));
 
             if (currentVariantName !== '') {
                 return false;
             }
 
             if (searchField.text.length > 0) {
-                const score = sourceModel.data(modelIndex, KItemModels.KRoleNames.role("searchScore"));
+                const score = modelIndex.data(KItemModels.KRoleNames.role("searchScore"));
                 if (score !== 0) {
                     return true;
                 }
                 const shortNameRole = KItemModels.KRoleNames.role("shortName");
-                const currentName = sourceModel.data(modelIndex, shortNameRole);
+                const currentName = modelIndex.data(shortNameRole);
                 const searchScoreRole = KItemModels.KRoleNames.role("searchScore");
                 for (let i = 0; i < sourceModel.rowCount(); i++) {
                     const index = sourceModel.index(i, 0, parent);
@@ -134,7 +134,7 @@ KissComponents.SetupModule {
             }
 
             const modelIndex = sourceModel.index(row, 0, parent);
-            const currentName = sourceModel.data(modelIndex, KItemModels.KRoleNames.role("shortName"));
+            const currentName = modelIndex.data(KItemModels.KRoleNames.role("shortName"));
             const selectedName = layoutsView.currentItem.shortName;
 
             if (currentName !== selectedName) {
@@ -142,7 +142,7 @@ KissComponents.SetupModule {
             }
 
             if (searchField.text.length > 0) {
-                const searchScore = sourceModel.data(modelIndex, KItemModels.KRoleNames.role("searchScore"));
+                const searchScore = modelIndex.data(KItemModels.KRoleNames.role("searchScore"));
                 return searchScore > 100;
             }
 
