@@ -106,7 +106,7 @@ KissComponents.SetupModule {
             return -1; // Not found
         }
 
-        function setLayout(newIndex) {
+        function setLayout(newIndex: int): void {
             if (newIndex < 0 || newIndex >= rowCount()) {
                 console.warn("Invalid index for layout:", newIndex);
                 return;
