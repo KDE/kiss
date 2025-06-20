@@ -1,6 +1,5 @@
 {
     "KPackageStructure": "KPackage/GenericQML",
-    "NoDisplay": true,
     "KPlugin": {
         "Authors": [
             {
@@ -52,5 +51,6 @@
         "Name[zh_CN]": "准备",
         "Name[zh_TW]": "準備",
         "Website": "https://kde.org"
-    }
+    },
+    "NoDisplay": true
 }

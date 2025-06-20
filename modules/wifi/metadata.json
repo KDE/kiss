@@ -1,6 +1,5 @@
 {
     "KPackageStructure": "KDE/InitialSystemSetup",
-    "NoDisplay": true,
     "KPlugin": {
         "Authors": [
             {
@@ -73,6 +72,7 @@
         "Name[zh_CN]": "网络",
         "Name[zh_TW]": "網路"
     },
+    "NoDisplay": true,
     "X-KDE-ParentApp": "org.kde.initialsystemsetup",
     "X-KDE-Weight": 50
 }

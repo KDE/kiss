@@ -1,6 +1,5 @@
 {
     "KPackageStructure": "KDE/InitialSystemSetup",
-    "NoDisplay": true,
     "KPlugin": {
         "Authors": [
             {
@@ -73,6 +72,7 @@
         "Name[zh_CN]": "移动网络",
         "Name[zh_TW]": "行動電話"
     },
+    "NoDisplay": true,
     "X-KDE-ParentApp": "org.kde.initialsystemsetup",
     "X-KDE-Weight": 60
 }
