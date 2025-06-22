@@ -308,8 +308,7 @@ msgid "Back"
 msgstr ""
 
 #: src/qml/Wizard.qml:309
-#, fuzzy, kde-format
-#| msgid "Next"
+#, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Seguinte"
