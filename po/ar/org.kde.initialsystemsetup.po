@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-09 00:45+0000\n"
+"POT-Creation-Date: 2025-06-24 00:45+0000\n"
 "PO-Revision-Date: 2025-06-12 12:35+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -169,6 +169,12 @@ msgstr "أضف اسم نقطة الوصول APN"
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr "جهازك جاهز الآن.<br /><br />استمتع <b>%1</b>!"
 
+#: modules/keyboard/contents/ui/main.qml:164
+#, fuzzy, kde-format
+#| msgid "Please select your preferred language."
+msgid "Select your keyboard layout and language."
+msgstr "الرجاء اختر لغتك المفضلة"
+
 #: modules/language/contents/ui/main.qml:45
 #, kde-format
 msgid "Please select your preferred language."
@@ -298,19 +304,19 @@ msgstr "ممكنة بواسطة<br/><b>%1</b>"
 msgid "Initial Start"
 msgstr "أول بدء"
 
-#: src/qml/Wizard.qml:288
+#: src/qml/Wizard.qml:301
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
 msgstr "السابق"
 
-#: src/qml/Wizard.qml:309
+#: src/qml/Wizard.qml:322
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "التالي"
 
-#: src/qml/Wizard.qml:328
+#: src/qml/Wizard.qml:341
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-09 00:45+0000\n"
+"POT-Creation-Date: 2025-06-24 00:45+0000\n"
 "PO-Revision-Date: 2025-06-10 23:46+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -168,6 +168,12 @@ msgstr "APN 추가"
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr "장치가 준비되었습니다. <br /><br /><b>%1</b>을(를) 즐겁게 사용하세요!"
 
+#: modules/keyboard/contents/ui/main.qml:164
+#, fuzzy, kde-format
+#| msgid "Please select your preferred language."
+msgid "Select your keyboard layout and language."
+msgstr "선호하는 언어를 선택하십시오."
+
 #: modules/language/contents/ui/main.qml:45
 #, kde-format
 msgid "Please select your preferred language."
@@ -297,19 +303,19 @@ msgstr "Powered by<br/><b>%1</b>"
 msgid "Initial Start"
 msgstr "첫 시작"
 
-#: src/qml/Wizard.qml:288
+#: src/qml/Wizard.qml:301
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
 msgstr "뒤로"
 
-#: src/qml/Wizard.qml:309
+#: src/qml/Wizard.qml:322
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "다음"
 
-#: src/qml/Wizard.qml:328
+#: src/qml/Wizard.qml:341
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"

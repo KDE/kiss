@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-09 00:45+0000\n"
+"POT-Creation-Date: 2025-06-24 00:45+0000\n"
 "PO-Revision-Date: 2025-06-04 23:29+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -168,6 +168,12 @@ msgstr "APN toevoegen"
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr "Uw apparaat is nu gereed. <br /><br />Veel plezier <b>%1</b>!"
 
+#: modules/keyboard/contents/ui/main.qml:164
+#, fuzzy, kde-format
+#| msgid "Please select your preferred language."
+msgid "Select your keyboard layout and language."
+msgstr "Selecteer uw taal met voorkeur."
+
 #: modules/language/contents/ui/main.qml:45
 #, kde-format
 msgid "Please select your preferred language."
@@ -298,19 +304,19 @@ msgstr "Aangedreven door<br/><b>%1</b>"
 msgid "Initial Start"
 msgstr "Initiële start"
 
-#: src/qml/Wizard.qml:288
+#: src/qml/Wizard.qml:301
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
 msgstr "Terug"
 
-#: src/qml/Wizard.qml:309
+#: src/qml/Wizard.qml:322
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Volgende"
 
-#: src/qml/Wizard.qml:328
+#: src/qml/Wizard.qml:341
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"

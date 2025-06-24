@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-09 00:45+0000\n"
+"POT-Creation-Date: 2025-06-24 00:45+0000\n"
 "PO-Revision-Date: 2025-06-21 23:10+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -171,6 +171,12 @@ msgstr "Gehitu APNa"
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr "Zure gailua orain prest dago. <br /><br />Gozatu <b>%1</b>!"
 
+#: modules/keyboard/contents/ui/main.qml:164
+#, fuzzy, kde-format
+#| msgid "Please select your preferred language."
+msgid "Select your keyboard layout and language."
+msgstr "Mesedez, hautatu zure hizkuntza hobetsia."
+
 #: modules/language/contents/ui/main.qml:45
 #, kde-format
 msgid "Please select your preferred language."
@@ -300,19 +306,19 @@ msgstr "<br/><b>%1</b>(e)k bultzatua"
 msgid "Initial Start"
 msgstr "Hasierako abioa"
 
-#: src/qml/Wizard.qml:288
+#: src/qml/Wizard.qml:301
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
 msgstr "Atzera"
 
-#: src/qml/Wizard.qml:309
+#: src/qml/Wizard.qml:322
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Hurrengoa"
 
-#: src/qml/Wizard.qml:328
+#: src/qml/Wizard.qml:341
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"
