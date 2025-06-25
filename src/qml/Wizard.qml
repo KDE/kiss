@@ -312,6 +312,8 @@ Kirigami.Page {
                         Layout.alignment: Qt.AlignRight
                         Layout.rightMargin: Kirigami.Units.gridUnit
                         Layout.bottomMargin: Kirigami.Units.gridUnit
+                        // Nicer to have the arrow on the side it's pointing to
+                        LayoutMirroring.enabled: Qt.application.layoutDirection === Qt.LeftToRight // qmllint disable missing-property
 
                         topPadding: Kirigami.Units.largeSpacing
                         bottomPadding: Kirigami.Units.largeSpacing
