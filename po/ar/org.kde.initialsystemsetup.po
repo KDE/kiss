@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-26 00:45+0000\n"
-"PO-Revision-Date: 2025-06-12 12:35+0400\n"
+"PO-Revision-Date: 2025-06-26 10:47+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -170,10 +170,9 @@ msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr "جهازك جاهز الآن.<br /><br />استمتع <b>%1</b>!"
 
 #: modules/keyboard/contents/ui/main.qml:164
-#, fuzzy, kde-format
-#| msgid "Please select your preferred language."
+#, kde-format
 msgid "Select your keyboard layout and language."
-msgstr "الرجاء اختر لغتك المفضلة"
+msgstr "حدد تخطيط لوحة المفاتيح واللغة."
 
 #: modules/language/contents/ui/main.qml:45
 #, kde-format

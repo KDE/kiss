@@ -1,68 +1,68 @@
+# Copyright (C) 2025 This file is copyright:
+# This file is distributed under the same license as the kiss package.
+#
+# SPDX-FileCopyrightText: 2025 Geraldo Simiao <geraldosimiao@fedoraproject.org>
 msgid ""
 msgstr ""
-"Project-Id-Version: kdeorg\n"
+"Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-26 00:45+0000\n"
-"PO-Revision-Date: 2024-07-15 19:45\n"
-"Last-Translator: \n"
-"Language-Team: Chinese Simplified\n"
-"Language: zh_CN\n"
+"PO-Revision-Date: 2025-06-26 08:12-0300\n"
+"Last-Translator: Geraldo Simiao <geraldosimiao@fedoraproject.org>\n"
+"Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Crowdin-Project: kdeorg\n"
-"X-Crowdin-Project-ID: 269464\n"
-"X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf6-trunk/messages/kiss/org.kde.initialsystemsetup.pot\n"
-"X-Crowdin-File-ID: 57488\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 25.04.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Tyson Tan"
+msgstr "Geraldo Simiao"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "tds00@qq.com"
+msgstr "geraldosimiao@fedoraproject.org"
 
 #: modules/account/contents/ui/main.qml:63
 #, kde-format
 msgid "Upload new avatar"
-msgstr "上传新头像"
+msgstr "Enviar novo avatar"
 
 #: modules/account/contents/ui/main.qml:80
 #, kde-format
 msgid "Remove current avatar"
-msgstr "移除当前头像"
+msgstr "Remover avatar atual"
 
 #: modules/account/contents/ui/main.qml:106
 #, kde-format
 msgid "We need a few details to complete the setup."
-msgstr "我们需要一些详细信息来完成设置。"
+msgstr "Precisamos de alguns detalhes para concluir a configuração."
 
 #: modules/account/contents/ui/main.qml:119
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Full Name"
-msgstr "全名"
+msgstr "Nome completo"
 
 #: modules/account/contents/ui/main.qml:140
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Username"
-msgstr "用户名"
+msgstr "Nome de usuário"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:14
 #, kde-format
 msgid "Edit APN"
-msgstr "编辑接入点 (APN)"
+msgstr "Editar APN (nome do ponto de acesso)"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:38
 #, kde-format
 msgid "Name"
-msgstr "名称"
+msgstr "Nome"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:43
 #, kde-format
@@ -72,17 +72,17 @@ msgstr "APN"
 #: modules/cellular/contents/ui/EditProfileDialog.qml:48
 #, kde-format
 msgid "Username"
-msgstr "用户名"
+msgstr "Nome de usuário"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:53
 #, kde-format
 msgid "Password"
-msgstr "密码"
+msgstr "Senha"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:58
 #, kde-format
 msgid "Network type"
-msgstr "网络类型"
+msgstr "Tipo de rede"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
@@ -102,244 +102,248 @@ msgstr "2G"
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 4G"
-msgstr "仅 4G"
+msgstr "Somente 4G "
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 3G"
-msgstr "仅 3G"
+msgstr "somente 3G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 2G"
-msgstr "仅 2G"
+msgstr "Somente 2G"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Any"
-msgstr "任意"
+msgstr "Qualquer uma"
 
 #: modules/cellular/contents/ui/main.qml:45
 #, kde-format
 msgid ""
 "Please configure your APN below for mobile data, further information will be "
 "available with your carrier."
-msgstr "请在下方配置您的 APN 以使用移动数据，更多相关信息请咨询您的运营商。"
+msgstr ""
+"Configure seu APN (nome do ponto de acesso) abaixo para dados móveis. Mais "
+"informações estarão disponíveis com sua operadora."
 
 #: modules/cellular/contents/ui/main.qml:47
 #, kde-format
 msgid "You are connected to the mobile network."
-msgstr "您已连接到该移动网络。"
+msgstr "Você está conectado à rede móvel."
 
 #: modules/cellular/contents/ui/main.qml:49
 #, kde-format
 msgid "Please insert a SIM card into your device."
-msgstr "请将 SIM 卡插入您的设备。"
+msgstr "Insira um cartão SIM no seu dispositivo."
 
 #: modules/cellular/contents/ui/main.qml:51
 #, kde-format
 msgid "Your device does not have a modem available."
-msgstr "您的设备没有可用的调制解调器。"
+msgstr "Seu dispositivo não tem um modem disponível."
 
 #: modules/cellular/contents/ui/main.qml:63
 #, kde-format
 msgid "Mobile Data"
-msgstr "移动数据"
+msgstr "Dados móveis"
 
 #: modules/cellular/contents/ui/main.qml:109
 #, kde-format
 msgid "Edit"
-msgstr "编辑"
+msgstr "Editar"
 
 #: modules/cellular/contents/ui/main.qml:117
 #, kde-format
 msgid "Delete"
-msgstr "删除"
+msgstr "Excluir"
 
 #: modules/cellular/contents/ui/main.qml:127
 #, kde-format
 msgid "Add APN"
-msgstr "添加 APN"
+msgstr "Adicionar APN (nome do ponto de acesso)"
 
 #: modules/finished/contents/ui/main.qml:25
 #, kde-format
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
-msgstr "您的设备已经准备就绪。<br /><br />请随心所欲地使用 <b>%1</b>！"
+msgstr "Seu dispositivo está pronto agora. <br /><br />Aproveite <b>%1</b>!"
 
 #: modules/keyboard/contents/ui/main.qml:164
 #, kde-format
 msgid "Select your keyboard layout and language."
-msgstr "选择您的键盘布局和语言。"
+msgstr "Selecione o layout do teclado e o idioma."
 
 #: modules/language/contents/ui/main.qml:45
 #, kde-format
 msgid "Please select your preferred language."
-msgstr "请选择您的首选语言。"
+msgstr "Selecione seu idioma preferido."
 
 #: modules/language/contents/ui/main.qml:65
 #, kde-format
 msgid "Language"
-msgstr "语言"
+msgstr "Idioma"
 
 #: modules/language/contents/ui/main.qml:82
 #, kde-format
 msgid "Search languages..."
-msgstr "搜索语言..."
+msgstr "Pesquisar idiomas..."
 
 #: modules/password/contents/ui/main.qml:31
 #, kde-format
 msgid "Be careful not to lose your password."
-msgstr "请注意不要丢失您的密码。"
+msgstr "Tenha cuidado para não perder sua senha."
 
 #: modules/password/contents/ui/main.qml:44
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Password"
-msgstr "密码"
+msgstr "Senha"
 
 #: modules/password/contents/ui/main.qml:55
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Confirm Password"
-msgstr "确认密码"
+msgstr "Confirmar senha"
 
 #: modules/password/contents/ui/main.qml:59
 #, kde-format
 msgctxt "@info:status"
 msgid "Passwords don’t match"
-msgstr "密码不匹配"
+msgstr "As senhas não coincidem"
 
 #: modules/prepare/contents/ui/main.qml:42
 #, kde-format
 msgid ""
 "Adjust the screen brightness to be comfortable for the installation process."
-msgstr "调整屏幕亮度，以便在安装过程中舒适地阅读屏幕显示的内容。"
+msgstr ""
+"Ajustar o brilho da tela para deixar confortável durante o processo de "
+"instalação."
 
 #: modules/prepare/contents/ui/main.qml:100
 #, kde-format
 msgid "Adjust the size of elements on the screen."
-msgstr "调整屏幕显示的元素大小。"
+msgstr "Ajustar o tamanho dos elementos na tela."
 
 #: modules/prepare/contents/ui/main.qml:111
 #, kde-format
 msgid "Display Scaling"
-msgstr "显示缩放"
+msgstr "Escala do monitor"
 
 #: modules/prepare/contents/ui/main.qml:136
 #, kde-format
 msgid "Dark Theme"
-msgstr "深色主题"
+msgstr "Tema escuro"
 
 #: modules/time/contents/ui/main.qml:28
 #, kde-format
 msgid "Select your time zone and preferred time format."
-msgstr "选择您的时区和首选的时间格式。"
+msgstr "Selecione seu fuso horário e formato de hora preferido."
 
 #: modules/time/contents/ui/main.qml:39
 #, kde-format
 msgid "24-Hour Format"
-msgstr "24 小时格式"
+msgstr "Formato de 24 horas"
 
 #: modules/wifi/contents/ui/ConnectionItemDelegate.qml:94
 #, kde-format
 msgid "Connect to"
-msgstr "连接到"
+msgstr "Conectar a"
 
 #: modules/wifi/contents/ui/main.qml:64
 #, kde-format
 msgid "Connect to a WiFi network for network access."
-msgstr "连接到 WiFi 网络以访问互联网。"
+msgstr "Conectar a uma rede WiFi para ter acesso à rede."
 
 #: modules/wifi/contents/ui/PasswordField.qml:14
 #, kde-format
 msgid "Password:"
-msgstr "密码："
+msgstr "Senha:"
 
 #: modules/wifi/contents/ui/PasswordField.qml:26
 #, kde-format
 msgid "Invalid input."
-msgstr "输入的内容无效。"
+msgstr "Entrada inválida."
 
 #: src/main.cpp:32
 #, kde-format
 msgid "KDE Initial System Setup"
-msgstr "KDE 初始系统设置程序"
+msgstr "Configuração inicial do sistema"
 
 #: src/main.cpp:34
 #, kde-format
 msgid "Make Plasma yours"
-msgstr "帮助您进行 Plasma 的初始系统设置"
+msgstr "Deixe o plasma do seu jeito!"
 
 #: src/main.cpp:36
 #, kde-format
 msgid "© 2021-2024 KDE Community"
-msgstr "© 2021-2024 KDE Community"
+msgstr "© 2021-2024 Comunidade KDE"
 
 #: src/qml/LandingComponent.qml:103
 #, kde-format
 msgid "Welcome to<br/><b>Plasma Mobile</b>"
-msgstr "欢迎使用<br/><b>Plasma Mobile</b>"
+msgstr "Bem-vindo ao<br/><b>Plasma Mobile</b>"
 
 #: src/qml/LandingComponent.qml:103
 #, kde-format
 msgid "Welcome to<br/><b>Plasma Desktop</b>"
-msgstr "欢迎使用<br/><b>Plasma 桌面</b>"
+msgstr "Bem-vindo ao<br/><b>Plasma Desktop</b>"
 
 #: src/qml/LandingComponent.qml:117
 #, kde-format
 msgid "Begin Setup"
-msgstr "开始设置"
+msgstr "Iniciar configuração"
 
 #: src/qml/LandingComponent.qml:144
 #, kde-format
 msgid "Powered by<br/><b>%1</b>"
-msgstr "由 <b>%1</b><br/>开发维护"
+msgstr "Distribuído por<br/><b>%1</b>"
 
 #: src/qml/Main.qml:14
 #, kde-format
 msgid "Initial Start"
-msgstr "初始化首页"
+msgstr "Primeira inicialização"
 
 #: src/qml/Wizard.qml:301
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
-msgstr "后退"
+msgstr "Voltar"
 
 #: src/qml/Wizard.qml:324
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
-msgstr "下一步"
+msgstr "Próximo"
 
 #: src/qml/Wizard.qml:343
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"
-msgstr "完成"
+msgstr "Concluir"
 
 #: src/user.cpp:125
 #, kde-format
 msgctxt "@info"
 msgid "Failed to crop image: %1"
-msgstr "裁剪图像失败：%1"
+msgstr "Falha ao cortar a imagem: %1"
 
 #: src/user.cpp:306
 #, kde-format
 msgid "Could not get permission to save user %1"
-msgstr "无法获取保存用户 %1 的权限"
+msgstr "Não foi possível obter permissão para salvar o usuário %1"
 
 #: src/user.cpp:311
 #, kde-format
 msgid "There was an error while saving changes"
-msgstr "保存更改时出错"
+msgstr "Ocorreu um erro ao salvar as alterações"
 
 #: src/user.cpp:412
 #, kde-format
 msgid "Failed to resize image: opening temp file failed"
-msgstr "调整图像大小失败：无法打开临时文件"
+msgstr "Falha ao redimensionar a imagem: falha ao abrir o arquivo temporário"
 
 #: src/user.cpp:420
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
-msgstr "调整图像大小失败：无法写入临时文件"
+msgstr "Falha ao redimensionar a imagem: falha ao gravar no arquivo temporário"
