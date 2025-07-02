@@ -1,0 +1,20 @@
+// SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
+//
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
+// Polkit rule allowing the initial system setup to run actions without requiring interactive authentication.
+//
+// /etc/polkit-1/rules.d/kde-initial-system-setup.rules
+
+polkit.addRule(function(action, subject) {
+    polkit.log("kde-initial-system-setup: action: " + action.id + ", subject: " + subject.user);
+
+    if (subject.user !== "kde-initial-system-setup") {
+        return polkit.Result.NO;
+    }
+
+    if (action.id === "org.freedesktop.locale1.set-keyboard" ||
+        action.id === "org.freedesktop.accounts.user-administration") {
+        return polkit.Result.YES;
+    }
+});
