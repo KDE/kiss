@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-26 00:45+0000\n"
-"PO-Revision-Date: 2025-06-08 23:59+0900\n"
+"PO-Revision-Date: 2025-07-01 20:29+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -167,10 +167,9 @@ msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr "您的裝置現已就緒。<br /><br />享受 <b>%1</b> 吧！"
 
 #: modules/keyboard/contents/ui/main.qml:164
-#, fuzzy, kde-format
-#| msgid "Please select your preferred language."
+#, kde-format
 msgid "Select your keyboard layout and language."
-msgstr "請選擇您偏好使用的語言。"
+msgstr "請選擇您的鍵盤佈局與語言。"
 
 #: modules/language/contents/ui/main.qml:45
 #, kde-format
