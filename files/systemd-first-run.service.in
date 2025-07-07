@@ -1,0 +1,24 @@
+# SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
+#
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
+# systemd service file for loading the KDE Initial System Setup application
+#
+# /etc/systemd/system/kde-initial-system-setup.service
+
+[Unit]
+Description=KDE Initial System Setup
+After=systemd-user-sessions.service plymouth-quit.service systemd-logind.service
+Before=display-manager.service
+# Requires=display-manager.service
+# RefuseManualStart=true
+# RefuseManualStop=true
+
+[Service]
+Type=oneshot
+User=kde-initial-system-setup
+# ExecStart=${CMAKE_INSTALL_FULL_BINDIR}/kde-initial-system-setup
+ExecStart=${CMAKE_INSTALL_FULL_BINDIR}/kde-initial-system-setup
+
+# We are running the service before SDDM. That way we can check if we need to run KISS. If so, we
+# can write the autologin configuration for SDDM.

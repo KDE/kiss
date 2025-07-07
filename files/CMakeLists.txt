@@ -3,17 +3,25 @@
 # SPDX-License-Identifier: BSD-2-Clause
 
 install(
-    FILES "kde-initial-system-setup.conf"
-    DESTINATION  ${CMAKE_INSTALL_PREFIX}/lib/sysusers.d
-)
-    
-install(
-    FILES "kde-initial-system-setup.rules"
-    DESTINATION ${CMAKE_INSTALL_SYSCONFDIR}/polkit-1/rules.d
+    FILES "tmpfiles.conf"
+    DESTINATION "lib/tmpfiles.d"
+    RENAME "kde-initial-system-setup.conf"
 )
 
-configure_file(kde-initial-system-setup.service.in kde-initial-system-setup.service)
 install(
-    FILES ${CMAKE_CURRENT_BINARY_DIR}/kde-initial-system-setup.service
-    DESTINATION ${KDE_INSTALL_SYSTEMDUNITDIR}/system
+    FILES "sysuser.conf"
+    DESTINATION  "lib/sysusers.d"
+    RENAME "kde-initial-system-setup.conf"
 )
+
+install(
+    FILES "polkit.rules"
+    DESTINATION ${CMAKE_INSTALL_SYSCONFDIR}/polkit-1/rules.d
+    RENAME "kde-initial-system-setup.rules"
+)
+
+# configure_file(systemd-first-run.service.in kde-initial-system-setup.service)
+# install(
+#     FILES ${CMAKE_CURRENT_BINARY_DIR}/kde-initial-system-setup.service
+#     DESTINATION ${KDE_INSTALL_SYSTEMDUNITDIR}/system
+# )
