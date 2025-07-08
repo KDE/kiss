@@ -10,7 +10,7 @@ polkit.addRule(function(action, subject) {
     polkit.log("kde-initial-system-setup: action: " + action.id + ", subject: " + subject.user);
 
     if (subject.user !== "kde-initial-system-setup") {
-        return polkit.Result.NO;
+        return;
     }
 
     if (action.id === "org.freedesktop.locale1.set-keyboard" ||
