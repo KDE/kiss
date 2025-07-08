@@ -17,8 +17,4 @@ Before=display-manager.service
 [Service]
 Type=oneshot
 User=kde-initial-system-setup
-# ExecStart=${CMAKE_INSTALL_FULL_BINDIR}/kde-initial-system-setup
-ExecStart=${CMAKE_INSTALL_FULL_BINDIR}/kde-initial-system-setup
-
-# We are running the service before SDDM. That way we can check if we need to run KISS. If so, we
-# can write the autologin configuration for SDDM.
+ExecStart=${KDE_INSTALL_LIBEXECDIR}/kde-initial-system-setup-bootutil

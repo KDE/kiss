@@ -20,8 +20,8 @@ install(
     RENAME "kde-initial-system-setup.rules"
 )
 
-# configure_file(systemd-first-run.service.in kde-initial-system-setup.service)
-# install(
-#     FILES ${CMAKE_CURRENT_BINARY_DIR}/kde-initial-system-setup.service
-#     DESTINATION ${KDE_INSTALL_SYSTEMDUNITDIR}/system
-# )
+configure_file(systemd-first-run.service.in kde-initial-system-setup.service)
+install(
+    FILES ${CMAKE_CURRENT_BINARY_DIR}/kde-initial-system-setup.service
+    DESTINATION ${KDE_INSTALL_SYSTEMDUNITDIR}/system
+)

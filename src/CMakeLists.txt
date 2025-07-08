@@ -2,6 +2,7 @@
 # SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
 # SPDX-License-Identifier: BSD-2-Clause
 
+add_subdirectory(bootutil)
 add_subdirectory(components)
 add_subdirectory(packagestructure)
 
@@ -88,4 +89,5 @@ target_link_libraries(kde-initial-system-setup
         componentsplugin
         componentspluginplugin
 )
-install(TARGETS kde-initial-system-setup ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+
+install(TARGETS kde-initial-system-setup RUNTIME DESTINATION ${KDE_INSTALL_LIBEXECDIR})
