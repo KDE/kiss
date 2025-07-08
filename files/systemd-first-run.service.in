@@ -17,4 +17,4 @@ Before=display-manager.service
 [Service]
 Type=oneshot
 User=kde-initial-system-setup
-ExecStart=${KDE_INSTALL_LIBEXECDIR}/kde-initial-system-setup-bootutil
+ExecStart=${CMAKE_INSTALL_FULL_LIBEXECDIR}/kde-initial-system-setup-bootutil

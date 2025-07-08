@@ -3,6 +3,7 @@
 
 #include <QCoreApplication>
 #include <QDebug>
+#include <iostream>
 
 #include "bootutil.h"
 #include "initialsystemsetup_bootutil_debug.h"
@@ -21,6 +22,8 @@
  */
 int main(int argc, char *argv[])
 {
+    std::cout << "KDE Initial System Setup Boot Utility started." << std::endl;
+
     QCoreApplication app(argc, argv);
 
     BootUtil bootUtil;

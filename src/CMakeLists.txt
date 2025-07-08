@@ -90,4 +90,4 @@ target_link_libraries(kde-initial-system-setup
         componentspluginplugin
 )
 
-install(TARGETS kde-initial-system-setup RUNTIME DESTINATION ${KDE_INSTALL_LIBEXECDIR})
+install(TARGETS kde-initial-system-setup RUNTIME DESTINATION ${CMAKE_INSTALL_LIBEXECDIR})

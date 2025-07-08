@@ -7,6 +7,7 @@ ecm_qt_declare_logging_category(logging_SRCS
     IDENTIFIER "KDEInitialSystemSetupBootUtil"
     CATEGORY_NAME "org.kde.initialsystemsetup.bootutil"
     DESCRIPTION "KDE Initial System Setup Boot Utility"
+    DEFAULT_SEVERITY Debug
     EXPORT INITIALSYSTEMSETUP_BOOTUTIL
 )
 
@@ -21,4 +22,4 @@ target_link_libraries(kde-initial-system-setup-bootutil
     Qt::Core
 )
 
-install(TARGETS kde-initial-system-setup-bootutil RUNTIME DESTINATION ${KDE_INSTALL_LIBEXECDIR})
+install(TARGETS kde-initial-system-setup-bootutil RUNTIME DESTINATION ${CMAKE_INSTALL_LIBEXECDIR})
