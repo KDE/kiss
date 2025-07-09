@@ -7,6 +7,8 @@
 #include "bootutil.h"
 #include "initialsystemsetup_bootutil_debug.h"
 
+#include <iostream>
+
 BootUtil::BootUtil(QObject *parent)
     : QObject(parent)
 {

@@ -3,10 +3,11 @@
 
 #include <QCoreApplication>
 #include <QDebug>
-#include <iostream>
 
 #include "bootutil.h"
 #include "initialsystemsetup_bootutil_debug.h"
+
+#include <iostream>
 
 /**
     Small utility to check if the system is booting for the first time, and set up KISS to run if it
@@ -27,8 +28,6 @@ int main(int argc, char *argv[])
     QCoreApplication app(argc, argv);
 
     BootUtil bootUtil;
-
-    std::cout << "Checking if force run was requested or if this is the first boot." << std::endl;
 
     // Check if force run was requested
     if (bootUtil.forceRunRequested()) {
