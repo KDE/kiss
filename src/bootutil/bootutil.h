@@ -4,6 +4,7 @@
 #pragma once
 
 #include <QObject>
+#include <iostream>
 
 class BootUtil : public QObject
 {

@@ -28,19 +28,21 @@ int main(int argc, char *argv[])
 
     BootUtil bootUtil;
 
+    std::cout << "Checking if force run was requested or if this is the first boot." << std::endl;
+
     // Check if force run was requested
     if (bootUtil.forceRunRequested()) {
-        qCDebug(KDEInitialSystemSetupBootUtil) << "Force run requested. Running KISS setup.";
+        std::cout << "Force run requested. Running KISS setup." << std::endl;
         // Here you would typically call the KISS setup function or process
     }
 
     // Check if this is the first boot
     if (bootUtil.isFirstBoot()) {
-        qCDebug(KDEInitialSystemSetupBootUtil) << "First boot detected. Running KISS setup.";
+        std::cout << "First boot detected. Running KISS setup." << std::endl;
         // Here you would typically call the KISS setup function or process
     }
 
-    qCDebug(KDEInitialSystemSetupBootUtil) << "Boot check completed. No action needed.";
+    std::cout << "Boot check completed. No action needed." << std::endl;
 
     // Exit the application
     return 0;

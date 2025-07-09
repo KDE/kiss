@@ -17,7 +17,7 @@ bool BootUtil::forceRunRequested() const
     // Check for the file /proc/cmdline for the parameter "kde.initial-setup=1"
     QFile file(QStringLiteral("/proc/cmdline"));
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        qCWarning(KDEInitialSystemSetupBootUtil) << "Could not open /proc/cmdline";
+        std::cerr << "Could not open /proc/cmdline" << std::endl;
         return false;
     }
 
