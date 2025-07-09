@@ -3,11 +3,15 @@
 
 #include <QCoreApplication>
 #include <QDebug>
+#include <QProcess>
 
 #include "bootutil.h"
 #include "initialsystemsetup_bootutil_debug.h"
 
 #include <iostream>
+
+// Function declarations
+void runSetup();
 
 /**
     Small utility to check if the system is booting for the first time, and set up KISS to run if it
@@ -31,18 +35,38 @@ int main(int argc, char *argv[])
 
     // Check if force run was requested
     if (bootUtil.forceRunRequested()) {
-        std::cout << "Force run requested. Running KISS setup." << std::endl;
-        // Here you would typically call the KISS setup function or process
+        std::cout << "Force run requested. Starting special user.." << std::endl;
+        bootUtil.writeSDDMAutologin();
+        return 0;
     }
 
     // Check if this is the first boot
     if (bootUtil.isFirstBoot()) {
-        std::cout << "First boot detected. Running KISS setup." << std::endl;
-        // Here you would typically call the KISS setup function or process
+        std::cout << "First boot detected. Starting special user.." << std::endl;
+        bootUtil.writeSDDMAutologin();
+        return 0;
     }
 
     std::cout << "Boot check completed. No action needed." << std::endl;
 
     // Exit the application
     return 0;
+}
+
+/**
+ * Runs the app, which CMake installed to CMAKE_INSTALL_LIBEXECDIR.
+ */
+void runSetup()
+{
+    std::cout << "Running KISS setup..." << std::endl;
+    QString path = QCoreApplication::applicationDirPath() + QStringLiteral("/kde-initial-system-setup-bootutil");
+    QProcess process;
+    process.start(path);
+    process.waitForFinished();
+
+    if (process.exitStatus() == QProcess::NormalExit && process.exitCode() == 0) {
+        std::cout << "KISS setup completed successfully." << std::endl;
+    } else {
+        std::cerr << "KISS setup failed with exit code: " << process.exitCode() << std::endl;
+    }
 }

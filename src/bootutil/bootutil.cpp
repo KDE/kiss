@@ -1,7 +1,9 @@
 // SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
 // SPDX-License-Identifier: LGPL-2.1-or-later
 
+#include <QDir>
 #include <QFile>
+#include <QFileInfo>
 #include <QTextStream>
 
 #include "bootutil.h"
@@ -34,4 +36,34 @@ bool BootUtil::isFirstBoot() const
 {
     // Check for user accounts or other indicators of first boot
     return false;
+}
+
+void BootUtil::writeSDDMAutologin()
+{
+    // Make sure the directory exists
+    QFileInfo fileInfo(QStringLiteral("/etc/sddm.conf.d/kde-initial-system-setup.conf"));
+    QDir dir = fileInfo.dir();
+
+    if (!dir.exists()) {
+        if (!dir.mkpath(QStringLiteral("."))) {
+            std::cerr << "Could not create directory: " << dir.path().toStdString() << std::endl;
+            return;
+        }
+    }
+
+    // Write the autologin configuration for SDDM
+    QFile file(fileInfo.filePath());
+    if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+        std::cerr << "Could not open SDDM config file for writing." << std::endl;
+        return;
+    }
+
+    QTextStream stream(&file);
+    stream << "[Autologin]\n";
+    stream << "User=kde-initial-system-setup\n";
+    // TODO: we may need to check which session is available first.
+    // For example, openSUSE seems to use "plasmawayland.desktop".
+    stream << "Session=plasma.desktop\n";
+
+    file.close();
 }

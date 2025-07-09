@@ -32,4 +32,12 @@ public:
      * @return true if this is the first boot, false otherwise.
      */
     bool isFirstBoot() const;
+
+    /**
+     * Writes the autologin configuration for SDDM.
+     *
+     * This function writes the necessary configuration to enable autologin
+     * for the SDDM display manager for the user "kde-initial-system-setup".
+     */
+    void writeSDDMAutologin();
 };
