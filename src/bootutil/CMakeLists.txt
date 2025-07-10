@@ -20,6 +20,7 @@ add_executable(kde-initial-system-setup-bootutil
 
 target_link_libraries(kde-initial-system-setup-bootutil
     Qt::Core
+    KF6::AuthCore
 )
 
 install(TARGETS kde-initial-system-setup-bootutil RUNTIME DESTINATION ${CMAKE_INSTALL_LIBEXECDIR})

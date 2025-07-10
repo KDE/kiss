@@ -6,10 +6,14 @@
 #include <QFileInfo>
 #include <QTextStream>
 
+#include <KAuth/Action>
+#include <KAuth/ExecuteJob>
+
 #include "bootutil.h"
 #include "initialsystemsetup_bootutil_debug.h"
 
 #include <iostream>
+#include <kauth/action.h>
 
 BootUtil::BootUtil(QObject *parent)
     : QObject(parent)
@@ -40,30 +44,47 @@ bool BootUtil::isFirstBoot() const
 
 void BootUtil::writeSDDMAutologin()
 {
-    // Make sure the directory exists
-    QFileInfo fileInfo(QStringLiteral("/etc/sddm.conf.d/kde-initial-system-setup.conf"));
-    QDir dir = fileInfo.dir();
+    // // Make sure the directory exists
+    // QFileInfo fileInfo(QStringLiteral("/etc/sddm.conf.d/kde-initial-system-setup.conf"));
+    // QDir dir = fileInfo.dir();
 
-    if (!dir.exists()) {
-        if (!dir.mkpath(QStringLiteral("."))) {
-            std::cerr << "Could not create directory: " << dir.path().toStdString() << std::endl;
-            return;
-        }
-    }
+    // if (!dir.exists()) {
+    //     if (!dir.mkpath(QStringLiteral("."))) {
+    //         std::cerr << "Could not create directory: " << dir.path().toStdString() << std::endl;
+    //         return;
+    //     }
+    // }
 
-    // Write the autologin configuration for SDDM
-    QFile file(fileInfo.filePath());
-    if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
-        std::cerr << "Could not open SDDM config file for writing." << std::endl;
+    // // Write the autologin configuration for SDDM
+    // QFile file(fileInfo.filePath());
+    // if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+    //     std::cerr << "Could not open SDDM config file for writing." << std::endl;
+    //     return;
+    // }
+
+    // QTextStream stream(&file);
+    // stream << "[Autologin]\n";
+    // stream << "User=kde-initial-system-setup\n";
+    // // TODO: we may need to check which session is available first.
+    // // For example, openSUSE seems to use "plasmawayland.desktop".
+    // stream << "Session=plasma.desktop\n";
+
+    // file.close();
+
+    QVariantMap args;
+    args.insert(QStringLiteral("autologin"), true);
+
+    KAuth::Action writeAction(QStringLiteral("org.kde.kiss.writesddmconfig"));
+    writeAction.setHelperId(QStringLiteral("org.kde.kiss"));
+    writeAction.setArguments(args);
+
+    KAuth::ExecuteJob *job = writeAction.execute();
+    if (!job->exec()) {
+        std::cerr << "Failed to execute KAuth action: " << job->errorString().toStdString() << std::endl;
         return;
+    } else {
+        std::cout << "SDDM autologin configuration written successfully." << std::endl;
     }
-
-    QTextStream stream(&file);
-    stream << "[Autologin]\n";
-    stream << "User=kde-initial-system-setup\n";
-    // TODO: we may need to check which session is available first.
-    // For example, openSUSE seems to use "plasmawayland.desktop".
-    stream << "Session=plasma.desktop\n";
-
-    file.close();
 }
+
+#include "bootutil.moc"

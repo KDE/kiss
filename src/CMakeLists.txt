@@ -2,6 +2,7 @@
 # SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
 # SPDX-License-Identifier: BSD-2-Clause
 
+add_subdirectory(auth)
 add_subdirectory(bootutil)
 add_subdirectory(components)
 add_subdirectory(packagestructure)

@@ -1,0 +1,14 @@
+# -*- mode: ini -*-
+
+# SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
+[Domain]
+Name=KDE Initial System Setup
+Icon=kauth-example
+URL=https://invent.kde.org/system/kiss
+
+[org.kde.kiss.writesddmconfig]
+Name=Write SDDM Configuration
+Description=Write the SDDM configuration file to enable/disable autologin for KISS
+Policy=yes
