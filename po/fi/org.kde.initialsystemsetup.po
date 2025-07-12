@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-26 00:45+0000\n"
-"PO-Revision-Date: 2025-05-28 17:14+0300\n"
+"PO-Revision-Date: 2025-07-07 21:00+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -167,10 +167,9 @@ msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr "Laite on nyt valmis.<br /><br />Tämä on <b>%1</b>, nauti!"
 
 #: modules/keyboard/contents/ui/main.qml:164
-#, fuzzy, kde-format
-#| msgid "Please select your preferred language."
+#, kde-format
 msgid "Select your keyboard layout and language."
-msgstr "Valitse suosimasi kieli."
+msgstr "Valitse näppäimistöasettelu ja kieli."
 
 #: modules/language/contents/ui/main.qml:45
 #, kde-format
@@ -264,12 +263,12 @@ msgstr "Virheellinen syöte."
 #: src/main.cpp:32
 #, kde-format
 msgid "KDE Initial System Setup"
-msgstr ""
+msgstr "KDE:n järjestelmän valmistelu"
 
 #: src/main.cpp:34
 #, kde-format
 msgid "Make Plasma yours"
-msgstr ""
+msgstr "Tee Plasmasta omasi"
 
 #: src/main.cpp:36
 #, kde-format
