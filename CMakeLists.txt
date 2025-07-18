@@ -74,6 +74,7 @@ add_definitions(-DQT_USE_QSTRINGBUILDER)
 add_definitions(-DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT)
 add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x050d00)
 
+add_subdirectory(files)
 add_subdirectory(src)
 add_subdirectory(modules)
 
