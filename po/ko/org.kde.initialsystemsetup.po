@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-26 00:45+0000\n"
-"PO-Revision-Date: 2025-06-10 23:46+0200\n"
+"PO-Revision-Date: 2025-07-20 01:49+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -169,10 +169,9 @@ msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr "장치가 준비되었습니다. <br /><br /><b>%1</b>을(를) 즐겁게 사용하세요!"
 
 #: modules/keyboard/contents/ui/main.qml:164
-#, fuzzy, kde-format
-#| msgid "Please select your preferred language."
+#, kde-format
 msgid "Select your keyboard layout and language."
-msgstr "선호하는 언어를 선택하십시오."
+msgstr "키보드 레이아웃과 언어를 선택하십시오."
 
 #: modules/language/contents/ui/main.qml:45
 #, kde-format
