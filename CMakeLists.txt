@@ -72,7 +72,7 @@ ecm_set_disabled_deprecation_versions(
 add_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_URL_CAST_FROM_STRING)
 add_definitions(-DQT_USE_QSTRINGBUILDER)
 add_definitions(-DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT)
-add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x050d00)
+add_definitions(-DQT_DISABLE_DEPRECATED_UP_TO=0x060600)
 
 add_subdirectory(files)
 add_subdirectory(src)
