@@ -1,0 +1,23 @@
+# SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
+#
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
+# tmpfiles.d file for creating the home directory of the kde-initial-system-setup
+# user, which is required for the initial system setup program to run correctly.
+#
+# /usr/lib/tmpfiles.d/kde-initial-system-setup.conf
+
+# Create the home dir of the kde-initial-system-setup user
+d /run/kde-initial-system-setup - - - - -
+
+# Copy the autostart file so it runs on login
+C /run/kde-initial-system-setup/.config/autostart/kde-initial-system-setup.desktop - - - - ${CMAKE_INSTALL_FULL_DATADIR}/kde-initial-system-setup/kde-initial-system-setup.desktop
+
+# Prevent plasma-welcome from running
+#
+# This works because plasma-welcome checks this config to decide whether to
+# run or not. A bit hacky, might break if plasma-welcome changes.
+f /run/kde-initial-system-setup/.config/plasma-welcomerc - - - - [General]\nLastSeenVersion=6.4.2
+
+# Recursively set the ownership of the home directory
+Z /run/kde-initial-system-setup 0750 kde-initial-system-setup kde-initial-system-setup - -

@@ -1,0 +1,24 @@
+# -*- mode: ini -*-
+
+# SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
+#
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
+# systemd service file for loading the KDE Initial System Setup application
+#
+# This service runs on boot so kde-initial-system-setup can check if force run 
+# was requested by a kernel command line option.
+#
+# systemd/system/kde-initial-system-setup-force-run.service
+
+[Unit]
+Description=KDE Initial System Setup Force Run
+After=systemd-user-sessions.service plymouth-quit.service systemd-logind.service
+Before=display-manager.service
+
+[Service]
+Type=oneshot
+ExecStart=${CMAKE_INSTALL_FULL_LIBEXECDIR}/kde-initial-system-setup-bootutil
+
+[Install]
+WantedBy=multi-user.target

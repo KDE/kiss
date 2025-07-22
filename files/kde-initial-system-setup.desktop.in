@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
+#
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
+[Desktop Entry]
+Exec=${CMAKE_INSTALL_FULL_LIBEXECDIR}/kde-initial-system-setup
+NoDisplay=true
+Type=Application
+Name=KDE Initial System Setup
+Comment=Run the initial system setup for KDE
+Icon=kde
+AutostartCondition=unless-exists kde-initial-setup-done
+X-KDE-StartupNotify=false
