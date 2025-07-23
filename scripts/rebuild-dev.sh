@@ -17,6 +17,9 @@ set -e
 # Use a consistent named temporary build directory
 BUILD_DIR="/tmp/kiss-build"
 
+# Change to the repo root directory, in case the script was run from elsewhere
+cd "$(dirname "$0")/.."
+
 # Try to uninstall if the build directory already exists
 if [ -d "$BUILD_DIR" ]; then
   # Use || true to prevent uninstall failure from stopping the script
