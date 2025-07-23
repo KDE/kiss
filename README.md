@@ -20,24 +20,47 @@ system's first user account and configuring initial settings.
 - Network configuration
 
 
-## Building
+## Getting Started
 
-The simplest way to build the project for development is to use
-[kde-builder](https://develop.kde.org/docs/getting-started/building/kde-builder-compile/),
-i.e.:
+> [!caution]
+> It is not recommended to install this on your system — you should use a virtual machine instead. Installing this on real hardware will leave behind files not trivially uninstallable and could leave your system in a non-function state.
 
-```bash
-kde-builder kiss
-```
-
-## Running
-
-kde-builder can also run the application during development:
+- Clone the repository:
 
 ```bash
-kde-builder --run kde-initial-system-setup
+git clone https://invent.kde.org/system/kiss.git
 ```
 
+- Build and install:
+
+```bash
+cmake -B build/
+cmake --build build/ --parallel
+sudo cmake --install build/
+```
+
+- Trigger system user creation:
+
+```bash
+sudo systemd-sysusers
+```
+
+- Enable the systemd services:
+
+```bash
+# Will enable running on boot.
+sudo systemctl enable kde-initial-system-setup-first-run.service
+
+# Will enable running if the kernel parameter `kde.initial-setup=1` is set.
+sudo systemctl enable kde-initial-system-setup-force-run.service
+```
+
+- Reboot:
+
+If you enabled the first-run service, reboot your system to see the initial setup.
+
+If only the force-run service is enabled, you can edit the kernel parameters during boot to add
+`kde.initial-setup=1` and the initial setup will run once, for that boot only.
 
 -----
 
