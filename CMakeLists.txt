@@ -42,7 +42,7 @@ set_package_properties(Qt6 PROPERTIES
     TYPE REQUIRED
     PURPOSE "Required application components"
 )
-find_package(KF6 ${KF_MIN_VERSION} COMPONENTS I18n Package Config)
+find_package(KF6 ${KF_MIN_VERSION} COMPONENTS Auth I18n Package Config)
 set_package_properties(KF6 PROPERTIES
     TYPE REQUIRED
     PURPOSE "Required application components"

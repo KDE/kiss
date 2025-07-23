@@ -1,4 +1,6 @@
 // SPDX-FileCopyrightText: 2023 Devin Lin <devin@kde.org>
+// SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
+//
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 #pragma once
@@ -21,4 +23,11 @@ public:
 
 private:
     KOSRelease m_osrelease;
+
+    /**
+     * Removes the autologin configuration for KISS.
+     *
+     * This allows the next login to be a normal login, unless the KISS systemd service runs again.
+     */
+    void disableKISSAutologin();
 };
