@@ -21,5 +21,11 @@ C /run/kde-initial-system-setup/.config/autostart/kde-initial-system-setup.deskt
 # run or not. A bit hacky, might break if plasma-welcome changes.
 f /run/kde-initial-system-setup/.config/plasma-welcomerc - - - - [General]\nLastSeenVersion=6.4.2
 
+# Disable screen locking, leaving only screen dimming / blanking enabled.
+#
+# The KISS special user does not have a password (nor would it be appropriate
+# to require one during first user setup).
+f /run/kde-initial-system-setup/.config/kscreenlockerrc - - - - [Daemon]\nAutolock=false\nTimeout=0
+
 # Recursively set the ownership of the home directory
 Z /run/kde-initial-system-setup 0750 kde-initial-system-setup kde-initial-system-setup - -
