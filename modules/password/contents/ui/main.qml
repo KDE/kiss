@@ -25,14 +25,17 @@ KissComponents.SetupModule {
             width: parent.width
             spacing: Kirigami.Units.gridUnit
 
-            Label {
-                wrapMode: Text.Wrap
-                horizontalAlignment: Text.AlignHCenter
-                text: i18n("Be careful not to lose your password.")
+            RowLayout {
+                Layout.alignment: Qt.AlignHCenter
 
-                Layout.leftMargin: Kirigami.Units.gridUnit
-                Layout.rightMargin: Kirigami.Units.gridUnit
-                Layout.fillWidth: true
+                Label {
+                    text: i18nc("@info", "This user will be an administrator.")
+                }
+
+                Kirigami.ContextualHelpButton {
+                    toolTipText: xi18nc("@info", "This user will have administrative privileges on the system.<nl/><nl/>This means that they can change system settings, install software, and access all files on the system.<nl/><nl/>Choose a strong password for this user.")
+
+                }
             }
 
             FormCard.FormCard {

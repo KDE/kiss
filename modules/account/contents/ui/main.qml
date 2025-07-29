@@ -110,6 +110,19 @@ KissComponents.SetupModule {
             Layout.fillWidth: true
         }
 
+        RowLayout {
+            Layout.alignment: Qt.AlignHCenter
+
+            QQC2.Label {
+                text: i18nc("@info", "This user will be an administrator.")
+            }
+
+            Kirigami.ContextualHelpButton {
+                toolTipText: xi18nc("@info", "This user will have administrative privileges on the system.<nl/><nl/>This means that they can change system settings, install software, and access all files on the system.<nl/><nl/>Choose a strong password for this user.")
+
+            }
+        }
+
         FormCard.FormCard {
             maximumWidth: root.cardWidth
 
