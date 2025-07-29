@@ -12,7 +12,7 @@
 # This service is intended to be enabled after the system installation if 
 # new user setup is desired, and will be disabled after the initial user is created.
 #
-# systemd/system/kde-initial-system-setup-first-run.service
+# systemd/system/kde-initial-system-setup.service
 
 [Unit]
 Description=KDE Initial System Setup First Run

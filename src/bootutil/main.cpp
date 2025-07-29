@@ -38,12 +38,6 @@ int main(int argc, char *argv[])
         return 0;
     }
 
-    if (bootUtil.forceRunRequested()) {
-        qCInfo(KDEInitialSystemSetupBootUtil) << "Force run requested. Running setup...";
-        bootUtil.writeSDDMAutologin(true);
-        return 0;
-    }
-
     qCInfo(KDEInitialSystemSetupBootUtil) << "Boot check completed. No action needed.";
 
     // Exit the application

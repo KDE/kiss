@@ -2,15 +2,9 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 
-configure_file(kde-initial-system-setup-first-run.service.in kde-initial-system-setup-first-run.service)
+configure_file(kde-initial-system-setup.service.in kde-initial-system-setup.service)
 install(
-    FILES ${CMAKE_CURRENT_BINARY_DIR}/kde-initial-system-setup-first-run.service
-    DESTINATION ${KDE_INSTALL_SYSTEMDUNITDIR}/system
-)
-
-configure_file(kde-initial-system-setup-force-run.service.in kde-initial-system-setup-force-run.service)
-install(
-    FILES ${CMAKE_CURRENT_BINARY_DIR}/kde-initial-system-setup-force-run.service
+    FILES ${CMAKE_CURRENT_BINARY_DIR}/kde-initial-system-setup.service
     DESTINATION ${KDE_INSTALL_SYSTEMDUNITDIR}/system
 )
 

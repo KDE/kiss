@@ -13,18 +13,6 @@ public:
     explicit BootUtil(QObject *parent = nullptr);
 
     /**
-     * @brief Checks if force run was requested with a kernel parameter.
-     *
-     * This checks for the presence of a specific kernel parameter that indicates
-     * whether KISS should run regardless of user accounts being present.
-     *
-     * The expected parameter is "kde.initial-setup=1".
-     *
-     * @return true if force run is requested, false otherwise.
-     */
-    bool forceRunRequested() const;
-
-    /**
      * Writes the autologin configuration for SDDM.
      *
      * This function writes the necessary configuration to enable autologin

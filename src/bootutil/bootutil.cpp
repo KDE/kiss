@@ -15,22 +15,6 @@ BootUtil::BootUtil(QObject *parent)
 {
 }
 
-bool BootUtil::forceRunRequested() const
-{
-    // Check for the file /proc/cmdline for the parameter "kde.initial-setup=1"
-    QFile file(QStringLiteral("/proc/cmdline"));
-    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        qCWarning(KDEInitialSystemSetupBootUtil) << "Could not open /proc/cmdline";
-        return false;
-    }
-
-    QTextStream stream(&file);
-    QString content = stream.readAll();
-    file.close();
-
-    return content.contains(QStringLiteral("kde.initial-setup=1"));
-}
-
 bool BootUtil::writeSDDMAutologin(const bool autoLogin)
 {
     // Make sure the directory exists

@@ -45,22 +45,15 @@ sudo cmake --install build/
 sudo systemd-sysusers
 ```
 
-- Enable the systemd services:
+- Enable the systemd service:
 
 ```bash
-# Will enable running on boot.
-sudo systemctl enable kde-initial-system-setup-first-run.service
-
-# Will enable running if the kernel parameter `kde.initial-setup=1` is set.
-sudo systemctl enable kde-initial-system-setup-force-run.service
+sudo systemctl enable kde-initial-system-setup.service
 ```
 
 - Reboot:
 
-If you enabled the first-run service, reboot your system to see the initial setup.
-
-If only the force-run service is enabled, you can edit the kernel parameters during boot to add
-`kde.initial-setup=1` and the initial setup will run once, for that boot only.
+With the systemd service enabled, reboot your system and the initial setup will run automatically.
 
 -----
 
