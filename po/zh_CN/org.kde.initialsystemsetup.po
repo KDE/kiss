@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-26 00:45+0000\n"
+"POT-Creation-Date: 2025-07-30 00:45+0000\n"
 "PO-Revision-Date: 2024-07-15 19:45\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -42,13 +42,30 @@ msgstr "移除当前头像"
 msgid "We need a few details to complete the setup."
 msgstr "我们需要一些详细信息来完成设置。"
 
-#: modules/account/contents/ui/main.qml:119
+#: modules/account/contents/ui/main.qml:117
+#: modules/password/contents/ui/main.qml:32
+#, kde-format
+msgctxt "@info"
+msgid "This user will be an administrator."
+msgstr ""
+
+#: modules/account/contents/ui/main.qml:121
+#: modules/password/contents/ui/main.qml:36
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"This user will have administrative privileges on the system.<nl/><nl/>This "
+"means that they can change system settings, install software, and access all "
+"files on the system.<nl/><nl/>Choose a strong password for this user."
+msgstr ""
+
+#: modules/account/contents/ui/main.qml:132
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Full Name"
 msgstr "全名"
 
-#: modules/account/contents/ui/main.qml:140
+#: modules/account/contents/ui/main.qml:153
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Username"
@@ -186,24 +203,19 @@ msgstr "语言"
 msgid "Search languages..."
 msgstr "搜索语言..."
 
-#: modules/password/contents/ui/main.qml:31
-#, kde-format
-msgid "Be careful not to lose your password."
-msgstr "请注意不要丢失您的密码。"
-
-#: modules/password/contents/ui/main.qml:44
+#: modules/password/contents/ui/main.qml:47
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Password"
 msgstr "密码"
 
-#: modules/password/contents/ui/main.qml:55
+#: modules/password/contents/ui/main.qml:58
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Confirm Password"
 msgstr "确认密码"
 
-#: modules/password/contents/ui/main.qml:59
+#: modules/password/contents/ui/main.qml:62
 #, kde-format
 msgctxt "@info:status"
 msgid "Passwords don’t match"
@@ -343,3 +355,6 @@ msgstr "调整图像大小失败：无法打开临时文件"
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "调整图像大小失败：无法写入临时文件"
+
+#~ msgid "Be careful not to lose your password."
+#~ msgstr "请注意不要丢失您的密码。"

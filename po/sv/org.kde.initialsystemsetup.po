@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-26 00:45+0000\n"
+"POT-Creation-Date: 2025-07-30 00:45+0000\n"
 "PO-Revision-Date: 2025-06-28 19:58+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -42,13 +42,30 @@ msgstr "Ta bort nuvarande avatar"
 msgid "We need a few details to complete the setup."
 msgstr "Vi behöver en del information för att kunna slutföra inställningen."
 
-#: modules/account/contents/ui/main.qml:119
+#: modules/account/contents/ui/main.qml:117
+#: modules/password/contents/ui/main.qml:32
+#, kde-format
+msgctxt "@info"
+msgid "This user will be an administrator."
+msgstr ""
+
+#: modules/account/contents/ui/main.qml:121
+#: modules/password/contents/ui/main.qml:36
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"This user will have administrative privileges on the system.<nl/><nl/>This "
+"means that they can change system settings, install software, and access all "
+"files on the system.<nl/><nl/>Choose a strong password for this user."
+msgstr ""
+
+#: modules/account/contents/ui/main.qml:132
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Full Name"
 msgstr "Fullständigt namn"
 
-#: modules/account/contents/ui/main.qml:140
+#: modules/account/contents/ui/main.qml:153
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Username"
@@ -188,24 +205,19 @@ msgstr "Språk"
 msgid "Search languages..."
 msgstr "Sök efter språk..."
 
-#: modules/password/contents/ui/main.qml:31
-#, kde-format
-msgid "Be careful not to lose your password."
-msgstr "Var försiktig så att du inte tappar bort ditt lösenord."
-
-#: modules/password/contents/ui/main.qml:44
+#: modules/password/contents/ui/main.qml:47
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Password"
 msgstr "Lösenord"
 
-#: modules/password/contents/ui/main.qml:55
+#: modules/password/contents/ui/main.qml:58
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Confirm Password"
 msgstr "Bekräfta lösenord"
 
-#: modules/password/contents/ui/main.qml:59
+#: modules/password/contents/ui/main.qml:62
 #, kde-format
 msgctxt "@info:status"
 msgid "Passwords don’t match"
@@ -348,6 +360,9 @@ msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "Misslyckades ändra storlek på bild: skrivning till tillfällig fil "
 "misslyckades"
+
+#~ msgid "Be careful not to lose your password."
+#~ msgstr "Var försiktig så att du inte tappar bort ditt lösenord."
 
 #~ msgid "Tokodon"
 #~ msgstr "Tokodon"

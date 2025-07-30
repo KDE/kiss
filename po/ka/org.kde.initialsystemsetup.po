@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-26 00:45+0000\n"
+"POT-Creation-Date: 2025-07-30 00:45+0000\n"
 "PO-Revision-Date: 2025-06-25 04:19+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -43,13 +43,30 @@ msgstr "მიმდინარე ავატარის წაშლა"
 msgid "We need a few details to complete the setup."
 msgstr "მორგების დასასრულებლად რამდენიმე დეტალი დაგვჭირდება."
 
-#: modules/account/contents/ui/main.qml:119
+#: modules/account/contents/ui/main.qml:117
+#: modules/password/contents/ui/main.qml:32
+#, kde-format
+msgctxt "@info"
+msgid "This user will be an administrator."
+msgstr ""
+
+#: modules/account/contents/ui/main.qml:121
+#: modules/password/contents/ui/main.qml:36
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"This user will have administrative privileges on the system.<nl/><nl/>This "
+"means that they can change system settings, install software, and access all "
+"files on the system.<nl/><nl/>Choose a strong password for this user."
+msgstr ""
+
+#: modules/account/contents/ui/main.qml:132
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Full Name"
 msgstr "სრული სახელი"
 
-#: modules/account/contents/ui/main.qml:140
+#: modules/account/contents/ui/main.qml:153
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Username"
@@ -189,24 +206,19 @@ msgstr "ენა"
 msgid "Search languages..."
 msgstr "ენის მოძებნა..."
 
-#: modules/password/contents/ui/main.qml:31
-#, kde-format
-msgid "Be careful not to lose your password."
-msgstr "ფრთხილად, ნუ გადაკარგავთ თქვენს პაროლს."
-
-#: modules/password/contents/ui/main.qml:44
+#: modules/password/contents/ui/main.qml:47
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Password"
 msgstr "პაროლი"
 
-#: modules/password/contents/ui/main.qml:55
+#: modules/password/contents/ui/main.qml:58
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Confirm Password"
 msgstr "გაიმეორეთ პაროლი"
 
-#: modules/password/contents/ui/main.qml:59
+#: modules/password/contents/ui/main.qml:62
 #, kde-format
 msgctxt "@info:status"
 msgid "Passwords don’t match"
@@ -346,6 +358,9 @@ msgstr "გამოსახულების ზომის შეცვლ�
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "გამოსახულების ზომის შეცვლის შეცდომა: დროებითი ფაილის ჩაწერის შეცდომა"
+
+#~ msgid "Be careful not to lose your password."
+#~ msgstr "ფრთხილად, ნუ გადაკარგავთ თქვენს პაროლს."
 
 #~ msgid "Tokodon"
 #~ msgstr "Tokodon"

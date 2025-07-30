@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-26 00:45+0000\n"
+"POT-Creation-Date: 2025-07-30 00:45+0000\n"
 "PO-Revision-Date: 2025-06-24 12:53+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -45,13 +45,30 @@ msgstr "Kendu uneko abatarra"
 msgid "We need a few details to complete the setup."
 msgstr "Ezarpena osatzeko xehetasun batzuk behar ditugu."
 
-#: modules/account/contents/ui/main.qml:119
+#: modules/account/contents/ui/main.qml:117
+#: modules/password/contents/ui/main.qml:32
+#, kde-format
+msgctxt "@info"
+msgid "This user will be an administrator."
+msgstr ""
+
+#: modules/account/contents/ui/main.qml:121
+#: modules/password/contents/ui/main.qml:36
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"This user will have administrative privileges on the system.<nl/><nl/>This "
+"means that they can change system settings, install software, and access all "
+"files on the system.<nl/><nl/>Choose a strong password for this user."
+msgstr ""
+
+#: modules/account/contents/ui/main.qml:132
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Full Name"
 msgstr "Izen osoa"
 
-#: modules/account/contents/ui/main.qml:140
+#: modules/account/contents/ui/main.qml:153
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Username"
@@ -191,24 +208,19 @@ msgstr "Hizkuntza"
 msgid "Search languages..."
 msgstr "Bilatu hizkuntza..."
 
-#: modules/password/contents/ui/main.qml:31
-#, kde-format
-msgid "Be careful not to lose your password."
-msgstr "Kontuz ibili pasahitza ez galtzeko."
-
-#: modules/password/contents/ui/main.qml:44
+#: modules/password/contents/ui/main.qml:47
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Password"
 msgstr "Pasahitza"
 
-#: modules/password/contents/ui/main.qml:55
+#: modules/password/contents/ui/main.qml:58
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Confirm Password"
 msgstr "Baieztatu pasahitza"
 
-#: modules/password/contents/ui/main.qml:59
+#: modules/password/contents/ui/main.qml:62
 #, kde-format
 msgctxt "@info:status"
 msgid "Passwords don’t match"
@@ -352,6 +364,9 @@ msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "Irudiaren neurria aldatzea huts egin du: aldi baterako fitxategian gordetzea "
 "huts egin du"
+
+#~ msgid "Be careful not to lose your password."
+#~ msgstr "Kontuz ibili pasahitza ez galtzeko."
 
 #~ msgid "Next"
 #~ msgstr "Hurrengoa"

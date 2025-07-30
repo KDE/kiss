@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-26 00:45+0000\n"
+"POT-Creation-Date: 2025-07-30 00:45+0000\n"
 "PO-Revision-Date: 2025-07-20 01:49+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -42,13 +42,30 @@ msgstr "현재 아바타 삭제"
 msgid "We need a few details to complete the setup."
 msgstr "설정을 완료하려면 몇 가지 정보가 필요합니다."
 
-#: modules/account/contents/ui/main.qml:119
+#: modules/account/contents/ui/main.qml:117
+#: modules/password/contents/ui/main.qml:32
+#, kde-format
+msgctxt "@info"
+msgid "This user will be an administrator."
+msgstr ""
+
+#: modules/account/contents/ui/main.qml:121
+#: modules/password/contents/ui/main.qml:36
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"This user will have administrative privileges on the system.<nl/><nl/>This "
+"means that they can change system settings, install software, and access all "
+"files on the system.<nl/><nl/>Choose a strong password for this user."
+msgstr ""
+
+#: modules/account/contents/ui/main.qml:132
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Full Name"
 msgstr "전체 이름"
 
-#: modules/account/contents/ui/main.qml:140
+#: modules/account/contents/ui/main.qml:153
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Username"
@@ -188,24 +205,19 @@ msgstr "언어"
 msgid "Search languages..."
 msgstr "언어 검색..."
 
-#: modules/password/contents/ui/main.qml:31
-#, kde-format
-msgid "Be careful not to lose your password."
-msgstr "암호를 잊어버리지 않도록 유의하십시오."
-
-#: modules/password/contents/ui/main.qml:44
+#: modules/password/contents/ui/main.qml:47
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Password"
 msgstr "암호"
 
-#: modules/password/contents/ui/main.qml:55
+#: modules/password/contents/ui/main.qml:58
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Confirm Password"
 msgstr "암호 확인"
 
-#: modules/password/contents/ui/main.qml:59
+#: modules/password/contents/ui/main.qml:62
 #, kde-format
 msgctxt "@info:status"
 msgid "Passwords don’t match"
@@ -345,6 +357,9 @@ msgstr "이미지 크기 조정 실패: 임시 파일을 열 수 없음"
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "이미지 크기 조정 실패: 임시 파일에 쓸 수 없음"
+
+#~ msgid "Be careful not to lose your password."
+#~ msgstr "암호를 잊어버리지 않도록 유의하십시오."
 
 #~ msgid "Next"
 #~ msgstr "다음"
