@@ -355,6 +355,3 @@ msgstr "调整图像大小失败：无法打开临时文件"
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "调整图像大小失败：无法写入临时文件"
-
-#~ msgid "Be careful not to lose your password."
-#~ msgstr "请注意不要丢失您的密码。"

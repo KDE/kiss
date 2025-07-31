@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-07-30 00:45+0000\n"
-"PO-Revision-Date: 2025-06-25 04:19+0200\n"
+"PO-Revision-Date: 2025-07-30 06:54+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -48,7 +48,7 @@ msgstr "მორგების დასასრულებლად რა�
 #, kde-format
 msgctxt "@info"
 msgid "This user will be an administrator."
-msgstr ""
+msgstr "ეს მომხმარებელი ადმინისტრატორი იქნება."
 
 #: modules/account/contents/ui/main.qml:121
 #: modules/password/contents/ui/main.qml:36
@@ -59,6 +59,10 @@ msgid ""
 "means that they can change system settings, install software, and access all "
 "files on the system.<nl/><nl/>Choose a strong password for this user."
 msgstr ""
+"ამ მომხმარებელს სისტემაში ადმინისტრატორის პრივილეგიები ექნება.<nl/><nl/>ეს "
+"ნიშნავს, რომ მას შეეძლება, შეცვალოს სისტემის პარამეტრები, დააყენოს "
+"პროგრამები და ექნება წვდომა სისტემაში არსებულ ყველა ფაილთან.<nl/><nl/>სჯობს, "
+"ამ მომხმარებელს რთული პაროლი დაუყენოთ."
 
 #: modules/account/contents/ui/main.qml:132
 #, kde-format

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-07-30 00:45+0000\n"
-"PO-Revision-Date: 2025-06-24 06:55+0200\n"
+"PO-Revision-Date: 2025-07-30 06:29+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -48,7 +48,7 @@ msgstr "Za dokončanje nastavitve potrebujemo nekaj podrobnosti."
 #, kde-format
 msgctxt "@info"
 msgid "This user will be an administrator."
-msgstr ""
+msgstr "Ta uporabnik bo skrbnik."
 
 #: modules/account/contents/ui/main.qml:121
 #: modules/password/contents/ui/main.qml:36
@@ -59,6 +59,9 @@ msgid ""
 "means that they can change system settings, install software, and access all "
 "files on the system.<nl/><nl/>Choose a strong password for this user."
 msgstr ""
+"Ta uporabnik bo imel skrbniške pravice v sistemu.<nl/><nl/>To pomeni, da "
+"lahko spreminja sistemske nastavitve, namešča programsko opremo in dostopa "
+"do vseh datotek v sistemu.<nl/><nl/>Izberite močno geslo za tega uporabnika."
 
 #: modules/account/contents/ui/main.qml:132
 #, kde-format

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-07-30 00:45+0000\n"
-"PO-Revision-Date: 2025-06-24 11:57+0200\n"
+"PO-Revision-Date: 2025-07-30 10:35+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.04.2\n"
+"X-Generator: Lokalize 25.04.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -49,7 +49,7 @@ msgstr "Cal alguns detalls per a completar la configuració."
 #, kde-format
 msgctxt "@info"
 msgid "This user will be an administrator."
-msgstr ""
+msgstr "Este usuari serà un administrador."
 
 #: modules/account/contents/ui/main.qml:121
 #: modules/password/contents/ui/main.qml:36
@@ -60,6 +60,10 @@ msgid ""
 "means that they can change system settings, install software, and access all "
 "files on the system.<nl/><nl/>Choose a strong password for this user."
 msgstr ""
+"Este usuari tindrà privilegis administratius al sistema.<nl/><nl/>Açò "
+"significa que pot canviar la Configuració del sistema, instal·lar programari "
+"i accedir a tots els fitxers del sistema.<nl/><nl/>Trieu una contrasenya "
+"forta per a este usuari."
 
 #: modules/account/contents/ui/main.qml:132
 #, kde-format
@@ -365,6 +369,3 @@ msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "No s'ha pogut redimensionar la imatge: ha fallat en escriure en el fitxer "
 "temporal"
-
-#~ msgid "Be careful not to lose your password."
-#~ msgstr "Aneu amb compte de no perdre la contrasenya."
