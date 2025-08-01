@@ -47,7 +47,7 @@ msgstr "我们需要一些详细信息来完成设置。"
 #, kde-format
 msgctxt "@info"
 msgid "This user will be an administrator."
-msgstr ""
+msgstr "此用户将成为管理员。"
 
 #: modules/account/contents/ui/main.qml:121
 #: modules/password/contents/ui/main.qml:36
@@ -58,6 +58,8 @@ msgid ""
 "means that they can change system settings, install software, and access all "
 "files on the system.<nl/><nl/>Choose a strong password for this user."
 msgstr ""
+"此用户将在系统中拥有管理员权限。<nl/><nl/>这意味着此用户可以更改系统设置、安"
+"装软件以及访问系统中的所有文件。<nl/><nl/>请为此用户选择一个强密码。"
 
 #: modules/account/contents/ui/main.qml:132
 #, kde-format
