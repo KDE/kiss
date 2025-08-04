@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-07-30 00:45+0000\n"
-"PO-Revision-Date: 2025-06-26 10:47+0400\n"
+"PO-Revision-Date: 2025-08-03 09:03+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -48,7 +48,7 @@ msgstr "نحتاج إلى بعض التفاصيل لإكمال الإعداد."
 #, kde-format
 msgctxt "@info"
 msgid "This user will be an administrator."
-msgstr ""
+msgstr "سيكون هذا المستخدم مسؤولاً."
 
 #: modules/account/contents/ui/main.qml:121
 #: modules/password/contents/ui/main.qml:36
@@ -59,6 +59,9 @@ msgid ""
 "means that they can change system settings, install software, and access all "
 "files on the system.<nl/><nl/>Choose a strong password for this user."
 msgstr ""
+"سيتمتع هذا المستخدم بامتيازات إدارية على النظام.<nl/><nl/>وهذا يعني أنه "
+"يمكنه تغيير إعدادات النظام وتثبيت البرامج والوصول إلى جميع الملفات الموجودة "
+"على النظام.<nl/><nl/>اختر كلمة سر قوية لهذا المستخدم."
 
 #: modules/account/contents/ui/main.qml:132
 #, kde-format
@@ -216,7 +219,7 @@ msgstr "كلمة السّر"
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Confirm Password"
-msgstr "تأكيد كلمة المرور"
+msgstr "تأكيد كلمة السر"
 
 #: modules/password/contents/ui/main.qml:62
 #, kde-format
