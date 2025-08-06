@@ -17,8 +17,6 @@
 
     1. With the command line flag `--first-run`, which indicates that this is the first boot and
        KISS should run.
-    2. With no command line arguments, which indicates that this is a regular boot and KISS should not run unless the
-       `kde.initial-setup=1` kernel parameter is set.
 
     These should be managed by the systemd service files.
  */

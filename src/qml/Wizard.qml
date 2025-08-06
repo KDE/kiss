@@ -73,9 +73,8 @@ Kirigami.Page {
     }
 
     function finishFinalPage(): void {
-        AccountController.createUser();
-        // the app exits
-        InitialStart.Wizard.wizardFinished();
+        // Finalize the initial setup process and exit the wizard.
+        InitialStartUtil.finish();
     }
 
     function requestNextPage(): void {
