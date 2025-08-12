@@ -29,11 +29,18 @@ void PagesModel::reload()
     });
 
     for (const auto &package : std::as_const(packages)) {
-        const auto plugin = package.metadata();
-        auto item = new QStandardItem(plugin.name());
-        item->setData(plugin.pluginId(), PagesModel::PluginIdRole);
-        item->setData(QVariant::fromValue(package), PagesModel::PackageRole);
-        appendRow(item);
+        // Create the module so we can check if it's available
+        const auto qmlPath = package.filePath("ui", QStringLiteral("main.qml"));
+        std::unique_ptr<SetupModule> module(createGui(qmlPath));
+
+        // Only add available modules to the model
+        if (module && module->available()) {
+            const auto plugin = package.metadata();
+            auto item = new QStandardItem(plugin.name());
+            item->setData(plugin.pluginId(), PagesModel::PluginIdRole);
+            item->setData(QVariant::fromValue(package), PagesModel::PackageRole);
+            appendRow(item);
+        }
     }
 
     Q_EMIT loaded();
