@@ -15,8 +15,14 @@ import org.kde.initialsystemsetup.components as KissComponents
 KissComponents.SetupModule {
     id: root
 
+    available: availableDevices.wirelessDeviceAvailable
+
     contentItem: ColumnLayout {
         spacing: Kirigami.Units.gridUnit
+
+        PlasmaNM.AvailableDevices {
+            id: availableDevices
+        }
 
         PlasmaNM.Handler {
             id: handler
