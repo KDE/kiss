@@ -96,15 +96,13 @@ KissComponents.SetupModule {
         }
 
         FormCard.FormCard {
-            Layout.fillHeight: true
             maximumWidth: root.cardWidth
             visible: enabledConnections.wirelessEnabled
 
             ScrollView {
                 Layout.fillWidth: true
-                Layout.fillHeight: true
                 Layout.minimumHeight: Kirigami.Units.gridUnit * 14
-                Layout.maximumHeight: Kirigami.Units.gridUnit * 14
+                Layout.maximumHeight: Kirigami.Units.gridUnit * 20
 
                 ListView {
                     id: listView

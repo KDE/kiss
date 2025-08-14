@@ -184,7 +184,7 @@ KissComponents.SetupModule {
                         implicitWidth: Math.round(mainScrollView.width / 2)
                         Layout.fillWidth: true
                         Layout.fillHeight: true
-                        Layout.maximumHeight: Kirigami.Units.gridUnit * 14
+                        Layout.maximumHeight: Kirigami.Units.gridUnit * 20
 
                         Component.onCompleted: {
                             if (background) {
@@ -211,7 +211,7 @@ KissComponents.SetupModule {
                         implicitWidth: Math.round(mainScrollView.width / 2)
                         Layout.fillWidth: true
                         Layout.fillHeight: true
-                        Layout.maximumHeight: Kirigami.Units.gridUnit * 14
+                        Layout.maximumHeight: Kirigami.Units.gridUnit * 20
 
                         Component.onCompleted: {
                             if (background) {

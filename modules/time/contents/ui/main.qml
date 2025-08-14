@@ -49,7 +49,6 @@ KissComponents.SetupModule {
         FormCard.FormCard {
             maximumWidth: root.cardWidth
 
-            Layout.fillHeight: true
             Layout.alignment: Qt.AlignTop | Qt.AlignHCenter
             Layout.fillWidth: true
 
@@ -76,9 +75,8 @@ KissComponents.SetupModule {
 
             ScrollView {
                 Layout.fillWidth: true
-                Layout.fillHeight: true
                 Layout.minimumHeight: Kirigami.Units.gridUnit * 14
-                Layout.maximumHeight: Kirigami.Units.gridUnit * 14
+                Layout.maximumHeight: Kirigami.Units.gridUnit * 20
 
                 ListView {
                     id: listView
