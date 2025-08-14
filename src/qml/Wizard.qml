@@ -248,8 +248,8 @@ Kirigami.Page {
                 centerIn: Kirigami.Settings.isMobile ? undefined : parent
             }
 
-            width: Kirigami.Settings.isMobile ? undefined : Kirigami.Units.gridUnit * 30
-            height: Kirigami.Settings.isMobile ? undefined : container.implicitHeight
+            width: Kirigami.Settings.isMobile ? undefined : Kirigami.Units.gridUnit * 60
+            height: Kirigami.Settings.isMobile ? undefined : Kirigami.Units.gridUnit * 45
 
             Behavior on height {
                 NumberAnimation {
@@ -262,17 +262,12 @@ Kirigami.Page {
             ColumnLayout {
                 id: container
 
-                anchors {
-                    top: parent.top
-                    left: parent.left
-                    right: parent.right
-                    fill: Kirigami.Settings.isMobile ? parent : undefined
-                }
+                anchors.fill: parent
+                anchors.topMargin: Kirigami.Units.gridUnit * 3
 
                 Item {
                     Layout.fillWidth: true
-                    Layout.minimumHeight: stepsRepeater.itemAt(root.currentIndex)?.implicitHeight ?? 0
-                    Layout.fillHeight: Kirigami.Settings.isMobile
+                    Layout.fillHeight: true
 
                     // setup steps
                     Repeater {
@@ -287,6 +282,8 @@ Kirigami.Page {
                     id: stepFooter
 
                     Layout.fillWidth: true
+                    Layout.topMargin: Kirigami.Units.gridUnit * 2
+                    Layout.alignment: Qt.AlignBottom
 
                     Button {
                         Layout.alignment: Qt.AlignLeft
@@ -395,6 +392,7 @@ Kirigami.Page {
         }
 
         width: parent.width
+        height: parent.height
 
         function updateRootItems(): void {
             if (index === root.currentIndex) {
