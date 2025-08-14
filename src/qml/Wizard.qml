@@ -240,7 +240,7 @@ Kirigami.Page {
             color: Kirigami.Theme.backgroundColor
             clip: true
 
-            radius: Kirigami.Settings.isMobile ? 0 : Kirigami.Units.cornerRadius + 2
+            radius: Kirigami.Settings.isMobile ? 0 : Kirigami.Units.cornerRadius + 8
 
             anchors {
                 fill: Kirigami.Settings.isMobile ? parent : undefined
