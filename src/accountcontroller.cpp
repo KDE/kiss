@@ -1,4 +1,6 @@
 // SPDX-FileCopyrightText: 2025 Carl Schwan <carl@carlschwan.eu>
+// SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
+//
 // SPDX-License-Identifier: LGPL-2.0-or-later
 
 #include "accountcontroller.h"
@@ -19,6 +21,25 @@ AccountController::AccountController(QObject *parent)
 
 AccountController::~AccountController() = default;
 
+AccountController *AccountController::create(QQmlEngine *qmlEngine, QJSEngine *jsEngine)
+{
+    Q_UNUSED(qmlEngine)
+    Q_UNUSED(jsEngine)
+
+    QJSEngine::setObjectOwnership(instance(), QQmlEngine::CppOwnership);
+    return instance();
+}
+
+AccountController *AccountController::s_instance = nullptr;
+
+AccountController *AccountController::instance()
+{
+    if (!s_instance) {
+        s_instance = new AccountController();
+    }
+    return s_instance;
+}
+
 QString AccountController::username() const
 {
     return m_username;
@@ -26,7 +47,7 @@ QString AccountController::username() const
 
 void AccountController::setUsername(const QString &username)
 {
-    qCDebug(KDEInitialSystemSetup) << "Setting username to" << username;
+    qCInfo(KDEInitialSystemSetup) << "Setting username to" << username;
 
     if (m_username == username) {
         return;
@@ -42,7 +63,7 @@ QString AccountController::fullName() const
 
 void AccountController::setFullName(const QString &fullName)
 {
-    qCDebug(KDEInitialSystemSetup) << "Setting full name to" << fullName;
+    qCInfo(KDEInitialSystemSetup) << "Setting full name to" << fullName;
 
     if (m_fullName == fullName) {
         return;
@@ -54,13 +75,13 @@ void AccountController::setFullName(const QString &fullName)
 
 bool AccountController::createUser()
 {
-    qCDebug(KDEInitialSystemSetup) << "Creating user" << m_username << "with full name" << m_fullName;
+    qCInfo(KDEInitialSystemSetup) << "Creating user" << m_username << "with full name" << m_fullName;
 
     bool isAdmin = false;
     QDBusPendingReply<QDBusObjectPath> reply = m_dbusInterface->CreateUser(m_username, m_fullName, static_cast<qint32>(isAdmin));
     reply.waitForFinished();
     if (reply.isValid()) {
-        qCDebug(KDEInitialSystemSetup) << "User created with path" << reply.value().path();
+        qCInfo(KDEInitialSystemSetup) << "User created with path" << reply.value().path();
         User *createdUser = new User(this);
         createdUser->setPath(reply.value());
         createdUser->setPassword(m_password);

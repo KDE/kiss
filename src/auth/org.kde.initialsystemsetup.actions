@@ -1,0 +1,35 @@
+# -*- mode: ini -*-
+
+# SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
+#
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
+[Domain]
+Name=KDE Initial System Setup
+Icon=kauth-example
+URL=https://invent.kde.org/system/kiss
+
+[org.kde.initialsystemsetup.createnewuserautostarthook]
+Name=Create New User Autostart Hook
+Description=Create an autostart hook for the newly created user
+Policy=yes
+
+[org.kde.initialsystemsetup.disablesystemdunit]
+Name=Disable Systemd Unit
+Description=Disable the systemd unit for the initial system setup
+Policy=yes
+
+[org.kde.initialsystemsetup.removeautologin]
+Name=Remove Autologin
+Description=Remove SDDM autologin configuration
+Policy=yes
+
+[org.kde.initialsystemsetup.setnewuserhomedirectoryownership]
+Name=Set New User Home Directory Ownership
+Description=Set ownership of the new users home directory to the newly created user
+Policy=yes
+
+[org.kde.initialsystemsetup.setnewusertempautologin]
+Name=Set New User Temporary Autologin
+Description=Set SDDM temporary autologin configuration for the newly created user
+Policy=yes

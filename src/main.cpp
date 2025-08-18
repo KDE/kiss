@@ -1,4 +1,6 @@
 // SPDX-FileCopyrightText: 2025 Carl Schwan <carl@carlschwan.eu>
+// SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
+//
 // SPDX-License-Identifier: LGPL-2.0-or-later
 
 #include <KAboutData>
@@ -15,6 +17,7 @@
 #include <QUrl>
 
 #include "../kiss-version.h"
+#include "initialstartutil.h"
 
 using namespace Qt::StringLiterals;
 
@@ -37,11 +40,16 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
 
-    {
-        QCommandLineParser parser;
-        about.setupCommandLine(&parser);
-        parser.process(app);
-        about.processCommandLine(&parser);
+    QCommandLineParser parser;
+    parser.addOption(QCommandLineOption(QStringLiteral("remove-autologin"), i18n("Remove the initial setup autologin configuration.")));
+    about.setupCommandLine(&parser);
+    parser.process(app);
+    about.processCommandLine(&parser);
+
+    if (parser.isSet(QStringLiteral("remove-autologin"))) {
+        InitialStartUtil util;
+        util.disableKISSAutologin();
+        return 0;
     }
 
     KLocalization::setupLocalizedContext(&engine);

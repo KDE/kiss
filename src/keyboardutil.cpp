@@ -41,12 +41,12 @@ void KeyboardUtil::applyLayout()
     }
 
 #ifdef QT_DEBUG
-    qCDebug(KDEInitialSystemSetup) << "Skipping actual layout application in debug mode. Would have applied layout:" << m_layout.name
-                                   << "with variant:" << m_layout.variant;
+    qCInfo(KDEInitialSystemSetup) << "Skipping actual layout application in debug mode. Would have applied layout:" << m_layout.name
+                                  << "with variant:" << m_layout.variant;
     return;
 #endif
 
-    qCDebug(KDEInitialSystemSetup) << "Applying keyboard layout:" << m_layout.name << "with variant:" << m_layout.variant;
+    qCInfo(KDEInitialSystemSetup) << "Applying keyboard layout:" << m_layout.name << "with variant:" << m_layout.variant;
 
     applyLayoutForCurrentUser();
     applyLayoutAsSystemDefault();
@@ -89,7 +89,7 @@ void KeyboardUtil::applyLayoutAsSystemDefault()
     if (resultMessage.type() == QDBusMessage::ErrorMessage) {
         qCWarning(KDEInitialSystemSetup) << "Failed to set system default keyboard layout:" << resultMessage.errorMessage();
     } else {
-        qCDebug(KDEInitialSystemSetup) << "Successfully set system default keyboard layout.";
+        qCInfo(KDEInitialSystemSetup) << "Successfully set system default keyboard layout.";
     }
 }
 

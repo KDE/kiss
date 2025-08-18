@@ -42,7 +42,7 @@ set_package_properties(Qt6 PROPERTIES
     TYPE REQUIRED
     PURPOSE "Required application components"
 )
-find_package(KF6 ${KF_MIN_VERSION} COMPONENTS I18n Package Config)
+find_package(KF6 ${KF_MIN_VERSION} COMPONENTS Auth I18n Package Config)
 set_package_properties(KF6 PROPERTIES
     TYPE REQUIRED
     PURPOSE "Required application components"
@@ -58,11 +58,14 @@ ecm_setup_version(${PROJECT_VERSION}
 )
 
 find_package(KF6Screen CONFIG REQUIRED)
+find_package(LibKWorkspace REQUIRED)
 find_package(PkgConfig REQUIRED)
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
 ################# build and install #################
+
+configure_file(config-kiss.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kiss.h)
 
 ecm_set_disabled_deprecation_versions(
     QT 6.8.3

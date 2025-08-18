@@ -1,14 +1,129 @@
 // SPDX-FileCopyrightText: 2023 Devin Lin <devin@kde.org>
+// SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
+//
 // SPDX-License-Identifier: GPL-2.0-or-later
 
+#include <KAuth/Action>
+#include <KAuth/ExecuteJob>
+
 #include "initialstartutil.h"
+#include "initialsystemsetup_debug.h"
 
 InitialStartUtil::InitialStartUtil(QObject *parent)
     : QObject{parent}
+    , m_accountController(AccountController::instance())
 {
+    disableKISSAutologin();
 }
 
 QString InitialStartUtil::distroName() const
 {
     return m_osrelease.name();
 }
+
+void InitialStartUtil::finish()
+{
+    disableSystemdUnit();
+
+    const bool userCreated = m_accountController->createUser();
+    if (!userCreated) {
+        qCWarning(KDEInitialSystemSetup) << "Failed to create user:" << m_accountController->username();
+        // TODO: Handle the error appropriately, e.g., show a message to the user
+        return;
+    }
+
+    // TODO: Set new user preferences re: dark mode, keyboard layout, etc.
+
+    setNewUserTempAutologin();
+    createNewUserAutostartHook();
+    setNewUserHomeDirectoryOwnership();
+    logOut();
+}
+
+void InitialStartUtil::disableKISSAutologin()
+{
+    qCInfo(KDEInitialSystemSetup) << "Removing autologin configuration for KISS user.";
+
+    KAuth::Action action(QStringLiteral("org.kde.initialsystemsetup.removeautologin"));
+    action.setHelperId(QStringLiteral("org.kde.initialsystemsetup"));
+    KAuth::ExecuteJob *job = action.execute();
+
+    if (!job->exec()) {
+        qCWarning(KDEInitialSystemSetup) << "Failed to remove autologin configuration:" << job->errorString();
+    } else {
+        qCInfo(KDEInitialSystemSetup) << "Autologin configuration removed successfully.";
+    }
+}
+
+void InitialStartUtil::disableSystemdUnit()
+{
+    qCInfo(KDEInitialSystemSetup) << "Disabling systemd unit for initial system setup.";
+
+    KAuth::Action action(QStringLiteral("org.kde.initialsystemsetup.disablesystemdunit"));
+    action.setHelperId(QStringLiteral("org.kde.initialsystemsetup"));
+    KAuth::ExecuteJob *job = action.execute();
+
+    if (!job->exec()) {
+        qCWarning(KDEInitialSystemSetup) << "Failed to disable systemd unit:" << job->errorString();
+    } else {
+        qCInfo(KDEInitialSystemSetup) << "Systemd unit disabled successfully.";
+    }
+}
+
+void InitialStartUtil::logOut()
+{
+    m_session.requestLogout(SessionManagement::ConfirmationMode::Skip);
+}
+
+void InitialStartUtil::setNewUserHomeDirectoryOwnership()
+{
+    const QString username = m_accountController->username();
+    qCInfo(KDEInitialSystemSetup) << "Setting ownership of new user's home directory to:" << username;
+
+    KAuth::Action action(QStringLiteral("org.kde.initialsystemsetup.setnewuserhomedirectoryownership"));
+    action.setHelperId(QStringLiteral("org.kde.initialsystemsetup"));
+    action.setArguments({{QStringLiteral("username"), username}});
+    KAuth::ExecuteJob *job = action.execute();
+
+    if (!job->exec()) {
+        qCWarning(KDEInitialSystemSetup) << "Failed to set new user home directory ownership:" << job->errorString();
+    } else {
+        qCInfo(KDEInitialSystemSetup) << "New user home directory ownership set successfully.";
+    }
+}
+
+void InitialStartUtil::setNewUserTempAutologin()
+{
+    const QString username = m_accountController->username();
+    qCInfo(KDEInitialSystemSetup) << "Setting temporary autologin for new user:" << username;
+
+    KAuth::Action action(QStringLiteral("org.kde.initialsystemsetup.setnewusertempautologin"));
+    action.setHelperId(QStringLiteral("org.kde.initialsystemsetup"));
+    action.setArguments({{QStringLiteral("username"), username}});
+    KAuth::ExecuteJob *job = action.execute();
+
+    if (!job->exec()) {
+        qCWarning(KDEInitialSystemSetup) << "Failed to set temporary autologin for new user:" << job->errorString();
+    } else {
+        qCInfo(KDEInitialSystemSetup) << "Temporary autologin set for new user successfully.";
+    }
+}
+
+void InitialStartUtil::createNewUserAutostartHook()
+{
+    const QString username = m_accountController->username();
+    qCInfo(KDEInitialSystemSetup) << "Creating autostart hook for new user:" << username;
+
+    KAuth::Action action(QStringLiteral("org.kde.initialsystemsetup.createnewuserautostarthook"));
+    action.setHelperId(QStringLiteral("org.kde.initialsystemsetup"));
+    action.setArguments({{QStringLiteral("username"), username}});
+    KAuth::ExecuteJob *job = action.execute();
+
+    if (!job->exec()) {
+        qCWarning(KDEInitialSystemSetup) << "Failed to create autostart hook for new user:" << job->errorString();
+    } else {
+        qCInfo(KDEInitialSystemSetup) << "Autostart hook created successfully for new user.";
+    }
+}
+
+#include "initialstartutil.moc"
