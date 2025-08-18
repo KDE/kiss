@@ -1,6 +1,10 @@
 // SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
 // SPDX-License-Identifier: LGPL-2.1-or-later
 
+#include <KConfig>
+#include <KConfigGroup>
+#include <KSharedConfig>
+
 #include <QDir>
 #include <QFile>
 #include <QFileInfo>
@@ -51,8 +55,21 @@ bool BootUtil::writeSDDMAutologin(const bool autoLogin)
     stream << "Session=plasma\n";
     file.close();
 
+    removeEmptyAutologinEntry();
+
     qCInfo(KDEInitialSystemSetupBootUtil) << "SDDM autologin configuration written successfully.";
     return true;
+}
+
+void BootUtil::removeEmptyAutologinEntry()
+{
+    const QString configFilePath = QStringLiteral("/etc/sddm.conf.d/kde_settings.conf");
+
+    KSharedConfigPtr config = KSharedConfig::openConfig(configFilePath);
+    config->deleteGroup(QStringLiteral("Autologin"));
+    config->sync();
+
+    qCInfo(KDEInitialSystemSetupBootUtil) << "Removed empty autologin group from SDDM configuration.";
 }
 
 #include "bootutil.moc"

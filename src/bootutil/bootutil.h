@@ -22,4 +22,13 @@ public:
      * @return true if the operation was successful, false otherwise.
      */
     bool writeSDDMAutologin(const bool autoLogin);
+
+private:
+    /**
+     * Removes the default autologin entry some distros have in the kde_settings.conf
+     *
+     * Some distros have this autologin entry populated but with empty values, which prevents our config
+     * from being applied correctly.
+     */
+    void removeEmptyAutologinEntry();
 };
