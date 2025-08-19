@@ -6,6 +6,23 @@
 
 [Domain]
 Name=KDE Initial System Setup
+Name[ar]=الإعداد الأولي لنظام كيدي
+Name[ca]=Configuració inicial del sistema KDE
+Name[ca@valencia]=Configuració inicial del sistema KDE
+Name[es]=Configuración inicial del sistema KDE
+Name[eu]=KDE sistemaren hasierako ezarpena
+Name[he]=הגדרות מערכות ראשוניות של KDE
+Name[it]=Configurazione iniziale del sistema di KDE
+Name[ka]=KDE-ის სისტემის საწყისი მორგება
+Name[nl]=KDE initiële systeemopzet
+Name[pt_BR]=Configuração inicial do sistema
+Name[sl]=Začetna namestitev sistema KDE
+Name[sv]=KDE:s initiala systeminställning
+Name[tr]=KDE İlk Sistem Ayarları
+Name[uk]=Початкове налаштовування системи KDE
+Name[x-test]=xxKDE Initial System Setupxx
+Name[zh_CN]=KDE 初始系统设置程序
+Name[zh_TW]=KDE 初始系統設定
 Icon=kauth-example
 URL=https://invent.kde.org/system/kiss
 
