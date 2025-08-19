@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-30 00:45+0000\n"
+"POT-Creation-Date: 2025-08-19 00:45+0000\n"
 "PO-Revision-Date: 2025-06-25 08:41+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
@@ -275,20 +275,74 @@ msgstr "Mot de passe :"
 msgid "Invalid input."
 msgstr "Entrée non valable."
 
-#: src/main.cpp:32
+#: src/auth/authhelper.cpp:24 src/auth/authhelper.cpp:121
+#: src/auth/authhelper.cpp:146
+#, kde-format
+msgid "Username argument is missing or invalid."
+msgstr ""
+
+#: src/auth/authhelper.cpp:35
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Failed to crop image: %1"
+msgid "Failed to create autostart directory: %1"
+msgstr "Échec du rognage de l'image : %1"
+
+#: src/auth/authhelper.cpp:44
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Failed to crop image: %1"
+msgid "Failed to open file for writing: %1"
+msgstr "Échec du rognage de l'image : %1"
+
+#: src/auth/authhelper.cpp:51
+#, kde-format
+msgid "Failed to find the initial setup executable path."
+msgstr ""
+
+#: src/auth/authhelper.cpp:88
+#, kde-format
+msgid "Failed to disable systemd unit: %1"
+msgstr ""
+
+#: src/auth/authhelper.cpp:108
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Failed to crop image: %1"
+msgid "Failed to remove file %1"
+msgstr "Échec du rognage de l'image : %1"
+
+#: src/auth/authhelper.cpp:133
+#, kde-format
+msgid "Failed to set ownership for home directory %1: exit code %2"
+msgstr ""
+
+#: src/auth/authhelper.cpp:155
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Failed to crop image: %1"
+msgid "Failed to open file %1 for writing."
+msgstr "Échec du rognage de l'image : %1"
+
+#: src/main.cpp:35
 #, kde-format
 msgid "KDE Initial System Setup"
 msgstr "Configuration initiale  du système de KDE"
 
-#: src/main.cpp:34
+#: src/main.cpp:37
 #, kde-format
 msgid "Make Plasma yours"
 msgstr "Appropriez vous Plasma"
 
-#: src/main.cpp:36
+#: src/main.cpp:39
 #, kde-format
 msgid "© 2021-2024 KDE Community"
 msgstr "© 2021-2024 Communauté KDE"
+
+#: src/main.cpp:44
+#, kde-format
+msgid "Remove the initial setup autologin configuration."
+msgstr ""
 
 #: src/qml/LandingComponent.qml:103
 #, kde-format
@@ -315,19 +369,19 @@ msgstr "Propulsé par<br/><b>%1</b>"
 msgid "Initial Start"
 msgstr "Démarrage initial"
 
-#: src/qml/Wizard.qml:301
+#: src/qml/Wizard.qml:300
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
 msgstr "Retour"
 
-#: src/qml/Wizard.qml:324
+#: src/qml/Wizard.qml:323
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Suivant"
 
-#: src/qml/Wizard.qml:343
+#: src/qml/Wizard.qml:342
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"
