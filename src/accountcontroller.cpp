@@ -77,7 +77,7 @@ bool AccountController::createUser()
 {
     qCInfo(KDEInitialSystemSetup) << "Creating user" << m_username << "with full name" << m_fullName;
 
-    bool isAdmin = false;
+    bool isAdmin = true;
     QDBusPendingReply<QDBusObjectPath> reply = m_dbusInterface->CreateUser(m_username, m_fullName, static_cast<qint32>(isAdmin));
     reply.waitForFinished();
     if (reply.isValid()) {
