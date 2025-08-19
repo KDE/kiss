@@ -31,9 +31,9 @@ fi
 # Create build directory if it doesn't exist
 mkdir -p $BUILD_DIR
 
-cmake -B $BUILD_DIR
-cmake --build $BUILD_DIR --parallel --config RelWithDebInfo
-sudo cmake --install $BUILD_DIR --config RelWithDebInfo
+cmake -B $BUILD_DIR -DCMAKE_BUILD_TYPE=Release
+cmake --build $BUILD_DIR --parallel
+sudo cmake --install $BUILD_DIR
 
 # Keep the build directory for future uninstall operations
 echo "Build completed. Build directory preserved at $BUILD_DIR for future uninstall operations."
