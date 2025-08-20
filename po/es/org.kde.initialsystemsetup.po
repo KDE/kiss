@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: org.kde.initialsystemsetup\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-19 00:45+0000\n"
-"PO-Revision-Date: 2025-07-30 17:03+0100\n"
+"POT-Creation-Date: 2025-08-20 00:46+0000\n"
+"PO-Revision-Date: 2025-08-19 12:39+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.04.3\n"
+"X-Generator: Lokalize 25.08.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -267,7 +267,7 @@ msgstr "Formato de 24 horas"
 msgid "Connect to"
 msgstr "Conectarse a"
 
-#: modules/wifi/contents/ui/main.qml:64
+#: modules/wifi/contents/ui/main.qml:70
 #, kde-format
 msgid "Connect to a WiFi network for network access."
 msgstr "Conectarse una red móvil para acceso de red."
@@ -286,50 +286,45 @@ msgstr "Entrada no válida."
 #: src/auth/authhelper.cpp:146
 #, kde-format
 msgid "Username argument is missing or invalid."
-msgstr ""
+msgstr "Falta el nombre de usuario o no es válido."
 
 #: src/auth/authhelper.cpp:35
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
+#, kde-format
 msgid "Failed to create autostart directory: %1"
-msgstr "No se ha podido recortar la imagen: %1"
+msgstr "No se ha podido crear el directorio de inicio automático: %1"
 
 #: src/auth/authhelper.cpp:44
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
+#, kde-format
 msgid "Failed to open file for writing: %1"
-msgstr "No se ha podido recortar la imagen: %1"
+msgstr "Ha se ha podido abrir el archivo para escritura: %1"
 
 #: src/auth/authhelper.cpp:51
 #, kde-format
 msgid "Failed to find the initial setup executable path."
 msgstr ""
+"No se ha podido encontrar la ruta del ejecutable de configuración inicial."
 
 #: src/auth/authhelper.cpp:88
 #, kde-format
 msgid "Failed to disable systemd unit: %1"
-msgstr ""
+msgstr "No se ha podido desactivar la unidad systemd: %1"
 
 #: src/auth/authhelper.cpp:108
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
+#, kde-format
 msgid "Failed to remove file %1"
-msgstr "No se ha podido recortar la imagen: %1"
+msgstr "No se ha podido eliminar el archivo: %1"
 
 #: src/auth/authhelper.cpp:133
 #, kde-format
 msgid "Failed to set ownership for home directory %1: exit code %2"
 msgstr ""
+"No se ha podido definir el propietario del directorio personal %1: código de "
+"salida %2"
 
 #: src/auth/authhelper.cpp:155
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
+#, kde-format
 msgid "Failed to open file %1 for writing."
-msgstr "No se ha podido recortar la imagen: %1"
+msgstr "Ha fallado la apertura del archivo %1 para escritura."
 
 #: src/main.cpp:35
 #, kde-format
@@ -349,7 +344,7 @@ msgstr "© 2021-2024 La Comunidad KDE"
 #: src/main.cpp:44
 #, kde-format
 msgid "Remove the initial setup autologin configuration."
-msgstr ""
+msgstr "Eliminar la configuración inicial de inicio automático."
 
 #: src/qml/LandingComponent.qml:103
 #, kde-format

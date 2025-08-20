@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-19 00:45+0000\n"
+"POT-Creation-Date: 2025-08-20 00:46+0000\n"
 "PO-Revision-Date: 2025-06-25 08:41+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
@@ -260,7 +260,7 @@ msgstr "Format 24 heures"
 msgid "Connect to"
 msgstr "Se connecter à"
 
-#: modules/wifi/contents/ui/main.qml:64
+#: modules/wifi/contents/ui/main.qml:70
 #, kde-format
 msgid "Connect to a WiFi network for network access."
 msgstr "Connectez-vous à un réseau WiFi pour accéder au réseau."

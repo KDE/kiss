@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: org.kde.initialsystemsetup\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-19 00:45+0000\n"
+"POT-Creation-Date: 2025-08-20 00:46+0000\n"
 "PO-Revision-Date: 2025-06-08 16:23+0200\n"
 "Last-Translator: Flori G <Renner03@protonmail.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -265,7 +265,7 @@ msgstr "24-Stunden-Format"
 msgid "Connect to"
 msgstr "Verbinden mit"
 
-#: modules/wifi/contents/ui/main.qml:64
+#: modules/wifi/contents/ui/main.qml:70
 #, kde-format
 msgid "Connect to a WiFi network for network access."
 msgstr "Verbinden Sie sich mit einem WLAN für den Netzwerkzugang."

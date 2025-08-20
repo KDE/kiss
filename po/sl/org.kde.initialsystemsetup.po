@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-19 00:45+0000\n"
-"PO-Revision-Date: 2025-07-30 06:29+0200\n"
+"POT-Creation-Date: 2025-08-20 00:46+0000\n"
+"PO-Revision-Date: 2025-08-19 06:42+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -263,7 +263,7 @@ msgstr "24-urni format"
 msgid "Connect to"
 msgstr "Povežite se na"
 
-#: modules/wifi/contents/ui/main.qml:64
+#: modules/wifi/contents/ui/main.qml:70
 #, kde-format
 msgid "Connect to a WiFi network for network access."
 msgstr "Za dostop do omrežja se povežite z omrežjem WiFi."
@@ -282,50 +282,42 @@ msgstr "Neveljaven vhod."
 #: src/auth/authhelper.cpp:146
 #, kde-format
 msgid "Username argument is missing or invalid."
-msgstr ""
+msgstr "Argument uporabniškega imena manjka ali je neveljaven."
 
 #: src/auth/authhelper.cpp:35
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
+#, kde-format
 msgid "Failed to create autostart directory: %1"
-msgstr "Obrezovanje slike ni uspelo: %1"
+msgstr "Ustvarjanje imenika za samodejni zagon ni uspelo: %1"
 
 #: src/auth/authhelper.cpp:44
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
+#, kde-format
 msgid "Failed to open file for writing: %1"
-msgstr "Obrezovanje slike ni uspelo: %1"
+msgstr "Datoteke ni bilo mogoče odpreti za pisanje: %1"
 
 #: src/auth/authhelper.cpp:51
 #, kde-format
 msgid "Failed to find the initial setup executable path."
-msgstr ""
+msgstr "Ni bilo mogoče najti poti do izvedljive datoteke začetne namestitve."
 
 #: src/auth/authhelper.cpp:88
 #, kde-format
 msgid "Failed to disable systemd unit: %1"
-msgstr ""
+msgstr "Onemogočanje enote systemd: %1 ni uspelo"
 
 #: src/auth/authhelper.cpp:108
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
+#, kde-format
 msgid "Failed to remove file %1"
-msgstr "Obrezovanje slike ni uspelo: %1"
+msgstr "Odstranjevanje datoteke %1 ni uspelo"
 
 #: src/auth/authhelper.cpp:133
 #, kde-format
 msgid "Failed to set ownership for home directory %1: exit code %2"
-msgstr ""
+msgstr "Ni uspelo nastaviti lastništva za domači imenik %1: izhodna koda %2"
 
 #: src/auth/authhelper.cpp:155
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
+#, kde-format
 msgid "Failed to open file %1 for writing."
-msgstr "Obrezovanje slike ni uspelo: %1"
+msgstr "Datoteke %1 ni bilo mogoče odpreti za pisanje."
 
 #: src/main.cpp:35
 #, kde-format
@@ -345,7 +337,7 @@ msgstr "© 2021-2024 Skupnost KDE"
 #: src/main.cpp:44
 #, kde-format
 msgid "Remove the initial setup autologin configuration."
-msgstr ""
+msgstr "Odstrani začetno konfiguracijo samodejne prijave."
 
 #: src/qml/LandingComponent.qml:103
 #, kde-format

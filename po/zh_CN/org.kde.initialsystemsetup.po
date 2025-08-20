@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-19 00:45+0000\n"
+"POT-Creation-Date: 2025-08-20 00:46+0000\n"
 "PO-Revision-Date: 2024-07-15 19:45\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -259,7 +259,7 @@ msgstr "24 小时格式"
 msgid "Connect to"
 msgstr "连接到"
 
-#: modules/wifi/contents/ui/main.qml:64
+#: modules/wifi/contents/ui/main.qml:70
 #, kde-format
 msgid "Connect to a WiFi network for network access."
 msgstr "连接到 WiFi 网络以访问互联网。"
@@ -282,15 +282,11 @@ msgstr ""
 
 #: src/auth/authhelper.cpp:35
 #, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
 msgid "Failed to create autostart directory: %1"
 msgstr "裁剪图像失败：%1"
 
 #: src/auth/authhelper.cpp:44
 #, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
 msgid "Failed to open file for writing: %1"
 msgstr "裁剪图像失败：%1"
 
@@ -306,8 +302,6 @@ msgstr ""
 
 #: src/auth/authhelper.cpp:108
 #, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
 msgid "Failed to remove file %1"
 msgstr "裁剪图像失败：%1"
 
@@ -318,8 +312,6 @@ msgstr ""
 
 #: src/auth/authhelper.cpp:155
 #, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
 msgid "Failed to open file %1 for writing."
 msgstr "裁剪图像失败：%1"
 
