@@ -10,7 +10,7 @@ install(
 
 install(
     FILES "kde-initial-system-setup-polkit.rules"
-    DESTINATION ${CMAKE_INSTALL_SYSCONFDIR}/polkit-1/rules.d
+    DESTINATION ${KDE_INSTALL_DATADIR}/polkit-1/rules.d
 )
 
 install(
