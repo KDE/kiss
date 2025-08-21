@@ -12,3 +12,6 @@ Dependencies:
     'plasma/libkscreen': '@latest-kf6'
     'plasma/plasma-desktop': '@latest-kf6'
     'plasma/plasma-workspace': '@same'
+
+Options:
+ run-qmllint: true
