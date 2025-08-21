@@ -38,6 +38,13 @@ void LanguageUtil::applyLanguage()
         return;
     }
 
+    applyLanguageForCurrentSession();
+
+    Q_EMIT currentLanguageChanged();
+}
+
+bool LanguageUtil::applyLanguageForCurrentSession()
+{
     qputenv("LANGUAGE", m_currentLanguage.toUtf8());
     qputenv("LANG", m_currentLanguage.toUtf8());
     QLocale::setDefault(QLocale(m_currentLanguage));
@@ -47,7 +54,7 @@ void LanguageUtil::applyLanguage()
     QEvent languageChangeEvent(QEvent::LanguageChange);
     QCoreApplication::sendEvent(QCoreApplication::instance(), &languageChangeEvent);
 
-    Q_EMIT currentLanguageChanged();
+    return true;
 }
 
 void LanguageUtil::loadAvailableLanguages()

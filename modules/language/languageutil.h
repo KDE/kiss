@@ -53,6 +53,11 @@ Q_SIGNALS:
 
 private:
     /**
+     * Applies the current language setting for the current user session.
+     */
+    bool applyLanguageForCurrentSession();
+
+    /**
      * Loads the available languages from the system.
      *
      * This function populates the availableLanguages list with the languages
