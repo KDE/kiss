@@ -281,14 +281,14 @@ msgid "Username argument is missing or invalid."
 msgstr ""
 
 #: src/auth/authhelper.cpp:35
-#, fuzzy, kde-format
+#, kde-format
 msgid "Failed to create autostart directory: %1"
-msgstr "裁剪图像失败：%1"
+msgstr ""
 
 #: src/auth/authhelper.cpp:44
-#, fuzzy, kde-format
+#, kde-format
 msgid "Failed to open file for writing: %1"
-msgstr "裁剪图像失败：%1"
+msgstr ""
 
 #: src/auth/authhelper.cpp:51
 #, kde-format
@@ -301,9 +301,9 @@ msgid "Failed to disable systemd unit: %1"
 msgstr ""
 
 #: src/auth/authhelper.cpp:108
-#, fuzzy, kde-format
+#, kde-format
 msgid "Failed to remove file %1"
-msgstr "裁剪图像失败：%1"
+msgstr ""
 
 #: src/auth/authhelper.cpp:133
 #, kde-format
@@ -311,9 +311,9 @@ msgid "Failed to set ownership for home directory %1: exit code %2"
 msgstr ""
 
 #: src/auth/authhelper.cpp:155
-#, fuzzy, kde-format
+#, kde-format
 msgid "Failed to open file %1 for writing."
-msgstr "裁剪图像失败：%1"
+msgstr ""
 
 #: src/main.cpp:35
 #, kde-format
