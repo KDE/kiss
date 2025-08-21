@@ -12,9 +12,7 @@
  * This class provides functionality to load available languages,
  * set the current language, and apply the selected language.
  *
- * Language choice applies to this application, as well as the session if we are
- * running in a live environment. When setting the language for a newly created
- * user, reference the result of QLocale::system() for chosen language.
+ * Language choice applies to this application, the current session, and as the system default.
  */
 class LanguageUtil : public QObject
 {
@@ -43,7 +41,7 @@ public:
     void setCurrentLanguage(const QString &language);
 
     /**
-     * Applies the chosen language to the running application.
+     * Applies the chosen language.
      */
     Q_INVOKABLE void applyLanguage();
 
@@ -55,7 +53,15 @@ private:
     /**
      * Applies the current language setting for the current user session.
      */
-    bool applyLanguageForCurrentSession();
+    void applyLanguageForCurrentSession();
+
+    /**
+     * Applies the selected language as the system default.
+     *
+     * Sets the selected language as the default for the entire system, so that
+     * it will apply to new users, the login screen, and other system components.
+     */
+    void applyLanguageAsSystemDefault();
 
     /**
      * Loads the available languages from the system.
