@@ -1,11 +1,14 @@
 // SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
 // SPDX-License-Identifier: LGPL-2.1-or-later
 
+#include "initialsystemsetup_language_debug.h"
 #include "languageutil.h"
 
 #include <KLocalizedString>
 
 #include <QCoreApplication>
+#include <QDBusConnection>
+#include <QDBusReply>
 
 LanguageUtil::LanguageUtil(QObject *parent)
     : QObject(parent)
@@ -39,11 +42,12 @@ void LanguageUtil::applyLanguage()
     }
 
     applyLanguageForCurrentSession();
+    applyLanguageAsSystemDefault();
 
     Q_EMIT currentLanguageChanged();
 }
 
-bool LanguageUtil::applyLanguageForCurrentSession()
+void LanguageUtil::applyLanguageForCurrentSession()
 {
     qputenv("LANGUAGE", m_currentLanguage.toUtf8());
     qputenv("LANG", m_currentLanguage.toUtf8());
@@ -53,8 +57,36 @@ bool LanguageUtil::applyLanguageForCurrentSession()
     QCoreApplication::sendEvent(QCoreApplication::instance(), &localeChangeEvent);
     QEvent languageChangeEvent(QEvent::LanguageChange);
     QCoreApplication::sendEvent(QCoreApplication::instance(), &languageChangeEvent);
+}
 
-    return true;
+void LanguageUtil::applyLanguageAsSystemDefault()
+{
+    const QString locale1Service = QStringLiteral("org.freedesktop.locale1");
+    const QString locale1Path = QStringLiteral("/org/freedesktop/locale1");
+
+    QDBusMessage message = QDBusMessage::createMethodCall( //
+        locale1Service,
+        locale1Path,
+        QStringLiteral("org.freedesktop.locale1"),
+        QStringLiteral("SetLocale") //
+    );
+
+    const QLocale locale = QLocale(m_currentLanguage);
+    const QString lang = QStringLiteral("LANG=") + locale.name() + QStringLiteral(".UTF-8"); // e.g. "LANG=en_US.UTF-8"
+    const bool interactive = false;
+    message << QStringList{lang} << interactive;
+
+    QDBusPendingReply<> reply = QDBusConnection::systemBus().asyncCall(message);
+    QDBusPendingCallWatcher *watcher = new QDBusPendingCallWatcher(reply, this);
+    connect(watcher, &QDBusPendingCallWatcher::finished, this, [=]() {
+        watcher->deleteLater();
+
+        if (watcher->isError()) {
+            qCWarning(KDEInitialSystemSetupLanguage) << "Failed to set system default language:" << watcher->error().message();
+        } else {
+            qCInfo(KDEInitialSystemSetupLanguage) << "Successfully set system default language.";
+        }
+    });
 }
 
 void LanguageUtil::loadAvailableLanguages()
