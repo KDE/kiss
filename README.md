@@ -28,7 +28,7 @@ system's first user account and configuring initial settings.
 - Clone the repository:
 
 ```bash
-git clone https://invent.kde.org/system/kiss.git
+git clone https://invent.kde.org/plasma/kiss.git
 ```
 
 - Build and install:

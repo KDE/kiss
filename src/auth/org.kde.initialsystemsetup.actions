@@ -24,7 +24,7 @@ Name[x-test]=xxKDE Initial System Setupxx
 Name[zh_CN]=KDE 初始系统设置程序
 Name[zh_TW]=KDE 初始系統設定
 Icon=kauth-example
-URL=https://invent.kde.org/system/kiss
+URL=https://invent.kde.org/plasma/kiss
 
 [org.kde.initialsystemsetup.createnewuserautostarthook]
 Name=Create New User Autostart Hook
