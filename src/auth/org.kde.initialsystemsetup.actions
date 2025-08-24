@@ -28,6 +28,7 @@ URL=https://invent.kde.org/plasma/kiss
 
 [org.kde.initialsystemsetup.createnewuserautostarthook]
 Name=Create New User Autostart Hook
+Name[ar]=إنشاء خطاف بدء آلي لمستخدم جديد
 Name[ca]=Ganxo d'inici automàtic de creació d'usuari nou
 Name[es]=Crear nuevo gancho de inicio automático para nuevo usuario
 Name[eu]=Sortu erabiltzaile berriaren abio automatikorako kakoa
@@ -43,6 +44,7 @@ Name[uk]=Скрипт автозапуску для нового користу�
 Name[x-test]=xxCreate New User Autostart Hookxx
 Name[zh_CN]=创建新用户自动启动钩子
 Description=Create an autostart hook for the newly created user
+Description[ar]=إنشاء خطاف بدء آلي للمستخدم المنشأ حديثًا
 Description[ca]=Crea un ganxo d'inici automàtic per al nou usuari creat
 Description[es]=Crear un gancho de inicio automático para el usuario recién creado
 Description[eu]=Sortu berriki sortutako erabiltzailearentzako abio automatikorako kako bat
@@ -61,6 +63,7 @@ Policy=yes
 
 [org.kde.initialsystemsetup.disablesystemdunit]
 Name=Disable Systemd Unit
+Name[ar]=تعطيل وحدة Systemd
 Name[ca]=Desactiva la unitat del Systemd
 Name[es]=Desactivar la unidad systemd
 Name[eu]=Ezgaitu Systemd Unitatea
@@ -76,6 +79,7 @@ Name[uk]=Вимкнути модуль Systemd
 Name[x-test]=xxDisable Systemd Unitxx
 Name[zh_CN]=禁用 Systemd 单元
 Description=Disable the systemd unit for the initial system setup
+Description[ar]=تعطيل وحدة systemd لإعداد النظام الأولي
 Description[ca]=Desactiva la unitat del «systemd» per a la configuració inicial del sistema
 Description[es]=Desactivar la unidad systemd para la configuración inicial del sistema
 Description[eu]=Ezgaitu systemd unitatea hasierako ezarpenerako
@@ -94,6 +98,7 @@ Policy=yes
 
 [org.kde.initialsystemsetup.removeautologin]
 Name=Remove Autologin
+Name[ar]=إزالة الولوج الآلي
 Name[ca]=Elimina l'inici de sessió automàtic
 Name[es]=Eliminar inicio de sesión automático
 Name[eu]=Kendu saioan automatikoki sartzea
@@ -109,6 +114,7 @@ Name[uk]=Вилучити автоматичний вхід до системи
 Name[x-test]=xxRemove Autologinxx
 Name[zh_CN]=移除自动登录
 Description=Remove SDDM autologin configuration
+Description[ar]=إزالة إعداد الولوج الآلي لـSDDM
 Description[ca]=Elimina la configuració d'inici de sessió automàtic del SDDM
 Description[es]=Eliminar la configuración de inicio de sesión automático de SDDM
 Description[eu]=Kendu SDDM saioan automatikoki sartzeko konfigurazioa
@@ -127,6 +133,7 @@ Policy=yes
 
 [org.kde.initialsystemsetup.setnewuserhomedirectoryownership]
 Name=Set New User Home Directory Ownership
+Name[ar]=تعيين ملكية مجلد البيت للمستخدمين الجدد
 Name[ca]=Estableix la propietat del directori d'inici de l'usuari nou
 Name[es]=Definir el propietario del directorio personal de nuevo usuario
 Name[eu]=Ezarri Etxeko karpetaren jabetza berria
@@ -142,6 +149,7 @@ Name[uk]=Встановити права власності на домашні�
 Name[x-test]=xxSet New User Home Directory Ownershipxx
 Name[zh_CN]=设置新用户主目录所有权
 Description=Set ownership of the new users home directory to the newly created user
+Description[ar]=تعيين ملكية مجلد البيت للمستخدمين الجدد
 Description[ca]=Estableix la propietat del directori d'inici dels usuaris nous al nou usuari creat
 Description[es]=Definir el propietario del directorio personal de los nuevos usuarios al usuario recién creado
 Description[eu]=Ezarri erabiltzaileen etxeko direktorio berriaren jabetza berriki sortutako erabiltzaileari
@@ -160,6 +168,7 @@ Policy=yes
 
 [org.kde.initialsystemsetup.setnewusertempautologin]
 Name=Set New User Temporary Autologin
+Name[ar]=تعيين الولوج الآلي المؤقت للمستخدمين الجدد
 Name[ca]=Estableix l'inici de sessió automàtic temporal de l'usuari nou
 Name[es]=Definir el inicio de sesión temporal de nuevo usuario
 Name[eu]=Ezarri erabiltzaile berriaren aldi baterako saio sarrera automatikoa
@@ -175,6 +184,7 @@ Name[uk]=Встановити тимчасовий автовхід для но�
 Name[x-test]=xxSet New User Temporary Autologinxx
 Name[zh_CN]=设置新用户临时自动登录
 Description=Set SDDM temporary autologin configuration for the newly created user
+Description[ar]=تعيين إعداد الولوج الآلي المؤقتة لـ SDDM للمستخدم المنشأ حديثًا
 Description[ca]=Estableix la configuració de l'inici de sessió automàtic temporal del SDDM per al nou usuari creat
 Description[es]=Definir la configuración de inicio de sesión temporal de SDDM para el usuario recién creado
 Description[eu]=Ezarri berriki sortutako erabiltzailearentzako SDDM aldi baterako saio sarrera automatikorako konfigurazioa
