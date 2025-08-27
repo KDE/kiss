@@ -1,4 +1,6 @@
 // SPDX-FileCopyrightText: 2023 Devin Lin <devin@kde.org>
+// SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
+//
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 import QtQuick
@@ -15,25 +17,28 @@ KissComponents.SetupModule {
 
     nextEnabled: true
 
-    contentItem: ColumnLayout {
-        anchors.fill: parent
-        anchors.margins: Kirigami.Units.gridUnit
+    contentItem: ScrollView {
+        ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
+        contentWidth: -1
 
-        Label {
-            Layout.fillWidth: true
-            Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
-            text: i18nc("%1 is the distro name", "Your device is now ready. <br /><br />Enjoy <b>%1</b>!", InitialStartUtil.distroName)
-            wrapMode: Text.Wrap
-            horizontalAlignment: Text.AlignHCenter
-        }
+        ColumnLayout {
+            anchors.centerIn: parent
 
-        Item { Layout.fillHeight: true }
+            Label {
+                Layout.fillWidth: true
+                Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
+                text: i18nc("%1 is the distro name", "Your device is now ready. <br /><br />Enjoy <b>%1</b>!", InitialStartUtil.distroName)
+                wrapMode: Text.Wrap
+                horizontalAlignment: Text.AlignHCenter
+            }
 
-        Image {
-            Layout.fillWidth: true
-            Layout.alignment: Qt.AlignHCenter
-            fillMode: Image.PreserveAspectFit
-            source: "konqi-calling.png"
+            Image {
+                Layout.fillWidth: true
+                Layout.alignment: Qt.AlignHCenter
+                Layout.topMargin: Kirigami.Units.gridUnit
+                fillMode: Image.PreserveAspectFit
+                source: "konqi-calling.png"
+            }
         }
     }
 }

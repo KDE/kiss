@@ -1,8 +1,10 @@
 // SPDX-FileCopyrightText: 2025 Carl Schwan <carl@carlschwan.eu>
+// SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
+//
 // SPDX-License-Identifier: LGPL-2.0-or-later
 
 import QtQuick
-import QtQuick.Controls as QQC2
+import QtQuick.Controls
 import QtQuick.Layouts
 import QtQuick.Dialogs
 import QtCore as Core
@@ -17,145 +19,227 @@ import org.kde.initialsystemsetup.components as KissComponents
 KissComponents.SetupModule {
     id: root
 
-    nextEnabled: usernameField.text.length > 0
+    nextEnabled: usernameField.text.length > 0 && paswordField.text.length > 0 && repeatField.text === paswordField.text
 
-    contentItem: ColumnLayout {
-        width: root.width
-        spacing: Kirigami.Units.gridUnit
+    contentItem: ScrollView {
+        ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
+        contentWidth: -1
 
-        KirigamiComponents.AvatarButton {
-            id: avatar
+        ColumnLayout {
+            anchors.fill: parent
+            spacing: Kirigami.Units.mediumSpacing
 
-            property FileDialog fileDialog: null
+            KirigamiComponents.AvatarButton {
+                id: avatar
 
-            Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-            Layout.topMargin: Kirigami.Units.largeSpacing
+                property FileDialog fileDialog: null
 
-            // Square button
-            implicitWidth: Kirigami.Units.gridUnit * 5
-            implicitHeight: implicitWidth
+                Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
 
-            padding: 0
+                // Square button
+                implicitWidth: Kirigami.Units.gridUnit * 5
+                implicitHeight: implicitWidth
 
-            name: fullNameField.text
+                padding: 0
 
-            onClicked: {
-                if (fileDialog) {
-                    return;
-                }
-                fileDialog = openFileDialog.createObject(this);
-                fileDialog.chosen.connect(receivedSource => {
-                    if (!receivedSource) {
+                name: fullNameField.text
+
+                onClicked: {
+                    if (fileDialog) {
                         return;
                     }
-                    source = receivedSource;
-                });
-                fileDialog.open();
-            }
-
-            QQC2.Button {
-                anchors {
-                    bottom: parent.bottom
-                    right: parent.right
+                    fileDialog = openFileDialog.createObject(this);
+                    fileDialog.chosen.connect(receivedSource => {
+                                                  if (!receivedSource) {
+                                                      return;
+                                                  }
+                                                  source = receivedSource;
+                                              });
+                    fileDialog.open();
                 }
-                visible: avatar.source.toString().length === 0
-                icon.name: "cloud-upload"
-                text: i18n("Upload new avatar")
-                display: QQC2.AbstractButton.IconOnly
 
-                onClicked: parent.clicked()
+                Button {
+                    anchors {
+                        bottom: parent.bottom
+                        right: parent.right
+                    }
+                    visible: avatar.source.toString().length === 0
+                    icon.name: "cloud-upload"
+                    text: i18n("Upload new avatar")
+                    display: AbstractButton.IconOnly
 
-                QQC2.ToolTip.text: text
-                QQC2.ToolTip.visible: hovered
-                QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
-            }
+                    onClicked: parent.clicked()
 
-            QQC2.Button {
-                anchors {
-                    bottom: parent.bottom
-                    right: parent.right
+                    ToolTip.text: text
+                    ToolTip.visible: hovered
+                    ToolTip.delay: Kirigami.Units.toolTipDelay
                 }
-                visible: avatar.source.toString().length !== 0
-                icon.name: "edit-clear"
-                text: i18n("Remove current avatar")
-                display: QQC2.AbstractButton.IconOnly
 
-                onClicked: avatar.source = ""
+                Button {
+                    anchors {
+                        bottom: parent.bottom
+                        right: parent.right
+                    }
+                    visible: avatar.source.toString().length !== 0
+                    icon.name: "edit-clear"
+                    text: i18n("Remove current avatar")
+                    display: AbstractButton.IconOnly
 
-                QQC2.ToolTip.text: text
-                QQC2.ToolTip.visible: hovered
-                QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
-            }
-            Component {
-                id: openFileDialog
+                    onClicked: avatar.source = ""
 
-                FileDialog {
-                    currentFolder: Core.StandardPaths.standardLocations(Core.StandardPaths.PicturesLocation)[0]
-                    parentWindow: root.Window.window
-
-                    onAccepted: destroy()
-                    onRejected: destroy()
+                    ToolTip.text: text
+                    ToolTip.visible: hovered
+                    ToolTip.delay: Kirigami.Units.toolTipDelay
                 }
-            }
-        }
+                Component {
+                    id: openFileDialog
 
+                    FileDialog {
+                        currentFolder: Core.StandardPaths.standardLocations(Core.StandardPaths.PicturesLocation)[0]
+                        parentWindow: root.Window.window
 
-        QQC2.Label {
-            wrapMode: Text.Wrap
-            horizontalAlignment: Text.AlignHCenter
-            text: i18n("We need a few details to complete the setup.")
-
-            Layout.leftMargin: Kirigami.Units.gridUnit
-            Layout.rightMargin: Kirigami.Units.gridUnit
-            Layout.fillWidth: true
-        }
-
-        RowLayout {
-            Layout.alignment: Qt.AlignHCenter
-
-            QQC2.Label {
-                text: i18nc("@info", "This user will be an administrator.")
-            }
-
-            Kirigami.ContextualHelpButton {
-                toolTipText: xi18nc("@info", "This user will have administrative privileges on the system.<nl/><nl/>This means that they can change system settings, install software, and access all files on the system.<nl/><nl/>Choose a strong password for this user.")
-
-            }
-        }
-
-        FormCard.FormCard {
-            maximumWidth: root.cardWidth
-
-            FormCard.FormTextFieldDelegate {
-                id: fullNameField
-
-                label: i18nc("@label:textfield", "Full Name")
-                property string previousText: ''
-                onTextChanged: {
-                    if (usernameField.text.length === 0 || usernameField.text === previousText) {
-                        usernameField.text = previousText = fullNameField.text.toLowerCase().replace(/\s/g, '');
+                        onAccepted: destroy()
+                        onRejected: destroy()
                     }
                 }
+            }
 
-                Binding {
-                    target: AccountController
-                    property: 'fullName'
-                    value: fullNameField.text
+            // Padding around the text
+            Item {
+                Layout.topMargin: Kirigami.Units.gridUnit
+            }
+
+            Label {
+                wrapMode: Text.Wrap
+                horizontalAlignment: Text.AlignHCenter
+                text: i18n("We need a few details to complete the setup.")
+
+                Layout.leftMargin: Kirigami.Units.gridUnit
+                Layout.rightMargin: Kirigami.Units.gridUnit
+                Layout.fillWidth: true
+            }
+
+            RowLayout {
+                Layout.alignment: Qt.AlignHCenter
+
+                Label {
+                    text: i18nc("@info", "This user will be an administrator.")
+                }
+
+                Kirigami.ContextualHelpButton {
+                    toolTipText: xi18nc("@info", "This user will have administrative privileges on the system.<nl/><nl/>This means that they can change system settings, install software, and access all files on the system.<nl/><nl/>Choose a strong password for this user.")
                 }
             }
-        }
 
-        FormCard.FormCard {
-            maximumWidth: root.cardWidth
+            // Padding around the text
+            Item {
+                Layout.bottomMargin: Kirigami.Units.gridUnit
+            }
 
-            FormCard.FormTextFieldDelegate {
-                id: usernameField
-                label: i18nc("@label:textfield", "Username")
+            FormCard.FormCard {
+                maximumWidth: root.cardWidth
 
-                Binding {
-                    target: AccountController
-                    property: 'username'
-                    value: usernameField.text
+                FormCard.FormTextFieldDelegate {
+                    id: fullNameField
+
+                    label: i18nc("@label:textfield", "Full Name")
+                    property string previousText: ''
+                    onTextChanged: {
+                        if (usernameField.text.length === 0 || usernameField.text === previousText) {
+                            usernameField.text = previousText = fullNameField.text.toLowerCase().replace(/\s/g, '');
+                        }
+                    }
+
+                    Binding {
+                        target: AccountController
+                        property: 'fullName'
+                        value: fullNameField.text
+                    }
+                }
+            }
+
+            FormCard.FormCard {
+                maximumWidth: root.cardWidth
+
+                FormCard.FormTextFieldDelegate {
+                    id: usernameField
+                    label: i18nc("@label:textfield", "Username")
+
+                    Binding {
+                        target: AccountController
+                        property: 'username'
+                        value: usernameField.text
+                    }
+                }
+            }
+
+            FormCard.FormCard {
+                maximumWidth: root.cardWidth
+
+                FormCard.FormPasswordFieldDelegate {
+                    id: paswordField
+
+                    label: i18nc("@label:textfield", "Password")
+
+                    onTextChanged: {
+                        showPasswordQuality = text.length > 0;
+                    }
+                }
+            }
+
+            FormCard.FormCard {
+                maximumWidth: root.cardWidth
+
+                FormCard.FormPasswordFieldDelegate {
+                    id: repeatField
+                    label: i18nc("@label:textfield", "Confirm Password")
+                    status: Kirigami.MessageType.Error
+
+                    function setPasswordMatchError() {
+                        repeatField.statusMessage = i18nc("@info:status", "Passwords don’t match");
+                        repeatField.status = Kirigami.MessageType.Error;
+                    }
+
+                    function clearPasswordMatchError() {
+                        repeatField.statusMessage = '';
+                        repeatField.status = Kirigami.MessageType.Information;
+                    }
+
+                    // Timer delays validation while the user is typing.
+                    Timer {
+                        id: validationTimer
+                        interval: Kirigami.Units.humanMoment
+                        running: false
+                        repeat: false
+
+                        onTriggered: {
+                            if (repeatField.text.length > 0 && repeatField.text !== paswordField.text) {
+                                repeatField.setPasswordMatchError();
+                            } else {
+                                repeatField.clearPasswordMatchError();
+                            }
+                        }
+                    }
+
+                    // Reset timer when the user types.
+                    onTextChanged: {
+                        // If passwords match, immediately clear the error message.
+                        if (text.length > 0 && text === paswordField.text) {
+                            repeatField.clearPasswordMatchError();
+                        } else {
+                            validationTimer.restart();
+                        }
+                    }
+
+                    onEditingFinished: function () {
+                        if (text.length < 1 || text !== paswordField.text) {
+                            repeatField.setPasswordMatchError();
+                        } else {
+                            repeatField.clearPasswordMatchError();
+                            AccountController.password = text;
+                            return;
+                        }
+                    }
                 }
             }
         }

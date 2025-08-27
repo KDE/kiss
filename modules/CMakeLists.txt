@@ -17,9 +17,6 @@ kpackage_install_package(keyboard org.kde.initialsystemsetup.keyboard packages p
 add_subdirectory(language)
 kpackage_install_package(language org.kde.initialsystemsetup.language packages plasma)
 
-add_subdirectory(password)
-kpackage_install_package(password org.kde.initialsystemsetup.password packages plasma)
-
 add_subdirectory(prepare)
 kpackage_install_package(prepare org.kde.initialsystemsetup.prepare packages plasma)
 

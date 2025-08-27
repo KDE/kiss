@@ -1,5 +1,7 @@
 // SPDX-FileCopyrightText: 2017 Martin Kacej <m.kacej@atlas.sk>
 // SPDX-FileCopyrightText: 2023 Devin Lin <devin@kde.org>
+// SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
+//
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 import QtQuick
@@ -17,111 +19,116 @@ KissComponents.SetupModule {
 
     available: availableDevices.wirelessDeviceAvailable
 
-    contentItem: ColumnLayout {
-        spacing: Kirigami.Units.gridUnit
+    contentItem: ScrollView {
+        ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
+        contentWidth: -1
 
-        PlasmaNM.AvailableDevices {
-            id: availableDevices
-        }
+        ColumnLayout {
+            anchors.centerIn: parent
+            spacing: Kirigami.Units.gridUnit
 
-        PlasmaNM.Handler {
-            id: handler
-        }
+            PlasmaNM.AvailableDevices {
+                id: availableDevices
+            }
 
-        PlasmaNM.EnabledConnections {
-            id: enabledConnections
-        }
+            PlasmaNM.Handler {
+                id: handler
+            }
 
-        PlasmaNM.NetworkModel {
-            id: connectionModel
-        }
+            PlasmaNM.EnabledConnections {
+                id: enabledConnections
+            }
 
-        PlasmaNM.MobileProxyModel {
-            id: mobileProxyModel
-            sourceModel: connectionModel
-            showSavedMode: false
-        }
+            PlasmaNM.NetworkModel {
+                id: connectionModel
+            }
 
-        ConnectDialog {
-            id: connectionDialog
-            handler: handler
-            parent: root.contentItem.Overlay.overlay
-        }
+            PlasmaNM.MobileProxyModel {
+                id: mobileProxyModel
+                sourceModel: connectionModel
+                showSavedMode: false
+            }
 
-        Component.onCompleted: handler.requestScan()
+            ConnectDialog {
+                id: connectionDialog
+                handler: handler
+                parent: root.contentItem.Overlay.overlay
+            }
 
-        Timer {
-            id: scanTimer
-            interval: 10200
-            repeat: true
-            running: parent.visible
+            Component.onCompleted: handler.requestScan()
 
-            onTriggered: handler.requestScan()
-        }
+            Timer {
+                id: scanTimer
+                interval: 10200
+                repeat: true
+                running: parent.visible
 
-        Label {
-            Layout.leftMargin: Kirigami.Units.gridUnit
-            Layout.rightMargin: Kirigami.Units.gridUnit
-            Layout.alignment: Qt.AlignTop
-            Layout.fillWidth: true
+                onTriggered: handler.requestScan()
+            }
 
-            wrapMode: Text.Wrap
-            horizontalAlignment: Text.AlignHCenter
-            text: i18n("Connect to a WiFi network for network access.")
-        }
+            Label {
+                Layout.leftMargin: Kirigami.Units.gridUnit
+                Layout.rightMargin: Kirigami.Units.gridUnit
+                Layout.alignment: Qt.AlignTop
+                Layout.fillWidth: true
 
-        FormCard.FormCard {
-            id: savedCard
-            maximumWidth: root.cardWidth
-            visible: enabledConnections.wirelessEnabled && count > 0
+                wrapMode: Text.Wrap
+                horizontalAlignment: Text.AlignHCenter
+                text: i18n("Connect to a WiFi network for network access.")
+            }
 
-            // number of visible entries
-            property int count: 0
-            function updateCount() {
-                count = 0;
-                for (let i = 0; i < connectedRepeater.count; i++) {
-                    let item = connectedRepeater.itemAt(i);
-                    if (item && item.shouldDisplay) {
-                        count++;
+            FormCard.FormCard {
+                id: savedCard
+                maximumWidth: root.cardWidth
+                visible: enabledConnections.wirelessEnabled && count > 0
+
+                // number of visible entries
+                property int count: 0
+                function updateCount() {
+                    count = 0;
+                    for (let i = 0; i < connectedRepeater.count; i++) {
+                        let item = connectedRepeater.itemAt(i);
+                        if (item && item.shouldDisplay) {
+                            count++;
+                        }
+                    }
+                }
+
+                Repeater {
+                    id: connectedRepeater
+                    model: mobileProxyModel
+                    delegate: ConnectionItemDelegate {
+                        // connected or saved
+                        property bool shouldDisplay: (Uuid != "") || ConnectionState === PlasmaNM.Enums.Activated
+                        onShouldDisplayChanged: savedCard.updateCount()
+
+                        // separate property for visible since visible is false when the whole card is not visible
+                        visible: (Uuid != "") || ConnectionState === PlasmaNM.Enums.Activated
                     }
                 }
             }
 
-            Repeater {
-                id: connectedRepeater
-                model: mobileProxyModel
-                delegate: ConnectionItemDelegate {
-                    // connected or saved
-                    property bool shouldDisplay: (Uuid != "") || ConnectionState === PlasmaNM.Enums.Activated
-                    onShouldDisplayChanged: savedCard.updateCount()
+            FormCard.FormCard {
+                maximumWidth: root.cardWidth
+                visible: enabledConnections.wirelessEnabled
+                Layout.minimumWidth: Kirigami.Settings.isMobile ? null : Kirigami.Units.gridUnit * 25
 
-                    // separate property for visible since visible is false when the whole card is not visible
-                    visible: (Uuid != "") || ConnectionState === PlasmaNM.Enums.Activated
-                }
-            }
-        }
+                ScrollView {
+                    Layout.fillWidth: true
+                    Layout.minimumHeight: Kirigami.Units.gridUnit * 14
+                    Layout.maximumHeight: Kirigami.Units.gridUnit * 20
 
-        FormCard.FormCard {
-            Layout.fillHeight: true
-            maximumWidth: root.cardWidth
-            visible: enabledConnections.wirelessEnabled
+                    ListView {
+                        id: listView
 
-            ScrollView {
-                Layout.fillWidth: true
-                Layout.fillHeight: true
-                Layout.minimumHeight: Kirigami.Units.gridUnit * 14
-                Layout.maximumHeight: Kirigami.Units.gridUnit * 14
+                        clip: true
+                        model: mobileProxyModel
 
-                ListView {
-                    id: listView
-
-                    clip: true
-                    model: mobileProxyModel
-
-                    delegate: ConnectionItemDelegate {
-                        width: ListView.view.width
-                        height: visible ? implicitHeight : 0
-                        visible: !((Uuid != "") || ConnectionState === PlasmaNM.Enums.Activated)
+                        delegate: ConnectionItemDelegate {
+                            width: ListView.view.width
+                            height: visible ? implicitHeight : 0
+                            visible: !((Uuid != "") || ConnectionState === PlasmaNM.Enums.Activated)
+                        }
                     }
                 }
             }

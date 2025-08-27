@@ -1,4 +1,6 @@
 // SPDX-FileCopyrightText: 2023 Devin Lin <devin@kde.org>
+// SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
+//
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 import QtQuick
@@ -14,91 +16,84 @@ import org.kde.initialsystemsetup.components as KissComponents
 KissComponents.SetupModule {
     id: root
 
-    contentItem: ColumnLayout {
-        spacing: Kirigami.Units.gridUnit
+    contentItem: ScrollView {
+        ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
+        contentWidth: -1
 
-        Label {
-            Layout.leftMargin: Kirigami.Units.gridUnit
-            Layout.rightMargin: Kirigami.Units.gridUnit
-            Layout.alignment: Qt.AlignTop
-            Layout.fillWidth: true
+        ColumnLayout {
+            anchors.centerIn: parent
+            spacing: Kirigami.Units.gridUnit
 
-            wrapMode: Text.Wrap
-            horizontalAlignment: Text.AlignHCenter
-            text: i18n("Select your time zone and preferred time format.")
-        }
-
-        FormCard.FormCard {
-            maximumWidth: root.cardWidth
-
-            Layout.alignment: Qt.AlignTop | Qt.AlignHCenter
-            Layout.fillWidth: true
-
-            FormCard.FormSwitchDelegate {
+            Label {
+                Layout.leftMargin: Kirigami.Units.gridUnit
+                Layout.rightMargin: Kirigami.Units.gridUnit
+                Layout.alignment: Qt.AlignTop
                 Layout.fillWidth: true
-                text: i18n("24-Hour Format")
-                checked: Time.TimeUtil.is24HourTime
-                onCheckedChanged: {
-                    if (checked !== Time.TimeUtil.is24HourTime) {
-                        Time.TimeUtil.is24HourTime = checked;
+
+                wrapMode: Text.Wrap
+                horizontalAlignment: Text.AlignHCenter
+                text: i18n("Select your time zone and preferred time format.")
+            }
+
+            FormCard.FormCard {
+                maximumWidth: root.cardWidth
+
+                Layout.alignment: Qt.AlignTop | Qt.AlignHCenter
+                Layout.fillWidth: true
+
+                FormCard.FormSwitchDelegate {
+                    Layout.fillWidth: true
+                    text: i18n("24-Hour Format")
+                    checked: Time.TimeUtil.is24HourTime
+                    onCheckedChanged: {
+                        if (checked !== Time.TimeUtil.is24HourTime) {
+                            Time.TimeUtil.is24HourTime = checked;
+                        }
                     }
                 }
             }
-        }
 
-        FormCard.FormCard {
-            maximumWidth: root.cardWidth
-
-            Layout.fillHeight: true
-            Layout.alignment: Qt.AlignTop | Qt.AlignHCenter
-            Layout.fillWidth: true
-
-            Control {
-                Layout.fillWidth: true
-
-                leftPadding: Kirigami.Units.largeSpacing
-                rightPadding: Kirigami.Units.largeSpacing
-                topPadding: Kirigami.Units.largeSpacing
-                bottomPadding: Kirigami.Units.largeSpacing
-
-                contentItem: Kirigami.SearchField {
+            ColumnLayout {
+                Kirigami.SearchField {
                     id: searchField
+                    Layout.fillWidth: true
 
                     onTextChanged: {
                         Time.TimeUtil.timeZones.filterString = text;
                     }
                 }
-            }
 
-            Kirigami.Separator {
-                Layout.fillWidth: true
-            }
+                ScrollView {
+                    Layout.fillWidth: true
+                    Layout.minimumHeight: Kirigami.Units.gridUnit * 14
+                    Layout.maximumHeight: Kirigami.Units.gridUnit * 20
 
-            ScrollView {
-                Layout.fillWidth: true
-                Layout.fillHeight: true
-                Layout.minimumHeight: Kirigami.Units.gridUnit * 14
-                Layout.maximumHeight: Kirigami.Units.gridUnit * 14
+                    Component.onCompleted: {
+                        if (background) {
+                            background.visible = true;
+                        }
+                    }
 
-                ListView {
-                    id: listView
+                    ListView {
+                        id: listView
 
-                    clip: true
-                    model: Time.TimeUtil.timeZones
-                    currentIndex: -1 // ensure focus is not on the listview
+                        clip: true
+                        model: Time.TimeUtil.timeZones
+                        currentIndex: -1 // ensure focus is not on the listview
 
-                    bottomMargin: 2
+                        bottomMargin: 2
 
-                    delegate: FormCard.FormRadioDelegate {
-                        required property string timeZoneId
+                        delegate: FormCard.FormRadioDelegate {
+                            required property string timeZoneId
 
-                        width: ListView.view.width
-                        text: timeZoneId
-                        checked: Time.TimeUtil.currentTimeZone === timeZoneId
-                        onToggled: {
-                            if (checked && timeZoneId !== Time.TimeUtil.currentTimeZone) {
-                                Time.TimeUtil.currentTimeZone = timeZoneId;
-                                checked = Qt.binding(() => Time.TimeUtil.currentTimeZone === timeZoneId);
+                            width: ListView.view.width
+                            text: timeZoneId
+                            checked: Time.TimeUtil.currentTimeZone === timeZoneId
+                            onToggled: {
+                                if (checked && timeZoneId !== Time.TimeUtil.currentTimeZone) {
+                                    Time.TimeUtil.currentTimeZone = timeZoneId;
+                                    checked = Qt.binding(() => Time.TimeUtil.currentTimeZone === timeZoneId);
+                                }
                             }
                         }
                     }

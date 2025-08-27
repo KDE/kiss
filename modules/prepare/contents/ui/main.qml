@@ -1,4 +1,6 @@
 // SPDX-FileCopyrightText: 2023 Devin Lin <devin@kde.org>
+// SPDX-FileCopyrightText: 2025 Kristen McWilliam <kristen@kde.org>
+//
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 import QtQuick
@@ -27,7 +29,7 @@ KissComponents.SetupModule {
         contentWidth: -1
 
         ColumnLayout {
-            width: parent.width
+            anchors.centerIn: parent
             spacing: Kirigami.Units.gridUnit
 
             Label {
@@ -69,7 +71,7 @@ KissComponents.SetupModule {
                             from: 1
                             to: screenBrightness.maxBrightness
                             value: screenBrightness.brightness
-                            onMoved: screenBrightness.brightness = value;
+                            onMoved: screenBrightness.brightness = value
 
                             // HACK: for some reason, the slider initial value doesn't set without being done after the component completes loading
                             Timer {
@@ -120,24 +122,24 @@ KissComponents.SetupModule {
                     }
                     }
 
-                    // remove % suffix
-                    onCurrentValueChanged: Prepare.PrepareUtil.scaling = parseInt(currentValue.substring(0, currentValue.length - 1));
+                        // remove % suffix
+                        onCurrentValueChanged: Prepare.PrepareUtil.scaling = parseInt(currentValue.substring(0, currentValue.length - 1))
+                    }
                 }
-            }
 
-            FormCard.FormCard {
-                id: darkThemeCard
-                maximumWidth: root.cardWidth
+                FormCard.FormCard {
+                    id: darkThemeCard
+                    maximumWidth: root.cardWidth
 
-                Layout.alignment: Qt.AlignTop | Qt.AlignHCenter
+                    Layout.alignment: Qt.AlignTop | Qt.AlignHCenter
 
-                FormCard.FormSwitchDelegate {
-                    id: darkThemeSwitch
-                    text: i18n("Dark Theme")
-                    checked: Prepare.PrepareUtil.usingDarkTheme
-                    onCheckedChanged: {
-                        if (checked !== Prepare.PrepareUtil.usingDarkTheme) {
-                            Prepare.PrepareUtil.usingDarkTheme = checked;
+                    FormCard.FormSwitchDelegate {
+                        id: darkThemeSwitch
+                        text: i18n("Dark Theme")
+                        checked: Prepare.PrepareUtil.usingDarkTheme
+                        onCheckedChanged: {
+                            if (checked !== Prepare.PrepareUtil.usingDarkTheme) {
+                                Prepare.PrepareUtil.usingDarkTheme = checked;
                         }
                     }
                 }

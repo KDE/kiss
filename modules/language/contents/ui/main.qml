@@ -31,8 +31,9 @@ KissComponents.SetupModule {
         contentWidth: -1
 
         ColumnLayout {
-            width: parent.width
+            width: Kirigami.Units.gridUnit * 25
             spacing: Kirigami.Units.gridUnit
+            anchors.centerIn: parent
 
             Label {
                 Layout.leftMargin: Kirigami.Units.gridUnit
@@ -45,133 +46,99 @@ KissComponents.SetupModule {
                 text: i18n("Please select your preferred language.") // qmllint disable unqualified
             }
 
-            FormCard.FormCard {
-                id: languageCard
-                maximumWidth: root.cardWidth
+            ColumnLayout {
+                spacing: Kirigami.Units.smallSpacing
 
-                Layout.alignment: Qt.AlignTop | Qt.AlignHCenter
-                Layout.fillWidth: true
-
-                FormCard.AbstractFormDelegate {
-                    background: null
+                Kirigami.SearchField {
+                    id: searchField
                     Layout.fillWidth: true
+                    placeholderText: i18n("Search languages…") // qmllint disable unqualified
+                    property string filterString: ""
 
-                    contentItem: ColumnLayout {
-                        spacing: Kirigami.Units.smallSpacing
-                        width: parent.width
+                    onTextChanged: {
+                        filterString = text.toLowerCase();
+                    }
+                }
 
-                        Label {
-                            Layout.fillWidth: true
-                            text: i18n("Language") // qmllint disable unqualified
-                            wrapMode: Text.Wrap
-                            elide: Text.ElideRight
-                            horizontalAlignment: Text.AlignLeft
-                            font.bold: true
+                ScrollView {
+                    Layout.fillWidth: true
+                    Layout.fillHeight: true
+                    Layout.minimumHeight: Kirigami.Units.gridUnit * 14
+                    Layout.maximumHeight: Kirigami.Units.gridUnit * 18
+
+                    Component.onCompleted: {
+                        if (background) {
+                            background.visible = true;
+                        }
+                    }
+
+                    ListView {
+                        id: languageListView
+                        clip: true
+                        model: Language.LanguageUtil.availableLanguages
+
+                        // Filter languages based on search text
+                        function matchesFilter(language) {
+                            if (!searchField.filterString) {
+                                return true;
+                            }
+
+                            // Get language name from locale code
+                            const localeName = Qt.locale(language).nativeLanguageName;
+                            return language.toLowerCase().includes(searchField.filterString) || localeName.toLowerCase().includes(searchField.filterString);
                         }
 
-                        Control {
-                            Layout.fillWidth: true
+                        currentIndex: -1 // Ensure focus is not on the listview
 
-                            leftPadding: Kirigami.Units.largeSpacing
-                            rightPadding: Kirigami.Units.largeSpacing
-                            topPadding: Kirigami.Units.largeSpacing
-                            bottomPadding: Kirigami.Units.largeSpacing
+                        delegate: FormCard.FormRadioDelegate {
+                            required property string modelData
 
-                            contentItem: Kirigami.SearchField {
-                                id: searchField
-                                placeholderText: i18n("Search languages…") // qmllint disable unqualified
-                                property string filterString: ""
+                            // Show and hide based on filter
+                            readonly property bool matchesFilter: languageListView.matchesFilter(modelData)
+                            height: matchesFilter ? implicitHeight : 0
+                            visible: matchesFilter
 
-                                onTextChanged: {
-                                    filterString = text.toLowerCase();
+                            width: ListView.view.width
+
+                            // Get language name from locale code (e.g., "en_US" -> "English (United States)")
+                            text: {
+                                const locale = Qt.locale(modelData);
+                                const localeName = locale.nativeLanguageName;
+                                // First letter to uppercase
+                                return localeName.charAt(0).toUpperCase() + localeName.slice(1) + " (" + locale.nativeCountryName + ")";
+                            }
+
+                            checked: Language.LanguageUtil.currentLanguage === modelData
+
+                            onToggled: {
+                                if (checked && modelData !== Language.LanguageUtil.currentLanguage) {
+                                    Language.LanguageUtil.currentLanguage = modelData;
+                                    Language.LanguageUtil.applyLanguage();
+                                    checked = Qt.binding(() => Language.LanguageUtil.currentLanguage === modelData);
                                 }
                             }
                         }
 
-                        Kirigami.Separator {
-                            Layout.fillWidth: true
+                        function scrollToCurrentLanguage() {
+                            // Find the index of the current language
+                            const currentLang = Language.LanguageUtil.currentLanguage;
+                            for (let i = 0; i < model.length; i++) {
+                                if (model[i] === currentLang) {
+                                    // Position the view at the current language with some offset
+                                    positionViewAtIndex(i, ListView.Center);
+                                    break;
+                                }
+                            }
                         }
 
-                        ScrollView {
-                            Layout.fillWidth: true
-                            Layout.fillHeight: true
-                            Layout.minimumHeight: Kirigami.Units.gridUnit * 14
-                            Layout.maximumHeight: Kirigami.Units.gridUnit * 14
-
-                            ListView {
-                                id: languageListView
-                                clip: true
-                                model: Language.LanguageUtil.availableLanguages
-
-                                // Filter languages based on search text
-                                function matchesFilter(language) {
-                                    if (!searchField.filterString) {
-                                        return true;
-                                    }
-
-                                    // Get language name from locale code
-                                    const localeName = Qt.locale(language).nativeLanguageName;
-                                    return language.toLowerCase().includes(searchField.filterString) || localeName.toLowerCase().includes(searchField.filterString);
-                                }
-
-                                currentIndex: -1 // Ensure focus is not on the listview
-                                bottomMargin: 2
-
-                                delegate: FormCard.FormRadioDelegate {
-                                    required property string modelData
-
-                                    // Show and hide based on filter
-                                    readonly property bool matchesFilter: languageListView.matchesFilter(modelData)
-                                    height: matchesFilter ? implicitHeight : 0
-                                    visible: matchesFilter
-
-                                    width: ListView.view.width
-
-                                    // Get language name from locale code (e.g., "en_US" -> "English (United States)")
-                                    text: {
-                                        const locale = Qt.locale(modelData);
-                                        const localeName = locale.nativeLanguageName;
-                                        // First letter to uppercase
-                                        return localeName.charAt(0).toUpperCase() + localeName.slice(1) + " (" + locale.nativeCountryName + ")";
-                                    }
-
-                                    checked: Language.LanguageUtil.currentLanguage === modelData
-
-                                    onToggled: {
-                                        if (checked && modelData !== Language.LanguageUtil.currentLanguage) {
-                                            Language.LanguageUtil.currentLanguage = modelData;
-                                            Language.LanguageUtil.applyLanguage();
-                                            checked = Qt.binding(() => Language.LanguageUtil.currentLanguage === modelData);
-                                        }
-                                    }
-                                }
-
-                                function scrollToCurrentLanguage() {
-                                    // Find the index of the current language
-                                    const currentLang = Language.LanguageUtil.currentLanguage;
-                                    for (let i = 0; i < model.length; i++) {
-                                        if (model[i] === currentLang) {
-                                            // Position the view at the current language with some offset
-                                            positionViewAtIndex(i, ListView.Center);
-                                            break;
-                                        }
-                                    }
-                                }
-
-                                Component.onCompleted: {
-                                    // Scroll to the current language when the view is ready
-                                    if (Language.LanguageUtil.currentLanguage) {
-                                        scrollToCurrentLanguage();
-                                    }
-                                }
+                        Component.onCompleted: {
+                            // Scroll to the current language when the view is ready
+                            if (Language.LanguageUtil.currentLanguage) {
+                                scrollToCurrentLanguage();
                             }
                         }
                     }
                 }
-            }
-
-            Item {
-                Layout.fillHeight: true
             }
         }
     }
