@@ -287,7 +287,7 @@ msgstr ""
 #: src/auth/authhelper.cpp:44
 #, kde-format
 msgid "Failed to open file for writing: %1"
-msgstr ""
+msgstr "Nelze otevřít soubor pro zápis: %1"
 
 #: src/auth/authhelper.cpp:51
 #, kde-format
@@ -402,9 +402,3 @@ msgstr "Změna velikosti obrázku selhala: otevření dočasného souboru selhal
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "Změna velikosti obrázku selhala: zápis do dočasného souboru selhal"
-
-#~ msgid "Tokodon"
-#~ msgstr "Tokodon"
-
-#~ msgid "Next"
-#~ msgstr "Následující"
