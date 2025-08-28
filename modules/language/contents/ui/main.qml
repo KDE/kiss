@@ -79,7 +79,7 @@ KissComponents.SetupModule {
 
                             contentItem: Kirigami.SearchField {
                                 id: searchField
-                                placeholderText: i18n("Search languages...") // qmllint disable unqualified
+                                placeholderText: i18n("Search languages…") // qmllint disable unqualified
                                 property string filterString: ""
 
                                 onTextChanged: {

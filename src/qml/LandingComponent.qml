@@ -141,7 +141,7 @@ Item {
 
         Kirigami.Heading {
             Layout.fillWidth: true
-            text: i18n("Powered by<br/><b>%1</b>", InitialStartUtil.distroName)
+            text: i18nc("%1 is the distro name", "Powered by<br/><b>%1</b>", InitialStartUtil.distroName)
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.Wrap
 

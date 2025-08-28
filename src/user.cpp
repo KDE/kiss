@@ -122,7 +122,7 @@ void User::setFace(const QUrl &value)
             face.save(mFaceFile.get(), "PNG");
             mFace = QUrl("file://"_L1 + mFaceFile->fileName());
         } else {
-            mError = i18nc("@info", "Failed to crop image: %1", mFaceFile->errorString());
+            mError = i18nc("@info, %1 is an error message", "Failed to crop image: %1", mFaceFile->errorString());
         }
         mFaceCrop.reset(); // crop was applied. reset it to nullopt again so the next face gets its own crop (or none)
     }
@@ -303,7 +303,7 @@ void User::apply()
             switch (static_cast<UserApplyJob::Error>(job->error())) {
             case UserApplyJob::Error::PermissionDenied:
                 loadData(); // Reload the old data to avoid half transactions
-                Q_EMIT applyError(i18n("Could not get permission to save user %1", mName));
+                Q_EMIT applyError(i18nc("%1 is the username", "Could not get permission to save user %1", mName));
                 break;
             case UserApplyJob::Error::Failed:
             case UserApplyJob::Error::Unknown:

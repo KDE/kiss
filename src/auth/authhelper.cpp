@@ -32,7 +32,7 @@ ActionReply KISSAuthHelper::createnewuserautostarthook(const QVariantMap &args)
     // Ensure the autostart directory exists
     if (!autostartDir.exists() && !autostartDir.mkpath(QStringLiteral("."))) {
         reply = ActionReply::HelperErrorReply();
-        reply.setErrorDescription(i18n("Failed to create autostart directory: %1", autostartDirPath));
+        reply.setErrorDescription(i18nc("%1 is a directory path", "Failed to create autostart directory: %1", autostartDirPath));
         return reply;
     }
 
@@ -41,7 +41,7 @@ ActionReply KISSAuthHelper::createnewuserautostarthook(const QVariantMap &args)
     QFile desktopFile(desktopFilePath);
     if (!desktopFile.open(QIODevice::WriteOnly | QIODevice::Text)) {
         reply = ActionReply::HelperErrorReply();
-        reply.setErrorDescription(i18n("Failed to open file for writing: %1", desktopFilePath));
+        reply.setErrorDescription(i18nc("%1 is a file path", "Failed to open file for writing: %1", desktopFilePath));
         return reply;
     }
 
@@ -85,7 +85,7 @@ ActionReply KISSAuthHelper::disablesystemdunit(const QVariantMap &args)
 
     if (dbusReply.isError()) {
         actionReply = ActionReply::HelperErrorReply();
-        actionReply.setErrorDescription(i18n("Failed to disable systemd unit: %1", dbusReply.error().message()));
+        actionReply.setErrorDescription(i18nc("%1 is an error message", "Failed to disable systemd unit: %1", dbusReply.error().message()));
         return actionReply;
     }
 
@@ -105,7 +105,7 @@ ActionReply KISSAuthHelper::removeautologin(const QVariantMap &args)
 
     if (!QFile::remove(fileInfo.filePath())) {
         reply = ActionReply::HelperErrorReply();
-        reply.setErrorDescription(i18n("Failed to remove file %1", fileInfo.filePath()));
+        reply.setErrorDescription(i18nc("%1 is a file path", "Failed to remove file %1", fileInfo.filePath()));
         return reply;
     }
 
@@ -130,7 +130,7 @@ ActionReply KISSAuthHelper::setnewuserhomedirectoryownership(const QVariantMap &
 
     if (exitCode != 0) {
         reply = ActionReply::HelperErrorReply();
-        reply.setErrorDescription(i18n("Failed to set ownership for home directory %1: exit code %2", homePath, exitCode));
+        reply.setErrorDescription(i18nc("%1 is a directory path, %2 an exit code", "Failed to set ownership for home directory %1: exit code %2", homePath, exitCode));
         return reply;
     }
 
@@ -152,7 +152,7 @@ ActionReply KISSAuthHelper::setnewusertempautologin(const QVariantMap &args)
     QFile file(SDDM_AUTOLOGIN_CONFIG_PATH);
     if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
         reply = ActionReply::HelperErrorReply();
-        reply.setErrorDescription(i18n("Failed to open file %1 for writing.", SDDM_AUTOLOGIN_CONFIG_PATH));
+        reply.setErrorDescription(i18nc("%1 is a file path", "Failed to open file %1 for writing.", SDDM_AUTOLOGIN_CONFIG_PATH));
         return reply;
     }
 
