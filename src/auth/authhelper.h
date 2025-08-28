@@ -45,6 +45,16 @@ public Q_SLOTS:
     ActionReply removeautologin(const QVariantMap &args);
 
     /**
+     * Sets the color scheme for the newly created user.
+     *
+     * @param args The arguments passed to the action, which should include:
+     * - String: "username": The username of the newly created user.
+     * - String: "colorscheme": The color scheme to set for the new user, e.g. "BreezeLight" or "BreezeDark".
+     * @return An ActionReply indicating success or failure.
+     */
+    ActionReply setnewusercolorscheme(const QVariantMap &args);
+
+    /**
      * Sets the ownership of the new user's home directory to the newly created user.
      *
      * This is necessary to ensure that the new user has proper ownership of their home directory

@@ -8,7 +8,9 @@
 #include <QtDBus/QDBusPendingReply>
 
 #include <KAuth/HelperSupport>
+#include <KConfigGroup>
 #include <KLocalizedString>
+#include <KSharedConfig>
 
 #include "authhelper.h"
 #include "config-kiss.h"
@@ -108,6 +110,34 @@ ActionReply KISSAuthHelper::removeautologin(const QVariantMap &args)
         reply.setErrorDescription(i18nc("%1 is a file path", "Failed to remove file %1", fileInfo.filePath()));
         return reply;
     }
+
+    return ActionReply::SuccessReply();
+}
+
+ActionReply KISSAuthHelper::setnewusercolorscheme(const QVariantMap &args)
+{
+    ActionReply reply;
+
+    if (!args.contains(QStringLiteral("username")) || !args[QStringLiteral("username")].canConvert<QString>()) {
+        reply = ActionReply::HelperErrorReply();
+        reply.setErrorDescription(i18n("Username argument is missing or invalid."));
+        return reply;
+    }
+
+    if (!args.contains(QStringLiteral("colorscheme")) || !args[QStringLiteral("colorscheme")].canConvert<QString>()) {
+        reply = ActionReply::HelperErrorReply();
+        reply.setErrorDescription(i18n("Color scheme argument is missing or invalid."));
+        return reply;
+    }
+
+    QString username = args[QStringLiteral("username")].toString();
+    QString colorScheme = args[QStringLiteral("colorscheme")].toString();
+
+    // Set the color scheme for the new user
+    KSharedConfigPtr config = KSharedConfig::openConfig(QStringLiteral("/home/%1/.config/kdeglobals").arg(username));
+    KConfigGroup generalGroup = config->group(QStringLiteral("General"));
+    generalGroup.writeEntry(QStringLiteral("ColorScheme"), colorScheme);
+    config->sync();
 
     return ActionReply::SuccessReply();
 }

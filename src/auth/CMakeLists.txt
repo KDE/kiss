@@ -11,6 +11,7 @@ target_link_libraries(kde-initial-system-setup-auth-helper
     Qt::Core
     Qt::DBus
     KF6::AuthCore
+    KF6::ConfigGui
     KF6::I18n
 )
 
