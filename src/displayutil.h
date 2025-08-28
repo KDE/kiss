@@ -5,6 +5,7 @@
 #pragma once
 
 #include <QObject>
+#include <QWindow>
 
 /**
  * Utility class for managing display settings for new users.
@@ -16,7 +17,7 @@ class DisplayUtil : public QObject
 public:
     explicit DisplayUtil(QObject *parent = nullptr);
 
-    void setColorSchemeForNewUser(QString userName);
+    void setColorSchemeForNewUser(QWindow *window, QString userName);
 
 private:
     QString getColorScheme();

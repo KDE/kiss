@@ -23,7 +23,7 @@ QString DisplayUtil::getColorScheme()
     return colorScheme;
 }
 
-void DisplayUtil::setColorSchemeForNewUser(QString userName)
+void DisplayUtil::setColorSchemeForNewUser(QWindow *window, QString userName)
 {
     const QString colorScheme = getColorScheme();
     qCInfo(KDEInitialSystemSetup) << "Setting color scheme for new user:" << userName << "to" << colorScheme;
@@ -34,6 +34,7 @@ void DisplayUtil::setColorSchemeForNewUser(QString userName)
     }
 
     KAuth::Action action(QStringLiteral("org.kde.initialsystemsetup.setnewusercolorscheme"));
+    action.setParentWindow(window);
     action.setHelperId(QStringLiteral("org.kde.initialsystemsetup"));
     action.addArgument(QStringLiteral("username"), userName);
     action.addArgument(QStringLiteral("colorscheme"), colorScheme);
