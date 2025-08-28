@@ -191,45 +191,6 @@ Kirigami.Page {
             y: stepsComponent.translateY
         }
 
-        // heading for all the wizard steps
-        Label {
-            id: stepHeading
-            opacity: 0
-            color: "white"
-            horizontalAlignment: Text.AlignHCenter
-            font.pointSize: 18
-
-            anchors.left: parent.left
-            anchors.leftMargin: Kirigami.Units.gridUnit
-            anchors.right: parent.right
-            anchors.rightMargin: Kirigami.Units.gridUnit
-            anchors.bottom: Kirigami.Settings.isMobile ? parent.bottom : overlaySteps.top
-            anchors.bottomMargin: Kirigami.Settings.isMobile ? root.height * 0.7 + Kirigami.Units.gridUnit : Kirigami.Units.gridUnit
-
-            property string toText
-
-            function changeText(text: string): void {
-                toText = text;
-                toHidden.restart();
-            }
-
-            NumberAnimation on opacity {
-                id: toHidden
-                duration: 200
-                to: 0
-                onFinished: {
-                    stepHeading.text = stepHeading.toText;
-                    toShown.restart();
-                }
-            }
-
-            NumberAnimation on opacity {
-                id: toShown
-                duration: 200
-                to: 1
-            }
-        }
-
         Rectangle {
             id: overlaySteps
 
@@ -239,7 +200,7 @@ Kirigami.Page {
             color: Kirigami.Theme.backgroundColor
             clip: true
 
-            radius: Kirigami.Settings.isMobile ? 0 : Kirigami.Units.cornerRadius + 2
+            radius: Kirigami.Settings.isMobile ? 0 : Kirigami.Units.cornerRadius + 8
 
             anchors {
                 fill: Kirigami.Settings.isMobile ? parent : undefined
@@ -247,8 +208,8 @@ Kirigami.Page {
                 centerIn: Kirigami.Settings.isMobile ? undefined : parent
             }
 
-            width: Kirigami.Settings.isMobile ? undefined : Kirigami.Units.gridUnit * 30
-            height: Kirigami.Settings.isMobile ? undefined : container.implicitHeight
+            width: Kirigami.Settings.isMobile ? undefined : Math.min(parent.width * 0.4, Kirigami.Units.gridUnit * 60)
+            height: Kirigami.Settings.isMobile ? undefined : Math.min(parent.height * 0.5, Kirigami.Units.gridUnit * 45)
 
             Behavior on height {
                 NumberAnimation {
@@ -261,23 +222,53 @@ Kirigami.Page {
             ColumnLayout {
                 id: container
 
-                anchors {
-                    top: parent.top
-                    left: parent.left
-                    right: parent.right
-                    fill: Kirigami.Settings.isMobile ? parent : undefined
+                anchors.fill: parent
+
+                // heading for all the wizard steps
+                Label {
+                    id: stepHeading
+                    opacity: 0
+                    horizontalAlignment: Text.AlignHCenter
+                    font.pointSize: 18
+
+                    Layout.fillWidth: true
+                    Layout.alignment: Qt.AlignHCenter
+                    Layout.topMargin: Kirigami.Units.gridUnit
+
+                    property string toText
+
+                    function changeText(text: string): void {
+                        toText = text;
+                        toHidden.restart();
+                    }
+
+                    NumberAnimation on opacity {
+                        id: toHidden
+                        duration: 200
+                        to: 0
+                        onFinished: {
+                            stepHeading.text = stepHeading.toText;
+                            toShown.restart();
+                        }
+                    }
+
+                    NumberAnimation on opacity {
+                        id: toShown
+                        duration: 200
+                        to: 1
+                    }
                 }
 
                 Item {
                     Layout.fillWidth: true
-                    Layout.minimumHeight: stepsRepeater.itemAt(root.currentIndex)?.implicitHeight ?? 0
-                    Layout.fillHeight: Kirigami.Settings.isMobile
+                    Layout.fillHeight: true
 
                     // setup steps
                     Repeater {
                         id: stepsRepeater
                         model: pagesModel
                         delegate: PageDelegate {}
+                        Layout.alignment: Qt.AlignHCenter
                     }
                 }
 
@@ -286,6 +277,7 @@ Kirigami.Page {
                     id: stepFooter
 
                     Layout.fillWidth: true
+                    Layout.alignment: Qt.AlignBottom
 
                     Button {
                         Layout.alignment: Qt.AlignLeft
@@ -376,9 +368,10 @@ Kirigami.Page {
             value: Math.min(Kirigami.Units.gridUnit * 30, item.contentItem.width - Kirigami.Units.gridUnit * 2)
         }
 
-        leftPadding: 0
-        rightPadding: 0
         topPadding: Kirigami.Units.gridUnit
+        bottomPadding: Kirigami.Units.gridUnit
+        leftPadding: Kirigami.Units.gridUnit
+        rightPadding: Kirigami.Units.gridUnit
 
         transform: Translate {
             x: {
@@ -394,6 +387,7 @@ Kirigami.Page {
         }
 
         width: parent.width
+        height: parent.height
 
         function updateRootItems(): void {
             if (index === root.currentIndex) {
