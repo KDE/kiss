@@ -11,7 +11,6 @@ import org.kde.kirigami as Kirigami
 import org.kde.kirigamiaddons.formcard as FormCard
 import org.kde.initialsystemsetup.prepare.private as Prepare
 import org.kde.initialsystemsetup.components as KissComponents
-import org.kde.initialsystemsetup.screenbrightnessplugin as ScreenBrightness
 
 KissComponents.SetupModule {
     id: root
@@ -20,10 +19,6 @@ KissComponents.SetupModule {
 
     nextEnabled: true
 
-    ScreenBrightness.ScreenBrightnessUtil {
-        id: screenBrightness
-    }
-
     contentItem: ScrollView {
         ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
         contentWidth: -1
@@ -31,65 +26,6 @@ KissComponents.SetupModule {
         ColumnLayout {
             anchors.centerIn: parent
             spacing: Kirigami.Units.gridUnit
-
-            Label {
-                Layout.leftMargin: Kirigami.Units.gridUnit
-                Layout.rightMargin: Kirigami.Units.gridUnit
-                Layout.alignment: Qt.AlignTop
-                Layout.fillWidth: true
-
-                visible: screenBrightness.brightnessAvailable
-                wrapMode: Text.Wrap
-                horizontalAlignment: Text.AlignHCenter
-                text: i18n("Adjust the screen brightness to be comfortable for the installation process.")
-            }
-
-            FormCard.FormCard {
-                id: brightnessCard
-                visible: screenBrightness.brightnessAvailable
-                maximumWidth: root.cardWidth
-
-                onWidthChanged: console.log("width", this, width, root.cardWidth)
-
-                Layout.alignment: Qt.AlignTop | Qt.AlignHCenter
-
-                FormCard.AbstractFormDelegate {
-                    background: null
-
-                    contentItem: RowLayout {
-                        spacing: Kirigami.Units.gridUnit
-
-                        Kirigami.Icon {
-                            implicitWidth: Kirigami.Units.iconSizes.smallMedium
-                            implicitHeight: Kirigami.Units.iconSizes.smallMedium
-                            source: "brightness-low"
-                        }
-
-                        Slider {
-                            id: brightnessSlider
-                            Layout.fillWidth: true
-                            from: 1
-                            to: screenBrightness.maxBrightness
-                            value: screenBrightness.brightness
-                            onMoved: screenBrightness.brightness = value
-
-                            // HACK: for some reason, the slider initial value doesn't set without being done after the component completes loading
-                            Timer {
-                                interval: 0
-                                running: true
-                                repeat: false
-                                onTriggered: brightnessSlider.value = Qt.binding(() => screenBrightness.brightness)
-                            }
-                        }
-
-                        Kirigami.Icon {
-                            implicitWidth: Kirigami.Units.iconSizes.smallMedium
-                            implicitHeight: Kirigami.Units.iconSizes.smallMedium
-                            source: "brightness-high"
-                        }
-                    }
-                }
-            }
 
             Label {
                 Layout.leftMargin: Kirigami.Units.gridUnit

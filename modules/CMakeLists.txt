@@ -20,9 +20,6 @@ kpackage_install_package(language org.kde.initialsystemsetup.language packages p
 add_subdirectory(prepare)
 kpackage_install_package(prepare org.kde.initialsystemsetup.prepare packages plasma)
 
-add_subdirectory(screenbrightnessplugin)
-kpackage_install_package(screenbrightnessplugin org.kde.initialsystemsetup.screenbrightnessplugin packages plasma)
-
 add_subdirectory(time)
 kpackage_install_package(time org.kde.initialsystemsetup.time packages plasma)
 
