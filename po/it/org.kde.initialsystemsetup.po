@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-20 00:46+0000\n"
+"POT-Creation-Date: 2025-08-29 00:44+0000\n"
 "PO-Revision-Date: 2025-08-21 19:55+0200\n"
 "Last-Translator: Valter Mura <valtermura@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -27,30 +27,28 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "valtermura@gmail.com"
 
-#: modules/account/contents/ui/main.qml:63
+#: modules/account/contents/ui/main.qml:68
 #, kde-format
 msgid "Upload new avatar"
 msgstr "Carica nuovo avatar"
 
-#: modules/account/contents/ui/main.qml:80
+#: modules/account/contents/ui/main.qml:85
 #, kde-format
 msgid "Remove current avatar"
 msgstr "Rimuovi avatar attuale"
 
-#: modules/account/contents/ui/main.qml:106
+#: modules/account/contents/ui/main.qml:115
 #, kde-format
 msgid "We need a few details to complete the setup."
 msgstr "Sono necessari alcuni dettagli per completare la configurazione."
 
-#: modules/account/contents/ui/main.qml:117
-#: modules/password/contents/ui/main.qml:32
+#: modules/account/contents/ui/main.qml:126
 #, kde-format
 msgctxt "@info"
 msgid "This user will be an administrator."
 msgstr "Questo utente sarà un amministratore."
 
-#: modules/account/contents/ui/main.qml:121
-#: modules/password/contents/ui/main.qml:36
+#: modules/account/contents/ui/main.qml:130
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -63,17 +61,35 @@ msgstr ""
 "software e avere accesso a tutti i file nel sistema.<nl/><nl/>Scegli una "
 "password robusta per questo utente."
 
-#: modules/account/contents/ui/main.qml:132
+#: modules/account/contents/ui/main.qml:145
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Full Name"
 msgstr "Nome completo"
 
-#: modules/account/contents/ui/main.qml:153
+#: modules/account/contents/ui/main.qml:166
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Username"
 msgstr "Nome utente"
+
+#: modules/account/contents/ui/main.qml:182
+#, kde-format
+msgctxt "@label:textfield"
+msgid "Password"
+msgstr "Password"
+
+#: modules/account/contents/ui/main.qml:195
+#, kde-format
+msgctxt "@label:textfield"
+msgid "Confirm Password"
+msgstr "Conferma password"
+
+#: modules/account/contents/ui/main.qml:199
+#, kde-format
+msgctxt "@info:status"
+msgid "Passwords don’t match"
+msgstr "Le password non corrispondono"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:14
 #, kde-format
@@ -184,8 +200,10 @@ msgstr "Elimina"
 msgid "Add APN"
 msgstr "Aggiungi APN"
 
-#: modules/finished/contents/ui/main.qml:25
-#, kde-format
+#: modules/finished/contents/ui/main.qml:30
+#, fuzzy, kde-format
+#| msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+msgctxt "%1 is the distro name"
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr "Il tuo dispositivo è pronto. <br /><br />Divertiti con <b>%1</b>!"
 
@@ -194,40 +212,18 @@ msgstr "Il tuo dispositivo è pronto. <br /><br />Divertiti con <b>%1</b>!"
 msgid "Select your keyboard layout and language."
 msgstr "Seleziona la tua disposizione della tastiera e la lingua."
 
-#: modules/language/contents/ui/main.qml:45
+#: modules/language/contents/ui/main.qml:46
 #, kde-format
 msgid "Please select your preferred language."
 msgstr "Seleziona la tua lingua preferita."
 
-#: modules/language/contents/ui/main.qml:65
-#, kde-format
-msgid "Language"
-msgstr "Lingua"
-
-#: modules/language/contents/ui/main.qml:82
-#, kde-format
-msgid "Search languages..."
+#: modules/language/contents/ui/main.qml:55
+#, fuzzy, kde-format
+#| msgid "Search languages..."
+msgid "Search languages…"
 msgstr "Cerca lingue..."
 
-#: modules/password/contents/ui/main.qml:47
-#, kde-format
-msgctxt "@label:textfield"
-msgid "Password"
-msgstr "Password"
-
-#: modules/password/contents/ui/main.qml:58
-#, kde-format
-msgctxt "@label:textfield"
-msgid "Confirm Password"
-msgstr "Conferma password"
-
-#: modules/password/contents/ui/main.qml:62
-#, kde-format
-msgctxt "@info:status"
-msgid "Passwords don’t match"
-msgstr "Le password non corrispondono"
-
-#: modules/prepare/contents/ui/main.qml:42
+#: modules/prepare/contents/ui/main.qml:44
 #, kde-format
 msgid ""
 "Adjust the screen brightness to be comfortable for the installation process."
@@ -235,27 +231,27 @@ msgstr ""
 "Regola la luminosità dello schermo in modo da risultare comoda per il "
 "processo di installazione."
 
-#: modules/prepare/contents/ui/main.qml:100
+#: modules/prepare/contents/ui/main.qml:102
 #, kde-format
 msgid "Adjust the size of elements on the screen."
 msgstr "Regola la dimensione degli elementi sullo schermo."
 
-#: modules/prepare/contents/ui/main.qml:111
+#: modules/prepare/contents/ui/main.qml:113
 #, kde-format
 msgid "Display Scaling"
 msgstr "Risoluzione di visualizzazione"
 
-#: modules/prepare/contents/ui/main.qml:136
+#: modules/prepare/contents/ui/main.qml:138
 #, kde-format
 msgid "Dark Theme"
 msgstr "Tema scuro"
 
-#: modules/time/contents/ui/main.qml:28
+#: modules/time/contents/ui/main.qml:35
 #, kde-format
 msgid "Select your time zone and preferred time format."
 msgstr "Seleziona il tuo fuso orario e il formato ora preferito."
 
-#: modules/time/contents/ui/main.qml:39
+#: modules/time/contents/ui/main.qml:46
 #, kde-format
 msgid "24-Hour Format"
 msgstr "Formato 24 ore"
@@ -265,7 +261,7 @@ msgstr "Formato 24 ore"
 msgid "Connect to"
 msgstr "Connetti a"
 
-#: modules/wifi/contents/ui/main.qml:70
+#: modules/wifi/contents/ui/main.qml:77
 #, kde-format
 msgid "Connect to a WiFi network for network access."
 msgstr "Connettiti a una rete WiFi per l'accesso di rete."
@@ -287,12 +283,16 @@ msgid "Username argument is missing or invalid."
 msgstr "Argomento nome utente mancante o non valido."
 
 #: src/auth/authhelper.cpp:35
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to create autostart directory: %1"
+msgctxt "%1 is a directory path"
 msgid "Failed to create autostart directory: %1"
 msgstr "Creazione della cartella di avvio automatico non riuscita: %1"
 
 #: src/auth/authhelper.cpp:44
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to open file for writing: %1"
+msgctxt "%1 is a file path"
 msgid "Failed to open file for writing: %1"
 msgstr "Apertura del file in scrittura non riuscito: %1"
 
@@ -304,24 +304,32 @@ msgstr ""
 "iniziale."
 
 #: src/auth/authhelper.cpp:88
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to disable systemd unit: %1"
+msgctxt "%1 is an error message"
 msgid "Failed to disable systemd unit: %1"
 msgstr "Disattivazione dell'unità di systemd non riuscita: %1"
 
 #: src/auth/authhelper.cpp:108
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to remove file %1"
+msgctxt "%1 is a file path"
 msgid "Failed to remove file %1"
 msgstr "Rimozione del file %1 non riuscita"
 
 #: src/auth/authhelper.cpp:133
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to set ownership for home directory %1: exit code %2"
+msgctxt "%1 is a directory path, %2 an exit code"
 msgid "Failed to set ownership for home directory %1: exit code %2"
 msgstr ""
 "Impostazione della proprietà per la cartella home %1 non riuscita: codice di "
 "uscita %2"
 
 #: src/auth/authhelper.cpp:155
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to open file %1 for writing."
+msgctxt "%1 is a file path"
 msgid "Failed to open file %1 for writing."
 msgstr "Apertura del file %1 in scrittura non riuscito."
 
@@ -362,7 +370,9 @@ msgid "Begin Setup"
 msgstr "Inizia la configurazione"
 
 #: src/qml/LandingComponent.qml:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Powered by<br/><b>%1</b>"
+msgctxt "%1 is the distro name"
 msgid "Powered by<br/><b>%1</b>"
 msgstr "Fornito da<br/><b>%1</b>"
 
@@ -371,32 +381,36 @@ msgstr "Fornito da<br/><b>%1</b>"
 msgid "Initial Start"
 msgstr "Avvio iniziale"
 
-#: src/qml/Wizard.qml:300
+#: src/qml/Wizard.qml:292
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
 msgstr "Indietro"
 
-#: src/qml/Wizard.qml:323
+#: src/qml/Wizard.qml:315
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Successivo"
 
-#: src/qml/Wizard.qml:342
+#: src/qml/Wizard.qml:334
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"
 msgstr "Fine"
 
 #: src/user.cpp:125
-#, kde-format
-msgctxt "@info"
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Failed to crop image: %1"
+msgctxt "@info, %1 is an error message"
 msgid "Failed to crop image: %1"
 msgstr "Ritaglio dell'immagine non riuscito: %1"
 
 #: src/user.cpp:306
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Could not get permission to save user %1"
+msgctxt "%1 is the username"
 msgid "Could not get permission to save user %1"
 msgstr "Impossibile ottenere i permessi per salvare l'utente %1"
 
@@ -418,6 +432,9 @@ msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "Ridimensionamento immagine non riuscito: impossibile scrivere nel file "
 "temporaneo"
+
+#~ msgid "Language"
+#~ msgstr "Lingua"
 
 #~ msgid "Be careful not to lose your password."
 #~ msgstr "Fai attenzione a non perdere la password."

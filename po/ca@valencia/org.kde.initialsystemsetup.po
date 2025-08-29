@@ -4,20 +4,21 @@
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # SPDX-FileCopyrightText: 2024, 2025 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2025 Antoni Bella Pérez <antonibella5@yahoo.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-20 00:46+0000\n"
-"PO-Revision-Date: 2025-08-19 10:22+0200\n"
-"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
+"POT-Creation-Date: 2025-08-29 00:44+0000\n"
+"PO-Revision-Date: 2025-08-28 14:02+0200\n"
+"Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.08.0\n"
+"X-Generator: Lokalize 24.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -29,30 +30,28 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "txemaq@gmail.com"
 
-#: modules/account/contents/ui/main.qml:63
+#: modules/account/contents/ui/main.qml:68
 #, kde-format
 msgid "Upload new avatar"
 msgstr "Puja un avatar nou"
 
-#: modules/account/contents/ui/main.qml:80
+#: modules/account/contents/ui/main.qml:85
 #, kde-format
 msgid "Remove current avatar"
 msgstr "Elimina l'avatar actual"
 
-#: modules/account/contents/ui/main.qml:106
+#: modules/account/contents/ui/main.qml:115
 #, kde-format
 msgid "We need a few details to complete the setup."
 msgstr "Cal alguns detalls per a completar la configuració."
 
-#: modules/account/contents/ui/main.qml:117
-#: modules/password/contents/ui/main.qml:32
+#: modules/account/contents/ui/main.qml:126
 #, kde-format
 msgctxt "@info"
 msgid "This user will be an administrator."
 msgstr "Este usuari serà un administrador."
 
-#: modules/account/contents/ui/main.qml:121
-#: modules/password/contents/ui/main.qml:36
+#: modules/account/contents/ui/main.qml:130
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -65,17 +64,35 @@ msgstr ""
 "i accedir a tots els fitxers del sistema.<nl/><nl/>Trieu una contrasenya "
 "forta per a este usuari."
 
-#: modules/account/contents/ui/main.qml:132
+#: modules/account/contents/ui/main.qml:145
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Full Name"
 msgstr "Nom complet"
 
-#: modules/account/contents/ui/main.qml:153
+#: modules/account/contents/ui/main.qml:166
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Username"
 msgstr "Nom d'usuari"
+
+#: modules/account/contents/ui/main.qml:182
+#, kde-format
+msgctxt "@label:textfield"
+msgid "Password"
+msgstr "Contrasenya"
+
+#: modules/account/contents/ui/main.qml:195
+#, kde-format
+msgctxt "@label:textfield"
+msgid "Confirm Password"
+msgstr "Confirmeu la contrasenya"
+
+#: modules/account/contents/ui/main.qml:199
+#, kde-format
+msgctxt "@info:status"
+msgid "Passwords don’t match"
+msgstr "Les contrasenyes no coincidixen"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:14
 #, kde-format
@@ -186,8 +203,10 @@ msgstr "Suprimix"
 msgid "Add APN"
 msgstr "Afig un APN"
 
-#: modules/finished/contents/ui/main.qml:25
-#, kde-format
+#: modules/finished/contents/ui/main.qml:30
+#, fuzzy, kde-format
+#| msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+msgctxt "%1 is the distro name"
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr "El dispositiu ara està llest. <br /><br />Gaudiu <b>%1</b>!"
 
@@ -196,40 +215,18 @@ msgstr "El dispositiu ara està llest. <br /><br />Gaudiu <b>%1</b>!"
 msgid "Select your keyboard layout and language."
 msgstr "Trieu la disposició del teclat i l'idioma."
 
-#: modules/language/contents/ui/main.qml:45
+#: modules/language/contents/ui/main.qml:46
 #, kde-format
 msgid "Please select your preferred language."
 msgstr "Trieu l'idioma preferit."
 
-#: modules/language/contents/ui/main.qml:65
-#, kde-format
-msgid "Language"
-msgstr "Idioma"
-
-#: modules/language/contents/ui/main.qml:82
-#, kde-format
-msgid "Search languages..."
+#: modules/language/contents/ui/main.qml:55
+#, fuzzy, kde-format
+#| msgid "Search languages..."
+msgid "Search languages…"
 msgstr "Busca idiomes…"
 
-#: modules/password/contents/ui/main.qml:47
-#, kde-format
-msgctxt "@label:textfield"
-msgid "Password"
-msgstr "Contrasenya"
-
-#: modules/password/contents/ui/main.qml:58
-#, kde-format
-msgctxt "@label:textfield"
-msgid "Confirm Password"
-msgstr "Confirmeu la contrasenya"
-
-#: modules/password/contents/ui/main.qml:62
-#, kde-format
-msgctxt "@info:status"
-msgid "Passwords don’t match"
-msgstr "Les contrasenyes no coincidixen"
-
-#: modules/prepare/contents/ui/main.qml:42
+#: modules/prepare/contents/ui/main.qml:44
 #, kde-format
 msgid ""
 "Adjust the screen brightness to be comfortable for the installation process."
@@ -237,27 +234,27 @@ msgstr ""
 "Ajusteu la brillantor de la pantalla perquè siga confortable durant el "
 "procés d'instal·lació."
 
-#: modules/prepare/contents/ui/main.qml:100
+#: modules/prepare/contents/ui/main.qml:102
 #, kde-format
 msgid "Adjust the size of elements on the screen."
 msgstr "Ajusteu la mida dels elements a la pantalla."
 
-#: modules/prepare/contents/ui/main.qml:111
+#: modules/prepare/contents/ui/main.qml:113
 #, kde-format
 msgid "Display Scaling"
 msgstr "Escalat de la pantalla"
 
-#: modules/prepare/contents/ui/main.qml:136
+#: modules/prepare/contents/ui/main.qml:138
 #, kde-format
 msgid "Dark Theme"
 msgstr "Tema fosc"
 
-#: modules/time/contents/ui/main.qml:28
+#: modules/time/contents/ui/main.qml:35
 #, kde-format
 msgid "Select your time zone and preferred time format."
-msgstr "Trieu la zona horària i el format de l'hora."
+msgstr "Trieu el fus horari i el format de l'hora."
 
-#: modules/time/contents/ui/main.qml:39
+#: modules/time/contents/ui/main.qml:46
 #, kde-format
 msgid "24-Hour Format"
 msgstr "Format de 24 hores"
@@ -267,7 +264,7 @@ msgstr "Format de 24 hores"
 msgid "Connect to"
 msgstr "Connecta a"
 
-#: modules/wifi/contents/ui/main.qml:70
+#: modules/wifi/contents/ui/main.qml:77
 #, kde-format
 msgid "Connect to a WiFi network for network access."
 msgstr "Connecta amb una xarxa Wi-Fi per a l'accés a la xarxa."
@@ -289,12 +286,16 @@ msgid "Username argument is missing or invalid."
 msgstr "Falta l'argument de nom d'usuari o no és vàlid."
 
 #: src/auth/authhelper.cpp:35
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to create autostart directory: %1"
+msgctxt "%1 is a directory path"
 msgid "Failed to create autostart directory: %1"
 msgstr "No s'ha pogut crear el directori d'inici automàtic: %1"
 
 #: src/auth/authhelper.cpp:44
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to open file for writing: %1"
+msgctxt "%1 is a file path"
 msgid "Failed to open file for writing: %1"
 msgstr "No s'ha pogut obrir el fitxer per a escriptura: %1"
 
@@ -305,24 +306,32 @@ msgstr ""
 "No s'ha pogut trobar el camí cap a l'executable de configuració inicial."
 
 #: src/auth/authhelper.cpp:88
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to disable systemd unit: %1"
+msgctxt "%1 is an error message"
 msgid "Failed to disable systemd unit: %1"
 msgstr "No s'ha pogut desactivar la unitat de «systemd»: %1"
 
 #: src/auth/authhelper.cpp:108
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to remove file %1"
+msgctxt "%1 is a file path"
 msgid "Failed to remove file %1"
 msgstr "No s'ha pogut eliminar el fitxer %1"
 
 #: src/auth/authhelper.cpp:133
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to set ownership for home directory %1: exit code %2"
+msgctxt "%1 is a directory path, %2 an exit code"
 msgid "Failed to set ownership for home directory %1: exit code %2"
 msgstr ""
 "No s'ha pogut establir la propietat del directori inicial %1: codi d'eixida "
 "%2"
 
 #: src/auth/authhelper.cpp:155
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to open file %1 for writing."
+msgctxt "%1 is a file path"
 msgid "Failed to open file %1 for writing."
 msgstr "No s'ha pogut obrir el fitxer %1 per a escriptura."
 
@@ -345,7 +354,8 @@ msgstr "© 2021-2024 Comunitat KDE"
 #, kde-format
 msgid "Remove the initial setup autologin configuration."
 msgstr ""
-"Elimina la configuració d'inici de sessió automàtic de configuració inicial."
+"Elimina la configuració d'inici de sessió automàtic de la configuració "
+"inicial."
 
 #: src/qml/LandingComponent.qml:103
 #, kde-format
@@ -363,7 +373,9 @@ msgid "Begin Setup"
 msgstr "Comença la configuració"
 
 #: src/qml/LandingComponent.qml:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Powered by<br/><b>%1</b>"
+msgctxt "%1 is the distro name"
 msgid "Powered by<br/><b>%1</b>"
 msgstr "Funciona amb<br/><b>%1</b>"
 
@@ -372,32 +384,36 @@ msgstr "Funciona amb<br/><b>%1</b>"
 msgid "Initial Start"
 msgstr "Començament inicial"
 
-#: src/qml/Wizard.qml:300
+#: src/qml/Wizard.qml:292
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
 msgstr "Arrere"
 
-#: src/qml/Wizard.qml:323
+#: src/qml/Wizard.qml:315
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Següent"
 
-#: src/qml/Wizard.qml:342
+#: src/qml/Wizard.qml:334
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"
 msgstr "Finalitza"
 
 #: src/user.cpp:125
-#, kde-format
-msgctxt "@info"
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Failed to crop image: %1"
+msgctxt "@info, %1 is an error message"
 msgid "Failed to crop image: %1"
 msgstr "No s'ha pogut escapçar la imatge: %1"
 
 #: src/user.cpp:306
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Could not get permission to save user %1"
+msgctxt "%1 is the username"
 msgid "Could not get permission to save user %1"
 msgstr "No s'ha pogut obtindre el permís per a guardar l'usuari %1"
 
@@ -419,3 +435,6 @@ msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "No s'ha pogut redimensionar la imatge: ha fallat en escriure en el fitxer "
 "temporal"
+
+#~ msgid "Language"
+#~ msgstr "Idioma"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-20 00:46+0000\n"
+"POT-Creation-Date: 2025-08-29 00:44+0000\n"
 "PO-Revision-Date: 2025-08-20 16:03+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -30,30 +30,28 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "xalba@ni.eus"
 
-#: modules/account/contents/ui/main.qml:63
+#: modules/account/contents/ui/main.qml:68
 #, kde-format
 msgid "Upload new avatar"
 msgstr "Zama-igo abatar berria"
 
-#: modules/account/contents/ui/main.qml:80
+#: modules/account/contents/ui/main.qml:85
 #, kde-format
 msgid "Remove current avatar"
 msgstr "Kendu uneko abatarra"
 
-#: modules/account/contents/ui/main.qml:106
+#: modules/account/contents/ui/main.qml:115
 #, kde-format
 msgid "We need a few details to complete the setup."
 msgstr "Ezarpena osatzeko xehetasun batzuk behar ditugu."
 
-#: modules/account/contents/ui/main.qml:117
-#: modules/password/contents/ui/main.qml:32
+#: modules/account/contents/ui/main.qml:126
 #, kde-format
 msgctxt "@info"
 msgid "This user will be an administrator."
 msgstr "Erabiltzaile hau administratzailea izango da."
 
-#: modules/account/contents/ui/main.qml:121
-#: modules/password/contents/ui/main.qml:36
+#: modules/account/contents/ui/main.qml:130
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -66,17 +64,35 @@ msgstr ""
 "eta sistemako fitxategi guztiak atzi ditzakeela.<nl/><nl/>Erabiltzaile "
 "honentzako pasahitz sendo bat aukeratu."
 
-#: modules/account/contents/ui/main.qml:132
+#: modules/account/contents/ui/main.qml:145
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Full Name"
 msgstr "Izen osoa"
 
-#: modules/account/contents/ui/main.qml:153
+#: modules/account/contents/ui/main.qml:166
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Username"
 msgstr "Erabiltzaile-izena"
+
+#: modules/account/contents/ui/main.qml:182
+#, kde-format
+msgctxt "@label:textfield"
+msgid "Password"
+msgstr "Pasahitza"
+
+#: modules/account/contents/ui/main.qml:195
+#, kde-format
+msgctxt "@label:textfield"
+msgid "Confirm Password"
+msgstr "Baieztatu pasahitza"
+
+#: modules/account/contents/ui/main.qml:199
+#, kde-format
+msgctxt "@info:status"
+msgid "Passwords don’t match"
+msgstr "Pasahitzak ez datoz bat"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:14
 #, kde-format
@@ -187,8 +203,10 @@ msgstr "Ezabatu"
 msgid "Add APN"
 msgstr "Gehitu APNa"
 
-#: modules/finished/contents/ui/main.qml:25
-#, kde-format
+#: modules/finished/contents/ui/main.qml:30
+#, fuzzy, kde-format
+#| msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+msgctxt "%1 is the distro name"
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr "Zure gailua orain prest dago. <br /><br />Gozatu <b>%1</b>!"
 
@@ -197,66 +215,44 @@ msgstr "Zure gailua orain prest dago. <br /><br />Gozatu <b>%1</b>!"
 msgid "Select your keyboard layout and language."
 msgstr "Hautatu zure teklatuaren antolaera eta hizkuntza."
 
-#: modules/language/contents/ui/main.qml:45
+#: modules/language/contents/ui/main.qml:46
 #, kde-format
 msgid "Please select your preferred language."
 msgstr "Mesedez, hautatu zure hizkuntza hobetsia."
 
-#: modules/language/contents/ui/main.qml:65
-#, kde-format
-msgid "Language"
-msgstr "Hizkuntza"
-
-#: modules/language/contents/ui/main.qml:82
-#, kde-format
-msgid "Search languages..."
+#: modules/language/contents/ui/main.qml:55
+#, fuzzy, kde-format
+#| msgid "Search languages..."
+msgid "Search languages…"
 msgstr "Bilatu hizkuntza..."
 
-#: modules/password/contents/ui/main.qml:47
-#, kde-format
-msgctxt "@label:textfield"
-msgid "Password"
-msgstr "Pasahitza"
-
-#: modules/password/contents/ui/main.qml:58
-#, kde-format
-msgctxt "@label:textfield"
-msgid "Confirm Password"
-msgstr "Baieztatu pasahitza"
-
-#: modules/password/contents/ui/main.qml:62
-#, kde-format
-msgctxt "@info:status"
-msgid "Passwords don’t match"
-msgstr "Pasahitzak ez datoz bat"
-
-#: modules/prepare/contents/ui/main.qml:42
+#: modules/prepare/contents/ui/main.qml:44
 #, kde-format
 msgid ""
 "Adjust the screen brightness to be comfortable for the installation process."
 msgstr "Doitu pantailaren distira, instalazio-prozesurako erosoa izan dadin."
 
-#: modules/prepare/contents/ui/main.qml:100
+#: modules/prepare/contents/ui/main.qml:102
 #, kde-format
 msgid "Adjust the size of elements on the screen."
 msgstr "Doitu pantailako elementuen neurria."
 
-#: modules/prepare/contents/ui/main.qml:111
+#: modules/prepare/contents/ui/main.qml:113
 #, kde-format
 msgid "Display Scaling"
 msgstr "Pantailaren eskalatzea"
 
-#: modules/prepare/contents/ui/main.qml:136
+#: modules/prepare/contents/ui/main.qml:138
 #, kde-format
 msgid "Dark Theme"
 msgstr "Gai iluna"
 
-#: modules/time/contents/ui/main.qml:28
+#: modules/time/contents/ui/main.qml:35
 #, kde-format
 msgid "Select your time zone and preferred time format."
 msgstr "Hautatu zure ordu-eremua eta gogoko ordu-formatua."
 
-#: modules/time/contents/ui/main.qml:39
+#: modules/time/contents/ui/main.qml:46
 #, kde-format
 msgid "24-Hour Format"
 msgstr "24 orduko formatua"
@@ -266,7 +262,7 @@ msgstr "24 orduko formatua"
 msgid "Connect to"
 msgstr "Konektatu hona"
 
-#: modules/wifi/contents/ui/main.qml:70
+#: modules/wifi/contents/ui/main.qml:77
 #, kde-format
 msgid "Connect to a WiFi network for network access."
 msgstr "Konektatu Wi-Fi sare batera sareko sarbiderako."
@@ -288,12 +284,16 @@ msgid "Username argument is missing or invalid."
 msgstr "Erabiltzaile-izena argumentua falta da edo baliogabea da."
 
 #: src/auth/authhelper.cpp:35
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to create autostart directory: %1"
+msgctxt "%1 is a directory path"
 msgid "Failed to create autostart directory: %1"
 msgstr "Abio automatikorako direktorioa sortzea huts egin du: %1"
 
 #: src/auth/authhelper.cpp:44
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to open file for writing: %1"
+msgctxt "%1 is a file path"
 msgid "Failed to open file for writing: %1"
 msgstr "Fitxategia idazteko irekitzea huts egin du: %1"
 
@@ -304,23 +304,31 @@ msgstr ""
 "Hasierako ezarpenenaren exekutagarriaren bide-izena aurkitzea huts egin du."
 
 #: src/auth/authhelper.cpp:88
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to disable systemd unit: %1"
+msgctxt "%1 is an error message"
 msgid "Failed to disable systemd unit: %1"
 msgstr "systemd unitatea ezgaitzea huts egin du: %1"
 
 #: src/auth/authhelper.cpp:108
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to remove file %1"
+msgctxt "%1 is a file path"
 msgid "Failed to remove file %1"
 msgstr "%1 fitxategia kentzea huts egin du"
 
 #: src/auth/authhelper.cpp:133
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to set ownership for home directory %1: exit code %2"
+msgctxt "%1 is a directory path, %2 an exit code"
 msgid "Failed to set ownership for home directory %1: exit code %2"
 msgstr ""
 "%1 etxeko direktorioaren jabetza ezartzea huts egin du: irteera-kodea %2"
 
 #: src/auth/authhelper.cpp:155
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to open file %1 for writing."
+msgctxt "%1 is a file path"
 msgid "Failed to open file %1 for writing."
 msgstr "%1 fitxategia idazteko irekitzea huts egin du."
 
@@ -361,7 +369,9 @@ msgid "Begin Setup"
 msgstr "Hasi ezartzen"
 
 #: src/qml/LandingComponent.qml:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Powered by<br/><b>%1</b>"
+msgctxt "%1 is the distro name"
 msgid "Powered by<br/><b>%1</b>"
 msgstr "<br/><b>%1</b>(e)k bultzatua"
 
@@ -370,32 +380,36 @@ msgstr "<br/><b>%1</b>(e)k bultzatua"
 msgid "Initial Start"
 msgstr "Hasierako abioa"
 
-#: src/qml/Wizard.qml:300
+#: src/qml/Wizard.qml:292
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
 msgstr "Atzera"
 
-#: src/qml/Wizard.qml:323
+#: src/qml/Wizard.qml:315
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
 msgstr "Hurrengoa"
 
-#: src/qml/Wizard.qml:342
+#: src/qml/Wizard.qml:334
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"
 msgstr "Bukatu"
 
 #: src/user.cpp:125
-#, kde-format
-msgctxt "@info"
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Failed to crop image: %1"
+msgctxt "@info, %1 is an error message"
 msgid "Failed to crop image: %1"
 msgstr "Irudia moztea huts egin du: %1"
 
 #: src/user.cpp:306
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Could not get permission to save user %1"
+msgctxt "%1 is the username"
 msgid "Could not get permission to save user %1"
 msgstr "Ezin izan da %1 erabiltzailea gordetzeko baimenik lortu"
 
@@ -417,6 +431,9 @@ msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "Irudiaren neurria aldatzea huts egin du: aldi baterako fitxategian gordetzea "
 "huts egin du"
+
+#~ msgid "Language"
+#~ msgstr "Hizkuntza"
 
 #~ msgid "Be careful not to lose your password."
 #~ msgstr "Kontuz ibili pasahitza ez galtzeko."
