@@ -18,6 +18,7 @@ public:
     explicit DisplayUtil(QObject *parent = nullptr);
 
     void setColorSchemeForNewUser(QWindow *window, QString userName);
+    void setScalingForNewUser(QWindow *window, QString userName);
 
 private:
     QString getColorScheme();
