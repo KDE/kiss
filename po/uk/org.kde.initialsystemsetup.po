@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-08-29 00:44+0000\n"
-"PO-Revision-Date: 2025-08-19 18:05+0300\n"
+"PO-Revision-Date: 2025-08-29 19:27+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -202,8 +202,7 @@ msgid "Add APN"
 msgstr "Додати APN"
 
 #: modules/finished/contents/ui/main.qml:30
-#, fuzzy, kde-format
-#| msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+#, kde-format
 msgctxt "%1 is the distro name"
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr "Тепер ваш пристрій готовий. <br /><br />Насолоджуйтеся <b>%1</b>!"
@@ -219,8 +218,7 @@ msgid "Please select your preferred language."
 msgstr "Будь ласка, виберіть пріоритетну мову."
 
 #: modules/language/contents/ui/main.qml:55
-#, fuzzy, kde-format
-#| msgid "Search languages..."
+#, kde-format
 msgid "Search languages…"
 msgstr "Шукати мови…"
 
@@ -284,15 +282,13 @@ msgid "Username argument is missing or invalid."
 msgstr "Пропущено аргумент імені користувача або аргумент є некоректним."
 
 #: src/auth/authhelper.cpp:35
-#, fuzzy, kde-format
-#| msgid "Failed to create autostart directory: %1"
+#, kde-format
 msgctxt "%1 is a directory path"
 msgid "Failed to create autostart directory: %1"
 msgstr "Не вдалося створити каталог автоматичного запуску: %1"
 
 #: src/auth/authhelper.cpp:44
-#, fuzzy, kde-format
-#| msgid "Failed to open file for writing: %1"
+#, kde-format
 msgctxt "%1 is a file path"
 msgid "Failed to open file for writing: %1"
 msgstr "Не вдалося відкрити файл для записування: %1"
@@ -304,30 +300,26 @@ msgstr ""
 "Не вдалося знайти шлях до виконуваних файлів початкового налаштовування."
 
 #: src/auth/authhelper.cpp:88
-#, fuzzy, kde-format
-#| msgid "Failed to disable systemd unit: %1"
+#, kde-format
 msgctxt "%1 is an error message"
 msgid "Failed to disable systemd unit: %1"
 msgstr "Не вдалося вимкнути модуль systemd: %1"
 
 #: src/auth/authhelper.cpp:108
-#, fuzzy, kde-format
-#| msgid "Failed to remove file %1"
+#, kde-format
 msgctxt "%1 is a file path"
 msgid "Failed to remove file %1"
 msgstr "Не вдалося вилучити файл %1"
 
 #: src/auth/authhelper.cpp:133
-#, fuzzy, kde-format
-#| msgid "Failed to set ownership for home directory %1: exit code %2"
+#, kde-format
 msgctxt "%1 is a directory path, %2 an exit code"
 msgid "Failed to set ownership for home directory %1: exit code %2"
 msgstr ""
 "Не вдалося встановити права власності на домашній каталог %1: код виходу %2"
 
 #: src/auth/authhelper.cpp:155
-#, fuzzy, kde-format
-#| msgid "Failed to open file %1 for writing."
+#, kde-format
 msgctxt "%1 is a file path"
 msgid "Failed to open file %1 for writing."
 msgstr "Не вдалося відкрити файл %1 для записування."
@@ -369,8 +361,7 @@ msgid "Begin Setup"
 msgstr "Почати налаштовування"
 
 #: src/qml/LandingComponent.qml:144
-#, fuzzy, kde-format
-#| msgid "Powered by<br/><b>%1</b>"
+#, kde-format
 msgctxt "%1 is the distro name"
 msgid "Powered by<br/><b>%1</b>"
 msgstr "На основі<br/><b>%1</b>"
@@ -399,16 +390,13 @@ msgid "Finish"
 msgstr "Завершити"
 
 #: src/user.cpp:125
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
+#, kde-format
 msgctxt "@info, %1 is an error message"
 msgid "Failed to crop image: %1"
 msgstr "Не вдалося обрізати зображення: %1"
 
 #: src/user.cpp:306
-#, fuzzy, kde-format
-#| msgid "Could not get permission to save user %1"
+#, kde-format
 msgctxt "%1 is the username"
 msgid "Could not get permission to save user %1"
 msgstr ""

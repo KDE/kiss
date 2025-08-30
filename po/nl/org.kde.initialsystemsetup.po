@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-08-29 00:44+0000\n"
-"PO-Revision-Date: 2025-08-19 11:35+0200\n"
+"PO-Revision-Date: 2025-08-29 18:58+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -201,8 +201,7 @@ msgid "Add APN"
 msgstr "APN toevoegen"
 
 #: modules/finished/contents/ui/main.qml:30
-#, fuzzy, kde-format
-#| msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+#, kde-format
 msgctxt "%1 is the distro name"
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr "Uw apparaat is nu gereed. <br /><br />Veel plezier <b>%1</b>!"
@@ -218,10 +217,9 @@ msgid "Please select your preferred language."
 msgstr "Selecteer uw taal met voorkeur."
 
 #: modules/language/contents/ui/main.qml:55
-#, fuzzy, kde-format
-#| msgid "Search languages..."
+#, kde-format
 msgid "Search languages…"
-msgstr "Doorzoek talen..."
+msgstr "Doorzoek talen…"
 
 #: modules/prepare/contents/ui/main.qml:44
 #, kde-format
@@ -282,15 +280,13 @@ msgid "Username argument is missing or invalid."
 msgstr "Argument gebruikersnaam ontbreekt of is niet geldig."
 
 #: src/auth/authhelper.cpp:35
-#, fuzzy, kde-format
-#| msgid "Failed to create autostart directory: %1"
+#, kde-format
 msgctxt "%1 is a directory path"
 msgid "Failed to create autostart directory: %1"
 msgstr "Aanmaken van map voor automatisch starten is mislukt: %1"
 
 #: src/auth/authhelper.cpp:44
-#, fuzzy, kde-format
-#| msgid "Failed to open file for writing: %1"
+#, kde-format
 msgctxt "%1 is a file path"
 msgid "Failed to open file for writing: %1"
 msgstr "Bestand openen voor schrijven is mislukt: %1"
@@ -301,29 +297,25 @@ msgid "Failed to find the initial setup executable path."
 msgstr "Vinden van het uitvoerbare pad voor initiële opzet is mislukt."
 
 #: src/auth/authhelper.cpp:88
-#, fuzzy, kde-format
-#| msgid "Failed to disable systemd unit: %1"
+#, kde-format
 msgctxt "%1 is an error message"
 msgid "Failed to disable systemd unit: %1"
 msgstr "Systemd-eenheid uitschakelen is mislukt: %1"
 
 #: src/auth/authhelper.cpp:108
-#, fuzzy, kde-format
-#| msgid "Failed to remove file %1"
+#, kde-format
 msgctxt "%1 is a file path"
 msgid "Failed to remove file %1"
 msgstr "Bestand %1 verwijderen is mislukt"
 
 #: src/auth/authhelper.cpp:133
-#, fuzzy, kde-format
-#| msgid "Failed to set ownership for home directory %1: exit code %2"
+#, kde-format
 msgctxt "%1 is a directory path, %2 an exit code"
 msgid "Failed to set ownership for home directory %1: exit code %2"
 msgstr "Eigendom van persoonlijke map %1 instellen is mislukt: exitcode %2"
 
 #: src/auth/authhelper.cpp:155
-#, fuzzy, kde-format
-#| msgid "Failed to open file %1 for writing."
+#, kde-format
 msgctxt "%1 is a file path"
 msgid "Failed to open file %1 for writing."
 msgstr "Bestand %1 openen voor schrijven is mislukt."
@@ -365,8 +357,7 @@ msgid "Begin Setup"
 msgstr "Begin met opzetten"
 
 #: src/qml/LandingComponent.qml:144
-#, fuzzy, kde-format
-#| msgid "Powered by<br/><b>%1</b>"
+#, kde-format
 msgctxt "%1 is the distro name"
 msgid "Powered by<br/><b>%1</b>"
 msgstr "Aangedreven door<br/><b>%1</b>"
@@ -395,16 +386,13 @@ msgid "Finish"
 msgstr "Beëindigen"
 
 #: src/user.cpp:125
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
+#, kde-format
 msgctxt "@info, %1 is an error message"
 msgid "Failed to crop image: %1"
 msgstr "Afbeelding bijsnijden is mislukt: %1"
 
 #: src/user.cpp:306
-#, fuzzy, kde-format
-#| msgid "Could not get permission to save user %1"
+#, kde-format
 msgctxt "%1 is the username"
 msgid "Could not get permission to save user %1"
 msgstr "Kon geen toegangsrechten verkrijgen om gebruiker %1 op te slaan"

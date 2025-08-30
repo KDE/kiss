@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: org.kde.initialsystemsetup\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-08-29 00:44+0000\n"
-"PO-Revision-Date: 2025-08-19 12:39+0100\n"
+"PO-Revision-Date: 2025-08-29 03:54+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -203,8 +203,7 @@ msgid "Add APN"
 msgstr "Añadir APN"
 
 #: modules/finished/contents/ui/main.qml:30
-#, fuzzy, kde-format
-#| msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+#, kde-format
 msgctxt "%1 is the distro name"
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr "El dispositivo ya está preparado.<br /><br />¡Disfrute de <b>%1</b>!"
@@ -220,8 +219,7 @@ msgid "Please select your preferred language."
 msgstr "Seleccione su idioma preferido."
 
 #: modules/language/contents/ui/main.qml:55
-#, fuzzy, kde-format
-#| msgid "Search languages..."
+#, kde-format
 msgid "Search languages…"
 msgstr "Buscar idiomas…"
 
@@ -285,15 +283,13 @@ msgid "Username argument is missing or invalid."
 msgstr "Falta el nombre de usuario o no es válido."
 
 #: src/auth/authhelper.cpp:35
-#, fuzzy, kde-format
-#| msgid "Failed to create autostart directory: %1"
+#, kde-format
 msgctxt "%1 is a directory path"
 msgid "Failed to create autostart directory: %1"
 msgstr "No se ha podido crear el directorio de inicio automático: %1"
 
 #: src/auth/authhelper.cpp:44
-#, fuzzy, kde-format
-#| msgid "Failed to open file for writing: %1"
+#, kde-format
 msgctxt "%1 is a file path"
 msgid "Failed to open file for writing: %1"
 msgstr "Ha se ha podido abrir el archivo para escritura: %1"
@@ -305,22 +301,19 @@ msgstr ""
 "No se ha podido encontrar la ruta del ejecutable de configuración inicial."
 
 #: src/auth/authhelper.cpp:88
-#, fuzzy, kde-format
-#| msgid "Failed to disable systemd unit: %1"
+#, kde-format
 msgctxt "%1 is an error message"
 msgid "Failed to disable systemd unit: %1"
 msgstr "No se ha podido desactivar la unidad systemd: %1"
 
 #: src/auth/authhelper.cpp:108
-#, fuzzy, kde-format
-#| msgid "Failed to remove file %1"
+#, kde-format
 msgctxt "%1 is a file path"
 msgid "Failed to remove file %1"
 msgstr "No se ha podido eliminar el archivo: %1"
 
 #: src/auth/authhelper.cpp:133
-#, fuzzy, kde-format
-#| msgid "Failed to set ownership for home directory %1: exit code %2"
+#, kde-format
 msgctxt "%1 is a directory path, %2 an exit code"
 msgid "Failed to set ownership for home directory %1: exit code %2"
 msgstr ""
@@ -328,8 +321,7 @@ msgstr ""
 "salida %2"
 
 #: src/auth/authhelper.cpp:155
-#, fuzzy, kde-format
-#| msgid "Failed to open file %1 for writing."
+#, kde-format
 msgctxt "%1 is a file path"
 msgid "Failed to open file %1 for writing."
 msgstr "Ha fallado la apertura del archivo %1 para escritura."
@@ -370,8 +362,7 @@ msgid "Begin Setup"
 msgstr "Empezar la configuración"
 
 #: src/qml/LandingComponent.qml:144
-#, fuzzy, kde-format
-#| msgid "Powered by<br/><b>%1</b>"
+#, kde-format
 msgctxt "%1 is the distro name"
 msgid "Powered by<br/><b>%1</b>"
 msgstr "Funciona con<br/><b>%1</b>"
@@ -400,16 +391,13 @@ msgid "Finish"
 msgstr "Terminar"
 
 #: src/user.cpp:125
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
+#, kde-format
 msgctxt "@info, %1 is an error message"
 msgid "Failed to crop image: %1"
 msgstr "No se ha podido recortar la imagen: %1"
 
 #: src/user.cpp:306
-#, fuzzy, kde-format
-#| msgid "Could not get permission to save user %1"
+#, kde-format
 msgctxt "%1 is the username"
 msgid "Could not get permission to save user %1"
 msgstr "No se ha podido obtener permiso para guardar el usuario %1"
@@ -432,6 +420,3 @@ msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "Ha ocurrido un error al cambiar el tamaño de la imagen: ha fallado la "
 "escritura en el archivo temporal"
-
-#~ msgid "Language"
-#~ msgstr "Idioma"

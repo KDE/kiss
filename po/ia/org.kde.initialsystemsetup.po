@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-08-29 00:44+0000\n"
-"PO-Revision-Date: 2025-05-27 11:44+0200\n"
+"PO-Revision-Date: 2025-08-29 12:40+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -358,7 +358,7 @@ msgstr "Benvenite a <br/><b>Plasma Mobile</b>"
 #: src/qml/LandingComponent.qml:103
 #, kde-format
 msgid "Welcome to<br/><b>Plasma Desktop</b>"
-msgstr "Benvenite a <br><b>Plasma Desktop (Scriptorio de Plasma)</b>"
+msgstr "Benvenite a <br/><b>Plasma Desktop (Scriptorio de Plasma)</b>"
 
 #: src/qml/LandingComponent.qml:117
 #, kde-format
