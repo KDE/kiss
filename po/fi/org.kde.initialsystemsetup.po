@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-08-29 00:44+0000\n"
-"PO-Revision-Date: 2025-07-07 21:00+0300\n"
+"PO-Revision-Date: 2025-07-31 09:37+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -46,7 +46,7 @@ msgstr "Asetuksen viimeistelyyn tarvitaan vielä vähän tietoja."
 #, kde-format
 msgctxt "@info"
 msgid "This user will be an administrator."
-msgstr ""
+msgstr "Tästä käyttäjästä tulee pääkäyttäjä."
 
 #: modules/account/contents/ui/main.qml:130
 #, kde-kuit-format
@@ -56,6 +56,10 @@ msgid ""
 "means that they can change system settings, install software, and access all "
 "files on the system.<nl/><nl/>Choose a strong password for this user."
 msgstr ""
+"Tälle käyttäjälle annetaan järjestelmän pääkäyttäjäoikeudet.<nl/><nl/>Tämä "
+"tarkoittaa, että hän voi muuttaa järjestelmän asetuksia, asentaa ohjelmia ja "
+"päästä järjestelmän kaikkiin  tiedostoihin.<nl/>Valitse tälle käyttäjälle "
+"vahva salasana."
 
 #: modules/account/contents/ui/main.qml:145
 #, kde-format

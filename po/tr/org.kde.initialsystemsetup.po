@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-08-29 00:44+0000\n"
-"PO-Revision-Date: 2025-08-19 16:50+0300\n"
+"PO-Revision-Date: 2025-08-30 18:40+0300\n"
 "Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.04.3\n"
+"X-Generator: Lokalize 25.08.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -201,11 +201,12 @@ msgid "Add APN"
 msgstr "APN Ekle"
 
 #: modules/finished/contents/ui/main.qml:30
-#, fuzzy, kde-format
-#| msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+#, kde-format
 msgctxt "%1 is the distro name"
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
-msgstr "Aygıtınız artık hazır.<br /><br /><b>%1</b> ortamının keyfini çıkarın!"
+msgstr ""
+"Aygıtınız artık hazır.<br /><br /><b>%1</b> işletim sisteminin keyfini "
+"çıkarın!"
 
 #: modules/keyboard/contents/ui/main.qml:164
 #, kde-format
@@ -218,8 +219,7 @@ msgid "Please select your preferred language."
 msgstr "Lütfen tercih ettiğiniz dili seçin."
 
 #: modules/language/contents/ui/main.qml:55
-#, fuzzy, kde-format
-#| msgid "Search languages..."
+#, kde-format
 msgid "Search languages…"
 msgstr "Dilleri ara…"
 
@@ -283,15 +283,13 @@ msgid "Username argument is missing or invalid."
 msgstr "Kullanıcı adı argümanı eksik veya geçersiz."
 
 #: src/auth/authhelper.cpp:35
-#, fuzzy, kde-format
-#| msgid "Failed to create autostart directory: %1"
+#, kde-format
 msgctxt "%1 is a directory path"
 msgid "Failed to create autostart directory: %1"
 msgstr "Kendiliğinden başlatma dizini oluşturulamadı: %1"
 
 #: src/auth/authhelper.cpp:44
-#, fuzzy, kde-format
-#| msgid "Failed to open file for writing: %1"
+#, kde-format
 msgctxt "%1 is a file path"
 msgid "Failed to open file for writing: %1"
 msgstr "Dosya, yazmak için açılamadı: %1"
@@ -302,29 +300,25 @@ msgid "Failed to find the initial setup executable path."
 msgstr "Başlangıç ayarı için yürütülebilir yolu bulunamadı."
 
 #: src/auth/authhelper.cpp:88
-#, fuzzy, kde-format
-#| msgid "Failed to disable systemd unit: %1"
+#, kde-format
 msgctxt "%1 is an error message"
 msgid "Failed to disable systemd unit: %1"
 msgstr "systemd birimi devre dışı bırakılamadı: %1"
 
 #: src/auth/authhelper.cpp:108
-#, fuzzy, kde-format
-#| msgid "Failed to remove file %1"
+#, kde-format
 msgctxt "%1 is a file path"
 msgid "Failed to remove file %1"
 msgstr "Dosya kaldırılamadı: %1"
 
 #: src/auth/authhelper.cpp:133
-#, fuzzy, kde-format
-#| msgid "Failed to set ownership for home directory %1: exit code %2"
+#, kde-format
 msgctxt "%1 is a directory path, %2 an exit code"
 msgid "Failed to set ownership for home directory %1: exit code %2"
-msgstr "Ana klasör %1 için sahiplik ayarlanamadı: Çıkış kodu %2"
+msgstr "Ana klasör %1 için sahiplik ayarlanamadı: Çıkış kodu: %2"
 
 #: src/auth/authhelper.cpp:155
-#, fuzzy, kde-format
-#| msgid "Failed to open file %1 for writing."
+#, kde-format
 msgctxt "%1 is a file path"
 msgid "Failed to open file %1 for writing."
 msgstr "%1 dosyası, yazmak için açılamadı."
@@ -365,8 +359,7 @@ msgid "Begin Setup"
 msgstr "Kurulumu Başlat"
 
 #: src/qml/LandingComponent.qml:144
-#, fuzzy, kde-format
-#| msgid "Powered by<br/><b>%1</b>"
+#, kde-format
 msgctxt "%1 is the distro name"
 msgid "Powered by<br/><b>%1</b>"
 msgstr "<b>%1</b><br/>tarafından sağlanır"
@@ -395,16 +388,13 @@ msgid "Finish"
 msgstr "Bitir"
 
 #: src/user.cpp:125
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
+#, kde-format
 msgctxt "@info, %1 is an error message"
 msgid "Failed to crop image: %1"
 msgstr "Görsel kırpılamadı: %1"
 
 #: src/user.cpp:306
-#, fuzzy, kde-format
-#| msgid "Could not get permission to save user %1"
+#, kde-format
 msgctxt "%1 is the username"
 msgid "Could not get permission to save user %1"
 msgstr "%1 kullanıcısını kaydetmek için izin alınamadı"
