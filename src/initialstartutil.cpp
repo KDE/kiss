@@ -6,6 +6,7 @@
 #include <KAuth/Action>
 #include <KAuth/ExecuteJob>
 
+#include "displayutil.h"
 #include "initialstartutil.h"
 #include "initialsystemsetup_debug.h"
 
@@ -32,10 +33,13 @@ void InitialStartUtil::finish()
         return;
     }
 
-    // TODO: Set new user preferences re: dark mode, keyboard layout, etc.
-
     setNewUserTempAutologin();
     createNewUserAutostartHook();
+
+    // TODO: Set new user preferences re: dark mode, keyboard layout, etc.
+    DisplayUtil displayUtil;
+    displayUtil.setGlobalThemeForNewUser(m_accountController->username());
+
     setNewUserHomeDirectoryOwnership();
     logOut();
 }

@@ -36,6 +36,8 @@ add_executable(kde-initial-system-setup
     controller.h
     accountcontroller.cpp
     accountcontroller.h
+    displayutil.cpp
+    displayutil.h
     user.cpp
     user.h
     initialstartutil.cpp
