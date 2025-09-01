@@ -3,17 +3,21 @@
 //
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <KAuth/Action>
-#include <KAuth/ExecuteJob>
-
 #include "displayutil.h"
 #include "initialstartutil.h"
 #include "initialsystemsetup_debug.h"
+
+#include <KAuth/Action>
+#include <KAuth/ExecuteJob>
+
+#include <QApplication>
 
 InitialStartUtil::InitialStartUtil(QObject *parent)
     : QObject{parent}
     , m_accountController(AccountController::instance())
 {
+    QList<QWindow*> topLevelWindows = QGuiApplication::topLevelWindows();
+    m_window = topLevelWindows.isEmpty() ? nullptr : topLevelWindows.first();
     disableKISSAutologin();
 }
 
@@ -44,7 +48,7 @@ void InitialStartUtil::finish()
 
     // TODO: Set new user preferences re: dark mode, keyboard layout, etc.
     DisplayUtil displayUtil;
-    displayUtil.setGlobalThemeForNewUser(m_accountController->username());
+    displayUtil.setGlobalThemeForNewUser(m_window, m_accountController->username());
 
     setNewUserHomeDirectoryOwnership();
     logOut();
@@ -55,6 +59,7 @@ void InitialStartUtil::disableKISSAutologin()
     qCInfo(KDEInitialSystemSetup) << "Removing autologin configuration for KISS user.";
 
     KAuth::Action action(QStringLiteral("org.kde.initialsystemsetup.removeautologin"));
+    action.setParentWindow(m_window);
     action.setHelperId(QStringLiteral("org.kde.initialsystemsetup"));
     KAuth::ExecuteJob *job = action.execute();
 
@@ -70,6 +75,7 @@ void InitialStartUtil::disableSystemdUnit()
     qCInfo(KDEInitialSystemSetup) << "Disabling systemd unit for initial system setup.";
 
     KAuth::Action action(QStringLiteral("org.kde.initialsystemsetup.disablesystemdunit"));
+    action.setParentWindow(m_window);
     action.setHelperId(QStringLiteral("org.kde.initialsystemsetup"));
     KAuth::ExecuteJob *job = action.execute();
 
@@ -91,6 +97,7 @@ void InitialStartUtil::setNewUserHomeDirectoryOwnership()
     qCInfo(KDEInitialSystemSetup) << "Setting ownership of new user's home directory to:" << username;
 
     KAuth::Action action(QStringLiteral("org.kde.initialsystemsetup.setnewuserhomedirectoryownership"));
+    action.setParentWindow(m_window);
     action.setHelperId(QStringLiteral("org.kde.initialsystemsetup"));
     action.setArguments({{QStringLiteral("username"), username}});
     KAuth::ExecuteJob *job = action.execute();
@@ -108,6 +115,7 @@ void InitialStartUtil::setNewUserTempAutologin()
     qCInfo(KDEInitialSystemSetup) << "Setting temporary autologin for new user:" << username;
 
     KAuth::Action action(QStringLiteral("org.kde.initialsystemsetup.setnewusertempautologin"));
+    action.setParentWindow(m_window);
     action.setHelperId(QStringLiteral("org.kde.initialsystemsetup"));
     action.setArguments({{QStringLiteral("username"), username}});
     KAuth::ExecuteJob *job = action.execute();
@@ -125,6 +133,7 @@ void InitialStartUtil::createNewUserAutostartHook()
     qCInfo(KDEInitialSystemSetup) << "Creating autostart hook for new user:" << username;
 
     KAuth::Action action(QStringLiteral("org.kde.initialsystemsetup.createnewuserautostarthook"));
+    action.setParentWindow(m_window);
     action.setHelperId(QStringLiteral("org.kde.initialsystemsetup"));
     action.setArguments({{QStringLiteral("username"), username}});
     KAuth::ExecuteJob *job = action.execute();
