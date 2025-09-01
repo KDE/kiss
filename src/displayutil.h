@@ -18,6 +18,7 @@ public:
     explicit DisplayUtil(QObject *parent = nullptr);
 
     void setGlobalThemeForNewUser(QWindow *window, QString userName);
+    void setScalingForNewUser(QWindow *window, QString userName);
 
 private:
     QString getGlobalTheme();

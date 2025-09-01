@@ -54,6 +54,20 @@ public Q_SLOTS:
     ActionReply setnewuserglobaltheme(const QVariantMap &args);
 
     /**
+     * Sets the display scaling for the newly created user.
+     *
+     * Copies a few configurations files containing the chosen display scaling options
+     * from the KISS user to the new user, namely:
+     * - ~/.config/kwinrc
+     * - ~/.config/kwinoutputconfig.json
+     *
+     * @param args The arguments passed to the action, which should include:
+     * - String: "username": The username of the newly created user.
+     * @return An ActionReply indicating success or failure.
+     */
+    ActionReply setnewuserdisplayscaling(const QVariantMap &args);
+
+    /**
      * Sets the ownership of the new user's home directory to the newly created user.
      *
      * This is necessary to ensure that the new user has proper ownership of their home directory
