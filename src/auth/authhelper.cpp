@@ -8,7 +8,9 @@
 #include <QtDBus/QDBusPendingReply>
 
 #include <KAuth/HelperSupport>
+#include <KConfigGroup>
 #include <KLocalizedString>
+#include <KSharedConfig>
 
 #include "authhelper.h"
 #include "config-kiss.h"
@@ -106,6 +108,31 @@ ActionReply KISSAuthHelper::removeautologin(const QVariantMap &args)
     if (!QFile::remove(fileInfo.filePath())) {
         reply = ActionReply::HelperErrorReply();
         reply.setErrorDescription(i18nc("%1 is a file path", "Failed to remove file %1", fileInfo.filePath()));
+        return reply;
+    }
+
+    return ActionReply::SuccessReply();
+}
+
+ActionReply KISSAuthHelper::setnewuserglobaltheme(const QVariantMap &args)
+{
+    ActionReply reply;
+
+    if (!args.contains(QStringLiteral("username")) || !args[QStringLiteral("username")].canConvert<QString>()) {
+        reply = ActionReply::HelperErrorReply();
+        reply.setErrorDescription(i18n("Username argument is missing or invalid."));
+        return reply;
+    }
+
+    QString username = args[QStringLiteral("username")].toString();
+
+    // Set the global theme for the new user
+    QString sourceFilePath = QStringLiteral("/run/kde-initial-system-setup/.config/kdeglobals");
+    QString destFilePath = QStringLiteral("/home/%1/.config/kdeglobals").arg(username);
+
+    if (!QFile::copy(sourceFilePath, destFilePath)) {
+        reply = ActionReply::HelperErrorReply();
+        reply.setErrorDescription(i18nc("%1 is a file path", "Failed to copy file %1", sourceFilePath));
         return reply;
     }
 
