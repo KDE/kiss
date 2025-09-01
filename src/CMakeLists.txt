@@ -9,6 +9,7 @@ add_subdirectory(packagestructure)
 
 set_source_files_properties(org.freedesktop.Accounts.xml PROPERTIES NO_NAMESPACE TRUE)
 set_source_files_properties(org.freedesktop.Accounts.User.xml PROPERTIES NO_NAMESPACE TRUE)
+set_source_files_properties(org.freedesktop.timedate1.xml PROPERTIES NO_NAMESPACE TRUE)
 
 ecm_qt_declare_logging_category(logging_SRCS
     HEADER "initialsystemsetup_debug.h"
@@ -28,6 +29,11 @@ qt_add_dbus_interface(initialstart_DBUS_SRCS
     user_interface
 )
 
+qt_add_dbus_interface(initialstart_DBUS_SRCS
+    org.freedesktop.timedate1.xml
+    timedate_interface
+)
+
 add_executable(kde-initial-system-setup
     main.cpp
     pagesmodel.cpp
@@ -42,6 +48,10 @@ add_executable(kde-initial-system-setup
     initialstartutil.h
     keyboardutil.cpp
     keyboardutil.h
+    timeutil.cpp
+    timeutil.h
+    timezonemodel.cpp
+    timezonemodel.h
     ${initialstart_DBUS_SRCS}
     ${logging_SRCS}
 )

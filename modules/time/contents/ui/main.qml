@@ -11,6 +11,7 @@ import org.kde.kirigami as Kirigami
 import org.kde.kirigamiaddons.formcard as FormCard
 import org.kde.initialsystemsetup.time.private as Time
 
+import org.kde.initialsystemsetup
 import org.kde.initialsystemsetup.components as KissComponents
 
 KissComponents.SetupModule {
@@ -44,10 +45,10 @@ KissComponents.SetupModule {
                 FormCard.FormSwitchDelegate {
                     Layout.fillWidth: true
                     text: i18n("24-Hour Format")
-                    checked: Time.TimeUtil.is24HourTime
+                    checked: TimeUtil.is24HourTime
                     onCheckedChanged: {
-                        if (checked !== Time.TimeUtil.is24HourTime) {
-                            Time.TimeUtil.is24HourTime = checked;
+                        if (checked !== TimeUtil.is24HourTime) {
+                            TimeUtil.is24HourTime = checked;
                         }
                     }
                 }
@@ -59,7 +60,7 @@ KissComponents.SetupModule {
                     Layout.fillWidth: true
 
                     onTextChanged: {
-                        Time.TimeUtil.timeZones.filterString = text;
+                        TimeUtil.timeZones.filterString = text;
                     }
                 }
 
@@ -78,7 +79,7 @@ KissComponents.SetupModule {
                         id: listView
 
                         clip: true
-                        model: Time.TimeUtil.timeZones
+                        model: TimeUtil.timeZones
                         currentIndex: -1 // ensure focus is not on the listview
 
                         bottomMargin: 2
@@ -88,11 +89,10 @@ KissComponents.SetupModule {
 
                             width: ListView.view.width
                             text: timeZoneId
-                            checked: Time.TimeUtil.currentTimeZone === timeZoneId
+                            checked: TimeUtil.currentTimeZone === timeZoneId
                             onToggled: {
-                                if (checked && timeZoneId !== Time.TimeUtil.currentTimeZone) {
-                                    Time.TimeUtil.currentTimeZone = timeZoneId;
-                                    checked = Qt.binding(() => Time.TimeUtil.currentTimeZone === timeZoneId);
+                                if (checked && timeZoneId !== TimeUtil.currentTimeZone) {
+                                    TimeUtil.currentTimeZone = timeZoneId;
                                 }
                             }
                         }
