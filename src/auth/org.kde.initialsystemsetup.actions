@@ -105,6 +105,11 @@ Description[zh_CN]=禁用初始系统设置使用的 systemd 单元
 Description[zh_TW]=將初始系統設定的 systemd 單元停用
 Policy=yes
 
+[org.kde.initialsystemsetup.makewificonnectionsglobal]
+Name=Make Wi-Fi Connections Global
+Description=Make Wi-Fi connections available system-wide for all users.
+Policy=yes
+
 [org.kde.initialsystemsetup.removeautologin]
 Name=Remove Autologin
 Name[ar]=إزالة الولوج الآلي

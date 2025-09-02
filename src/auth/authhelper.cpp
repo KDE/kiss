@@ -13,6 +13,8 @@
 #include "authhelper.h"
 #include "config-kiss.h"
 
+#include <utility> // For std::as_const
+
 const QString SDDM_AUTOLOGIN_CONFIG_PATH = QStringLiteral("/etc/sddm.conf.d/99-kde-initial-system-setup.conf");
 
 ActionReply KISSAuthHelper::createnewuserautostarthook(const QVariantMap &args)
@@ -87,6 +89,90 @@ ActionReply KISSAuthHelper::disablesystemdunit(const QVariantMap &args)
         actionReply = ActionReply::HelperErrorReply();
         actionReply.setErrorDescription(i18nc("%1 is an error message", "Failed to disable systemd unit: %1", dbusReply.error().message()));
         return actionReply;
+    }
+
+    return ActionReply::SuccessReply();
+}
+
+ActionReply KISSAuthHelper::makewificonnectionsglobal(const QVariantMap &args)
+{
+    Q_UNUSED(args);
+
+    ActionReply actionReply;
+
+    // For every config file in /etc/NetworkManager/system-connections,
+    // If it contains `type=wifi` make it global by removing the line that begins `permissions=user:`
+    QDir systemConnectionsDir(QStringLiteral("/etc/NetworkManager/system-connections"));
+    if (!systemConnectionsDir.exists()) {
+        // If the directory doesn't exist, there's nothing to do
+        return ActionReply::SuccessReply();
+    }
+
+    QStringList configFiles = systemConnectionsDir.entryList(QDir::Files);
+    for (const QString &configFileName : configFiles) {
+        QString configFilePath = systemConnectionsDir.filePath(configFileName);
+        QFile configFile(configFilePath);
+        if (!configFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
+            actionReply = ActionReply::HelperErrorReply();
+            actionReply.setErrorDescription(i18nc("%1 is a file path", "Failed to open config file for reading: %1", configFilePath));
+            return actionReply;
+        }
+
+        // Read the entire file content
+        QStringList lines;
+        bool isWifiConnection = false;
+        QTextStream in(&configFile);
+        while (!in.atEnd()) {
+            QString line = in.readLine();
+            lines.append(line); // Store all lines with original format
+            if (line.trimmed().startsWith(QStringLiteral("type=wifi"))) {
+                isWifiConnection = true;
+            }
+        }
+        configFile.close();
+
+        if (!isWifiConnection) {
+            // No need to modify this file
+            continue;
+        }
+
+        // Only if it's a WiFi connection, remove the permissions line
+        bool hasPermissionsLine = false;
+        QStringList newLines;
+        for (const QString &line : std::as_const(lines)) {
+            if (!line.trimmed().startsWith(QStringLiteral("permissions=user:"))) {
+                newLines.append(line);
+            } else {
+                hasPermissionsLine = true;
+            }
+        }
+
+        // Only rewrite the file if we found and removed a permissions line
+        if (hasPermissionsLine) {
+            if (!configFile.open(QIODevice::WriteOnly | QIODevice::Truncate | QIODevice::Text)) {
+                actionReply = ActionReply::HelperErrorReply();
+                actionReply.setErrorDescription(i18nc("%1 is a file path", "Failed to open config file for writing: %1", configFilePath));
+                return actionReply;
+            }
+
+            // Rewrite the file with modified contents
+            QTextStream out(&configFile);
+            for (const QString &line : std::as_const(newLines)) {
+                out << line << '\n';
+            }
+            configFile.close();
+
+            // Reconnect the modified WiFi connection using its ID (filename without the .nmconnection extension)
+            QString connectionId = configFileName;
+            if (connectionId.endsWith(QStringLiteral(".nmconnection"))) {
+                connectionId.chop(QStringLiteral(".nmconnection").length()); // Remove the ".nmconnection" extension
+            }
+            QProcess nmProcess;
+            nmProcess.start(QStringLiteral("nmcli"), {QStringLiteral("connection"), QStringLiteral("up"), connectionId});
+            nmProcess.waitForFinished(5000); // Wait up to 5 seconds for nmcli to finish
+            // We don't check the exit code here because the connection might already be active
+            // or some other non-critical error might occur that shouldn't stop the process
+        }
     }
 
     return ActionReply::SuccessReply();

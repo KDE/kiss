@@ -51,6 +51,11 @@ private:
     void logOut();
 
     /**
+     * Makes Wi-Fi connections global (available to all users without requiring the password).
+     */
+    void makeWifiConnectionsGlobal();
+
+    /**
      * Sets the new user's home directory ownership to the new user.
      */
     void setNewUserHomeDirectoryOwnership();

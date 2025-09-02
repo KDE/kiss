@@ -37,6 +37,14 @@ public Q_SLOTS:
     ActionReply disablesystemdunit(const QVariantMap &args);
 
     /**
+     * Makes Wi-Fi connections global (available to all users without requiring the password).
+     *
+     * @param args The arguments passed to the action (not used here).
+     * @return An ActionReply indicating success or failure.
+     */
+    ActionReply makewificonnectionsglobal(const QVariantMap &args);
+
+    /**
      * Removes the configuration file that enables autologin for KISS.
      *
      * @param args The arguments passed to the action (not used here).

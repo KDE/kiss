@@ -34,6 +34,7 @@ void InitialStartUtil::finish()
 
     // TODO: Set new user preferences re: dark mode, keyboard layout, etc.
 
+    makeWifiConnectionsGlobal();
     setNewUserTempAutologin();
     createNewUserAutostartHook();
     setNewUserHomeDirectoryOwnership();
@@ -73,6 +74,21 @@ void InitialStartUtil::disableSystemdUnit()
 void InitialStartUtil::logOut()
 {
     m_session.requestLogout(SessionManagement::ConfirmationMode::Skip);
+}
+
+void InitialStartUtil::makeWifiConnectionsGlobal()
+{
+    qCInfo(KDEInitialSystemSetup) << "Making Wi-Fi connections global.";
+
+    KAuth::Action action(QStringLiteral("org.kde.initialsystemsetup.makewificonnectionsglobal"));
+    action.setHelperId(QStringLiteral("org.kde.initialsystemsetup"));
+    KAuth::ExecuteJob *job = action.execute();
+
+    if (!job->exec()) {
+        qCWarning(KDEInitialSystemSetup) << "Failed to make Wi-Fi connections global:" << job->errorString();
+    } else {
+        qCInfo(KDEInitialSystemSetup) << "Wi-Fi connections made global successfully.";
+    }
 }
 
 void InitialStartUtil::setNewUserHomeDirectoryOwnership()
