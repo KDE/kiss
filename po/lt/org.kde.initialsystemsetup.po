@@ -1,21 +1,22 @@
-# Copyright (C) 2024 This file is copyright:
+# Lithuanian translations for kiss package.
+# Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the kiss package.
-# SPDX-FileCopyrightText: 2024 Vit Pelcak <vit@pelcak.org>
+# Automatically generated, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-08-29 00:44+0000\n"
-"PO-Revision-Date: 2024-07-16 15:46+0200\n"
-"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
-"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
-"Language: cs\n"
+"PO-Revision-Date: 2025-08-29 00:44+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 24.05.2\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
+"%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -30,7 +31,7 @@ msgstr ""
 #: modules/account/contents/ui/main.qml:68
 #, kde-format
 msgid "Upload new avatar"
-msgstr "Odeslat nového avatara"
+msgstr ""
 
 #: modules/account/contents/ui/main.qml:85
 #, kde-format
@@ -90,68 +91,67 @@ msgstr ""
 #: modules/cellular/contents/ui/EditProfileDialog.qml:14
 #, kde-format
 msgid "Edit APN"
-msgstr "Upravit APN"
+msgstr ""
 
-# Tohle vypadá na název vlastnosti. Jméno bycvh nechal pro lidi a zvířata.
 #: modules/cellular/contents/ui/EditProfileDialog.qml:38
 #, kde-format
 msgid "Name"
-msgstr "Název"
+msgstr ""
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:43
 #, kde-format
 msgid "APN"
-msgstr "APN"
+msgstr ""
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:48
 #, kde-format
 msgid "Username"
-msgstr "Uživatelské jméno"
+msgstr ""
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:53
 #, kde-format
 msgid "Password"
-msgstr "Heslo"
+msgstr ""
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:58
 #, kde-format
 msgid "Network type"
-msgstr "Typ sítě"
+msgstr ""
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "4G/3G/2G"
-msgstr "4G/3G/2G"
+msgstr ""
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "3G/2G"
-msgstr "3G/2G"
+msgstr ""
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "2G"
-msgstr "2G"
+msgstr ""
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 4G"
-msgstr "Pouze 4G"
+msgstr ""
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 3G"
-msgstr "Pouze 3G"
+msgstr ""
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Only 2G"
-msgstr "Pouze 2G"
+msgstr ""
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:59
 #, kde-format
 msgid "Any"
-msgstr "Cokoliv"
+msgstr ""
 
 #: modules/cellular/contents/ui/main.qml:45
 #, kde-format
@@ -178,22 +178,22 @@ msgstr ""
 #: modules/cellular/contents/ui/main.qml:63
 #, kde-format
 msgid "Mobile Data"
-msgstr "Mobilní data"
+msgstr ""
 
 #: modules/cellular/contents/ui/main.qml:109
 #, kde-format
 msgid "Edit"
-msgstr "Upravit"
+msgstr ""
 
 #: modules/cellular/contents/ui/main.qml:117
 #, kde-format
 msgid "Delete"
-msgstr "Smazat"
+msgstr ""
 
 #: modules/cellular/contents/ui/main.qml:127
 #, kde-format
 msgid "Add APN"
-msgstr "Přidat APN"
+msgstr ""
 
 #: modules/finished/contents/ui/main.qml:30
 #, kde-format
@@ -235,7 +235,7 @@ msgstr ""
 #: modules/prepare/contents/ui/main.qml:138
 #, kde-format
 msgid "Dark Theme"
-msgstr "Tmavý motiv"
+msgstr ""
 
 #: modules/time/contents/ui/main.qml:35
 #, kde-format
@@ -245,12 +245,12 @@ msgstr ""
 #: modules/time/contents/ui/main.qml:46
 #, kde-format
 msgid "24-Hour Format"
-msgstr "24-hodinový formát"
+msgstr ""
 
 #: modules/wifi/contents/ui/ConnectionItemDelegate.qml:94
 #, kde-format
 msgid "Connect to"
-msgstr "Připojit se k"
+msgstr ""
 
 #: modules/wifi/contents/ui/main.qml:77
 #, kde-format
@@ -260,12 +260,12 @@ msgstr ""
 #: modules/wifi/contents/ui/PasswordField.qml:14
 #, kde-format
 msgid "Password:"
-msgstr "Heslo:"
+msgstr ""
 
 #: modules/wifi/contents/ui/PasswordField.qml:26
 #, kde-format
 msgid "Invalid input."
-msgstr "Neplatný vstup."
+msgstr ""
 
 #: src/auth/authhelper.cpp:24 src/auth/authhelper.cpp:121
 #: src/auth/authhelper.cpp:146
@@ -364,19 +364,19 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "Back"
-msgstr "Zpět"
+msgstr ""
 
 #: src/qml/Wizard.qml:315
 #, kde-format
 msgctxt "@action:button"
 msgid "Next"
-msgstr "Další"
+msgstr ""
 
 #: src/qml/Wizard.qml:334
 #, kde-format
 msgctxt "@action:button"
 msgid "Finish"
-msgstr "Dokončit"
+msgstr ""
 
 #: src/user.cpp:125
 #, kde-format
@@ -393,14 +393,14 @@ msgstr ""
 #: src/user.cpp:311
 #, kde-format
 msgid "There was an error while saving changes"
-msgstr "Při ukládání změn došlo k chybě"
+msgstr ""
 
 #: src/user.cpp:412
 #, kde-format
 msgid "Failed to resize image: opening temp file failed"
-msgstr "Změna velikosti obrázku selhala: otevření dočasného souboru selhalo"
+msgstr ""
 
 #: src/user.cpp:420
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
-msgstr "Změna velikosti obrázku selhala: zápis do dočasného souboru selhal"
+msgstr ""
