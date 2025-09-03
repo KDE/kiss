@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-08-29 00:44+0000\n"
-"PO-Revision-Date: 2025-08-29 12:40+0200\n"
+"PO-Revision-Date: 2025-09-02 17:58+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -197,8 +197,7 @@ msgid "Add APN"
 msgstr "Adde APN"
 
 #: modules/finished/contents/ui/main.qml:30
-#, fuzzy, kde-format
-#| msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+#, kde-format
 msgctxt "%1 is the distro name"
 msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
 msgstr "Tu dispositivo es nunc preste. <br /><br /> Gaude de <b>%1</b>!"
@@ -288,12 +287,10 @@ msgid "Failed to create autostart directory: %1"
 msgstr "Il falleva a tonder imagine: %1"
 
 #: src/auth/authhelper.cpp:44
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
+#, kde-format
 msgctxt "%1 is a file path"
 msgid "Failed to open file for writing: %1"
-msgstr "Il falleva a tonder imagine: %1"
+msgstr "Il falleva a aperir  file pro scriber: %1"
 
 #: src/auth/authhelper.cpp:51
 #, kde-format
@@ -314,7 +311,7 @@ msgstr "Il falleva a tonder imagine: %1"
 #| msgid "Failed to crop image: %1"
 msgctxt "%1 is a file path"
 msgid "Failed to remove file %1"
-msgstr "Il falleva a tonder imagine: %1"
+msgstr "Falleva a remover file %1:<nl/>%2"
 
 #: src/auth/authhelper.cpp:133
 #, kde-format
@@ -328,7 +325,7 @@ msgstr ""
 #| msgid "Failed to crop image: %1"
 msgctxt "%1 is a file path"
 msgid "Failed to open file %1 for writing."
-msgstr "Il falleva a tonder imagine: %1"
+msgstr "Il falleva a aperir  file pro scriber: %1"
 
 #: src/main.cpp:35
 #, kde-format
@@ -366,8 +363,7 @@ msgid "Begin Setup"
 msgstr "Initia configuration"
 
 #: src/qml/LandingComponent.qml:144
-#, fuzzy, kde-format
-#| msgid "Powered by<br/><b>%1</b>"
+#, kde-format
 msgctxt "%1 is the distro name"
 msgid "Powered by<br/><b>%1</b>"
 msgstr "Potentiate per <br/><b>%1</b>"
@@ -396,9 +392,7 @@ msgid "Finish"
 msgstr "Termina"
 
 #: src/user.cpp:125
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
+#, kde-format
 msgctxt "@info, %1 is an error message"
 msgid "Failed to crop image: %1"
 msgstr "Il falleva a tonder imagine: %1"
