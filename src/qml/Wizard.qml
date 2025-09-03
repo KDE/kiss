@@ -200,16 +200,20 @@ Kirigami.Page {
             color: Kirigami.Theme.backgroundColor
             clip: true
 
-            radius: Kirigami.Settings.isMobile ? 0 : Kirigami.Units.cornerRadius + 8
+            // Pages fill the screen if the screen is very small to prevent the contents of the
+            // pages from all having to scroll.
+            readonly property bool isSmallScreen: Screen.width < 1920 || Screen.height < 1080
+
+            radius: Kirigami.Settings.isMobile || isSmallScreen ? 0 : Kirigami.Units.cornerRadius + 8
 
             anchors {
-                fill: Kirigami.Settings.isMobile ? parent : undefined
+                fill: Kirigami.Settings.isMobile || isSmallScreen ? parent : undefined
                 topMargin: Kirigami.Settings.isMobile ? root.height * 0.3 : undefined
                 centerIn: Kirigami.Settings.isMobile ? undefined : parent
             }
 
-            width: Kirigami.Settings.isMobile ? undefined : Math.min(parent.width * 0.4, Kirigami.Units.gridUnit * 60)
-            height: Kirigami.Settings.isMobile ? undefined : Math.min(parent.height * 0.5, Kirigami.Units.gridUnit * 45)
+            width: Kirigami.Settings.isMobile || isSmallScreen ? undefined : Math.min(parent.width * 0.4, Kirigami.Units.gridUnit * 60)
+            height: Kirigami.Settings.isMobile || isSmallScreen ? undefined : Math.min(parent.height * 0.5, Kirigami.Units.gridUnit * 45)
 
             Behavior on height {
                 NumberAnimation {
