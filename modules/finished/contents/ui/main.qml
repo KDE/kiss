@@ -27,7 +27,7 @@ KissComponents.SetupModule {
             Label {
                 Layout.fillWidth: true
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
-                text: i18nc("%1 is the distro name", "Your device is now ready. <br /><br />Enjoy <b>%1</b>!", InitialStartUtil.distroName)
+                text: i18nc("%1 is the distro name", "Your device is now ready. <br /><br />After clicking <b>Finish</b> you will be able to sign in to your new account.<br /><br />Enjoy <b>%1</b>!", InitialStartUtil.distroName)
                 wrapMode: Text.Wrap
                 horizontalAlignment: Text.AlignHCenter
             }

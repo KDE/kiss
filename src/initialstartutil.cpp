@@ -34,8 +34,14 @@ void InitialStartUtil::finish()
 
     // TODO: Set new user preferences re: dark mode, keyboard layout, etc.
 
-    setNewUserTempAutologin();
-    createNewUserAutostartHook();
+    // Temporarily disabling the automatic session transition because using SDDM's
+    // Autologin causes some issues, like being unable to create a wallet and potentially
+    // connecting to new wifi networks until after a reboot. This isn't an issue when the user
+    // logs in normally with their password. Re-enable these when we can ensure the automatic
+    // transition doesn't cause such issues.
+    // setNewUserTempAutologin();
+    // createNewUserAutostartHook();
+
     setNewUserHomeDirectoryOwnership();
     logOut();
 }
