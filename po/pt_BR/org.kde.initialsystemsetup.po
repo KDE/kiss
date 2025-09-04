@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-29 00:44+0000\n"
+"POT-Creation-Date: 2025-09-04 00:44+0000\n"
 "PO-Revision-Date: 2025-08-29 09:01-0300\n"
 "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -204,8 +204,10 @@ msgstr "Adicionar APN (nome do ponto de acesso)"
 #: modules/finished/contents/ui/main.qml:30
 #, kde-format
 msgctxt "%1 is the distro name"
-msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
-msgstr "Seu dispositivo está pronto agora. <br /><br />Aproveite <b>%1</b>!"
+msgid ""
+"Your device is now ready. <br /><br />After clicking <b>Finish</b> you will "
+"be able to sign in to your new account.<br /><br />Enjoy <b>%1</b>!"
+msgstr ""
 
 #: modules/keyboard/contents/ui/main.qml:164
 #, kde-format
@@ -412,6 +414,10 @@ msgstr "Falha ao redimensionar a imagem: falha ao abrir o arquivo temporário"
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "Falha ao redimensionar a imagem: falha ao gravar no arquivo temporário"
+
+#~ msgctxt "%1 is the distro name"
+#~ msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+#~ msgstr "Seu dispositivo está pronto agora. <br /><br />Aproveite <b>%1</b>!"
 
 #~ msgid "Language"
 #~ msgstr "Idioma"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-29 00:44+0000\n"
+"POT-Creation-Date: 2025-09-04 00:44+0000\n"
 "PO-Revision-Date: 2025-08-29 19:27+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -204,8 +204,10 @@ msgstr "Додати APN"
 #: modules/finished/contents/ui/main.qml:30
 #, kde-format
 msgctxt "%1 is the distro name"
-msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
-msgstr "Тепер ваш пристрій готовий. <br /><br />Насолоджуйтеся <b>%1</b>!"
+msgid ""
+"Your device is now ready. <br /><br />After clicking <b>Finish</b> you will "
+"be able to sign in to your new account.<br /><br />Enjoy <b>%1</b>!"
+msgstr ""
 
 #: modules/keyboard/contents/ui/main.qml:164
 #, kde-format
@@ -419,6 +421,10 @@ msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "Не вдалося змінити розміри зображення: не вдалося виконати запис до "
 "тимчасового файла"
+
+#~ msgctxt "%1 is the distro name"
+#~ msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+#~ msgstr "Тепер ваш пристрій готовий. <br /><br />Насолоджуйтеся <b>%1</b>!"
 
 #~ msgid "Language"
 #~ msgstr "Мова"

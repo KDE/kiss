@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-29 00:44+0000\n"
+"POT-Creation-Date: 2025-09-04 00:44+0000\n"
 "PO-Revision-Date: 2025-08-29 09:33+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -206,8 +206,10 @@ msgstr "Afegeix un APN"
 #: modules/finished/contents/ui/main.qml:30
 #, kde-format
 msgctxt "%1 is the distro name"
-msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
-msgstr "El dispositiu ara està llest. <br /><br />Gaudiu de <b>%1</b>!"
+msgid ""
+"Your device is now ready. <br /><br />After clicking <b>Finish</b> you will "
+"be able to sign in to your new account.<br /><br />Enjoy <b>%1</b>!"
+msgstr ""
 
 #: modules/keyboard/contents/ui/main.qml:164
 #, kde-format
@@ -422,6 +424,10 @@ msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "Ha fallat en redimensionar la imatge: ha fallat en escriure al fitxer "
 "temporal"
+
+#~ msgctxt "%1 is the distro name"
+#~ msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+#~ msgstr "El dispositiu ara està llest. <br /><br />Gaudiu de <b>%1</b>!"
 
 #~ msgid "Language"
 #~ msgstr "Idioma"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-29 00:44+0000\n"
+"POT-Creation-Date: 2025-09-04 00:44+0000\n"
 "PO-Revision-Date: 2025-07-20 01:49+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -197,11 +197,12 @@ msgid "Add APN"
 msgstr "APN 추가"
 
 #: modules/finished/contents/ui/main.qml:30
-#, fuzzy, kde-format
-#| msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+#, kde-format
 msgctxt "%1 is the distro name"
-msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
-msgstr "장치가 준비되었습니다. <br /><br /><b>%1</b>을(를) 즐겁게 사용하세요!"
+msgid ""
+"Your device is now ready. <br /><br />After clicking <b>Finish</b> you will "
+"be able to sign in to your new account.<br /><br />Enjoy <b>%1</b>!"
+msgstr ""
 
 #: modules/keyboard/contents/ui/main.qml:164
 #, kde-format
@@ -421,6 +422,13 @@ msgstr "이미지 크기 조정 실패: 임시 파일을 열 수 없음"
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "이미지 크기 조정 실패: 임시 파일에 쓸 수 없음"
+
+#, fuzzy
+#~| msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+#~ msgctxt "%1 is the distro name"
+#~ msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+#~ msgstr ""
+#~ "장치가 준비되었습니다. <br /><br /><b>%1</b>을(를) 즐겁게 사용하세요!"
 
 #~ msgid "Language"
 #~ msgstr "언어"

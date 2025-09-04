@@ -1,18 +1,19 @@
 # SPDX-FileCopyrightText: 2024, 2025 Xavier Besnard <xavier.besnard@kde.org>
+# SPDX-FileCopyrightText: 2025 Thomas Vergnaud <thomas.vergnaud@mailo.eu>
 msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-29 00:44+0000\n"
-"PO-Revision-Date: 2025-08-23 16:45+0200\n"
-"Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
-"Language-Team: French <French <kde-francophone@kde.org>>\n"
+"POT-Creation-Date: 2025-09-04 00:44+0000\n"
+"PO-Revision-Date: 2025-08-30 14:04+0200\n"
+"Last-Translator: Thomas Vergnaud <thomas.vergnaud@mailo.eu>\n"
+"Language-Team: French <kde-francophone@kde.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.08.0\n"
+"X-Generator: Lokalize 24.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -198,12 +199,12 @@ msgid "Add APN"
 msgstr "Ajouter APN"
 
 #: modules/finished/contents/ui/main.qml:30
-#, fuzzy, kde-format
-#| msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+#, kde-format
 msgctxt "%1 is the distro name"
-msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+msgid ""
+"Your device is now ready. <br /><br />After clicking <b>Finish</b> you will "
+"be able to sign in to your new account.<br /><br />Enjoy <b>%1</b>!"
 msgstr ""
-"Votre appareil est maintenant prêt. <br /><br />Profitez de <b>%1</b> !"
 
 #: modules/keyboard/contents/ui/main.qml:164
 #, kde-format
@@ -218,8 +219,7 @@ msgid "Please select your preferred language."
 msgstr "Veuillez sélectionnée votre langue préférée."
 
 #: modules/language/contents/ui/main.qml:55
-#, fuzzy, kde-format
-#| msgid "Search languages..."
+#, kde-format
 msgid "Search languages…"
 msgstr "Rechercher des langues..."
 
@@ -282,18 +282,16 @@ msgid "Username argument is missing or invalid."
 msgstr "L'argument du nom d'utilisateur est manquant ou non valable."
 
 #: src/auth/authhelper.cpp:35
-#, fuzzy, kde-format
-#| msgid "Failed to create autostart directory: %1"
+#, kde-format
 msgctxt "%1 is a directory path"
 msgid "Failed to create autostart directory: %1"
 msgstr "Impossible de créer le dossier de démarrage automatique : %1"
 
 #: src/auth/authhelper.cpp:44
-#, fuzzy, kde-format
-#| msgid "Failed to open file for writing: %1"
+#, kde-format
 msgctxt "%1 is a file path"
 msgid "Failed to open file for writing: %1"
-msgstr "Impossible d'ouvrir le fichier en l'écriture : %1"
+msgstr "Impossible d'ouvrir le fichier en écriture : %1"
 
 #: src/auth/authhelper.cpp:51
 #, kde-format
@@ -302,22 +300,19 @@ msgstr ""
 "Impossible de trouver l'emplacement d'exécution de la configuration initiale."
 
 #: src/auth/authhelper.cpp:88
-#, fuzzy, kde-format
-#| msgid "Failed to disable systemd unit: %1"
+#, kde-format
 msgctxt "%1 is an error message"
 msgid "Failed to disable systemd unit: %1"
-msgstr "Impossible de désactiver une unité « systemd » : %1"
+msgstr "Impossible de désactiver l'unité systemd : %1"
 
 #: src/auth/authhelper.cpp:108
-#, fuzzy, kde-format
-#| msgid "Failed to remove file %1"
+#, kde-format
 msgctxt "%1 is a file path"
 msgid "Failed to remove file %1"
 msgstr "Impossible de supprimer le fichier %1"
 
 #: src/auth/authhelper.cpp:133
-#, fuzzy, kde-format
-#| msgid "Failed to set ownership for home directory %1: exit code %2"
+#, kde-format
 msgctxt "%1 is a directory path, %2 an exit code"
 msgid "Failed to set ownership for home directory %1: exit code %2"
 msgstr ""
@@ -325,16 +320,15 @@ msgstr ""
 "sortie %2"
 
 #: src/auth/authhelper.cpp:155
-#, fuzzy, kde-format
-#| msgid "Failed to open file %1 for writing."
+#, kde-format
 msgctxt "%1 is a file path"
 msgid "Failed to open file %1 for writing."
-msgstr "Impossible d'ouvrir le fichier %1 en l'écriture."
+msgstr "Impossible d'ouvrir le fichier %1 en écriture."
 
 #: src/main.cpp:35
 #, kde-format
 msgid "KDE Initial System Setup"
-msgstr "Configuration initiale  du système de KDE"
+msgstr "Configuration initiale du système de KDE"
 
 #: src/main.cpp:37
 #, kde-format
@@ -367,8 +361,7 @@ msgid "Begin Setup"
 msgstr "Commencer la configuration"
 
 #: src/qml/LandingComponent.qml:144
-#, fuzzy, kde-format
-#| msgid "Powered by<br/><b>%1</b>"
+#, kde-format
 msgctxt "%1 is the distro name"
 msgid "Powered by<br/><b>%1</b>"
 msgstr "Propulsé par<br/><b>%1</b>"
@@ -397,16 +390,13 @@ msgid "Finish"
 msgstr "Terminer"
 
 #: src/user.cpp:125
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
+#, kde-format
 msgctxt "@info, %1 is an error message"
 msgid "Failed to crop image: %1"
 msgstr "Échec du rognage de l'image : %1"
 
 #: src/user.cpp:306
-#, fuzzy, kde-format
-#| msgid "Could not get permission to save user %1"
+#, kde-format
 msgctxt "%1 is the username"
 msgid "Could not get permission to save user %1"
 msgstr "Impossible d'obtenir l'autorisation d'enregistrer l'utilisateur %1"
@@ -429,6 +419,11 @@ msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "Échec du redimensionnement de l'image : échec de l'écriture dans le fichier "
 "temporaire"
+
+#~ msgctxt "%1 is the distro name"
+#~ msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+#~ msgstr ""
+#~ "Votre appareil est maintenant prêt. <br /><br />Profitez de <b>%1</b> !"
 
 #~ msgid "Language"
 #~ msgstr "Langue"

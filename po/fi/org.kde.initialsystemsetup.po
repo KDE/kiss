@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-29 00:44+0000\n"
+"POT-Creation-Date: 2025-09-04 00:44+0000\n"
 "PO-Revision-Date: 2025-07-31 09:37+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -199,11 +199,12 @@ msgid "Add APN"
 msgstr "Lisää APN"
 
 #: modules/finished/contents/ui/main.qml:30
-#, fuzzy, kde-format
-#| msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+#, kde-format
 msgctxt "%1 is the distro name"
-msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
-msgstr "Laite on nyt valmis.<br /><br />Tämä on <b>%1</b>, nauti!"
+msgid ""
+"Your device is now ready. <br /><br />After clicking <b>Finish</b> you will "
+"be able to sign in to your new account.<br /><br />Enjoy <b>%1</b>!"
+msgstr ""
 
 #: modules/keyboard/contents/ui/main.qml:164
 #, kde-format
@@ -424,6 +425,12 @@ msgstr "Kuvan koon muuttaminen epäonnistui: väliaikaistiedostoa ei voi avata"
 msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "Kuvan koon muuttaminen epäonnistui: väliaikaistiedostoon ei voi kirjoittaa"
+
+#, fuzzy
+#~| msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+#~ msgctxt "%1 is the distro name"
+#~ msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+#~ msgstr "Laite on nyt valmis.<br /><br />Tämä on <b>%1</b>, nauti!"
 
 #~ msgid "Language"
 #~ msgstr "Kieli"

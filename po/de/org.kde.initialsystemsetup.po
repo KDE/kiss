@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: org.kde.initialsystemsetup\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-29 00:44+0000\n"
+"POT-Creation-Date: 2025-09-04 00:44+0000\n"
 "PO-Revision-Date: 2025-06-08 16:23+0200\n"
 "Last-Translator: Flori G <Renner03@protonmail.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -200,11 +200,12 @@ msgid "Add APN"
 msgstr "APN hinzufügen"
 
 #: modules/finished/contents/ui/main.qml:30
-#, fuzzy, kde-format
-#| msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+#, kde-format
 msgctxt "%1 is the distro name"
-msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
-msgstr "Ihr Gerät ist jetzt bereit. <br /><br />Viel Freude mit <b>%1</b>!"
+msgid ""
+"Your device is now ready. <br /><br />After clicking <b>Finish</b> you will "
+"be able to sign in to your new account.<br /><br />Enjoy <b>%1</b>!"
+msgstr ""
 
 #: modules/keyboard/contents/ui/main.qml:164
 #, fuzzy, kde-format
@@ -431,6 +432,12 @@ msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "Größenänderung des Bilds ist fehlgeschlagen: Schreiben der temporären Datei "
 "ist nicht möglich"
+
+#, fuzzy
+#~| msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+#~ msgctxt "%1 is the distro name"
+#~ msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
+#~ msgstr "Ihr Gerät ist jetzt bereit. <br /><br />Viel Freude mit <b>%1</b>!"
 
 #~ msgid "Language"
 #~ msgstr "Sprache"
