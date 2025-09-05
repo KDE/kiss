@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-09-04 00:44+0000\n"
-"PO-Revision-Date: 2025-08-29 18:58+0200\n"
+"PO-Revision-Date: 2025-09-04 16:59+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -207,6 +207,9 @@ msgid ""
 "Your device is now ready. <br /><br />After clicking <b>Finish</b> you will "
 "be able to sign in to your new account.<br /><br />Enjoy <b>%1</b>!"
 msgstr ""
+"Uw apparaat is nu gereed. <br /><br />Na klikken op <b>Beëindigen</b> zult u "
+"in staat zijn u aan te melden in uw nieuwe account.<br /><br />Veel plezier "
+"<b>%1</b>!"
 
 #: modules/keyboard/contents/ui/main.qml:164
 #, kde-format

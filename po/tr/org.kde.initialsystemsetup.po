@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-09-04 00:44+0000\n"
-"PO-Revision-Date: 2025-08-30 18:40+0300\n"
+"PO-Revision-Date: 2025-09-04 14:35+0300\n"
 "Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -94,7 +94,7 @@ msgstr "Parolalar eşleşmiyor"
 #: modules/cellular/contents/ui/EditProfileDialog.qml:14
 #, kde-format
 msgid "Edit APN"
-msgstr "APN’yi Düzenle"
+msgstr "Erişim Noktasını Düzenle"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:38
 #, kde-format
@@ -104,7 +104,7 @@ msgstr "Ad"
 #: modules/cellular/contents/ui/EditProfileDialog.qml:43
 #, kde-format
 msgid "APN"
-msgstr "APN"
+msgstr "Erişim Noktası"
 
 #: modules/cellular/contents/ui/EditProfileDialog.qml:48
 #, kde-format
@@ -198,7 +198,7 @@ msgstr "Sil"
 #: modules/cellular/contents/ui/main.qml:127
 #, kde-format
 msgid "Add APN"
-msgstr "APN Ekle"
+msgstr "Erişim Noktası Ekle"
 
 #: modules/finished/contents/ui/main.qml:30
 #, kde-format
@@ -207,6 +207,9 @@ msgid ""
 "Your device is now ready. <br /><br />After clicking <b>Finish</b> you will "
 "be able to sign in to your new account.<br /><br />Enjoy <b>%1</b>!"
 msgstr ""
+"Aygıtınız artık hazır.<br /><br /><b>Bitir</b>’e tıkladıktan sonra yeni "
+"hesabınızla oturum açabileceksiniz.<br /><br /><b>%1</b> sisteminin keyfini "
+"çıkarın!"
 
 #: modules/keyboard/contents/ui/main.qml:164
 #, kde-format
@@ -326,7 +329,7 @@ msgstr "%1 dosyası, yazmak için açılamadı."
 #: src/main.cpp:35
 #, kde-format
 msgid "KDE Initial System Setup"
-msgstr "KDE İlk Sistem Ayarları"
+msgstr "KDE İlk Kullanım Ayarları"
 
 #: src/main.cpp:37
 #, kde-format
@@ -341,7 +344,8 @@ msgstr "© 2021–2024 KDE Topluluğu"
 #: src/main.cpp:44
 #, kde-format
 msgid "Remove the initial setup autologin configuration."
-msgstr "Başlangıç ayarı kendiliğinden oturum açma yapılandırmasını kaldırın."
+msgstr ""
+"Başlangıç ayarının kendiliğinden oturum açma yapılandırmasını kaldırın."
 
 #: src/qml/LandingComponent.qml:103
 #, kde-format
