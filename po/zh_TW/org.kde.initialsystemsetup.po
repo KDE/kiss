@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-09-04 00:44+0000\n"
-"PO-Revision-Date: 2025-08-29 20:52+0900\n"
+"PO-Revision-Date: 2025-09-05 17:08+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -203,6 +203,8 @@ msgid ""
 "Your device is now ready. <br /><br />After clicking <b>Finish</b> you will "
 "be able to sign in to your new account.<br /><br />Enjoy <b>%1</b>!"
 msgstr ""
+"您的裝置現已就緒。<br /><br />點擊<b>完成</b>之後您便能夠登入您的新帳號。"
+"<br /><br />享受 <b>%1</b> 吧！"
 
 #: modules/keyboard/contents/ui/main.qml:164
 #, kde-format
