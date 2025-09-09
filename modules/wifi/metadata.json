@@ -25,7 +25,6 @@
                 "Name[sv]": "Devin Lin",
                 "Name[tr]": "Devin Lin",
                 "Name[uk]": "Devin Lin",
-                "Name[x-test]": "xxDevin Linxx",
                 "Name[zh_CN]": "Devin Lin",
                 "Name[zh_TW]": "Devin Lin"
             }
@@ -51,7 +50,6 @@
         "Description[sv]": "Låt användaren ansluta till ett WIFI-nätverk.",
         "Description[tr]": "Kullanıcının bir Wi-Fi ağına bağlanmasına olanak tanır.",
         "Description[uk]": "Дозволити користувачеві встановлювати з'єднання з мережею Wi-Fi.",
-        "Description[x-test]": "xxAllow the user to connect to a Wi-Fi network.xx",
         "Description[zh_CN]": "允许用户连接到 Wi-Fi 网络。",
         "Description[zh_TW]": "允許使用者連線到 Wi-Fi 網路。",
         "Id": "org.kde.initialsystemsetup.wifi",
@@ -77,7 +75,6 @@
         "Name[sv]": "Nätverk",
         "Name[tr]": "Ağ",
         "Name[uk]": "Мережа",
-        "Name[x-test]": "xxNetworkxx",
         "Name[zh_CN]": "网络",
         "Name[zh_TW]": "網路"
     },

@@ -24,7 +24,6 @@
                 "Name[sv]": "Kristen McWilliam",
                 "Name[tr]": "Kristen McWilliam",
                 "Name[uk]": "Kristen McWilliam",
-                "Name[x-test]": "xxKristen McWilliamxx",
                 "Name[zh_CN]": "Kristen McWilliam",
                 "Name[zh_TW]": "Kristen McWilliam"
             }
@@ -47,7 +46,6 @@
         "Description[sv]": "Låt användaren välja tangentbordslayout.",
         "Description[tr]": "Kullanıcının klavye yerleşimini seçmesine olanak tanır.",
         "Description[uk]": "Дозволити користувачеві вибирати розкладку клавіатури.",
-        "Description[x-test]": "xxAllow the user to choose the keyboard layout.xx",
         "Description[zh_CN]": "允许用户选择键盘布局。",
         "Description[zh_TW]": "允許使用者選擇鍵盤佈局。",
         "Id": "org.kde.initialsystemsetup.keyboard",
@@ -70,7 +68,6 @@
         "Name[sv]": "Tangentbordslayout",
         "Name[tr]": "Klavye Yerleşimi",
         "Name[uk]": "Розкладка клавіатури",
-        "Name[x-test]": "xxKeyboard Layoutxx",
         "Name[zh_CN]": "键盘布局",
         "Name[zh_TW]": "鍵盤佈局",
         "Website": "https://kde.org"

@@ -25,7 +25,6 @@
                 "Name[sv]": "Carl Schwan",
                 "Name[tr]": "Carl Schwan",
                 "Name[uk]": "Carl Schwan",
-                "Name[x-test]": "xxCarl Schwanxx",
                 "Name[zh_CN]": "Carl Schwan",
                 "Name[zh_TW]": "Carl Schwan"
             }
@@ -51,7 +50,6 @@
         "Description[sv]": "Låter användaren ställa in miljön innan den används.",
         "Description[tr]": "Kullanıcının onu kullanmadan önce ortamı yapılandırmasına olanak tanır.",
         "Description[uk]": "Дозволяє користувачеві налаштовувати середовище до його використання.",
-        "Description[x-test]": "xxAllows the user to configure the environment before using it.xx",
         "Description[zh_CN]": "允许用户在使用系统环境之前对其进行配置。",
         "Description[zh_TW]": "允許使用者在使用環境前先把它設定好。",
         "Id": "org.kde.plasma.plasmainitialstart.prepare",
@@ -77,7 +75,6 @@
         "Name[sv]": "Innan vi kommer igång …",
         "Name[tr]": "Başlamadan Önce…",
         "Name[uk]": "Перш, ніж ми почнемо.",
-        "Name[x-test]": "xxBefore we get started…xx",
         "Name[zh_CN]": "在开始之前…",
         "Name[zh_TW]": "開始之前…",
         "Version": "1.0"
