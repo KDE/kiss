@@ -149,6 +149,11 @@ Name=Set New User Global Theme
 Description=Set the global theme for the new user
 Policy=yes
 
+[org.kde.initialsystemsetup.setnewuserdisplayscaling]
+Name=Set New User Display Scaling
+Description=Set display scaling for the new user
+Policy=yes
+
 [org.kde.initialsystemsetup.setnewuserhomedirectoryownership]
 Name=Set New User Home Directory Ownership
 Name[ar]=تعيين ملكية مجلد البيت للمستخدمين الجدد

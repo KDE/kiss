@@ -154,6 +154,43 @@ ActionReply KISSAuthHelper::setnewuserglobaltheme(const QVariantMap &args)
     return ActionReply::SuccessReply();
 }
 
+ActionReply KISSAuthHelper::setnewuserdisplayscaling(const QVariantMap &args)
+{
+    ActionReply reply;
+
+    if (!args.contains(QStringLiteral("username")) || !args[QStringLiteral("username")].canConvert<QString>()) {
+        reply = ActionReply::HelperErrorReply();
+        reply.setErrorDescription(i18n("Username argument is missing or invalid."));
+        return reply;
+    }
+
+    QString username = args[QStringLiteral("username")].toString();
+
+    // Copy display scaling configuration files to the new user
+    QString sourceBasePath = QDir::cleanPath(QStringLiteral("/run/kde-initial-system-setup/.config"));
+    QString destBasePath = QDir::cleanPath(QStringLiteral("/home/") + username + QStringLiteral("/.config"));
+    QDir destDir(destBasePath);
+    if (!destDir.exists()) {
+        destDir.mkpath(destBasePath);
+    }
+
+    QStringList filesToCopy = {
+        QStringLiteral("kwinoutputconfig.json"),
+        QStringLiteral("kwinrc"),
+    };
+    for (const QString &fileName : filesToCopy) {
+        QString sourceFilePath = QDir::cleanPath(sourceBasePath + QStringLiteral("/") + fileName);
+        QString destFilePath = QDir::cleanPath(destBasePath + QStringLiteral("/") + fileName);
+        if (!QFile::copy(sourceFilePath, destFilePath)) {
+            reply = ActionReply::HelperErrorReply();
+            reply.setErrorDescription(i18nc("%1 is a file path", "Failed to copy file %1", sourceFilePath));
+            return reply;
+        }
+    }
+
+    return ActionReply::SuccessReply();
+}
+
 ActionReply KISSAuthHelper::setnewuserhomedirectoryownership(const QVariantMap &args)
 {
     ActionReply reply;

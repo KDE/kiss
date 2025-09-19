@@ -45,9 +45,9 @@ void InitialStartUtil::finish()
     // setNewUserTempAutologin();
     // createNewUserAutostartHook();
 
-    // TODO: Set new user preferences re: dark mode, keyboard layout, etc.
     DisplayUtil displayUtil;
     displayUtil.setGlobalThemeForNewUser(m_window, m_accountController->username());
+    displayUtil.setScalingForNewUser(m_window, m_accountController->username());
 
     setNewUserHomeDirectoryOwnership();
     logOut();
