@@ -6,6 +6,7 @@
 #pragma once
 
 #include <QObject>
+#include <QWindow>
 #include <qqmlintegration.h>
 
 #include <KOSRelease>
@@ -77,6 +78,14 @@ private:
      * Provides access to the operating system information.
      */
     KOSRelease m_osrelease;
+
+    /**
+     * The window used as the parent for KAuth actions.
+     *
+     * Without passing this KAuth spams the console with warnings about missing parent windows,
+     * which is not relevant to us since we never show an authorization dialog.
+     */
+    QWindow *m_window = nullptr;
 
     /**
      * Provides session management capabilities, notably for logging out of the initial setup user session.

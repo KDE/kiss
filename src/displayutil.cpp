@@ -15,11 +15,12 @@ DisplayUtil::DisplayUtil(QObject *parent)
 {
 }
 
-void DisplayUtil::setGlobalThemeForNewUser(QString userName)
+void DisplayUtil::setGlobalThemeForNewUser(QWindow *window, QString userName)
 {
     qCInfo(KDEInitialSystemSetup) << "Setting global theme for new user.";
 
     KAuth::Action action(QStringLiteral("org.kde.initialsystemsetup.setnewuserglobaltheme"));
+    action.setParentWindow(window);
     action.setHelperId(QStringLiteral("org.kde.initialsystemsetup"));
     action.addArgument(QStringLiteral("username"), userName);
 
