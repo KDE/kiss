@@ -6,6 +6,7 @@
 #include <KAuth/Action>
 #include <KAuth/ExecuteJob>
 
+#include "displayutil.h"
 #include "initialstartutil.h"
 #include "initialsystemsetup_debug.h"
 
@@ -32,8 +33,6 @@ void InitialStartUtil::finish()
         return;
     }
 
-    // TODO: Set new user preferences re: dark mode, keyboard layout, etc.
-
     // Temporarily disabling the automatic session transition because using SDDM's
     // Autologin causes some issues, like being unable to create a wallet and potentially
     // connecting to new wifi networks until after a reboot. This isn't an issue when the user
@@ -41,6 +40,10 @@ void InitialStartUtil::finish()
     // transition doesn't cause such issues.
     // setNewUserTempAutologin();
     // createNewUserAutostartHook();
+
+    // TODO: Set new user preferences re: dark mode, keyboard layout, etc.
+    DisplayUtil displayUtil;
+    displayUtil.setGlobalThemeForNewUser(m_accountController->username());
 
     setNewUserHomeDirectoryOwnership();
     logOut();

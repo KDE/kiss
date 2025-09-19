@@ -94,11 +94,11 @@ bool PrepareUtil::usingDarkTheme() const
 
 void PrepareUtil::setUsingDarkTheme(bool usingDarkTheme)
 {
-    // use plasma-apply-colorscheme since it has logic for notifying the shell of changes
+    // use plasma-apply-lookandfeel since it has logic for notifying the shell of changes
     if (usingDarkTheme) {
-        QProcess::execute(u"plasma-apply-colorscheme"_s, {QStringLiteral("BreezeDark")});
+        QProcess::execute(u"plasma-apply-lookandfeel"_s, {QStringLiteral("--apply"), QStringLiteral("org.kde.breezedark.desktop")});
     } else {
-        QProcess::execute(u"plasma-apply-colorscheme"_s, {QStringLiteral("BreezeLight")});
+        QProcess::execute(u"plasma-apply-lookandfeel"_s, {QStringLiteral("--apply"), QStringLiteral("org.kde.breeze.desktop")});
     }
 
     m_usingDarkTheme = usingDarkTheme;

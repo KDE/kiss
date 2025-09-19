@@ -144,6 +144,11 @@ Description[zh_CN]=移除 SDDM 自动登录配置
 Description[zh_TW]=移除 SDDM 自動登入配置
 Policy=yes
 
+[org.kde.initialsystemsetup.setnewuserglobaltheme]
+Name=Set New User Global Theme
+Description=Set the global theme for the new user
+Policy=yes
+
 [org.kde.initialsystemsetup.setnewuserhomedirectoryownership]
 Name=Set New User Home Directory Ownership
 Name[ar]=تعيين ملكية مجلد البيت للمستخدمين الجدد
