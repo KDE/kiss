@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-09-04 00:44+0000\n"
+"POT-Creation-Date: 2025-09-20 00:44+0000\n"
 "PO-Revision-Date: 2025-09-02 17:58+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -221,25 +221,17 @@ msgstr "Pro favor selige tu linguage preferite."
 msgid "Search languages…"
 msgstr "Cerca linguages..."
 
-#: modules/prepare/contents/ui/main.qml:44
-#, kde-format
-msgid ""
-"Adjust the screen brightness to be comfortable for the installation process."
-msgstr ""
-"Adapta le brillantia de schermo a esser confortabile per le processo de "
-"installation."
-
-#: modules/prepare/contents/ui/main.qml:102
+#: modules/prepare/contents/ui/main.qml:38
 #, kde-format
 msgid "Adjust the size of elements on the screen."
 msgstr "Adapta le grandor de elementos sur le schermo."
 
-#: modules/prepare/contents/ui/main.qml:113
+#: modules/prepare/contents/ui/main.qml:49
 #, kde-format
 msgid "Display Scaling"
 msgstr "Scalar de monstrator"
 
-#: modules/prepare/contents/ui/main.qml:138
+#: modules/prepare/contents/ui/main.qml:74
 #, kde-format
 msgid "Dark Theme"
 msgstr "Thema obscur"
@@ -274,13 +266,14 @@ msgstr "Contrasigno:"
 msgid "Invalid input."
 msgstr "Entrata invalide."
 
-#: src/auth/authhelper.cpp:24 src/auth/authhelper.cpp:121
-#: src/auth/authhelper.cpp:146
+#: src/auth/authhelper.cpp:26 src/auth/authhelper.cpp:123
+#: src/auth/authhelper.cpp:163 src/auth/authhelper.cpp:200
+#: src/auth/authhelper.cpp:225
 #, kde-format
 msgid "Username argument is missing or invalid."
 msgstr ""
 
-#: src/auth/authhelper.cpp:35
+#: src/auth/authhelper.cpp:37
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Failed to crop image: %1"
@@ -288,18 +281,18 @@ msgctxt "%1 is a directory path"
 msgid "Failed to create autostart directory: %1"
 msgstr "Il falleva a tonder imagine: %1"
 
-#: src/auth/authhelper.cpp:44
+#: src/auth/authhelper.cpp:46
 #, kde-format
 msgctxt "%1 is a file path"
 msgid "Failed to open file for writing: %1"
 msgstr "Il falleva a aperir  file pro scriber: %1"
 
-#: src/auth/authhelper.cpp:51
+#: src/auth/authhelper.cpp:53
 #, kde-format
 msgid "Failed to find the initial setup executable path."
 msgstr ""
 
-#: src/auth/authhelper.cpp:88
+#: src/auth/authhelper.cpp:90
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Failed to crop image: %1"
@@ -307,7 +300,7 @@ msgctxt "%1 is an error message"
 msgid "Failed to disable systemd unit: %1"
 msgstr "Il falleva a tonder imagine: %1"
 
-#: src/auth/authhelper.cpp:108
+#: src/auth/authhelper.cpp:110
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Failed to crop image: %1"
@@ -315,13 +308,29 @@ msgctxt "%1 is a file path"
 msgid "Failed to remove file %1"
 msgstr "Falleva a remover file %1:<nl/>%2"
 
-#: src/auth/authhelper.cpp:133
+#: src/auth/authhelper.cpp:140
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Failed to crop image: %1"
+msgctxt "%1 is a directory path"
+msgid "Failed to create .config directory: %1"
+msgstr "Il falleva a tonder imagine: %1"
+
+#: src/auth/authhelper.cpp:150 src/auth/authhelper.cpp:186
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Failed to crop image: %1"
+msgctxt "%1 is a file path"
+msgid "Failed to copy file %1"
+msgstr "Falleva a remover file %1:<nl/>%2"
+
+#: src/auth/authhelper.cpp:212
 #, kde-format
 msgctxt "%1 is a directory path, %2 an exit code"
 msgid "Failed to set ownership for home directory %1: exit code %2"
 msgstr ""
 
-#: src/auth/authhelper.cpp:155
+#: src/auth/authhelper.cpp:234
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Failed to crop image: %1"
@@ -420,6 +429,13 @@ msgstr "Falleva a redimensionar image. il falleva a aperir file temp"
 #, kde-format
 msgid "Failed to resize image: writing to temp file failed"
 msgstr "Falleva a redimensionar image. il falleva a scriber in file temp"
+
+#~ msgid ""
+#~ "Adjust the screen brightness to be comfortable for the installation "
+#~ "process."
+#~ msgstr ""
+#~ "Adapta le brillantia de schermo a esser confortabile per le processo de "
+#~ "installation."
 
 #~ msgctxt "%1 is the distro name"
 #~ msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"

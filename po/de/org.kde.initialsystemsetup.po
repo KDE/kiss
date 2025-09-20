@@ -1,24 +1,22 @@
-# German translations for kiss package
 # German translation for kiss.
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the kiss package.
 # SPDX-FileCopyrightText: 2025 Flori G <Renner03@protonmail.com>
-# Automatically generated, 2024.
-#
+# SPDX-FileCopyrightText: 2025 Philipp Kiemle <l10n@prly.mozmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: org.kde.initialsystemsetup\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-09-04 00:44+0000\n"
-"PO-Revision-Date: 2025-06-08 16:23+0200\n"
-"Last-Translator: Flori G <Renner03@protonmail.com>\n"
+"POT-Creation-Date: 2025-09-20 00:44+0000\n"
+"PO-Revision-Date: 2025-09-06 23:17+0200\n"
+"Last-Translator: Philipp Kiemle <l10n@prly.mozmail.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.04.2\n"
+"X-Generator: Lokalize 25.08.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -49,7 +47,7 @@ msgstr "Um die Einrichtung abzuschließen, benötigen wir noch ein paar Details.
 #, kde-format
 msgctxt "@info"
 msgid "This user will be an administrator."
-msgstr ""
+msgstr "Dieser Benutzer wird ein Administrator."
 
 #: modules/account/contents/ui/main.qml:130
 #, kde-kuit-format
@@ -59,6 +57,10 @@ msgid ""
 "means that they can change system settings, install software, and access all "
 "files on the system.<nl/><nl/>Choose a strong password for this user."
 msgstr ""
+"Dieser Benutzer wird die Rechte eines Systemverwalters besitzen.<nl/><nl/"
+">Das bedeutet, dass er Systemeinstellungen verändern, Software installieren "
+"und auf alle Dateien auf dem System zugreifen kann.<nl/><nl/>Wählen Sie ein "
+"starkes Passwort für diesen Benutzer."
 
 #: modules/account/contents/ui/main.qml:145
 #, kde-format
@@ -208,10 +210,9 @@ msgid ""
 msgstr ""
 
 #: modules/keyboard/contents/ui/main.qml:164
-#, fuzzy, kde-format
-#| msgid "Please select your preferred language."
+#, kde-format
 msgid "Select your keyboard layout and language."
-msgstr "Bitte wählen Sie Ihre bevorzugte Sprache aus."
+msgstr "Bitte wählen Sie Ihre Tastaturbelegung und Sprache aus."
 
 #: modules/language/contents/ui/main.qml:46
 #, kde-format
@@ -219,30 +220,21 @@ msgid "Please select your preferred language."
 msgstr "Bitte wählen Sie Ihre bevorzugte Sprache aus."
 
 #: modules/language/contents/ui/main.qml:55
-#, fuzzy, kde-format
-#| msgid "Search languages..."
-msgid "Search languages…"
-msgstr "Sprachen durchsuchen …"
-
-#: modules/prepare/contents/ui/main.qml:44
 #, kde-format
-msgid ""
-"Adjust the screen brightness to be comfortable for the installation process."
-msgstr ""
-"Stellen Sie die Bildschirmhelligkeit so ein, dass sie für den "
-"Installationsvorgang angenehm ist."
+msgid "Search languages…"
+msgstr "Sprachen durchsuchen …"
 
-#: modules/prepare/contents/ui/main.qml:102
+#: modules/prepare/contents/ui/main.qml:38
 #, kde-format
 msgid "Adjust the size of elements on the screen."
 msgstr "Passen Sie die Größe der Elemente auf dem Bildschirm an."
 
-#: modules/prepare/contents/ui/main.qml:113
+#: modules/prepare/contents/ui/main.qml:49
 #, kde-format
 msgid "Display Scaling"
 msgstr "Anzeigeskalierung"
 
-#: modules/prepare/contents/ui/main.qml:138
+#: modules/prepare/contents/ui/main.qml:74
 #, kde-format
 msgid "Dark Theme"
 msgstr "Dunkles Design"
@@ -277,82 +269,92 @@ msgstr "Passwort:"
 msgid "Invalid input."
 msgstr "Ungültige Eingabe."
 
-#: src/auth/authhelper.cpp:24 src/auth/authhelper.cpp:121
-#: src/auth/authhelper.cpp:146
+#: src/auth/authhelper.cpp:26 src/auth/authhelper.cpp:123
+#: src/auth/authhelper.cpp:163 src/auth/authhelper.cpp:200
+#: src/auth/authhelper.cpp:225
 #, kde-format
 msgid "Username argument is missing or invalid."
-msgstr ""
+msgstr "Benutzername-Argument fehlt oder ist ungültig."
 
-#: src/auth/authhelper.cpp:35
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
+#: src/auth/authhelper.cpp:37
+#, kde-format
 msgctxt "%1 is a directory path"
 msgid "Failed to create autostart directory: %1"
-msgstr "Bild kann nicht zugeschnitten werden: %1"
+msgstr "Autostart-Ordner „%1“ kann nicht erstellt werden"
 
-#: src/auth/authhelper.cpp:44
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
+#: src/auth/authhelper.cpp:46
+#, kde-format
 msgctxt "%1 is a file path"
 msgid "Failed to open file for writing: %1"
-msgstr "Bild kann nicht zugeschnitten werden: %1"
+msgstr "Die Datei „%1“ lässt sich nicht zum Schreiben öffnen"
 
-#: src/auth/authhelper.cpp:51
+#: src/auth/authhelper.cpp:53
 #, kde-format
 msgid "Failed to find the initial setup executable path."
-msgstr ""
+msgstr "Pfad der Programmdatei für die Ersteinrichtung nicht gefunden."
 
-#: src/auth/authhelper.cpp:88
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
+#: src/auth/authhelper.cpp:90
+#, kde-format
 msgctxt "%1 is an error message"
 msgid "Failed to disable systemd unit: %1"
-msgstr "Bild kann nicht zugeschnitten werden: %1"
+msgstr "Deaktivieren der Systemd-Unit fehlgeschlagen: %1"
 
-#: src/auth/authhelper.cpp:108
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
+#: src/auth/authhelper.cpp:110
+#, kde-format
 msgctxt "%1 is a file path"
 msgid "Failed to remove file %1"
-msgstr "Bild kann nicht zugeschnitten werden: %1"
+msgstr "Löschen der Datei %1 fehlgeschlagen"
 
-#: src/auth/authhelper.cpp:133
+#: src/auth/authhelper.cpp:140
+#, fuzzy, kde-format
+#| msgctxt "%1 is a directory path"
+#| msgid "Failed to create autostart directory: %1"
+msgctxt "%1 is a directory path"
+msgid "Failed to create .config directory: %1"
+msgstr "Autostart-Ordner „%1“ kann nicht erstellt werden"
+
+#: src/auth/authhelper.cpp:150 src/auth/authhelper.cpp:186
+#, fuzzy, kde-format
+#| msgctxt "%1 is a file path"
+#| msgid "Failed to remove file %1"
+msgctxt "%1 is a file path"
+msgid "Failed to copy file %1"
+msgstr "Löschen der Datei %1 fehlgeschlagen"
+
+#: src/auth/authhelper.cpp:212
 #, kde-format
 msgctxt "%1 is a directory path, %2 an exit code"
 msgid "Failed to set ownership for home directory %1: exit code %2"
 msgstr ""
+"Setzen der Eigentumsrechte des persönlichen Ordners (%1) fehlgeschlagen: %2"
 
-#: src/auth/authhelper.cpp:155
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
+#: src/auth/authhelper.cpp:234
+#, kde-format
 msgctxt "%1 is a file path"
 msgid "Failed to open file %1 for writing."
-msgstr "Bild kann nicht zugeschnitten werden: %1"
+msgstr "Die Datei %1 lässt sich nicht zum Schreiben öffnen."
 
 #: src/main.cpp:35
 #, kde-format
 msgid "KDE Initial System Setup"
-msgstr "Tokodon"
+msgstr "KDE – Ersteinrichtung des Systems"
 
 #: src/main.cpp:37
 #, kde-format
 msgid "Make Plasma yours"
-msgstr "Stöbern Sie im Fediverse"
+msgstr "Gestalten Sie Plasma nach Ihren Wünschen"
 
 #: src/main.cpp:39
 #, kde-format
 msgid "© 2021-2024 KDE Community"
-msgstr "© 2021-2024 KDE Gemeinschaft"
+msgstr "© 2021–2024 KDE Gemeinschaft"
 
 #: src/main.cpp:44
 #, kde-format
 msgid "Remove the initial setup autologin configuration."
 msgstr ""
+"Die Konfiguration zum automatischen Anmelden für die Ersteinrichtung "
+"entfernen."
 
 #: src/qml/LandingComponent.qml:103
 #, kde-format
@@ -367,11 +369,10 @@ msgstr "Willkommen bei<br/><b>Plasma Desktop</b>"
 #: src/qml/LandingComponent.qml:117
 #, kde-format
 msgid "Begin Setup"
-msgstr ""
+msgstr "Einrichtung beginnen"
 
 #: src/qml/LandingComponent.qml:144
-#, fuzzy, kde-format
-#| msgid "Powered by<br/><b>%1</b>"
+#, kde-format
 msgctxt "%1 is the distro name"
 msgid "Powered by<br/><b>%1</b>"
 msgstr "Ermöglicht durch<br/><b>%1</b>"
@@ -400,16 +401,13 @@ msgid "Finish"
 msgstr "Abschließen"
 
 #: src/user.cpp:125
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Failed to crop image: %1"
+#, kde-format
 msgctxt "@info, %1 is an error message"
 msgid "Failed to crop image: %1"
 msgstr "Bild kann nicht zugeschnitten werden: %1"
 
 #: src/user.cpp:306
-#, fuzzy, kde-format
-#| msgid "Could not get permission to save user %1"
+#, kde-format
 msgctxt "%1 is the username"
 msgid "Could not get permission to save user %1"
 msgstr "Keine Berechtigung, um den Benutzer %1 zu speichern"
@@ -432,6 +430,13 @@ msgid "Failed to resize image: writing to temp file failed"
 msgstr ""
 "Größenänderung des Bilds ist fehlgeschlagen: Schreiben der temporären Datei "
 "ist nicht möglich"
+
+#~ msgid ""
+#~ "Adjust the screen brightness to be comfortable for the installation "
+#~ "process."
+#~ msgstr ""
+#~ "Stellen Sie die Bildschirmhelligkeit so ein, dass sie für den "
+#~ "Installationsvorgang angenehm ist."
 
 #, fuzzy
 #~| msgid "Your device is now ready. <br /><br />Enjoy <b>%1</b>!"
