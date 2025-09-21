@@ -153,12 +153,56 @@ Policy=yes
 
 [org.kde.initialsystemsetup.setnewuserglobaltheme]
 Name=Set New User Global Theme
+Name[ar]=عيِّن سمة عامة جديدة للمستخدم
+Name[ca]=Estableix el tema global d'usuari nou
+Name[es]=Definir tema global para nuevo usuario
+Name[eu]=Ezarri Erabiltzaile berriaren gai globala
+Name[he]=הגדרת ערכת עיצוב מקיפה למשתמש חדש
+Name[ka]=ახალი მომხმარებლის გლობალური თემის დაყენება
+Name[nl]=Zet nieuw globaal thema van gebruiker
+Name[pt_BR]=Definir novo tema global do usuário
+Name[sl]=Nastavi novemu uporabniku globalno temo
+Name[sv]=Ställ in globalt tema för ny användare
+Name[uk]=Встановити загальну тему для нового користувача
 Description=Set the global theme for the new user
+Description[ar]=عيّن السمة العامة للمستخدم الجديد
+Description[ca]=Estableix el tema global per a l'usuari nou
+Description[es]=Definir el tema global para el nuevo usuario
+Description[eu]=Ezarri erabiltzaile berriaren gai globala
+Description[he]=הגדרת ערכת העיצוב המקיפה למשתמש החדש
+Description[ka]=გლობალური თემის დაყენება ახალი მომხმარებლისთვის
+Description[nl]=Zet het globale thema voor de nieuwe gebruiker
+Description[pt_BR]=Definir o tema global para o novo usuário
+Description[sl]=Nastavi globalno temo za novega uporabnika
+Description[sv]=Ställ in det globala temat för den nya användaren
+Description[uk]=Встановити загальну тему для нового користувача
 Policy=yes
 
 [org.kde.initialsystemsetup.setnewuserdisplayscaling]
 Name=Set New User Display Scaling
+Name[ar]=عيّن مقياس عرض المستخدم الجديد
+Name[ca]=Estableix l'escalat de pantalla d'usuari nou
+Name[es]=Definir escalado de pantalla para nuevo usuario
+Name[eu]=Ezarri erabiltzaile berriaren bistaratzaile-eskala
+Name[he]=קנה מידה לתצוגה של משתמש חדש
+Name[ka]=ახალი მომხმარებლის ეკრანის მასშტაბის დაყენება
+Name[nl]=Zet beeldschermschaal van de nieuwe gebruiker
+Name[pt_BR]=Definir nova escala de exibição do usuário
+Name[sl]=Nastavi novemu uporabniku povečavo zaslona
+Name[sv]=Ställ in bildskärmsskalning för ny användare
+Name[uk]=Встановити масштабування дисплея для нового користувача
 Description=Set display scaling for the new user
+Description[ar]=عيّن مقياس العرض للمستخدم الجديد
+Description[ca]=Estableix l'escalat de pantalla par a l'usuari nou
+Description[es]=Definir el escalado de pantalla para el nuevo usuario
+Description[eu]=Ezarri erabiltzaile berriaren bistaratzailearen eskala
+Description[he]=הגדרת קנה מידה לתצוגה של המשתמש החדש
+Description[ka]=ეკრანის მასშტაბის დაყენება ახალი მომხმარებლისთვის
+Description[nl]=Zet beeldschermschaal voor de nieuwe gebruiker
+Description[pt_BR]=Definir escala de exibição para o novo usuário
+Description[sl]=Nastavit povečavo zaslona za novega uporabnika
+Description[sv]=Ställ in bildskärmsskalningen för den nya användaren
+Description[uk]=Встановити масштабування дисплея для нового користувача
 Policy=yes
 
 [org.kde.initialsystemsetup.setnewuserhomedirectoryownership]
