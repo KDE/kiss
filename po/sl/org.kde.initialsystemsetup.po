@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kiss\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-09-20 00:44+0000\n"
-"PO-Revision-Date: 2025-09-04 06:57+0200\n"
+"PO-Revision-Date: 2025-09-20 08:26+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -307,20 +307,16 @@ msgid "Failed to remove file %1"
 msgstr "Neuspelo odstranjevanje datoteke %1"
 
 #: src/auth/authhelper.cpp:140
-#, fuzzy, kde-format
-#| msgctxt "%1 is a directory path"
-#| msgid "Failed to create autostart directory: %1"
+#, kde-format
 msgctxt "%1 is a directory path"
 msgid "Failed to create .config directory: %1"
-msgstr "Ustvarjanje imenika za samodejni zagon ni uspelo: %1"
+msgstr "Ustvarjanje imenika .config ni uspelo: %1"
 
 #: src/auth/authhelper.cpp:150 src/auth/authhelper.cpp:186
-#, fuzzy, kde-format
-#| msgctxt "%1 is a file path"
-#| msgid "Failed to remove file %1"
+#, kde-format
 msgctxt "%1 is a file path"
 msgid "Failed to copy file %1"
-msgstr "Neuspelo odstranjevanje datoteke %1"
+msgstr "Neuspelo kopiranje datoteke %1"
 
 #: src/auth/authhelper.cpp:212
 #, kde-format
