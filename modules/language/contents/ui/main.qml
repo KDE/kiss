@@ -23,119 +23,108 @@ import org.kde.initialsystemsetup.components as KissComponents
 KissComponents.SetupModule {
     id: root
 
-    cardWidth: Math.min(Kirigami.Units.gridUnit * 30, root.contentItem.width - Kirigami.Units.gridUnit * 2)
-    nextEnabled: true
+    contentItem: ColumnLayout {
+        id: mainColumn
+        spacing: Kirigami.Units.gridUnit
 
-    contentItem: ScrollView {
-        ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
-        contentWidth: -1
+        Label {
+            id: titleLabel
+            Layout.leftMargin: Kirigami.Units.gridUnit
+            Layout.rightMargin: Kirigami.Units.gridUnit
+            Layout.alignment: Qt.AlignTop
+            Layout.fillWidth: true
+
+            wrapMode: Text.Wrap
+            horizontalAlignment: Text.AlignHCenter
+            text: i18n("Please select your preferred language.") // qmllint disable unqualified
+        }
 
         ColumnLayout {
-            width: Kirigami.Units.gridUnit * 25
-            spacing: Kirigami.Units.gridUnit
-            anchors.centerIn: parent
+            spacing: Kirigami.Units.smallSpacing
 
-            Label {
-                Layout.leftMargin: Kirigami.Units.gridUnit
-                Layout.rightMargin: Kirigami.Units.gridUnit
-                Layout.alignment: Qt.AlignTop
+            Kirigami.SearchField {
+                id: searchField
                 Layout.fillWidth: true
+                placeholderText: i18n("Search languages…") // qmllint disable unqualified
+                property string filterString: ""
 
-                wrapMode: Text.Wrap
-                horizontalAlignment: Text.AlignHCenter
-                text: i18n("Please select your preferred language.") // qmllint disable unqualified
+                onTextChanged: {
+                    filterString = text.toLowerCase();
+                }
             }
 
-            ColumnLayout {
-                spacing: Kirigami.Units.smallSpacing
+            ScrollView {
+                Layout.fillWidth: true
 
-                Kirigami.SearchField {
-                    id: searchField
-                    Layout.fillWidth: true
-                    placeholderText: i18n("Search languages…") // qmllint disable unqualified
-                    property string filterString: ""
+                implicitHeight: mainColumn.height - titleLabel.height - searchField.height - Kirigami.Units.smallSpacing
 
-                    onTextChanged: {
-                        filterString = text.toLowerCase();
+                Component.onCompleted: {
+                    if (background) {
+                        background.visible = true;
                     }
                 }
 
-                ScrollView {
-                    Layout.fillWidth: true
-                    Layout.fillHeight: true
-                    Layout.minimumHeight: Kirigami.Units.gridUnit * 14
-                    Layout.maximumHeight: Kirigami.Units.gridUnit * 18
+                ListView {
+                    id: languageListView
+                    clip: true
+                    model: Language.LanguageUtil.availableLanguages
 
-                    Component.onCompleted: {
-                        if (background) {
-                            background.visible = true;
+                    // Filter languages based on search text
+                    function matchesFilter(language) {
+                        if (!searchField.filterString) {
+                            return true;
+                        }
+
+                        // Get language name from locale code
+                        const localeName = Qt.locale(language).nativeLanguageName;
+                        return language.toLowerCase().includes(searchField.filterString) || localeName.toLowerCase().includes(searchField.filterString);
+                    }
+
+                    currentIndex: -1 // Ensure focus is not on the listview
+
+                    delegate: FormCard.FormRadioDelegate {
+                        required property string modelData
+
+                        // Show and hide based on filter
+                        readonly property bool matchesFilter: languageListView.matchesFilter(modelData)
+                        height: matchesFilter ? implicitHeight : 0
+                        visible: matchesFilter
+
+                        // Get language name from locale code (e.g., "en_US" -> "English (United States)")
+                        text: {
+                            const locale = Qt.locale(modelData);
+                            const localeName = locale.nativeLanguageName;
+                            // First letter to uppercase
+                            return localeName.charAt(0).toUpperCase() + localeName.slice(1) + " (" + locale.nativeCountryName + ")";
+                        }
+
+                        checked: Language.LanguageUtil.currentLanguage === modelData
+
+                        onToggled: {
+                            if (checked && modelData !== Language.LanguageUtil.currentLanguage) {
+                                Language.LanguageUtil.currentLanguage = modelData;
+                                Language.LanguageUtil.applyLanguage();
+                                checked = Qt.binding(() => Language.LanguageUtil.currentLanguage === modelData);
+                            }
                         }
                     }
 
-                    ListView {
-                        id: languageListView
-                        clip: true
-                        model: Language.LanguageUtil.availableLanguages
-
-                        // Filter languages based on search text
-                        function matchesFilter(language) {
-                            if (!searchField.filterString) {
-                                return true;
-                            }
-
-                            // Get language name from locale code
-                            const localeName = Qt.locale(language).nativeLanguageName;
-                            return language.toLowerCase().includes(searchField.filterString) || localeName.toLowerCase().includes(searchField.filterString);
-                        }
-
-                        currentIndex: -1 // Ensure focus is not on the listview
-
-                        delegate: FormCard.FormRadioDelegate {
-                            required property string modelData
-
-                            // Show and hide based on filter
-                            readonly property bool matchesFilter: languageListView.matchesFilter(modelData)
-                            height: matchesFilter ? implicitHeight : 0
-                            visible: matchesFilter
-
-                            width: ListView.view.width
-
-                            // Get language name from locale code (e.g., "en_US" -> "English (United States)")
-                            text: {
-                                const locale = Qt.locale(modelData);
-                                const localeName = locale.nativeLanguageName;
-                                // First letter to uppercase
-                                return localeName.charAt(0).toUpperCase() + localeName.slice(1) + " (" + locale.nativeCountryName + ")";
-                            }
-
-                            checked: Language.LanguageUtil.currentLanguage === modelData
-
-                            onToggled: {
-                                if (checked && modelData !== Language.LanguageUtil.currentLanguage) {
-                                    Language.LanguageUtil.currentLanguage = modelData;
-                                    Language.LanguageUtil.applyLanguage();
-                                    checked = Qt.binding(() => Language.LanguageUtil.currentLanguage === modelData);
-                                }
+                    function scrollToCurrentLanguage() {
+                        // Find the index of the current language
+                        const currentLang = Language.LanguageUtil.currentLanguage;
+                        for (let i = 0; i < model.length; i++) {
+                            if (model[i] === currentLang) {
+                                // Position the view at the current language with some offset
+                                positionViewAtIndex(i, ListView.Center);
+                                break;
                             }
                         }
+                    }
 
-                        function scrollToCurrentLanguage() {
-                            // Find the index of the current language
-                            const currentLang = Language.LanguageUtil.currentLanguage;
-                            for (let i = 0; i < model.length; i++) {
-                                if (model[i] === currentLang) {
-                                    // Position the view at the current language with some offset
-                                    positionViewAtIndex(i, ListView.Center);
-                                    break;
-                                }
-                            }
-                        }
-
-                        Component.onCompleted: {
-                            // Scroll to the current language when the view is ready
-                            if (Language.LanguageUtil.currentLanguage) {
-                                scrollToCurrentLanguage();
-                            }
+                    Component.onCompleted: {
+                        // Scroll to the current language when the view is ready
+                        if (Language.LanguageUtil.currentLanguage) {
+                            scrollToCurrentLanguage();
                         }
                     }
                 }
