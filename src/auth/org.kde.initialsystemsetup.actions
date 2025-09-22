@@ -163,7 +163,9 @@ Name[nl]=Zet nieuw globaal thema van gebruiker
 Name[pt_BR]=Definir novo tema global do usuário
 Name[sl]=Nastavi novemu uporabniku globalno temo
 Name[sv]=Ställ in globalt tema för ny användare
+Name[tr]=Yeni Kullanıcı Global Teması Ayarla
 Name[uk]=Встановити загальну тему для нового користувача
+Name[zh_TW]=設定新使用者的全域主題
 Description=Set the global theme for the new user
 Description[ar]=عيّن السمة العامة للمستخدم الجديد
 Description[ca]=Estableix el tema global per a l'usuari nou
@@ -175,7 +177,9 @@ Description[nl]=Zet het globale thema voor de nieuwe gebruiker
 Description[pt_BR]=Definir o tema global para o novo usuário
 Description[sl]=Nastavi globalno temo za novega uporabnika
 Description[sv]=Ställ in det globala temat för den nya användaren
+Description[tr]=Yeni kullanıcı için global temayı ayarlayın
 Description[uk]=Встановити загальну тему для нового користувача
+Description[zh_TW]=為新建立的使用者設定全域主題
 Policy=yes
 
 [org.kde.initialsystemsetup.setnewuserdisplayscaling]
@@ -190,7 +194,9 @@ Name[nl]=Zet beeldschermschaal van de nieuwe gebruiker
 Name[pt_BR]=Definir nova escala de exibição do usuário
 Name[sl]=Nastavi novemu uporabniku povečavo zaslona
 Name[sv]=Ställ in bildskärmsskalning för ny användare
+Name[tr]=Yeni Kullanıcı Görüntü Ölçeklendirmesini Ayarla
 Name[uk]=Встановити масштабування дисплея для нового користувача
+Name[zh_TW]=設定新使用者顯示器縮放
 Description=Set display scaling for the new user
 Description[ar]=عيّن مقياس العرض للمستخدم الجديد
 Description[ca]=Estableix l'escalat de pantalla par a l'usuari nou
@@ -202,7 +208,9 @@ Description[nl]=Zet beeldschermschaal voor de nieuwe gebruiker
 Description[pt_BR]=Definir escala de exibição para o novo usuário
 Description[sl]=Nastavit povečavo zaslona za novega uporabnika
 Description[sv]=Ställ in bildskärmsskalningen för den nya användaren
+Description[tr]=Yeni kullanıcı için görüntü ölçeklendirmesini ayarlayın
 Description[uk]=Встановити масштабування дисплея для нового користувача
+Description[zh_TW]=為新建立的使用者建立顯示器縮放
 Policy=yes
 
 [org.kde.initialsystemsetup.setnewuserhomedirectoryownership]
